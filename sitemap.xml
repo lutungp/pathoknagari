@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ 
+<url>
+<loc>https://pathoknagari.id/</loc>
+</url>
+<url>
+<loc>https://pathoknagari.id/beranda</loc>
+<lastmod>2018-12-28</lastmod>
+<changefreq>always</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://pathoknagari.id/berita</loc>
+</url>
+<url>
+<loc>https://pathoknagari.id/kajian</loc>
+</url>
+ 
+</urlset>
