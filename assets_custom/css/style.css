@@ -4114,6 +4114,24 @@ footer .copyrights > a:focus {
   padding-bottom: 20px;
 }
 
+.news_item {
+  height: 570px;
+}
+
+.image {
+  min-width: 330px;
+  max-width: 350px;
+  height: 200px;
+  display: block;
+  padding-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news_desc2 {
+  padding-bottom: 20px!important;
+}
+
 
 /*-------------------------------*/
       /*Loader ends*/
