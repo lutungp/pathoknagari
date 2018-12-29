@@ -328,7 +328,7 @@
       <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A"
       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-delay="400ms">
        <h3 class="invisible">hidden</h3>
        <div class="row">
           <div class="col-md-12 col-sm-12">
