@@ -51,7 +51,7 @@
 <title>Pathok Nagari | Official Website</title>
 <link href="assets/images/212.png" rel="icon">
 <link rel="stylesheet" href="assets/css/plugins.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets_custom/css/style.css">
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -205,7 +205,7 @@
          </div>
       </div><br><br><br><br>
 	       <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 box-berita">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
                <a class="image" href="berita-detail">
                   <img src="assets/images/Berita/7.jpg"alt="Latest News" class="img-responsive">
@@ -217,7 +217,7 @@
                </div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-4 box-berita">
             <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
                <a class="image" href="berita-detail">
                   <img src="assets/images/Berita/8.jpg" alt="Latest News" class="img-responsive">
@@ -229,7 +229,7 @@
                </div>
             </div>
          </div>
-		     <div class="col-md-4">
+		     <div class="col-md-4 box-berita">
             <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
                <a class="image" href="berita-detail">
                   <img src="assets/images/Berita/addarojat.png" alt="Latest News" class="img-responsive">

@@ -6,7 +6,7 @@
 <title>Pathok Nagari</title>
 <link href="assets/images/212.png" rel="icon">
 <link rel="stylesheet" href="assets/css/plugins.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets_custom/css/style.css">
 
 </head>
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -364,7 +364,7 @@
             <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i></a></li>
             <li><a href="https://twitter.com/ipib1960/"><i class="fa fa-twitter"></i></a></li>
-	    <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>	
+	    <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
             <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a></li>
             </ul>
             <p class="copyrights wow fadeInUp" data-wow-delay="400ms"> IPIB Production &copy; 2018</p>

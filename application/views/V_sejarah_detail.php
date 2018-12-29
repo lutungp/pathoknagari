@@ -7,7 +7,7 @@
 <title>Pathok Nagari</title>
 <link href="assets/images/212.png" rel="icon">
 <link rel="stylesheet" href="assets/css/plugins.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets_custom/css/style.css">
 
 </head>
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">

@@ -7,7 +7,7 @@
 <title>Pathok Nagari</title>
 <link href="assets/images/212.png" rel="icon">
 <link rel="stylesheet" href="assets/css/plugins.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets_custom/css/style.css">
 
 </head>
 
@@ -190,7 +190,7 @@
                   <img src="assets/images/Berita/end.jpg" alt="Latest News" class="img-responsive">
                </a>
                <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="Berita-detail">Soko Guru Arsitekur Jawa Kuno</a></h3>
+                  <h3 class="text-capitalize font-light darkcolor"><a href="Berita-detail">Soko Guru</a></h3>
                   <ul class="meta-tags top20 bottom20">
                      <li><a href="#."><i class="fa fa-calendar"></i>Feb 28</a></li>
                      <li><a href="#."> <i class="fa fa-user-o"></i> admin </a></li>
