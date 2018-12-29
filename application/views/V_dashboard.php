@@ -215,37 +215,41 @@
           <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
               <a class="image" href="berita-detail">
-                <img src="assets/images/Berita/7.jpg"alt="Latest News" class="img-responsive">
-              </a>
-              <div class="news_desc">
-                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Buka bersama</a></h3>
-                <ul class="meta-tags top20 bottom20"></ul>
-                <p class="bottom35">Buka bersama 1000 Anak yatim dalam rangkaian acara ramadhan di masjid Ad-Darojat.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
-              <a class="image" href="berita-detail">
-                <img src="assets/images/Berita/8.jpg" alt="Latest News" class="img-responsive">
-              </a>
-              <div class="news_desc">
-                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Lomba Mewarnai</a></h3>
-                <ul class="meta-tags top20 bottom20"></ul>
-                <p class="bottom35">Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
-              <a class="image" href="berita-detail">
-                <img src="assets/images/Berita/addarojat.png" alt="Latest News" class="img-responsive">
+                <img src="assets/images/Berita/addarojat.png"alt="Latest News" class="img-responsive">
               </a>
               <div class="news_desc">
                 <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Masjid Ad-Darojat</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
                 <p class="bottom35">Tiada pahlawan dicetak kecuali
                 mereka itu lulusan masjid, yang di dalamnya ada taman Qur’an dan naungan hadits shahih.</p>
+                <a href="berita-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/kyai.png" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">"Kyai Muthohar"</a></h3>
+                <ul class="meta-tags top20 bottom20"></ul>
+                <p class="bottom35">Kyai Muthohar adalah sosok figur yang dihormati, dikagumi dan menjadi inspirasi bagi para santrinya.</p>
+                <a href="berita-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/dalem.png" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Soko Guru</a></h3>
+                <ul class="meta-tags top20 bottom20"></ul>
+                <p class="bottom35">Tata arsitetur Masjid Ad-Darojat masih kental dengan alkulturisasi budaya.
+                Soko guru adalah gaya arsitetur jawa kuno.</p>
+                <a href="berita-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
               </div>
             </div>
           </div>
@@ -254,12 +258,13 @@
           <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
               <a class="image" href="berita-detail">
-                <img src="assets/images/Berita/kyai.png" alt="Latest News" class="img-responsive">
+                <img src="assets/images/Berita/8.jpg" alt="Latest News" class="img-responsive">
               </a>
               <div class="news_desc">
-                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">"Kyai Muthohar"</a></h3>
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Lomba Mewarnai</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
-                <p class="bottom35">Kyai Muthohar adalah sosok figur yang dihormati, dikagumi dan menjadi inspirasi bagi para santrinya.</p>
+                <p class="bottom35">Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
+                <a href="berita-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
               </div>
             </div>
           </div>
@@ -273,19 +278,20 @@
                 <ul class="meta-tags top20 bottom20"></ul>
                 <p class="bottom35">Angkringan Masjarot adalah Salah satu kegiatan yang digagas Ikatan Pemuda Islam Babadan
                 sebagai media dakwah yang inovatif.</p>
+                <a href="berita-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="550ms">
               <a class="image" href="berita-detail">
-                <img src="assets/images/Berita/dalem.png" alt="Latest News" class="img-responsive">
+                <img src="assets/images/Berita/7.jpg" alt="Latest News" class="img-responsive">
               </a>
               <div class="news_desc">
-                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Soko Guru</a></h3>
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Buka Bersama</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
-                <p class="bottom35">Tata arsitetur Masjid Ad-Darojat masih kental dengan alkulturisasi budaya.
-                Soko guru adalah gaya arsitetur jawa kuno.</p>
+                <p class="bottom35">Buka bersama 1000 Anak yatim dalam rangkaian acara ramadhan di masjid Ad-Darojat.</p>
+                <a href="berita-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
               </div>
             </div>
           </div>
