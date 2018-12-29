@@ -235,10 +235,10 @@
                   <img src="assets/images/Berita/addarojat.png" alt="Latest News" class="img-responsive">
                </a>
                <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Di Masjid Hatiku Terkait</a></h3>
+                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Masjid Ad-Darojat</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
                   <p class="bottom35">Tiada pahlawan dicetak kecuali
-				           mereka itu lulusan masjid-masjid, yang di dalamnya ada taman al-Qur’an dan di bawah naungan hadits-hadits shahih.</p>
+				           mereka itu lulusan masjid, yang di dalamnya ada taman al-Qur’an dan di bawah naungan hadits shahih.</p>
                </div>
             </div>
          </div>
