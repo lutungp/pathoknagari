@@ -197,14 +197,20 @@
                <p class="bottom30 wow fadeInUp" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
 			   yang bertujuan memberikan informasi yang mengedukasi serta tarbiyah bagi sahabat-sahabat kaum muslimin.</p>
                <a href="berita" class="button btnsecondary wow fadeInUp" data-wow-delay="700ms">Lihat Semua Kabar</a>
-               </div>
-            </div>
-         </div>
+           </div>
+       </div>
+    </div>
+</section>
+<!--Kabar Ad-Darojat-->
+
+<!-- Kabar Berita -->
+<section id="berita" class="padding bglight">
+  <div class="container">
 		 <div class="col-md-5 col-sm-12">
             <div class="image hover-effect wow fadeInUp" data-wow-delay="300ms"><img src="assets/images/Berita/1.png" alt="berita" class="equalheight"></div>
          </div>
       </div><br><br>
-	  <div class="row">
+	       <div class="row">
             <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
                <a class="image" href="berita-detail">
@@ -212,11 +218,6 @@
                </a>
                <div class="news_desc">
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Buka bersama</a></h3>
-                  <ul class="meta-tags top20 bottom20">
-                     <li><a href="#."><i class="fa fa-calendar"></i>Feb 14</a></li>
-                     <li><a href="#."> <i class="fa fa-user-o"></i> admin </a></li>
-                     <li><a href="#."><i class="fa fa-comment-o"></i>5</a></li>
-                  </ul>
                   <p class="bottom35">Buka bersama 1000 Anak yatim dalam rangkaian acara ramadhan di masjid Ad-Darojat.</p>
                </div>
             </div>
@@ -228,33 +229,57 @@
                </a>
                <div class="news_desc">
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Lomba Mewarnai</a></h3>
-                  <ul class="meta-tags top20 bottom20">
-                     <li><a href="#."><i class="fa fa-calendar"></i>Feb 16</a></li>
-                     <li><a href="#."> <i class="fa fa-user-o"></i> admin </a></li>
-                     <li><a href="#."><i class="fa fa-comment-o"></i>5 </a></li>
-                  </ul>
                   <p class="bottom35">Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
                </div>
             </div>
          </div>
-		  <div class="col-md-4">
+		    <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
                <a class="image" href="berita-detail">
                   <img src="assets/images/Berita/9.jpg" alt="Latest News" class="img-responsive">
                </a>
                <div class="news_desc">
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Angkringan Dakwah</a></h3>
-                  <ul class="meta-tags top20 bottom20">
-                     <li><a href="#."><i class="fa fa-calendar"></i>Feb 16</a></li>
-                     <li><a href="#."> <i class="fa fa-user-o"></i> admin </a></li>
-                     <li><a href="#."><i class="fa fa-comment-o"></i>5 </a></li>
-                  </ul>
                   <p class="bottom35">Angkringan Masjarot adalah Salah satu kegiatan yang digagas Ikatan Pemuda Islam Babadan
-			   sebagai media dakwah yang inovatif.</p>
+			                           sebagai media dakwah yang inovatif.</p>
                </div>
             </div>
          </div>
+      <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
+             <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/ber2.jpg" alt="Latest News" class="img-responsive">
+             </a>
+             <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Sosok Inspiratif : "Kyai Muthohar"</a></h3>
+                <p class="bottom35">Kyai Muthohar adalah sosok figur yang dihormati, dikagumi dan menjadi inspirasi bagi para santrinya.</p>
+             </div>
+          </div>
+       </div>
+   <div class="col-md-4">
+        <div class="news_item shadow text-center wow fadeIn" data-wow-delay="500ms">
+           <a class="image" href="berita-detail">
+              <img src="assets/images/Berita/end.jpg" alt="Latest News" class="img-responsive">
+           </a>
+           <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Soko Guru Arsitekur Jawa Kuno</a></h3>
+              <p class="bottom35">Tata arsitetur Masjid Ad-Darojat masih kental dengan alkulturisasi budaya.
+              Soko guru adalah gaya arsitetur jawa kuno yang masih diaplikasikan saat ini.</p>
+           </div>
+        </div>
+     </div>
+ <div class="col-md-4">
+      <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="550ms">
+         <a class="image" href="berita-detail">
+            <img src="assets/images/Berita/10.jpg" alt="Latest News" class="img-responsive">
+         </a>
+         <div class="news_desc">
+            <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Di Masjid Hatiku Terkait</a></h3>
+            <p class="bottom35">Tiada pahlawan dicetak kecuali
+             mereka itu lulusan masjid-masjid, yang di dalamnya ada taman al-Qur’an dan di bawah naungan hadits-hadits shahih.</p>
+         </div>
       </div>
+   </div>
       <div class="row">
          <div class="col-sm-12">
             <!--Pagination-->
@@ -267,9 +292,10 @@
             </ul>
          </div>
       </div>
-   </div>
+    </div>
+ </div>
 </section>
-<!--Kabar Ad-Darojat-->
+<!--Kabar Berita-->
 
 <!--Live Streaming section-->
 <section id="streaming" class="padding"><br><br>
@@ -284,7 +310,7 @@
   </div>
   <div class="col-md-12">
     <div class="profile-video wow fadeInUp" data-wow-delay="350ms">
-      <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A" 
+      <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A"
       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <div class="container">
