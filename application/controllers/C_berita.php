@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_berita extends CI_Controller{
+class C_berita extends MY_Controller{
 
   public function __construct()
   {
@@ -11,7 +11,9 @@ class C_berita extends CI_Controller{
 
   function index()
   {
+    $this->load->view('templates/V_header');
     $this->load->view('V_berita');
+    $this->load->view('templates/V_footer');
   }
 
 }
