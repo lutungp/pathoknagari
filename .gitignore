@@ -29,7 +29,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 /tests/tests/
 /tests/results/
-assets
 application/config/database.php
 admin/application/config/database.php
 admin/assets
