@@ -238,7 +238,7 @@
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Masjid Ad-Darojat</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
                   <p class="bottom35">Tiada pahlawan dicetak kecuali
-				           mereka itu lulusan masjid, yang di dalamnya ada taman al-Qur’an dan di bawah naungan hadits shahih.</p>
+				           mereka itu lulusan masjid, yang di dalamnya ada taman Qur’an dan naungan hadits shahih.</p>
                </div>
             </div>
          </div>
