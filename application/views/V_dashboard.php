@@ -366,7 +366,7 @@
          <div class="col-md-12 col-sm-12 text-center">
            <div class="whitecolor heading-title-top10 wow fadeInUp" data-wow-delay="300ms">
                <span>Jadwal Kegiatan Rutin</span>
-               <h2 class="whitecolor bottom20wow fadeInUp" data-wow-delay="350ms">MAJELIS ILMU</h2>
+               <h2 class="whitecolor bottom20 wow fadeInUp" data-wow-delay="400ms">MAJELIS ILMU</h2>
             </div>
          </div>
       </div>
@@ -443,8 +443,8 @@
          <div class="col-md-4 col-sm-5 wow fadeInRight" data-wow-delay="400ms">
             <div class="image"><img alt="logo" src="assets/images/21.png"></div>
          </div>
-      </div>
-	  <div class="row">
+         </div>
+	       <div class="row">
          <div class="col-lg-3 col-md-6">
             <div class="team-box grey-shade top60 wow fadeInLeft" data-wow-delay="350ms">
                <div class="image">
