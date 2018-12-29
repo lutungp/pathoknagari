@@ -60,6 +60,7 @@
 
     <!--WOw animations-->
     <script src="assets/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 
     <!--Revolution SLider-->
     <script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
