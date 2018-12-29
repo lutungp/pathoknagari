@@ -212,7 +212,7 @@
                </a>
                <div class="news_desc">
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Buka bersama</a></h3>
-
+                  <ul class="meta-tags top20 bottom20"></ul>
                   <p class="bottom35">Buka bersama 1000 Anak yatim dalam rangkaian acara ramadhan di masjid Ad-Darojat.</p>
                </div>
             </div>
@@ -224,7 +224,7 @@
                </a>
                <div class="news_desc">
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Lomba Mewarnai</a></h3>
-
+                  <ul class="meta-tags top20 bottom20"></ul>
                   <p class="bottom35">Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
                </div>
             </div>
@@ -236,7 +236,7 @@
                </a>
                <div class="news_desc">
                   <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Angkringan Dakwah</a></h3>
-
+                <ul class="meta-tags top20 bottom20"></ul>
                   <p class="bottom35">Angkringan Masjarot adalah Salah satu kegiatan yang digagas Ikatan Pemuda Islam Babadan
 			   sebagai media dakwah yang inovatif.</p>
                </div>
