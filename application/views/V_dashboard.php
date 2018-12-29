@@ -80,30 +80,30 @@
          </button>
          <div class="collapse navbar-collapse" id="xenav">
             <ul class="navbar-nav ml-auto">
-             		   <li class="nav-item active">
-                  <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
-               </li>
-			<li class="nav-item active">
-                  <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
-			   </li>
-			   <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#portfolio_top">Galeri</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#kajian">Kajian Islam</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#kontak">Kontak</a>
-               </li>
+              <li class="nav-item active">
+                <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pagescroll" href="#portfolio_top">Galeri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pagescroll" href="#kajian">Kajian Islam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pagescroll" href="#kontak">Kontak</a>
+              </li>
             </ul>
          </div>
       </div>
@@ -317,13 +317,13 @@
   <div class="col-md-8 offset-md-2 col-sm-12 text-center">
     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
        <span>Masjid Ad-Darojat</span>
-       <h2 class="darkcolor bottom30">LIVE STREAMING</h2>
-       <p>Kami menyiarkan secara langsung agenda kegiatan dakwah Masjid Ad-Darojat melalui Live Streaming. Sebagai bentuk dari dakwah kami untuk mengedukasi dan bisa dijangkau semua
+       <h2 class="wow fadeInUp bottom30" data-wow-delay="350ms">LIVE STREAMING</h2>
+       <p class="wow fadeInUp bottom30" data-wow-delay="400ms">Kami menyiarkan secara langsung agenda kegiatan dakwah Masjid Ad-Darojat melalui Live Streaming. Sebagai bentuk dari dakwah kami untuk mengedukasi dan bisa dijangkau semua
         lapisan masyarakat dan umat .</p>
     </div><br>
   </div>
   <div class="col-md-12">
-    <div class="profile-video wow fadeInUp" data-wow-delay="350ms">
+    <div class="profile-video wow fadeInUp" data-wow-delay="450ms">
       <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A"
       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
@@ -366,13 +366,13 @@
          <div class="col-md-12 col-sm-12 text-center">
            <div class="whitecolor heading-title-top10 wow fadeInUp" data-wow-delay="300ms">
                <span>Jadwal Kegiatan Rutin</span>
-               <h2 class="whitecolor bottom20">MAJELIS ILMU</h2>
+               <h2 class="whitecolor bottom20wow fadeInUp" data-wow-delay="350ms">MAJELIS ILMU</h2>
             </div>
          </div>
       </div>
       <div class="row our-process">
         <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 even wow fadeInLeft" data-wow-delay="350ms">
+           <div class="process-number top60 even wow fadeInLeft" data-wow-delay="400ms">
                <span class="pro-step">1</span>
              <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAHSIN QUR'AN</h3>
 			   <h4 class="font-light darkcolor top10 bottom10">Zaenal Syarifudin M.Ag.</h4>
@@ -380,7 +380,7 @@
             </div>
         </div>
 		  <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 wow fadeInUp" data-wow-delay="400ms">
+           <div class="process-number top60 wow fadeInUp" data-wow-delay="450ms">
               <span class="pro-step">2</span>
                <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAFSIR QUR'AN</h3>
 			   <h4 class="font-light darkcolor top10 bottom10">Dr. Nurkholis, M.Ag.</h4>
@@ -388,7 +388,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 even wow fadeInRight" data-wow-delay="450ms">
+           <div class="process-number top60 even wow fadeInRight" data-wow-delay="500ms">
                <span class="pro-step">3</span>
               <h3 class="font-light darkcolor top20 bottom20">TADARUS QUR'AN BAPAK-BAPAK</h3>
 			   <h4 class="font-light darkcolor top10 bottom10">Jama'ah Masjid</h4>
@@ -396,7 +396,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-3">
-           <div class="process-number top60 wow fadeInLeft" data-wow-delay="500ms">
+           <div class="process-number top60 wow fadeInLeft" data-wow-delay="550ms">
               <span class="pro-step">4</span>
                <h3 class="font-light darkcolor top20 bottom20">PENGAJIAN AHAD PAGI</h3>
 			   <h4 class="font-light darkcolor top10 bottom10">Warga Babadan & Umum</h4>
@@ -404,7 +404,7 @@
             </div>
         </div>
 		<div class="col-lg-4 col-md-3">
-           <div class="process-number top60 even wow fadeInUp" data-wow-delay="550">
+           <div class="process-number top60 even wow fadeInUp" data-wow-delay="600">
                <span class="pro-step">5</span>
                <h3 class="font-light darkcolor top20 bottom20">KAJIAN PEMUDA ISLAM</h3>
 			   <h4 class="font-light darkcolor top10 bottom10">IPIB & FOKRI</h4>
@@ -412,7 +412,7 @@
             </div>
         </div>
 		<div class="col-lg-4 col-md-3">
-           <div class="process-number top60 wow fadeInRight" data-wow-delay="600ms">
+           <div class="process-number top60 wow fadeInRight" data-wow-delay="650ms">
               <span class="pro-step">6</span>
                <h3 class="font-light darkcolor top20 bottom20">TADARUS & PENGAJIAN ANAK</h3>
 			   <h4 class="font-light darkcolor top10 bottom10">IPMADA</h4>
@@ -428,19 +428,19 @@
 <section id="profil" class="padding single-feature">
 <div class="container"><br><br>
     <div class="row">
-         <div class="col-md-8 col-sm-7 text-md-left text-center wow fadeInLeft" data-wow-delay="50ms">
+         <div class="col-md-8 col-sm-7 text-md-left text-center wow fadeInLeft" data-wow-delay="300ms">
             <div class="heading-title heading_space">
                <span>Biografi</span>
-               <h2 class="darkcolor bottom30">Sejarah Masjid</h2>
+               <h2 class="darkcolor bottom30 wow fadeInLeft" data-wow-delay="350ms">Sejarah Masjid</h2>
             </div>
-            <p class="bottom35">Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
+            <p class="bottom35 wow fadeInLeft" data-wow-delay="350ms">Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
 			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
 			   Pada zaman penjajahan Jepang yakni pada tahun 1940, Masjid Ad-Darojat dan masyarakat Babadan dipindah ke Desa Babadan Jl. Kaliurang, Kentungan,
 			   Sleman. Perpindahan ini dikarenakan saat itu daerah Babadan terkena pelebaran pangkalan pesawat terbang dan sebagai gudang senjata.
 			   Akibat perpindahan tersebut denyut kampung Babadan sebagai kampung santri sempat mengalami tidur panjang.</p>
             <a href="sejarah" class="button btnprimary">Selengkapnya</a><br><br>
          </div>
-         <div class="col-md-4 col-sm-5 wow fadeInRight" data-wow-delay="100ms">
+         <div class="col-md-4 col-sm-5 wow fadeInRight" data-wow-delay="400ms">
             <div class="image"><img alt="logo" src="assets/images/21.png"></div>
          </div>
       </div>
@@ -726,13 +726,6 @@ adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
 </section>
 <!--Kajian Islami Ends-->
 
-<section id="merchandise" class="padding" style="background:#000">
-   <div class="container">
-      <div class="row">
-
-      </div>
-   </div>
-</section>
 
  <!-- Merchandise -->
 <section id="merchandise" class="padding bglight">
