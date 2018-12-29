@@ -14,7 +14,7 @@
   "@type" : "LocalBusiness",
   "name" : "Masjid Pathok Nagari | Official Website -",
   "image" : "https://pathoknagari.id/assets/images/21.png",
-  "url" : "https://www.pathoknagari.id/",
+  "url" : "https://pathoknagari.id/",
   "review" : {
     "@type" : "Review",
     "reviewBody" : "Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi. Pada zaman penjajahan Jepang yakni pada tahun 1940, Masjid Ad-Darojat dan masyarakat Babadan dipindah ke Desa Babadan Jl. Kaliurang, Kentungan, Sleman. Perpindahan ini dikarenakan saat itu daerah Babadan terkena pelebaran pangkalan pesawat terbang dan sebagai gudang senjata. Akibat perpindahan tersebut denyut kampung Babadan sebagai kampung santri sempat mengalami tidur panjang."
@@ -29,7 +29,7 @@
     "https://assets/images/21.png",
     "https://assets/images/msj.jpg"
    ],
-  "@id": "http://www.pathoknagari.id",
+  "@id": "http://pathoknagari.id",
   "name": "Masjid Pathok Nagari | Official Website",
   "address": {
     "@type": "PostalAddress",
@@ -43,9 +43,9 @@
     "latitude": 110.399282,
     "longitude": -7.798450
   },
-  "url": "http://www.pathoknagari.id/kontak",
+  "url": "http://pathoknagari.id/kontak",
   "telephone": "+628 562 898 979",
-  "Kabar Ad-Darojat": "http://www.pathoknagari.id/berita"
+  "Kabar Ad-Darojat": "http://pathoknagari.id/berita"
 }
 </script>
 <title>Pathok Nagari | Official Website</title>
@@ -68,7 +68,7 @@
 <header class="site-header">
    <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
    <nav class="navbar"><marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
-   Pengajian Ahad Pagi di Masjid Ad-Darojat Kauman Babadan. &nbsp <b>Ahad, 30 Desember 2018</b> &nbsp 
+   Pengajian Ahad Pagi di Masjid Ad-Darojat Kauman Babadan. &nbsp <b>Ahad, 30 Desember 2018</b> &nbsp
    <b>Pembicara :</b> Drs. H. Slamet Abdullah, M.Si. &nbsp <b>Tema :</b> Selamatkan Dirimu dan Keluargamu dari Siksa Api       Neraka. &nbsp
    Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b> &nbsp Seluruh hasil dari Infaq akan didonasikan       kepada korban tsunami Banten & Lampung.</marquee>
       <div class="container">
@@ -79,7 +79,7 @@
             <span> </span>
          </button>
          <div class="collapse navbar-collapse" id="xenav">
-            <ul class="navbar-nav ml-auto">			
+            <ul class="navbar-nav ml-auto">
              		   <li class="nav-item active">
                   <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
                </li>
@@ -166,13 +166,13 @@
          <div class="col-md-2 col-sm-1"></div>
          <div class="col-md-8 col-sm-10">
                   <div class="center-item text-center video-content">
-		  
+
                   <h2 class="text-capitalize bottom10 whitecolor">
 		  <span class="block fontbold wow fadeIn" data-wow-delay="300ms">MASJID</span>
-		  <span class="block fontbold wow fadeIn" data-wow-delay="400ms">PATHOK NAGARI</span>		
+		  <span class="block fontbold wow fadeIn" data-wow-delay="400ms">PATHOK NAGARI</span>
    		  </h2>
 		  <h3 class="text-capitalize bottom20 whitecolor">
-                  <span class="hero-text wow fadeIn" data-wow-delay="500ms">- Official Website -</span></h3> </span>	
+                  <span class="hero-text wow fadeIn" data-wow-delay="500ms">- Official Website -</span></h3> </span>
 
                    <a href="#kabar" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">Jelajahi</a>
                </div>
@@ -284,7 +284,7 @@
   </div>
   <div class="col-md-12">
     <div class="profile-video wow fadeInUp" data-wow-delay="350ms">
-      <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/4sZcjqCk34w"
+      <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A" 
       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <div class="container">
@@ -752,7 +752,7 @@
             <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
             <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a></li>
             </ul>
-            <p class="copyrights wow fadeInUp" data-wow-delay="400ms"> IPIB Production &copy; 2018</p>	    
+            <p class="copyrights wow fadeInUp" data-wow-delay="400ms"> IPIB Production &copy; 2018</p>
          </div>
       </div>
    </div>
