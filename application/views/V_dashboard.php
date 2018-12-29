@@ -156,7 +156,7 @@
   <div class="col-md-8 offset-md-2 col-sm-12 text-center">
     <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
        <span>Masjid Ad-Darojat</span>
-       <h2 class="wow fadeInUp bottom30" data-wow-delay="350ms">LIVE STREAMING</h2>
+       <h2 class="darkcolor wow fadeInUp bottom30" data-wow-delay="350ms">LIVE STREAMING</h2>
        <p class="wow fadeInUp bottom30" data-wow-delay="400ms">Kami menyiarkan secara langsung agenda kegiatan dakwah Masjid Ad-Darojat melalui Live Streaming. Sebagai bentuk dari dakwah kami untuk mengedukasi dan bisa dijangkau semua
         lapisan masyarakat dan umat .</p>
     </div><br>
