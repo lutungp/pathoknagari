@@ -69,8 +69,8 @@
    <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
    <nav class="navbar"><marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
    Pengajian Ahad Pagi di Masjid Ad-Darojat Kauman Babadan. &nbsp <b>Ahad, 30 Desember 2018</b> &nbsp
-   <b>Pembicara :</b> Drs. H. Slamet Abdullah, M.Si. &nbsp <b>Tema :</b> Selamatkan Dirimu dan Keluargamu dari Siksa Api       Neraka. &nbsp
-   Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b> &nbsp Seluruh hasil dari Infaq akan didonasikan       kepada korban tsunami Banten & Lampung.</marquee>
+   <b>Pembicara :</b> Drs. H. Slamet Abdullah, M.Si. &nbsp <b>Tema :</b> Selamatkan Dirimu dan Keluargamu dari Siksa Api Neraka. &nbsp
+   Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b> &nbsp Seluruh hasil dari Infaq akan didonasikan kepada korban tsunami Banten & Lampung.</marquee>
       <div class="container">
          <a class="navbar-brand" href="beranda"> <img src="assets/images/pn5-transparent.png" alt="logo"> </a>
          <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
@@ -186,115 +186,124 @@
 </section>
 
 <!-- Kabar Ad-Darojat -->
-<section id="kabar" class="padding bglight">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7 col-sm-12">
-            <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half">
-               <span class="wow fadeInUp" data-wow-delay="350ms">Berita Terbaru</span>
-               <h2 class="darkcolor bottom25 wow fadeInUp" data-wow-delay="400ms">Kabar Ad-Darojat</h2>
-               <p class="bottom30 wow fadeInUp" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
-			          yang bertujuan memberikan informasi yang mengedukasi serta tarbiyah bagi sahabat-sahabat kaum muslimin.</p>
-               <a href="berita" class="button btnsecondary wow fadeInUp" data-wow-delay="700ms">Lihat Semua Kabar</a>
-               </div>
-            </div>
-         </div>
-		 <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInUp" data-wow-delay="300ms"><img src="assets/images/Berita/1.png" alt="berita" class="equalheight"></div>
-         </div>
+  <section id="kabar" class="padding">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-7 col-sm-12">
+              <div class="split-box center-block equalheight container-padding" style="padding-top :50px;">
+                 <div class="heading-title padding_half">
+                 <span class="wow fadeInUp" data-wow-delay="350ms">Berita Terbaru</span>
+                 <h2 class="darkcolor bottom25 wow fadeInUp" data-wow-delay="400ms">Kabar Ad-Darojat</h2>
+                 <p class="bottom30 wow fadeInUp" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
+  			          yang bertujuan memberikan informasi yang mengedukasi serta tarbiyah bagi sahabat-sahabat kaum muslimin.</p>
+                 <a href="#berita" class="nav-link pagescroll button btnsecondary wow fadeInUp" data-wow-delay="700ms">Lihat Semua Kabar</a>
+                 </div>
+              </div>
+           </div>
+  		 <div class="col-md-5 col-sm-12">
+              <div class="image hover-effect wow fadeInUp" data-wow-delay="300ms" style="padding-top :30px;">
+                <img src="assets/images/Berita/1.png" alt="berita" class="equalheight"></div>
+           </div>
+        </div>
+
       </div>
-	       <div class="row">
-          <div class="col-md-4 box-berita">
+  </section>
+
+  <section id="berita" class="padding bglight">
+    <div class="container">
+       <div class="row box-berita">
+          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
-               <a class="image" href="berita-detail">
-                  <img src="assets/images/Berita/7.jpg"alt="Latest News" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Buka bersama</a></h3>
-                  <ul class="meta-tags top20 bottom20"></ul>
-                  <p class="bottom35">Buka bersama 1000 Anak yatim dalam rangkaian acara ramadhan di masjid Ad-Darojat.</p>
-               </div>
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/7.jpg"alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Buka bersama</a></h3>
+                <ul class="meta-tags top20 bottom20"></ul>
+                <p class="bottom35">Buka bersama 1000 Anak yatim dalam rangkaian acara ramadhan di masjid Ad-Darojat.</p>
+              </div>
             </div>
-         </div>
-         <div class="col-md-4 box-berita">
+          </div>
+          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
-               <a class="image" href="berita-detail">
-                  <img src="assets/images/Berita/8.jpg" alt="Latest News" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Lomba Mewarnai</a></h3>
-                  <ul class="meta-tags top20 bottom20"></ul>
-                  <p class="bottom35">Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
-               </div>
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/8.jpg" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Lomba Mewarnai</a></h3>
+                <ul class="meta-tags top20 bottom20"></ul>
+                <p class="bottom35">Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
+              </div>
             </div>
-         </div>
-		     <div class="col-md-4 box-berita">
+          </div>
+          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
-               <a class="image" href="berita-detail">
-                  <img src="assets/images/Berita/addarojat.png" alt="Latest News" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Masjid Ad-Darojat</a></h3>
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/addarojat.png" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Masjid Ad-Darojat</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
-                  <p class="bottom35">Tiada pahlawan dicetak kecuali
-				           mereka itu lulusan masjid, yang di dalamnya ada taman Qur’an dan naungan hadits shahih.</p>
-               </div>
+                <p class="bottom35">Tiada pahlawan dicetak kecuali
+                mereka itu lulusan masjid, yang di dalamnya ada taman Qur’an dan naungan hadits shahih.</p>
+              </div>
             </div>
-         </div><br>
-         <div class="col-md-4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
-               <a class="image" href="berita-detail">
-                  <img src="assets/images/Berita/kyai.png" alt="Latest News" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">"Kyai Muthohar"</a></h3>
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/kyai.png" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">"Kyai Muthohar"</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
-                  <p class="bottom35">Kyai Muthohar adalah sosok figur yang dihormati, dikagumi dan menjadi inspirasi bagi para santrinya.</p>
-               </div>
+                <p class="bottom35">Kyai Muthohar adalah sosok figur yang dihormati, dikagumi dan menjadi inspirasi bagi para santrinya.</p>
+              </div>
             </div>
-         </div>
-         <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeIn" data-wow-delay="500ms">
-               <a class="image" href="berita-detail">
-                  <img src="assets/images/Berita/9.jpg" alt="Latest News" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Angkringan Dakwah</a></h3>
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/9.jpg" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Angkringan Dakwah</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
-                  <p class="bottom35">Angkringan Masjarot adalah Salah satu kegiatan yang digagas Ikatan Pemuda Islam Babadan
-			             sebagai media dakwah yang inovatif.</p>
-               </div>
+                <p class="bottom35">Angkringan Masjarot adalah Salah satu kegiatan yang digagas Ikatan Pemuda Islam Babadan
+                sebagai media dakwah yang inovatif.</p>
+              </div>
             </div>
-         </div>
-         <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="550ms">
-               <a class="image" href="berita-detail">
-                  <img src="assets/images/Berita/dalem.png" alt="Latest News" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Soko Guru</a></h3>
+              <a class="image" href="berita-detail">
+                <img src="assets/images/Berita/dalem.png" alt="Latest News" class="img-responsive">
+              </a>
+              <div class="news_desc">
+                <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Soko Guru</a></h3>
                 <ul class="meta-tags top20 bottom20"></ul>
-                  <p class="bottom35">Tata arsitetur Masjid Ad-Darojat masih kental dengan alkulturisasi budaya.
-				  Soko guru adalah gaya arsitetur jawa kuno.</p>
-               </div>
+                <p class="bottom35">Tata arsitetur Masjid Ad-Darojat masih kental dengan alkulturisasi budaya.
+                Soko guru adalah gaya arsitetur jawa kuno.</p>
+              </div>
             </div>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-sm-12">
-            <!--Pagination-->
-            <ul class="pagination justify-content-center top50">
-               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-               <li class="page-item active"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">3</a></li>
-               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-            </ul>
-         </div>
-      </div>
+          </div>
+        </div>
+        <div class="row">
+           <div class="col-sm-12">
+              <!--Pagination-->
+              <ul class="pagination justify-content-center top50">
+                 <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                 <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+              </ul>
+           </div>
+        </div>
    </div>
-</section>
+  </section>
 <!--Kabar Ad-Darojat-->
 
 <!--Live Streaming section-->
