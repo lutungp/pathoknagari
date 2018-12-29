@@ -187,7 +187,7 @@
 
 <!-- Kabar Ad-Darojat -->
 <section id="kabar" class="padding bglight">
-   <div class="container"><br><br>
+   <div class="container"><br>
       <div class="row">
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
@@ -203,7 +203,7 @@
 		 <div class="col-md-5 col-sm-12">
             <div class="image hover-effect wow fadeInUp" data-wow-delay="300ms"><img src="assets/images/Berita/1.png" alt="berita" class="equalheight"></div>
          </div>
-      </div><br><br><br><br>
+      </div>
 	       <div class="row">
           <div class="col-md-4 box-berita">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
