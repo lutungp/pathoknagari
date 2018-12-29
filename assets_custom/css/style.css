@@ -1710,10 +1710,10 @@ i::before,i::after{
 }
 .half-section .img-container{}
 .half-section .imgone{
-    background: url("../images/split-img1.jpg") no-repeat;
+    background: url("../../assets/images/split-img1.jpg") no-repeat;
 }
 .half-section .imgtwo{
-    background: url("../images/split-img2.jpg") no-repeat;
+    background: url("../../assets/images/split-img2.jpg") no-repeat;
 }
 @media (min-width: 768px) and (max-width: 1024px){
    .split-box .padding {
@@ -1746,7 +1746,7 @@ i::before,i::after{
     /*Page Headers */
 /*-------------------------------*/
 .page-header {
-   background: url(../images/page-header.jpg) no-repeat;
+   background: url(../../assets/images/page-header.jpg) no-repeat;
    background-position: center center;
    -webkit-background-size: cover;
    background-size: cover;
@@ -2407,7 +2407,7 @@ i::before,i::after{
 }
 /*apps background*/
 .bg-apps {
-   background: url(../images/bg-apps.jpg) no-repeat;
+   background: url(../../assets/images/bg-apps.jpg) no-repeat;
    background-attachment: fixed;
    background-position: center center;
    -webkit-background-size: cover;
@@ -2693,7 +2693,7 @@ i::before,i::after{
    vertical-align: middle;
 }
 .bg-counter-light {
-   background: url(../images/bg-counter-light.jpg) no-repeat;
+   background: url(../../assets/images/bg-counter-light.jpg) no-repeat;
    background-attachment: fixed;
    background-position: center center;
    -webkit-background-size: cover;
@@ -2720,7 +2720,7 @@ i::before,i::after{
     transition: all .4s ease-in;
 }
 .pricing-bg {
-   background: url(../images/page-header-2.jpg) no-repeat;
+   background: url(../../assets/images/page-header-2.jpg) no-repeat;
    background-position: center center;
    -webkit-background-size: cover;
    background-size: cover;
@@ -2903,22 +2903,22 @@ i::before,i::after{
 
 /*banner parallax*/
 #video-parallax{
-    background: url(../images/bg-video.jpg) no-repeat;
+    background: url(../../assets/images/bg-video.jpg) no-repeat;
 }
 .rotating-slider {
-   background: url(../images/page-header-2.jpg)no-repeat;
+   background: url(../../assets/images/page-header-2.jpg)no-repeat;
 }
 .rotating-words {
-   background: url(../images/page-header-2.jpg)no-repeat;
+   background: url(../../assets/images/page-header-2.jpg)no-repeat;
 }
 .rotating-slider {
-   background: url(../images/banner-fade.jpg)no-repeat;
+   background: url(../../assets/images/banner-fade.jpg)no-repeat;
 }
 .rotating-slider.studio-ver{
-   background: url(../images/studio-fade.jpg)no-repeat;
+   background: url(../../assets/images/studio-fade.jpg)no-repeat;
 }
 .ineractive-ver {
-   background: url(../images/banner-interactive-agency.jpg)no-repeat;
+   background: url(../../assets/images/banner-interactive-agency.jpg)no-repeat;
 }
 .rotating-slider, .rotating-words, #video-parallax, .rotating-slider, .ineractive-ver{
    background-position: center center;
@@ -3100,10 +3100,10 @@ iframe  {
 
 /*Testimonial Quotes*/
 .testimonial-bg{
-	background: url(../images/bg-testimonial.jpg) no-repeat;
+	background: url(../../assets/images/bg-testimonial.jpg) no-repeat;
 }
 .testimonial-bg-light {
-	background: url(../images/bg-testimonial-light.jpg) no-repeat;
+	background: url(../../assets/images/bg-testimonial-light.jpg) no-repeat;
 }
 .testimonial-bg, .testimonial-bg-light{
 	background-position: center center;
@@ -3726,7 +3726,7 @@ textarea:-ms-input-placeholder {
     /*Crypto*/
 /*-------------------------------*/
 .crypto-ver{
-   background: url(../images/banner-crypto.jpg)no-repeat;
+   background: url(../../assets/images/banner-crypto.jpg)no-repeat;
    background-attachment: fixed;
    background-position: center center;
    -webkit-background-size: cover cover;

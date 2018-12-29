@@ -187,7 +187,7 @@
 
 <!-- Kabar Ad-Darojat -->
 <section id="kabar" class="padding bglight">
-   <div class="container"><br>
+   <div class="container">
       <div class="row">
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
