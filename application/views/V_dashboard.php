@@ -187,7 +187,7 @@
 
 <!-- Kabar Ad-Darojat -->
 <section id="kabar" class="padding bglight">
-   <div class="container">
+   <div class="container"><br><br>
       <div class="row">
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
@@ -241,7 +241,7 @@
 				           mereka itu lulusan masjid, yang di dalamnya ada taman Qur’an dan naungan hadits shahih.</p>
                </div>
             </div>
-         </div>
+         </div><br>
          <div class="col-md-4">
             <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
                <a class="image" href="berita-detail">
