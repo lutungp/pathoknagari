@@ -205,7 +205,6 @@
                 <img src="assets/images/Berita/1.png" alt="berita" class="equalheight"></div>
            </div>
         </div>
-
       </div>
   </section>
 
@@ -602,27 +601,138 @@
 <!--Gallery Ends-->
 
 <!-- Kajian Islami -->
-<section id="kajian" class="half-section">
-   <div class="container"><br><br><br><br><br><br><br>
+<section id="kajian" class="padding">
+   <div class="container">
       <div class="row">
          <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInLeft" data-wow-delay="300ms"><img src="assets/images/kajian/1.jpg" alt="berita" class="equalheight"></div>
+            <div class="image hover-effect wow fadeInLeft" style="padding-top :40px;" data-wow-delay="300ms"><img src="assets/images/kajian/1.jpg" alt="berita" class="equalheight"></div>
          </div>
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half">
+               <div class="heading-title padding_half" style="padding-top :130px;">
                <span class="wow fadeInRight" data-wow-delay="350ms">Kajian Islami</span>
                <h2 class="darkcolor bottom25 wow fadeInRight" data-wow-delay="400ms">Kajian Islami Terbaru</h2>
                <p class="bottom30 wow fadeInRight" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan artikel kajian-kajian islam
 			   yang bertujuan memberikan edukasi serta tarbiyah bagi sahabat-sahabat kaum muslimin.</p>
-               <a href="kajian" class="button btnsecondary wow fadeIn" data-wow-delay="700ms">Lihat Semua kajian</a>
+               <a href="#kajian2" class="nav-link pagescroll button btnsecondary wow fadeIn" data-wow-delay="700ms">Lihat Semua kajian</a>
             </div>
             </div>
          </div>
       </div>
    </div>
-</section><br><br><br><br><br><br>
+</section>
+
+<section id="kajian2" class="padding bglight">
+  <div class="container">
+     <div class="row box-berita">
+        <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
+            <a class="image" href="kajian-detail">
+              <img src="assets/images/kajian/1.png"alt="Latest News" class="img-responsive">
+            </a>
+            <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Islam dan Sunnah</a></h3>
+              <ul class="meta-tags top20 bottom20"></ul>
+              <p class="bottom35">Bukankah sunnah adalah sesuatu yang apabila dikerjakan, pelakunya mendapat pahala.
+              </p>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
+            <a class="image" href="kajian-detail">
+              <img src="assets/images/kajian/3.png" alt="Latest News" class="img-responsive">
+            </a>
+            <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Akibat Buruk Dusta</a></h3>
+              <ul class="meta-tags top20 bottom20"></ul>
+              <p class="bottom35">erkadang dengan lisannya seseorang mengucapkan kata-kata tanpa
+                dipertimbangkan dan dipikirkan sebelumnya.</p>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
+            <a class="image" href="kajian-detail">
+              <img src="assets/images/kajian/5.png" alt="Latest News" class="img-responsive">
+            </a>
+            <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Haid dan Nifas</a></h3>
+              <ul class="meta-tags top20 bottom20"></ul>
+              <p class="bottom35">Ada berbagai larangan saat haid yang beredar di masyarakat khususnya
+                 kaum hawa yang menjalani periode menstruasi setiap bulannya.</p>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
+            <a class="image" href="kajian-detail">
+              <img src="assets/images/kajian/2.png" alt="Latest News" class="img-responsive">
+            </a>
+            <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Istiqomah</a></h3>
+              <ul class="meta-tags top20 bottom20"></ul>
+              <p class="bottom35">Seorang muslim yang baik tentunya diharapakan bisa beristiqamah dengan ibadah yang ia lakukan serta menjaga akhlaknya.</p>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeIn" data-wow-delay="500ms">
+            <a class="image" href="kajian-detail">
+              <img src="assets/images/kajian/4.png" alt="Latest News" class="img-responsive">
+            </a>
+            <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Kajian Ilmiah</a></h3>
+              <ul class="meta-tags top20 bottom20"></ul>
+              <p class="bottom35">Sebagian ahli pendidikan mengatakan bahwa ilmu pendidikan
+adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="550ms">
+            <a class="image" href="kajian-detail">
+              <img src="assets/images/kajian/6.png" alt="Latest News" class="img-responsive">
+            </a>
+            <div class="news_desc">
+              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Do'a Malaikat</a></h3>
+              <ul class="meta-tags top20 bottom20"></ul>
+              <p class="bottom35">Ibnu Katsir berkata: Adapun shalawat dari malaikat dalam ayat di atas, maknanya adalah doa dan istighfar bagi para manusia.</p>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+            <!--Pagination-->
+            <ul class="pagination justify-content-center top50">
+               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+               <li class="page-item active"><a class="page-link" href="#">1</a></li>
+               <li class="page-item"><a class="page-link" href="#">2</a></li>
+               <li class="page-item"><a class="page-link" href="#">3</a></li>
+               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+         </div>
+      </div>
+ </div>
+</section>
 <!--Kajian Islami Ends-->
+
+<section id="merchandise" class="padding" style="background:#000">
+   <div class="container">
+      <div class="row">
+
+      </div>
+   </div>
+</section>
 
  <!-- Merchandise -->
 <section id="merchandise" class="padding bglight">
