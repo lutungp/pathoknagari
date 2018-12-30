@@ -75,7 +75,7 @@
 
             $text .= "<div class='col-md-4'>
                         <div class='news_item shadow text-center wow " . $cls . "' data-wow-delay='450ms'>
-                          <a class='image' href='berita-detail'>
+                          <a class='image image-berita' href='berita-detail'>
                             <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='Latest News' class='img-responsive'>
                           </a>
                           <div class='news_desc news_desc2'>
@@ -93,10 +93,9 @@
             }
         }
 
+        echo $text;
+
         ?>
-        <div id="Column_berita" class="">
-          <?php echo $text ?>
-        </div>
         <div class="row">
            <div class="col-sm-12">
               <!--Pagination-->
@@ -242,102 +241,94 @@
             <div class="image"><img alt="logo" src="assets/images/21.png"></div>
          </div>
          </div>
-	       <div class="row">
-         <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInLeft" data-wow-delay="350ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/1.jpg"  alt="">
+
+  <div class="container-fluid" >
+    <div class="row">
+         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+               <div id="flat-filters" class="cbp-l-filters dark bottom30">
+               <div data-filter="*" class="cbp-filter-item">
+                  <span>All</span>
                </div>
-               <div class="team-content darkcolor">
-                  <h3>Ketua Takmir</h3>
-                  <p class="nomargin">Drs. H. Harsoyo, MS.I</p>
+               <div data-filter=".web" class="cbp-filter-item">
+                  <span>web</span>
                </div>
-            </div>
-         </div>
-         <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInLeft" data-wow-delay="400ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/2.jpg" alt="">
+               <div data-filter=".print" class="cbp-filter-item">
+                  <span>Print</span>
                </div>
-               <div class="team-content darkcolor">
-                  <h3>Wakil Takmir</h3>
-                  <p class="nomargin">Ir. H. Syaiful Huda, M.T</p>
+               <div data-filter=".graphic" class="cbp-filter-item">
+                  <span>Graphic</span>
                </div>
-            </div>
-         </div>
-         <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInLeft" data-wow-delay="450ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/3.jpg" alt="">
-               </div>
-               <div class="team-content darkcolor">
-                  <h3>Bendahara</h3>
-                  <p class="nomargin">H. Zamzuri,S.Ag, S.H.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInLeft" data-wow-delay="500ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/5.jpg" alt="">
-               </div>
-               <div class="team-content darkcolor">
-                  <h3>Sekretaris</h3>
-                  <p class="nomargin">H. Suhari</p>
-               </div>
-            </div>
-         </div>
-		 <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInRight" data-wow-delay="550">
-               <div class="image">
-                  <img src="assets/images/ustadz/4.jpg" alt="">
-               </div>
-               <div class="team-content darkcolor">
-                  <h3>Ustadz</h3>
-                  <p class="nomargin">Zaenal Syarifudin, M.Ag</p>
-               </div>
-            </div>
-         </div>
-		 <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInRight" data-wow-delay="600ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/6.jpg" alt="">
-               </div>
-               <div class="team-content darkcolor">
-                  <h3>Ustadz</h3>
-                  <p class="nomargin">Dr. Nurkholis, M.Ag</p>
-               </div>
-            </div>
-         </div>
-		 <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInRight" data-wow-delay="650ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/7.jpg" alt="">
-               </div>
-               <div class="team-content darkcolor">
-                  <h3>Ustadz</h3>
-                  <p class="nomargin">Ngudi Hartono</p>
-               </div>
-            </div>
-         </div>
-		 <div class="col-lg-3 col-md-6">
-            <div class="team-box grey-shade top60 wow fadeInRight" data-wow-delay="700ms">
-               <div class="image">
-                  <img src="assets/images/ustadz/8.jpg" alt="">
-               </div>
-               <div class="team-content darkcolor">
-                  <h3>Ustadz</h3>
-                  <p class="nomargin">dr. Zulrifqi Buyung, Sp.PD.</p>
+               <div data-filter=".logo" class="cbp-filter-item">
+                  <span>Logo</span>
                </div>
             </div>
          </div>
       </div>
-	</div>
+      <div id="flat-gallery" class="cbp">
+         <div class="cbp-item web logo">
+            <img src="assets/images/gallery-flat7.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat7.jpg"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item graphic print">
+            <img src="assets/images/gallery-flat8.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat8.jpg"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item logo graphic">
+            <img src="assets/images/gallery-flat9.jpg"  alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="javascript:if(confirm(%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0%27" tppabs="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item print">
+            <img src="assets/images/gallery-flat10.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat10.jpg"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item logo">
+            <img src="assets/images/gallery-flat11.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat11.jpg" ></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item web print graphic">
+            <img src="assets/images/gallery-flat12.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat12.jpg" ></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item logo">
+            <img src="assets/images/gallery-flat13.jpg"  alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="javascript:if(confirm(%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0%27" tppabs="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>
 <!--Beranda ends-->
 
+
 <!--Gallery-->
-<section id="portfolio_top" class="bglight">
+<!--<section id="portfolio_top" class="bglight">
    <div class="container"><br><br>
       <div id="portfolio-measonry" class="cbp border-portfolio simple_overlay">
          <div class="cbp-item itemshadow">
@@ -417,7 +408,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
 </section>
 
 <section id="kajian2" class="padding bglight">
@@ -585,21 +576,17 @@
     $( document ).ready(function() {
         var jml_berita = '<?php echo $ringkas_berita['nbrows'] ?>'
         var pageval = 1
-        var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
-        var rightrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
+        var leftrow = '<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>'
+        var rightrow = '<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>'
 
-        var page    = '<li class="page-item"><a class="page-link">' + pageval + '</a></li>'
+        var page    = '<li class="page-item"><a class="page-link" href="#">' + pageval + '</a></li>'
 
         page = ''
         pagebullet = 1;
         if (jml_berita > 6) {
             for (var i = 0; i < jml_berita; i++) {
                 if (i % 6 == 0) {
-                    var aktif = ''
-                    if (pagebullet == 1) {
-                        aktif = 'active'
-                    }
-                    page += '<li class="page-item ' + aktif + '"><a class="page-link page-number" value=' + pagebullet + '>' + pagebullet + '</a></li>'
+                    page += '<li class="page-item"><a class="page-link" href="#">' + pagebullet + '</a></li>'
                     pagebullet++
                 }
             }
@@ -607,58 +594,5 @@
             $('#pagination_news').append(leftrow + page + rightrow)
         }
 
-        $('.page-item').on('click', function () {
-            var itemchild = $(this).children()
-            var pagenumber = $(itemchild).attr('value');
-            getBeritaDetail(pagenumber)
-        })
-
     });
-
-    function getBeritaDetail(pagenumber) {
-        jmlCol = 6
-        jmlberita = 6 * parseInt(pagenumber - 1)
-        startCol  = jmlberita
-        endCol    = jmlberita + 6
-
-        $.ajax ({
-            type: "POST",
-            url: '<?php echo base_url('get_berita')?>',
-            dataType: 'json',
-            async: false,
-            data:{
-              start : startCol,
-              end : endCol
-            },
-            success: function (response) {
-                $('#Column_berita').html('')
-                addBerita(response)
-            }
-        })
-    }
-
-    function addBerita(berita_detail) {
-        data = berita_detail.data
-        text = ''
-        for (var i = 0; i < data.length; i++) {
-          result = data[i]
-          text   = " <div class='col-md-4'>";
-          text  += "<div class='news_item shadow text-center wow' data-wow-delay='450ms'>"
-          text  += "<a class='image' href='berita-detail'>"
-          text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
-          text  += "</a>"
-          text  += "<div class='news_desc news_desc2'>"
-          text  += "<h3 class='text-capitalize font-light darkcolor'><a href='berita-detail'>Lomba Mewarnai</a></h3>"
-          text  += "<ul class='meta-tags top20 bottom20'></ul>"
-          text  += "<p class='bottom35'>Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>"
-          text  += "<a href='berita-detail' class='button btnprimary btn-gradient-hvr'>Baca Lengkap</a>"
-          text  += "</div>"
-          text  += "</div>"
-          text  += "</div>"
-        }
-
-        $('#Column_berita').append(text)
-        console.log($('#Column_berita'));
-    }
-
 </script>
