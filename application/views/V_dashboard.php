@@ -398,7 +398,7 @@
 <!--Gallery Ends-->
 
 <!-- Kajian Islami -->
-<!-- <section id="kajian" class="padding">
+<section id="kajian" class="padding">
    <div class="container">
       <div class="row">
          <div class="col-md-5 col-sm-12">
@@ -416,7 +416,7 @@
             </div>
          </div>
       </div>
-   </div> -->
+   </div>
 </section>
 
 <section id="kajian2" class="padding bglight">
@@ -584,17 +584,21 @@
     $( document ).ready(function() {
         var jml_berita = '<?php echo $ringkas_berita['nbrows'] ?>'
         var pageval = 1
-        var leftrow = '<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>'
-        var rightrow = '<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>'
+        var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
+        var rightrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
 
-        var page    = '<li class="page-item"><a class="page-link" href="#">' + pageval + '</a></li>'
+        var page    = '<li class="page-item"><a class="page-link">' + pageval + '</a></li>'
 
         page = ''
         pagebullet = 1;
         if (jml_berita > 6) {
             for (var i = 0; i < jml_berita; i++) {
                 if (i % 6 == 0) {
-                    page += '<li class="page-item"><a class="page-link" href="#">' + pagebullet + '</a></li>'
+                    var aktif = ''
+                    if (pagebullet == 1) {
+                        aktif = 'active'
+                    }
+                    page += '<li class="page-item ' + aktif + '"><a class="page-link page-number" value=' + pagebullet + '>' + pagebullet + '</a></li>'
                     pagebullet++
                 }
             }
@@ -602,5 +606,34 @@
             $('#pagination_news').append(leftrow + page + rightrow)
         }
 
+        $('.page-item').on('click', function () {
+            var itemchild = $(this).children()
+            var pagenumber = $(itemchild).attr('value');
+            getBeritaDetail(pagenumber)
+        })
+
     });
+
+    function getBeritaDetail(pagenumber) {
+        jmlCol = 6
+        jmlberita = 6 * parseInt(pagenumber - 1)
+        startCol  = jmlberita
+        endCol    = jmlberita + 6
+
+        $.ajax ({
+            type: "POST",
+            url: '<?php echo base_url('get_berita')?>',
+            dataType: 'json',
+            async: false,
+            data:{
+              start : startCol,
+              end : endCol
+            },
+            success: function (response) {
+                $('#pagination_news').html('')
+                console.log('aasa');
+            }
+        })
+    }
+
 </script>

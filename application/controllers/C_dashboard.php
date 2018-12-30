@@ -63,4 +63,19 @@ class C_dashboard extends MY_Controller{
       return $output;
   }
 
+  function get_berita()
+  {
+    $start = $this->input->post('start');
+    $end = $this->input->post('end');
+    $postData = [
+      'start'   => $start,
+      'limit'   => $end,
+    ];
+
+    $countData = count($postData);
+
+    $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
+    echo $profile;
+  }
+
 }
