@@ -244,7 +244,7 @@
 
   <div class="container-fluid" >
     <div class="row">
-         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+         <div class="col-md-12 offset-md-4 col-sm-12 text-center">
                <div id="flat-filters" class="cbp-l-filters dark bottom30">
                <div data-filter="*" class="cbp-filter-item">
                   <span>Semua</span>
