@@ -240,12 +240,14 @@
          <div class="col-md-4 col-sm-5 wow fadeInRight" data-wow-delay="400ms">
             <div class="image"><img alt="logo" src="assets/images/21.png"></div>
          </div>
-         </div>
-
-  <div class="container-fluid" >
+    </div><br><br>
+  <div class="container-fluid">
     <div class="row">
          <div class="col-md-12 text-center">
                <div id="flat-filters" class="cbp-l-filters dark bottom30">
+               <div data-filter="*" class="cbp-filter-item">
+                  <span>Semua</span>
+               </div>
                <div data-filter=".web" class="cbp-filter-item">
                   <span>Takmir</span>
                </div>
@@ -254,18 +256,6 @@
                </div>
                <div data-filter=".graphic" class="cbp-filter-item">
                   <span>Masjid</span>
-               </div>
-               <div data-filter="*" class="cbp-filter-item">
-                  <span>Semua</span>
-               </div>
-               <div data-filter=".web" class="cbp-filter-item">
-                  <span>TPA</span>
-               </div>
-               <div data-filter=".graphic" class="cbp-filter-item">
-                  <span>Alumni</span>
-               </div>
-               <div data-filter=".logo" class="cbp-filter-item">
-                  <span>Kegiatan</span>
                </div>
             </div>
          </div>

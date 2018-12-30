@@ -2180,7 +2180,7 @@ i::before,i::after{
 .cbp-l-filters .cbp-filter-item span {
    color: #b7b7b7;
    display: inline-block;
-   font-size: 14px;
+     /*font-size: 14px;*/
    font-weight: bold;
    text-transform: capitalize;
    position: relative;
