@@ -51,9 +51,9 @@
       <div class="container">
         <?php
         $berita_row = 0 ;
-        $ringkas_berita = json_decode($ringkas_berita);
+        $ringkas_berita = $ringkas_berita;
         $text = "";
-        foreach ($ringkas_berita->data as $key => $value) {
+        foreach ($ringkas_berita['data'] as $key => $value) {
           $berita_row++;
           if ($berita_row == 1) {
               $text .= "<div class='row'>";
@@ -62,7 +62,7 @@
             $text .= "<div class='col-md-4'>
                         <div class='news_item shadow text-center wow fadeInLeft' data-wow-delay='450ms'>
                           <a class='image' href='berita-detail'>
-                            <img src='" . $ringkas_berita->img_url . $value->berita_photo . "' alt='Latest News' class='img-responsive'>
+                            <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='Latest News' class='img-responsive'>
                           </a>
                           <div class='news_desc news_desc2'>
                             <h3 class='text-capitalize font-light darkcolor'><a href='berita-detail'>Lomba Mewarnai</a></h3>

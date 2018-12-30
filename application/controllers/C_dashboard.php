@@ -26,17 +26,15 @@ class C_dashboard extends MY_Controller{
 
     $countData = count($postData);
 
-    // $data['ringkas_berita'] = $this->curl->simple_post($this->API.'/C_api/berita');
-    // $this->load->view('templates/V_header');
-    // $this->load->view('V_dashboard', $data);
-    // $this->load->view('templates/V_footer');
     $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
 
     // ubah string JSON menjadi array
     $profile = json_decode($profile, TRUE);
+    $data['ringkas_berita'] = $profile;
 
-    echo "<pre>";
-    print_r($profile);
+    $this->load->view('templates/V_header');
+    $this->load->view('V_dashboard', $data);
+    $this->load->view('templates/V_footer');
   }
 
   function http_request($url, $data, $count){
