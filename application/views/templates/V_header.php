@@ -52,6 +52,7 @@
   <link href="assets/images/212.png" rel="icon">
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets_custom/css/style.css">
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">

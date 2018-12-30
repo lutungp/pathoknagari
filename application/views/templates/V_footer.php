@@ -22,8 +22,6 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
-
     <!--Bootstrap Core-->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

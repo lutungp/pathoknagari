@@ -34,6 +34,7 @@ class C_dashboard extends MY_Controller{
 
     $this->load->view('templates/V_header');
     $this->load->view('V_dashboard', $data);
+    $this->load->view('templates/V_kontak');
     $this->load->view('templates/V_footer');
   }
 
