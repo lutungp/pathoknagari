@@ -246,9 +246,6 @@
     <div class="row">
          <div class="col-md-12 text-center">
                <div id="flat-filters" class="cbp-l-filters dark bottom30">
-               <div data-filter="*" class="cbp-filter-item">
-                  <span>Semua</span>
-               </div>
                <div data-filter=".web" class="cbp-filter-item">
                   <span>Takmir</span>
                </div>
@@ -258,13 +255,13 @@
                <div data-filter=".graphic" class="cbp-filter-item">
                   <span>Masjid</span>
                </div>
+               <div data-filter="*" class="cbp-filter-item">
+                  <span>Semua</span>
+               </div>
                <div data-filter=".web" class="cbp-filter-item">
                   <span>TPA</span>
                </div>
                <div data-filter=".graphic" class="cbp-filter-item">
-                  <span>Takmir</span>
-               </div>
-               <div data-filter=".print" class="cbp-filter-item">
                   <span>Alumni</span>
                </div>
                <div data-filter=".logo" class="cbp-filter-item">
