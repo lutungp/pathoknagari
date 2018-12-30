@@ -264,6 +264,9 @@
                <div data-filter=".graphic" class="cbp-filter-item">
                   <span>Takmir</span>
                </div>
+               <div data-filter=".print" class="cbp-filter-item">
+                  <span>Alumni</span>
+               </div>
                <div data-filter=".logo" class="cbp-filter-item">
                   <span>Kegiatan</span>
                </div>
