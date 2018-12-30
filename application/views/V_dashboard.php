@@ -54,7 +54,13 @@
         $berita_row2 = 1; /* baris berita sebenarnya */
         $ringkas_berita = $ringkas_berita;
         $text = "";
+
+        $animation_cls[0]  = 'fadeInLeft';
+        $animation_cls[1]  = 'fadeInUp';
+        $animation_cls[2]  = 'fadeInRight';
+
         foreach ($ringkas_berita['data'] as $key => $value) {
+          $cls = $animation_cls[$berita_row];
           $berita_row++;
           if ($berita_row == 1) {
               $style = "";
@@ -68,7 +74,7 @@
           }
 
             $text .= "<div class='col-md-4'>
-                        <div class='news_item shadow text-center wow fadeInLeft' data-wow-delay='450ms'>
+                        <div class='news_item shadow text-center wow " . $cls . "' data-wow-delay='450ms'>
                           <a class='image' href='berita-detail'>
                             <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='Latest News' class='img-responsive'>
                           </a>
@@ -93,12 +99,8 @@
         <div class="row">
            <div class="col-sm-12">
               <!--Pagination-->
-              <ul class="pagination justify-content-center top50">
-                 <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-                 <div id='pagination_news'>
+              <ul class="pagination justify-content-center top50" id="pagination_news">
 
-                 </div>
-                 <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
               </ul>
            </div>
         </div>
@@ -108,49 +110,49 @@
 
 <!--Live Streaming section-->
 <section id="streaming" class="padding"><br><br>
-<div class="container-fluid w-100 m-0 p-0 homeprofil pb-5">
-  <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-    <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-       <span>Masjid Ad-Darojat</span>
-       <h2 class="wow fadeInUp bottom30" data-wow-delay="350ms">LIVE STREAMING</h2>
-       <p class="wow fadeInUp bottom30" data-wow-delay="400ms">Kami menyiarkan secara langsung agenda kegiatan dakwah Masjid Ad-Darojat melalui Live Streaming. Sebagai bentuk dari dakwah kami untuk mengedukasi dan bisa dijangkau semua
-        lapisan masyarakat dan umat .</p>
-    </div><br>
-  </div>
-  <div class="col-md-12">
-    <div class="profile-video wow fadeInUp" data-wow-delay="450ms">
-      <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A"
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div class="container-fluid w-100 m-0 p-0 homeprofil pb-5">
+    <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+      <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+         <span>Masjid Ad-Darojat</span>
+         <h2 class="wow fadeInUp bottom30" data-wow-delay="350ms">LIVE STREAMING</h2>
+         <p class="wow fadeInUp bottom30" data-wow-delay="400ms">Kami menyiarkan secara langsung agenda kegiatan dakwah Masjid Ad-Darojat melalui Live Streaming. Sebagai bentuk dari dakwah kami untuk mengedukasi dan bisa dijangkau semua
+          lapisan masyarakat dan umat .</p>
+      </div><br>
     </div>
-    <div class="container wow fadeIn" data-wow-delay="400ms">
-       <h3 class="invisible">hidden</h3>
-       <div class="row">
-          <div class="col-md-12 col-sm-12">
-             <div id="partners-slider" class="owl-carousel">
-               <div class="item">
-                  <div class="logo-item"> <img alt="" src="assets/images/patner/logo-1.png" ></div>
+    <div class="col-md-12">
+      <div class="profile-video wow fadeInUp" data-wow-delay="450ms">
+        <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/Ha2NT4y1a2A"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="container wow fadeIn" data-wow-delay="400ms">
+         <h3 class="invisible">hidden</h3>
+         <div class="row">
+            <div class="col-md-12 col-sm-12">
+               <div id="partners-slider" class="owl-carousel">
+                 <div class="item">
+                    <div class="logo-item"> <img alt="" src="assets/images/patner/logo-1.png" ></div>
+                 </div>
+                 <div class="item">
+                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-2.png"></div>
+                 </div>
+                 <div class="item">
+                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-3.png"></div>
+                 </div>
+                 <div class="item">
+                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-4.png"></div>
+                 </div>
+                 <div class="item">
+                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-5.png"></div>
+                 </div>
+                 <div class="item">
+                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-6.png"></div>
+                 </div>
                </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="assets/images/patner/logo-2.png"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="assets/images/patner/logo-3.png"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="assets/images/patner/logo-4.png"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="assets/images/patner/logo-5.png"></div>
-               </div>
-               <div class="item">
-                  <div class="logo-item"><img alt="" src="assets/images/patner/logo-6.png"></div>
-               </div>
-             </div>
-          </div>
-       </div>
+            </div>
+         </div>
+      </div>
     </div>
   </div>
-</div>
 </section>
 <!--Live Streaming ends-->
 
@@ -221,7 +223,7 @@
 
 <!--Beranda section-->
 <section id="profil" class="padding single-feature">
-<div class="container"><br><br>
+  <div class="container"><br><br>
     <div class="row">
          <div class="col-md-8 col-sm-7 text-md-left text-center wow fadeInLeft" data-wow-delay="300ms">
             <div class="heading-title heading_space">
@@ -396,7 +398,7 @@
 <!--Gallery Ends-->
 
 <!-- Kajian Islami -->
-<section id="kajian" class="padding">
+<!-- <section id="kajian" class="padding">
    <div class="container">
       <div class="row">
          <div class="col-md-5 col-sm-12">
@@ -414,7 +416,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
 </section>
 
 <section id="kajian2" class="padding bglight">
@@ -486,7 +488,7 @@
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Kajian Ilmiah</a></h3>
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">Sebagian ahli pendidikan mengatakan bahwa ilmu pendidikan
-adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
+                adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
               <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
             </div>
           </div>
@@ -507,7 +509,6 @@ adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
       </div>
       <div class="row">
          <div class="col-sm-12">
-            <!--Pagination-->
             <ul class="pagination justify-content-center top50">
                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
                <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -517,12 +518,12 @@ adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
             </ul>
          </div>
       </div>
- </div>
+  </div>
 </section>
 <!--Kajian Islami Ends-->
 
 
- <!-- Merchandise -->
+<!-- Merchandise -->
 <section id="merchandise" class="padding bglight">
    <div class="container"><br><br>
       <div class="row">
@@ -581,21 +582,25 @@ adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
 
 <script type="text/javascript">
     $( document ).ready(function() {
-        // var jml_berita = $('.cbp-item').length
-        // var pageval = 1
-        // var page = '<li class="page-item"><a class="page-link" href="#">' + pageval + '</a></li>'
-        // $('#pagination_news').html(page)
-        //
-        // page = ''
-        // pagebullet = 1;
-        // if (jml_berita > 6) {
-        //     for (var i = 0; i < jml_berita; i++) {
-        //         if (i % 6 == 0 && i > 2) {
-        //             page += '<li class="page-item"><a class="page-link" href="#">' + pagebullet + '</a></li>'
-        //             pagebullet++
-        //         }
-        //     }
-        //     $('#pagination_news').html(page)
-        // }
+        var jml_berita = '<?php echo $ringkas_berita['nbrows'] ?>'
+        var pageval = 1
+        var leftrow = '<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>'
+        var rightrow = '<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>'
+
+        var page    = '<li class="page-item"><a class="page-link" href="#">' + pageval + '</a></li>'
+
+        page = ''
+        pagebullet = 1;
+        if (jml_berita > 6) {
+            for (var i = 0; i < jml_berita; i++) {
+                if (i % 6 == 0) {
+                    page += '<li class="page-item"><a class="page-link" href="#">' + pagebullet + '</a></li>'
+                    pagebullet++
+                }
+            }
+
+            $('#pagination_news').append(leftrow + page + rightrow)
+        }
+
     });
 </script>
