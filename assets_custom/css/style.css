@@ -299,11 +299,12 @@ a.image{
     display: block;
 }
 .image img {
-    width: 97%;
+    width: 100%;
     display: block;
 }
 .image, .image img {
-    position: relative;
+    position: block;
+
 }
 
  /*hover on images*/
@@ -4119,7 +4120,8 @@ footer .copyrights > a:focus {
 }
 
 .image-berita {
-  min-width: 330px;
+  /* min-width: 330px; */
+  width: 100%;
   max-width: 350px;
   height: 200px;
   display: block;
