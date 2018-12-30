@@ -258,8 +258,11 @@
                <div data-filter=".graphic" class="cbp-filter-item">
                   <span>Masjid</span>
                </div>
+               <div data-filter=".web" class="cbp-filter-item">
+                  <span>TPA</span>
+               </div>
                <div data-filter=".graphic" class="cbp-filter-item">
-                  <span>Ustadz</span>
+                  <span>Takmir</span>
                </div>
                <div data-filter=".logo" class="cbp-filter-item">
                   <span>Kegiatan</span>
