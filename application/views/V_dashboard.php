@@ -50,13 +50,21 @@
   <section id="berita" class="padding bglight">
       <div class="container">
         <?php
-        $berita_row = 0 ;
+        $berita_row  = 0 ;
+        $berita_row2 = 1; /* baris berita sebenarnya */
         $ringkas_berita = $ringkas_berita;
         $text = "";
         foreach ($ringkas_berita['data'] as $key => $value) {
           $berita_row++;
           if ($berita_row == 1) {
-              $text .= "<div class='row'>";
+              $style = "";
+              if ($berita_row2 == 1) {
+                  /* memberi baris pertama padding bottom */
+                  $style = "style='padding-bottom : 15px;'";
+              }
+
+              $text .= "<div class='row' $style >";
+              $berita_row2++;
           }
 
             $text .= "<div class='col-md-4'>
