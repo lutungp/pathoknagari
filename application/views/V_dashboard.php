@@ -326,6 +326,45 @@
 </section>
 <!--Beranda ends-->
 
+<!-- Merchandise -->
+<section id="merchandise" class="padding bglight">
+   <div class="container"><br><br>
+      <div class="row">
+         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+               <span>Dapatkan Segera</span>
+               <h2 class="darkcolor bottom30">Merchandise</h2>
+               <p>Kami menyediakan merchandise untuk para jamaah. Anda bisa mendapatkannya langsung dimasjid. Sebagian dari hasil penjualan kami
+				  donasikan untuk kegiatan umat.</p>
+            </div>
+         </div>
+      </div>
+      <div class="row three-col-pricing">
+         <div class="col-lg-4 col-sm-12">
+            <div class="price-table top60 wow fadeInUp" data-wow-delay="350ms">
+                <img src = "assets/images/merchandise/mug2.png" style="width:282px"></img>
+               <div class="clearfix"></div>
+            <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
+            </div>
+         </div>
+         <div class="col-lg-4 col-sm-12">
+            <div class="price-table active top60 wow fadeInUp" data-wow-delay="400ms">
+               <img src = "assets/images/merchandise/2.jpg" style="width:282px"></img>
+               <div class="clearfix"></div>
+             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
+            </div>
+         </div>
+         <div class="col-lg-4 col-sm-12">
+            <div class="price-table top60 wow fadeInUp" data-wow-delay="450ms">
+              <img src = "assets/images/merchandise/mug1.png" style="width:282px"></img>
+               <div class="clearfix"></div>
+             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--Merchandise ends-->
 
 <!--Gallery-->
 <!--<section id="portfolio_top" class="bglight">
@@ -513,47 +552,6 @@
   </div>
 </section>
 <!--Kajian Islami Ends-->
-
-
-<!-- Merchandise -->
-<section id="merchandise" class="padding bglight">
-   <div class="container"><br><br>
-      <div class="row">
-         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <span>Dapatkan Segera</span>
-               <h2 class="darkcolor bottom30">Merchandise</h2>
-               <p>Kami menyediakan merchandise untuk para jamaah. Anda bisa mendapatkannya langsung dimasjid. Sebagian dari hasil penjualan kami
-				  donasikan untuk kegiatan umat.</p>
-            </div>
-         </div>
-      </div>
-      <div class="row three-col-pricing">
-         <div class="col-lg-4 col-sm-12">
-            <div class="price-table top60 wow fadeInUp" data-wow-delay="350ms">
-                <img src = "assets/images/merchandise/mug2.png" style="width:282px"></img>
-               <div class="clearfix"></div>
-            <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
-            </div>
-         </div>
-         <div class="col-lg-4 col-sm-12">
-            <div class="price-table active top60 wow fadeInUp" data-wow-delay="400ms">
-               <img src = "assets/images/merchandise/2.jpg" style="width:282px"></img>
-               <div class="clearfix"></div>
-             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
-            </div>
-         </div>
-         <div class="col-lg-4 col-sm-12">
-            <div class="price-table top60 wow fadeInUp" data-wow-delay="450ms">
-              <img src = "assets/images/merchandise/mug1.png" style="width:282px"></img>
-               <div class="clearfix"></div>
-             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--Merchandise ends-->
 
 <!-- Video -->
 <section id="video-parallax" class="video-parallax padding parallaxie">
