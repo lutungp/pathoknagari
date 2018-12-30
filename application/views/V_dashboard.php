@@ -247,19 +247,19 @@
          <div class="col-md-8 offset-md-2 col-sm-12 text-center">
                <div id="flat-filters" class="cbp-l-filters dark bottom30">
                <div data-filter="*" class="cbp-filter-item">
-                  <span>All</span>
+                  <span>Semua</span>
                </div>
                <div data-filter=".web" class="cbp-filter-item">
-                  <span>web</span>
+                  <span>Takmir</span>
                </div>
                <div data-filter=".print" class="cbp-filter-item">
-                  <span>Print</span>
+                  <span>IPIB</span>
                </div>
                <div data-filter=".graphic" class="cbp-filter-item">
-                  <span>Graphic</span>
+                  <span>Masjid</span>
                </div>
                <div data-filter=".logo" class="cbp-filter-item">
-                  <span>Logo</span>
+                  <span>Kegiatan</span>
                </div>
             </div>
          </div>
@@ -269,48 +269,48 @@
             <img src="assets/images/gallery-flat13.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat13.jpg"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <h4 class="top30">Klik +</h4>
+               <p>Lihat lebih detai disini</p>
             </div>
          </div>
          <div class="cbp-item graphic print">
             <img src="assets/images/gallery-flat8.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat8.jpg"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <h4 class="top30">Klik +</h4>
+               <p>Lihat lebih detai disini</p>
             </div>
          </div>
          <div class="cbp-item logo graphic">
             <img src="assets/images/gallery-flat9.jpg"  alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat9.jpg"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <h4 class="top30">Klik +</h4>
+               <p>Lihat lebih detai disini</p>
             </div>
          </div>
          <div class="cbp-item print">
             <img src="assets/images/gallery-flat10.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat10.jpg"></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <h4 class="top30">Klik +</h4>
+               <p>Lihat lebih detai disini</p>
             </div>
          </div>
          <div class="cbp-item logo">
             <img src="assets/images/gallery-flat11.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat11.jpg" ></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <h4 class="top30">Klik +</h4>
+               <p>Lihat lebih detai disini</p>
             </div>
          </div>
          <div class="cbp-item web print graphic">
             <img src="assets/images/gallery-flat3.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat3.jpg" ></a>
-               <h4 class="top30">Wood Work</h4>
-               <p>Small Portfolio Detail Here</p>
+               <h4 class="top30">Klik +</h4>
+               <p>Lihat lebih detai disini</p>
             </div>
          </div>
       </div>
