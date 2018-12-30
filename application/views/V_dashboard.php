@@ -580,25 +580,22 @@ adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
 <!--Video Ends-->
 
 <script type="text/javascript">
-    // $( document ).ready(function() {
-    //     var jml_berita = $('.cbp-item').length
-    //
-    //     var pageval = 1
-    //     var page = '<li class="page-item"><a class="page-link" href="#">' + pageval + '</a></li>'
-    //     $('#pagination_news').html(page)
-    //
-    //     page = ''
-    //     pagebullet = 1;
-    //     if (jml_berita > 6) {
-    //         for (var i = 0; i < jml_berita; i++) {
-    //             if (i % 6 == 0 && i > 2) {
-    //                 console.log();
-    //                 page += '<li class="page-item"><a class="page-link" href="#">' + pagebullet + '</a></li>'
-    //                 pagebullet++
-    //             }
-    //         }
-    //
-    //         $('#pagination_news').html(page)
-    //     }
-    // });
+    $( document ).ready(function() {
+        // var jml_berita = $('.cbp-item').length
+        // var pageval = 1
+        // var page = '<li class="page-item"><a class="page-link" href="#">' + pageval + '</a></li>'
+        // $('#pagination_news').html(page)
+        //
+        // page = ''
+        // pagebullet = 1;
+        // if (jml_berita > 6) {
+        //     for (var i = 0; i < jml_berita; i++) {
+        //         if (i % 6 == 0 && i > 2) {
+        //             page += '<li class="page-item"><a class="page-link" href="#">' + pagebullet + '</a></li>'
+        //             pagebullet++
+        //         }
+        //     }
+        //     $('#pagination_news').html(page)
+        // }
+    });
 </script>
