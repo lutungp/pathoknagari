@@ -7,9 +7,8 @@ class C_dashboard extends MY_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
-    //Codeigniter : Write Less Do More
-    // $this->API="http://admin.pathoknagari.id";
-    $this->API="http://localhost/pathoknagari_back";
+    $this->API="http://admin.pathoknagari.id";
+    // $this->API="http://localhost/pathoknagari_back";
     $this->load->library('session');
     $this->load->library('curl');
     $this->load->helper('form');
@@ -21,7 +20,6 @@ class C_dashboard extends MY_Controller{
     // $ch   = curl_init();
     // $url  = $this->API.'/C_api/berita';
     $postData = [
-      'username' => 'user1',
       'end'     => 0,
       'limit'   => 6,
     ];
