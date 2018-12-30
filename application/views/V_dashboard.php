@@ -266,9 +266,9 @@
       </div>
       <div id="flat-gallery" class="cbp">
          <div class="cbp-item web logo">
-            <img src="assets/images/gallery-flat12.jpg" alt="">
+            <img src="assets/images/gallery-flat13.jpg" alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat12.jpg"></a>
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat13.jpg"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
