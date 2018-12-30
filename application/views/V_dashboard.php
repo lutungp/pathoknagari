@@ -284,7 +284,7 @@
          <div class="cbp-item logo graphic">
             <img src="assets/images/gallery-flat9.jpg"  alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="javascript:if(confirm(%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0%27" tppabs="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0"></a>
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat9.jpg"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
@@ -316,7 +316,7 @@
          <div class="cbp-item logo">
             <img src="assets/images/gallery-flat13.jpg"  alt="">
             <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="javascript:if(confirm(%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0%27" tppabs="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0"></a>
+               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat3.jpg"></a>
                <h4 class="top30">Wood Work</h4>
                <p>Small Portfolio Detail Here</p>
             </div>
