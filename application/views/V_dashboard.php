@@ -50,7 +50,7 @@
   <section id="berita" class="padding bglight">
       <div class="container">
         <?php
-        $berita_row = 0;
+        $berita_row = 0 ;
         $ringkas_berita = json_decode($ringkas_berita);
         $text = "";
         foreach ($ringkas_berita->data as $key => $value) {

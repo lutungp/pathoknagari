@@ -32,12 +32,16 @@ class Global_m extends CI_Model{
     return $this->db->insert_id();
   }
 
-  function select_config($table, $where = "", $select = "*"){
-    $query = $this->db->query("SELECT $select FROM $table $where");
+  function select_config($table, $where = "", $select = "*", $start = 0, $end = 0){
+    $limit = '';
+    if ($end > 0) {
+        $limit = " LIMIT ".$end." OFFSET ".$start;
+    }
+
+    $query = $this->db->query("SELECT $select FROM $table $where $limit");
 
     return $query;
   }
-
 
   function select_config_array($table, $where){
     $this->db->select('*');
