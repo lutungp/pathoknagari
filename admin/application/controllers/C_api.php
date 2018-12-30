@@ -29,5 +29,21 @@
 
         $this->response($response);
     }
+
+    public function berita_post(){
+        $start = $this->post('start');
+        $end   = $this->post('end');
+
+        $where  = " WHERE berita_active = 'y' ";
+
+        $response['status'] = 200;
+        $response['img_url'] = base_url('assets/img/items/');
+        $result = $this->Global_m->select_config('m_berita', $where, '*', $start, $end)->result();
+        foreach ($result as $key => $value) {
+          $response['data'][] = $value;
+        }
+
+        $this->response($response);
+    }
 }
 ?>
