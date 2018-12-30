@@ -93,9 +93,10 @@
             }
         }
 
-        echo $text;
-
         ?>
+        <div id="Column_berita" class="">
+          <?php echo $text ?>
+        </div>
         <div class="row">
            <div class="col-sm-12">
               <!--Pagination-->
@@ -630,10 +631,34 @@
               end : endCol
             },
             success: function (response) {
-                $('#pagination_news').html('')
-                console.log('aasa');
+                $('#Column_berita').html('')
+                addBerita(response)
             }
         })
+    }
+
+    function addBerita(berita_detail) {
+        data = berita_detail.data
+        text = ''
+        for (var i = 0; i < data.length; i++) {
+          result = data[i]
+          text   = " <div class='col-md-4'>";
+          text  += "<div class='news_item shadow text-center wow' data-wow-delay='450ms'>"
+          text  += "<a class='image' href='berita-detail'>"
+          text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
+          text  += "</a>"
+          text  += "<div class='news_desc news_desc2'>"
+          text  += "<h3 class='text-capitalize font-light darkcolor'><a href='berita-detail'>Lomba Mewarnai</a></h3>"
+          text  += "<ul class='meta-tags top20 bottom20'></ul>"
+          text  += "<p class='bottom35'>Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>"
+          text  += "<a href='berita-detail' class='button btnprimary btn-gradient-hvr'>Baca Lengkap</a>"
+          text  += "</div>"
+          text  += "</div>"
+          text  += "</div>"
+        }
+
+        $('#Column_berita').append(text)
+        console.log($('#Column_berita'));
     }
 
 </script>
