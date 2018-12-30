@@ -7,6 +7,7 @@
   <meta name="google-site-verification" content="y-Qd6PdoN9G1E2mrTKqI_tvN9h-Rgi4sginjctBEr5I" />
   <meta content='https://pathoknagari.id/' property='og:url'/>
   <meta title='Masjid Pathok Nagari | Official Website' property='og:title'/>
+
   <!-- Markup JSON-LD -->
   <script type="application/ld+json">
     {
@@ -21,33 +22,7 @@
       }
     }
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Restaurant",
-      "image": [
-        "https://assets/images/21.png",
-        "https://assets/images/msj.jpg"
-       ],
-      "@id": "http://pathoknagari.id",
-      "name": "Masjid Pathok Nagari | Official Website",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jl. Babadan, Banguntapan, Bantul",
-        "addressLocality": "Yogyakarta",
-        "postalCode": "55198",
-        "addressCountry": "Indonesia"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 110.399282,
-        "longitude": -7.798450
-      },
-      "url": "http://pathoknagari.id/kontak",
-      "telephone": "+628 562 898 979",
-      "Kabar Ad-Darojat": "http://pathoknagari.id/berita"
-    }
-  </script>
+
   <title>Pathok Nagari | Official Website</title>
   <link href="assets/images/212.png" rel="icon">
   <link rel="stylesheet" href="assets/css/plugins.css">
@@ -94,13 +69,10 @@
               <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pagescroll" href="#portfolio_top">Galeri</a>
+              <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#kajian">Kajian Islam</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#kontak">Kontak</a>
@@ -135,13 +107,10 @@
             <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pagescroll" href="#portfolio_top">Galeri</a>
+            <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
           </li>
           <li class="nav-item">
             <a class="nav-link pagescroll" href="#kajian">Kajian Islam</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
           </li>
           <li class="nav-item">
             <a class="nav-link pagescroll" href="#kontak">Kontak</a>
