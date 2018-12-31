@@ -654,7 +654,7 @@
                         aktif = 'active'
                     }
 
-                    page += '<li class="page-item berita-col ' + aktif + '"><a class="page-link">' + pagebullet + '</a></li>'
+                    page += '<li class="page-item berita-col ' + aktif + '" value="' + pagebullet + '"><a class="page-link">' + pagebullet + '</a></li>'
                     pagebullet++
                 }
             }
@@ -671,8 +671,7 @@
                 }
 
                 $(page_bullet).addClass('active')
-                var itemchild = $(this).children()
-                var pagenumber = $(itemchild).attr('value');
+                var pagenumber = $(page_bullet).attr('value')
                 getBeritaDetail(pagenumber)
             }
         })
@@ -703,10 +702,31 @@
     function addBerita(berita_detail) {
        data = berita_detail.data
        text = ''
+
+       berita_row  = 0 ;
+       berita_row2 = 1; /* baris berita sebenarnya */
+       animation_cls = new Array()
+       animation_cls[0]  = 'fadeInLeft';
+       animation_cls[1]  = 'fadeInUp';
+       animation_cls[2]  = 'fadeInRight';
+
        for (var i = 0; i < data.length; i++) {
+         cls = animation_cls[berita_row];
+         berita_row++
+         if (berita_row == 1) {
+             style = "";
+             if (berita_row2 == 1) {
+                 /* memberi baris pertama padding bottom */
+                 style = "style='padding-bottom : 15px;'";
+             }
+
+             text += "<div class='row' " + style + " >"
+             berita_row2++
+         }
+
          result = data[i]
-         text   = " <div class='col-md-4'>";
-         text  += "<div class='news_item shadow text-center wow' data-wow-delay='450ms'>"
+         text  += " <div class='col-md-4'>";
+         text  += "<div class='news_item shadow text-center wow " + cls + "' data-wow-delay='450ms'>"
          text  += "<a class='image image-berita'>"
          text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
          text  += "</a>"
@@ -718,7 +738,13 @@
          text  += "</div>"
          text  += "</div>"
          text  += "</div>"
+
+         if (berita_row == 3) {
+             text += "</div>";
+             berita_row = 0;
+         }
        }
+
        $('#Column_berita').append(text)
    }
 
