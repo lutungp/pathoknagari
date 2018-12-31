@@ -41,7 +41,7 @@
            </div>
   		 <div class="col-md-5 col-sm-12">
               <div class="image hover-effect wow fadeInUp" data-wow-delay="300ms" style="padding-top :30px;">
-                <img src="assets/images/Berita/1.png" alt="berita" class="equalheight"></div>
+                <img src="assets/images/Berita/1.png" alt="pathoknagari-berita" class="equalheight"></div>
            </div>
         </div>
       </div>
@@ -130,22 +130,22 @@
             <div class="col-md-12 col-sm-12">
                <div id="partners-slider" class="owl-carousel">
                  <div class="item">
-                    <div class="logo-item"> <img alt="logo-sponsor" src="assets/images/patner/logo-1.png" ></div>
+                    <div class="logo-item"> <img alt="pathoknagari-sponsor" src="assets/images/patner/logo-1.png" ></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-2.png"></div>
+                    <div class="logo-item"><img alt="pathoknagari-sponsor" src="assets/images/patner/logo-2.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-3.png"></div>
+                    <div class="logo-item"><img alt="pathoknagari-sponsor" src="assets/images/patner/logo-3.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-4.png"></div>
+                    <div class="logo-item"><img alt="pathoknagari-sponsor" src="assets/images/patner/logo-4.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-5.png"></div>
+                    <div class="logo-item"><img alt="pathoknagari-sponsor" src="assets/images/patner/logo-5.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-6.png"></div>
+                    <div class="logo-item"><img alt="pathoknagari-sponsor" src="assets/images/patner/logo-6.png"></div>
                  </div>
                </div>
             </div>
@@ -264,35 +264,35 @@
  	     <div class="cbp-item masjid">
              <img src="assets/images/Galeri/mas1.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas1.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas1.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
              <img src="assets/images/Galeri/mas2.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas2.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas2.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
              <img src="assets/images/Galeri/mas3.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas3.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas3.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
              <img src="assets/images/Galeri/mas4.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas4.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas4.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
              <img src="assets/images/Galeri/mas5.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas5.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas5.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -300,7 +300,7 @@
           <div class="cbp-item ipib">
              <img src="assets/images/Galeri/nau.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/nau.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/nau.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -308,7 +308,7 @@
           <div class="cbp-item takmir">
              <img src="assets/images/Galeri/1.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/1.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/1.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -316,7 +316,7 @@
           <div class="cbp-item ipib">
              <img src="assets/images/Galeri/ipib.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ipib.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ipib.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -324,7 +324,7 @@
            <div class="cbp-item takmir">
              <img src="assets/images/Galeri/tmk.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/tmk.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/tmk.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -332,7 +332,7 @@
           <div class="cbp-item ipib">
              <img src="assets/images/Galeri/had.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/had.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/had.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -340,7 +340,7 @@
           <div class="cbp-item takmir">
              <img src="assets/images/Galeri/2.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/2.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/2.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -348,7 +348,7 @@
           <div class="cbp-item ipib">
              <img src="assets/images/Galeri/arg.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/arg.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/arg.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -356,7 +356,7 @@
           <div class="cbp-item takmir">
              <img src="assets/images/Galeri/3.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/3.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/3.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -364,7 +364,7 @@
           <div class="cbp-item ipib">
              <img src="assets/images/Galeri/ind.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ind.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ind.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -372,7 +372,7 @@
           <div class="cbp-item takmir">
              <img src="assets/images/Galeri/5.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/5.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/5.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -380,7 +380,7 @@
           <div class="cbp-item ipib">
              <img src="assets/images/Galeri/bil.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/bil.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/bil.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -388,7 +388,7 @@
           <div class="cbp-item takmir">
              <img src="assets/images/Galeri/4.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/4.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/4.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -396,7 +396,7 @@
  		 <div class="cbp-item masjid">
              <img src="assets/images/Galeri/al1.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al1.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al1.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -404,21 +404,21 @@
  		 <div class="cbp-item masjid">
              <img src="assets/images/Galeri/al2.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al2.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al2.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
              <img src="assets/images/Galeri/al3.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al3.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al3.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
              <img src="assets/images/Galeri/al4.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al4.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al4.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -426,7 +426,7 @@
  		 <div class="cbp-item masjid">
              <img src="assets/images/Galeri/al5.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al5.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al5.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
@@ -434,14 +434,14 @@
  		  <div class="cbp-item masjid">
              <img src="assets/images/Galeri/al6.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al6.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al6.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div> <div class="cbp-item masjid">
              <img src="assets/images/Galeri/al7.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
-                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al7.jpg"></a>
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al7.jpg" alt="pathoknagari-galeri"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>

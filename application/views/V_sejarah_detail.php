@@ -149,7 +149,7 @@
          <div class="col-md-8">
             <div class="news_item shadow">
               <div class="image">
-                 <img src="assets/images/msj.jpg" alt="Latest News" class="img-responsive">
+                 <img src="assets/images/msj.jpg" alt="pathoknagari-berita" class="img-responsive">
               </div>
                <div class="news_desc text-left">
                  <p style="text-align: justify;"><DT>Masjid Kagungan Dalem</DT></p>
