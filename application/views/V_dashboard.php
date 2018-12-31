@@ -75,14 +75,14 @@
 
             $text .= "<div class='col-md-4'>
                         <div class='news_item shadow text-center wow " . $cls . "' data-wow-delay='450ms'>
-                          <a class='image image-berita' href='berita-detail'>
+                          <a class='image image-berita'>
                             <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='pathoknagari-berita' class='img-responsive'>
                           </a>
                           <div class='news_desc news_desc2'>
-                            <h3 class='text-capitalize font-light darkcolor'><a href='berita-detail'>Lomba Mewarnai</a></h3>
+                            <h3 class='text-capitalize font-light darkcolor'><a>Lomba Mewarnai</a></h3>
                             <ul class='meta-tags top20 bottom20'></ul>
                             <p class='bottom35'>Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
-                            <a href='berita-detail' class='button btnprimary btn-gradient-hvr'>Baca Lengkap</a>
+                            <a class='button btnprimary btn-gradient-hvr' style='color: #FFF;'>Baca Lengkap</a>
                           </div>
                         </div>
                       </div>";
@@ -92,10 +92,10 @@
               $berita_row = 0;
             }
         }
-
-        echo $text;
-
         ?>
+        <div id="Column_berita">
+            <?php echo $text; ?>
+        </div>
         <div class="row">
            <div class="col-sm-12">
               <!--Pagination-->
@@ -528,7 +528,7 @@
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">Bukankah sunnah adalah sesuatu yang apabila dikerjakan, pelakunya mendapat pahala.
               </p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr" style='color: #FFF;'>Baca Lengkap</a>
             </div>
           </div>
         </div>
@@ -542,7 +542,7 @@
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">erkadang dengan lisannya seseorang mengucapkan kata-kata tanpa
                 dipertimbangkan dan dipikirkan sebelumnya.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr" style='color: #FFF;'>Baca Lengkap</a>
             </div>
           </div>
         </div>
@@ -556,7 +556,7 @@
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">Ada berbagai larangan saat haid yang beredar di masyarakat khususnya
                  kaum hawa yang menjalani periode menstruasi setiap bulannya.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr" style='color: #FFF;'>Baca Lengkap</a>
             </div>
           </div>
         </div>
@@ -571,7 +571,7 @@
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Istiqomah</a></h3>
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">Seorang muslim yang baik tentunya diharapakan bisa beristiqamah dengan ibadah yang ia lakukan serta menjaga akhlaknya.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr" style='color: #FFF;'>Baca Lengkap</a>
             </div>
           </div>
         </div>
@@ -585,7 +585,7 @@
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">Sebagian ahli pendidikan mengatakan bahwa ilmu pendidikan
                 adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr" style='color: #FFF;'>Baca Lengkap</a>
             </div>
           </div>
         </div>
@@ -598,7 +598,7 @@
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Do'a Malaikat</a></h3>
               <ul class="meta-tags top20 bottom20"></ul>
               <p class="bottom35">Ibnu Katsir berkata: Adapun shalawat dari malaikat dalam ayat di atas, maknanya adalah doa dan istighfar bagi para manusia.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
+              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr" style='color: #FFF;'>Baca Lengkap</a>
             </div>
           </div>
         </div>
@@ -648,8 +648,13 @@
         pagebullet = 1;
         if (jml_berita > 6) {
             for (var i = 0; i < jml_berita; i++) {
+                aktif = ''
                 if (i % 6 == 0) {
-                    page += '<li class="page-item"><a class="page-link">' + pagebullet + '</a></li>'
+                    if (pagebullet == 1) {
+                        aktif = 'active'
+                    }
+
+                    page += '<li class="page-item berita-col ' + aktif + '"><a class="page-link">' + pagebullet + '</a></li>'
                     pagebullet++
                 }
             }
@@ -657,5 +662,64 @@
             $('#pagination_news').append(leftrow + page + rightrow)
         }
 
-    });
+        $('.page-item').on('click', function () {
+            var page_bullet = this
+            if ($(this).hasClass('berita-col')) {
+                for (var i = 0; i < $('.berita-col').length; i++) {
+                    var bullets = $('.berita-col')[i]
+                    $(bullets).removeClass('active')
+                }
+
+                $(page_bullet).addClass('active')
+                var itemchild = $(this).children()
+                var pagenumber = $(itemchild).attr('value');
+                getBeritaDetail(pagenumber)
+            }
+        })
+
+    })
+
+    function getBeritaDetail(pagenumber) {
+        jmlCol = 6
+        jmlberita = 6 * parseInt(pagenumber - 1)
+        startCol  = jmlberita
+        endCol    = jmlberita + 6
+        $.ajax ({
+            type: "POST",
+            url: '<?php echo base_url('get_berita')?>',
+            dataType: 'json',
+            async: false,
+            data:{
+              start : startCol,
+              end : endCol
+            },
+            success: function (response) {
+                $('#Column_berita').html('')
+                addBerita(response)
+            }
+        })
+    }
+
+    function addBerita(berita_detail) {
+       data = berita_detail.data
+       text = ''
+       for (var i = 0; i < data.length; i++) {
+         result = data[i]
+         text   = " <div class='col-md-4'>";
+         text  += "<div class='news_item shadow text-center wow' data-wow-delay='450ms'>"
+         text  += "<a class='image image-berita'>"
+         text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
+         text  += "</a>"
+         text  += "<div class='news_desc news_desc2'>"
+         text  += "<h3 class='text-capitalize font-light darkcolor'><a>Lomba Mewarnai</a></h3>"
+         text  += "<ul class='meta-tags top20 bottom20'></ul>"
+         text  += "<p class='bottom35'>Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>"
+         text  += "<a class='button btnprimary btn-gradient-hvr' style='color: #FFF;'>Baca Lengkap</a>"
+         text  += "</div>"
+         text  += "</div>"
+         text  += "</div>"
+       }
+       $('#Column_berita').append(text)
+   }
+
 </script>
