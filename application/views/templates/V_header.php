@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="google-site-verification" content="y-Qd6PdoN9G1E2mrTKqI_tvN9h-Rgi4sginjctBEr5I" />
+  <title>Masjid Pathok Nagari | Official Website</title>
+  <link href="assets/images/212.png" rel="icon">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <link rel="stylesheet" href="assets_custom/css/style.css">
 
   <!-- HTML Meta Tags -->
-<title>Masjid Pathok Nagari | Official Website</title>
 <meta name="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
 			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
 			 ">
@@ -50,10 +52,6 @@
       }
     }
   </script>
-  <link href="assets/images/212.png" rel="icon">
-  <link rel="stylesheet" href="assets/css/plugins.css">
-  <link rel="stylesheet" href="assets_custom/css/style.css">
-  <script src="assets/js/jquery-3.1.1.min.js"></script>
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
