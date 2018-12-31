@@ -52,6 +52,8 @@
       }
     }
   </script>
+
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
