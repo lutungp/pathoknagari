@@ -37,7 +37,7 @@
 			 ">
 <meta name="twitter:image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
 
-<!-- Meta Tags Generated via -->
+<!-- Meta Tags Generated -->
 
 
   <!-- Markup JSON-LD -->
@@ -61,7 +61,7 @@
 <!--PreLoader-->
 <div class="loader">
    <div class="loader-inner">
-      <img src="assets/images/Preloader_3.gif" alt="">
+      <img src="assets/images/Preloader_3.gif" alt="loader">
    </div>
 </div>
 <!--PreLoader Ends-->
@@ -74,7 +74,7 @@
           Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b> &nbsp Seluruh hasil dari Infaq akan didonasikan kepada korban tsunami Banten & Lampung.
       </marquee>
       <div class="container">
-        <a class="navbar-brand" href="beranda"> <img src="assets/images/pn5-transparent.png" alt="logo"> </a>
+        <a class="navbar-brand" href="beranda"> <img src="assets/images/pn5-transparent.png" alt="pathoknagari-logo"> </a>
         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
           <span> </span>
           <span> </span>

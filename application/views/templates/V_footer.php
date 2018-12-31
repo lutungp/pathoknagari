@@ -5,7 +5,7 @@
        <div class="container">
           <div class="row">
              <div class="col-md-12 col-sm-12 text-center">
-               <img src="assets/images/pn1-transparent.png" alt="logo" class="footer-logo bottom45">
+               <img src="assets/images/pn1-transparent.png" alt="pathoknagari-logo" class="footer-logo bottom45">
                 <ul class="social-icons small bottom25 wow fadeInUp" data-wow-delay="300ms">
                 <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i></a></li>

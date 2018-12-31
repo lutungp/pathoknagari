@@ -76,7 +76,7 @@
             $text .= "<div class='col-md-4'>
                         <div class='news_item shadow text-center wow " . $cls . "' data-wow-delay='450ms'>
                           <a class='image image-berita' href='berita-detail'>
-                            <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='Latest News' class='img-responsive'>
+                            <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='pathoknagari-berita' class='img-responsive'>
                           </a>
                           <div class='news_desc news_desc2'>
                             <h3 class='text-capitalize font-light darkcolor'><a href='berita-detail'>Lomba Mewarnai</a></h3>
@@ -130,22 +130,22 @@
             <div class="col-md-12 col-sm-12">
                <div id="partners-slider" class="owl-carousel">
                  <div class="item">
-                    <div class="logo-item"> <img alt="" src="assets/images/patner/logo-1.png" ></div>
+                    <div class="logo-item"> <img alt="logo-sponsor" src="assets/images/patner/logo-1.png" ></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-2.png"></div>
+                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-2.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-3.png"></div>
+                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-3.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-4.png"></div>
+                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-4.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-5.png"></div>
+                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-5.png"></div>
                  </div>
                  <div class="item">
-                    <div class="logo-item"><img alt="" src="assets/images/patner/logo-6.png"></div>
+                    <div class="logo-item"><img alt="logo-sponsor" src="assets/images/patner/logo-6.png"></div>
                  </div>
                </div>
             </div>
@@ -238,7 +238,7 @@
             <a href="sejarah" class="button btnprimary">Selengkapnya</a><br><br>
          </div>
          <div class="col-md-4 col-sm-5 wow fadeInRight" data-wow-delay="400ms">
-            <div class="image"><img alt="logo" src="assets/images/21.png"></div>
+            <div class="image"><img alt="logo-masjid" src="assets/images/21.png"></div>
          </div>
     </div><br><br>
     <div class="container">
@@ -262,35 +262,35 @@
        </div>
        <div id="flat-gallery" class="cbp">
  	     <div class="cbp-item masjid">
-             <img src="assets/images/Galeri/mas1.jpg" alt="">
+             <img src="assets/images/Galeri/mas1.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas1.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
-             <img src="assets/images/Galeri/mas2.jpg" alt="">
+             <img src="assets/images/Galeri/mas2.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas2.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
-             <img src="assets/images/Galeri/mas3.jpg" alt="">
+             <img src="assets/images/Galeri/mas3.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas3.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
-             <img src="assets/images/Galeri/mas4.jpg" alt="">
+             <img src="assets/images/Galeri/mas4.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas4.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
-             <img src="assets/images/Galeri/mas5.jpg" alt="">
+             <img src="assets/images/Galeri/mas5.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas5.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -298,7 +298,7 @@
              </div>
           </div>
           <div class="cbp-item ipib">
-             <img src="assets/images/Galeri/nau.jpg" alt="">
+             <img src="assets/images/Galeri/nau.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/nau.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -306,7 +306,7 @@
              </div>
           </div>
           <div class="cbp-item takmir">
-             <img src="assets/images/Galeri/1.jpg" alt="">
+             <img src="assets/images/Galeri/1.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/1.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -314,7 +314,7 @@
              </div>
           </div>
           <div class="cbp-item ipib">
-             <img src="assets/images/Galeri/ipib.jpg" alt="">
+             <img src="assets/images/Galeri/ipib.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ipib.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -322,7 +322,7 @@
              </div>
           </div>
            <div class="cbp-item takmir">
-             <img src="assets/images/Galeri/tmk.jpg" alt="">
+             <img src="assets/images/Galeri/tmk.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/tmk.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -330,7 +330,7 @@
              </div>
           </div>
           <div class="cbp-item ipib">
-             <img src="assets/images/Galeri/had.jpg" alt="">
+             <img src="assets/images/Galeri/had.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/had.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -338,7 +338,7 @@
              </div>
           </div>
           <div class="cbp-item takmir">
-             <img src="assets/images/Galeri/2.jpg" alt="">
+             <img src="assets/images/Galeri/2.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/2.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -346,7 +346,7 @@
              </div>
           </div>
           <div class="cbp-item ipib">
-             <img src="assets/images/Galeri/arg.jpg" alt="">
+             <img src="assets/images/Galeri/arg.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/arg.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -354,7 +354,7 @@
              </div>
           </div>
           <div class="cbp-item takmir">
-             <img src="assets/images/Galeri/3.jpg" alt="">
+             <img src="assets/images/Galeri/3.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/3.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -362,7 +362,7 @@
              </div>
           </div>
           <div class="cbp-item ipib">
-             <img src="assets/images/Galeri/ind.jpg" alt="">
+             <img src="assets/images/Galeri/ind.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ind.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -370,7 +370,7 @@
              </div>
           </div>
           <div class="cbp-item takmir">
-             <img src="assets/images/Galeri/5.jpg" alt="">
+             <img src="assets/images/Galeri/5.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/5.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -378,7 +378,7 @@
              </div>
           </div>
           <div class="cbp-item ipib">
-             <img src="assets/images/Galeri/bil.jpg" alt="">
+             <img src="assets/images/Galeri/bil.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/bil.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -386,7 +386,7 @@
              </div>
           </div>
           <div class="cbp-item takmir">
-             <img src="assets/images/Galeri/4.jpg" alt="">
+             <img src="assets/images/Galeri/4.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/4.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -394,7 +394,7 @@
              </div>
           </div>
  		 <div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al1.jpg" alt="">
+             <img src="assets/images/Galeri/al1.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al1.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -402,21 +402,21 @@
              </div>
           </div>
  		 <div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al2.jpg" alt="">
+             <img src="assets/images/Galeri/al2.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al2.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al3.jpg" alt="">
+             <img src="assets/images/Galeri/al3.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al3.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div><div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al4.jpg" alt="">
+             <img src="assets/images/Galeri/al4.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al4.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -424,7 +424,7 @@
              </div>
           </div>
  		 <div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al5.jpg" alt="">
+             <img src="assets/images/Galeri/al5.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al5.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -432,14 +432,14 @@
              </div>
           </div>
  		  <div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al6.jpg" alt="">
+             <img src="assets/images/Galeri/al6.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al6.jpg"></a>
                 <h4 class="top30">Klik +</h4>
                 <p>Lihat Lebih Detail</p>
              </div>
           </div> <div class="cbp-item masjid">
-             <img src="assets/images/Galeri/al7.jpg" alt="">
+             <img src="assets/images/Galeri/al7.jpg" alt="pathoknagari-galeri">
              <div class="overlay center-block whitecolor">
                 <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al7.jpg"></a>
                 <h4 class="top30">Klik +</h4>
@@ -468,21 +468,21 @@
       <div class="row three-col-pricing">
          <div class="col-lg-4 col-sm-12">
             <div class="price-table top60 wow fadeInUp" data-wow-delay="350ms">
-                <img src = "assets/images/merchandise/mug2.png" style="width:282px"></img>
+                <img src = "assets/images/merchandise/mug2.png" alt="pathoknagari-merchandise" style="width:282px"></img>
                <div class="clearfix"></div>
             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
             </div>
          </div>
          <div class="col-lg-4 col-sm-12">
             <div class="price-table active top60 wow fadeInUp" data-wow-delay="400ms">
-               <img src = "assets/images/merchandise/2.jpg" style="width:282px"></img>
+               <img src = "assets/images/merchandise/2.jpg" alt="pathoknagari-merchandise" style="width:282px"></img>
                <div class="clearfix"></div>
              <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
             </div>
          </div>
          <div class="col-lg-4 col-sm-12">
             <div class="price-table top60 wow fadeInUp" data-wow-delay="450ms">
-              <img src = "assets/images/merchandise/mug1.png" style="width:282px"></img>
+              <img src = "assets/images/merchandise/mug1.png" alt="pathoknagari-merchandise" style="width:282px"></img>
                <div class="clearfix"></div>
              <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
             </div>
@@ -492,74 +492,13 @@
 </section>
 <!--Merchandise ends-->
 
-<!--Gallery-->
-<!--<section id="portfolio_top" class="bglight">
-   <div class="container"><br><br>
-      <div id="portfolio-measonry" class="cbp border-portfolio simple_overlay">
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/e.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/e1.jpg"></a>
-               <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item">
-            <div class="text_wrap wow fadeIn" data-wow-delay="350ms">
-               <div class="heading-title text-center padding_top wow fadeInRight">
-                  <span>Documenter</span>
-                  <h2 class="darkcolor bottom10 fadeInRight">Galeri Masjid</h2>
-                  <p>Dokumentasi foto Masjid Ad-Darojat serta kegiatan Takmir dan Ikatan Pemuda Islam Babadan.</p>
-               </div>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/g.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/g1.jpg"></a>
-               <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/h.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/h1.jpg"></a>
-               <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/j.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/j1.jpg"></a>
-              <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item">
-            <div class="bottom-text">
-               <div class="cells wow fadeInLeft" data-wow-delay="350ms">
-                  <p>Kami telah mendokumentasikan lebih dari </p>
-                  <h2 class="port_head gradient_text">1774</h2>
-                  <p class="bottom15">foto kegiatan yang sangat luar biasa</p>
-               </div>
-               <div class="cells wow fadeIn" data-wow-delay="700ms">
-                  <a href="galeri" class="button btnsecondary btn-gradient-hvr">Lihat Semua</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--Gallery Ends-->
-
 <!-- Kajian Islami -->
 <section id="kajian" class="padding">
    <div class="container">
       <div class="row">
          <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInLeft" style="padding-top :40px;" data-wow-delay="300ms"><img src="assets/images/kajian/1.jpg" alt="berita" class="equalheight"></div>
+            <div class="image hover-effect wow fadeInLeft" style="padding-top :40px;" data-wow-delay="300ms"><img src="assets/images/kajian/1.jpg"
+              alt="pathoknagari-kajian" class="equalheight"></div>
          </div>
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
@@ -582,7 +521,7 @@
         <div class="col-md-4">
           <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
             <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/1.png"alt="Latest News" class="img-responsive">
+              <img src="assets/images/kajian/1.png"alt="pathoknagari-kajian" class="img-responsive">
             </a>
             <div class="news_desc">
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Islam dan Sunnah</a></h3>
@@ -596,7 +535,7 @@
         <div class="col-md-4">
           <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
             <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/3.png" alt="Latest News" class="img-responsive">
+              <img src="assets/images/kajian/3.png" alt="pathoknagari-kajian" class="img-responsive">
             </a>
             <div class="news_desc">
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Akibat Buruk Dusta</a></h3>
@@ -610,7 +549,7 @@
         <div class="col-md-4">
           <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
             <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/5.png" alt="Latest News" class="img-responsive">
+              <img src="assets/images/kajian/5.png" alt="pathoknagari-kajian" class="img-responsive">
             </a>
             <div class="news_desc">
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Haid dan Nifas</a></h3>
@@ -626,7 +565,7 @@
         <div class="col-md-4">
           <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
             <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/2.png" alt="Latest News" class="img-responsive">
+              <img src="assets/images/kajian/2.png" alt="pathoknagari-kajian" class="img-responsive">
             </a>
             <div class="news_desc">
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Istiqomah</a></h3>
@@ -639,7 +578,7 @@
         <div class="col-md-4">
           <div class="news_item shadow text-center wow fadeIn" data-wow-delay="500ms">
             <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/4.png" alt="Latest News" class="img-responsive">
+              <img src="assets/images/kajian/4.png" alt="pathoknagari-kajian" class="img-responsive">
             </a>
             <div class="news_desc">
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Kajian Ilmiah</a></h3>
@@ -653,7 +592,7 @@
         <div class="col-md-4">
           <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="550ms">
             <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/6.png" alt="Latest News" class="img-responsive">
+              <img src="assets/images/kajian/6.png" alt="pathoknagari-kajian" class="img-responsive">
             </a>
             <div class="news_desc">
               <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Do'a Malaikat</a></h3>
