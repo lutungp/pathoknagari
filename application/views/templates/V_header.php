@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="google-site-verification" content="y-Qd6PdoN9G1E2mrTKqI_tvN9h-Rgi4sginjctBEr5I" />
-  <meta content='https://pathoknagari.id/' property='og:url'/>
-  <meta title='Masjid Pathok Nagari | Official Website' property='og:title'/>
+
+  <!-- HTML Meta Tags -->
+<title>Masjid Pathok Nagari | Official Website</title>
+<meta name="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
+			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
+			 ">
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Masjid Pathok Nagari | Official Website">
+<meta itemprop="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
+			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
+			 ">
+<meta itemprop="image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://pathoknagari.id">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Masjid Pathok Nagari | Official Website">
+<meta property="og:description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
+			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
+			 ">
+<meta property="og:image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Masjid Pathok Nagari | Official Website">
+<meta name="twitter:description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
+			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
+			 ">
+<meta name="twitter:image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
+
+<!-- Meta Tags Generated via -->
+
 
   <!-- Markup JSON-LD -->
   <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "LocalBusiness",
-      "name" : "Masjid Pathok Nagari | Official Website -",
-      "image" : "https://pathoknagari.id/assets/images/21.png",
-      "url" : "https://pathoknagari.id/",
-      "review" : {
-        "@type" : "Review",
-        "reviewBody" : "Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi. Pada zaman penjajahan Jepang yakni pada tahun 1940, Masjid Ad-Darojat dan masyarakat Babadan dipindah ke Desa Babadan Jl. Kaliurang, Kentungan, Sleman. Perpindahan ini dikarenakan saat itu daerah Babadan terkena pelebaran pangkalan pesawat terbang dan sebagai gudang senjata. Akibat perpindahan tersebut denyut kampung Babadan sebagai kampung santri sempat mengalami tidur panjang."
+     {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://pathoknagari.id",
+        "logo": "https://pathoknagari.id/assets/images/21.png"
       }
     }
   </script>
-
-  <title>Pathok Nagari | Official Website</title>
   <link href="assets/images/212.png" rel="icon">
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets_custom/css/style.css">

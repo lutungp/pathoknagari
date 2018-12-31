@@ -1,20 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- 
-<url>
-<loc>https://pathoknagari.id/</loc>
-</url>
-<url>
-<loc>https://pathoknagari.id/beranda</loc>
-<lastmod>2018-12-28</lastmod>
-<changefreq>always</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://pathoknagari.id/berita</loc>
-</url>
-<url>
-<loc>https://pathoknagari.id/kajian</loc>
-</url>
- 
+  <url>
+    <loc>https://www.pathoknagari.id/beranda</loc>
+    <xhtml:link rel="amphtml" href="https://www.pathoknagari.id/beranda"/>
+    <lastmod>2018-12-31T11:30:02Z</lastmod>
+  </url>
 </urlset>
