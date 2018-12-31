@@ -241,320 +241,214 @@
             <div class="image"><img alt="logo" src="assets/images/21.png"></div>
          </div>
     </div><br><br>
-  <div class="container-fluid">
-    <div class="row">
-         <div class="col-md-12 text-center">
-               <div id="flat-filters" class="cbp-l-filters dark bottom30">
-               <div data-filter="*" class="cbp-filter-item">
-                  <span>Semua</span>
-               </div>
-               <div data-filter=".web" class="cbp-filter-item">
-                  <span>Takmir</span>
-               </div>
-               <div data-filter=".print" class="cbp-filter-item">
-                  <span>IPIB</span>
-               </div>
-               <div data-filter=".graphic" class="cbp-filter-item">
-                  <span>Masjid</span>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="flat-gallery" class="cbp">
-         <div class="cbp-item web logo">
-            <img src="assets/images/gallery-flat13.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat13.jpg"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat lebih detai disini</p>
-            </div>
-         </div>
-         <div class="cbp-item graphic print">
-            <img src="assets/images/gallery-flat8.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat8.jpg"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat lebih detai disini</p>
-            </div>
-         </div>
-         <div class="cbp-item logo graphic">
-            <img src="assets/images/gallery-flat9.jpg"  alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat9.jpg"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat lebih detai disini</p>
-            </div>
-         </div>
-         <div class="cbp-item print">
-            <img src="assets/images/gallery-flat10.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat10.jpg"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat lebih detai disini</p>
-            </div>
-         </div>
-         <div class="cbp-item logo">
-            <img src="assets/images/gallery-flat11.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat11.jpg" ></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat lebih detai disini</p>
-            </div>
-         </div>
-         <div class="cbp-item web print graphic">
-            <img src="assets/images/gallery-flat3.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/gallery-flat3.jpg" ></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat lebih detai disini</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--Beranda ends-->
-
-<!-- Merchandise -->
-<section id="merchandise" class="padding bglight">
-   <div class="container"><br><br>
-      <div class="row">
-         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <span>Dapatkan Segera</span>
-               <h2 class="darkcolor bottom30">Merchandise</h2>
-               <p>Kami menyediakan merchandise untuk para jamaah. Anda bisa mendapatkannya langsung dimasjid. Sebagian dari hasil penjualan kami
-				  donasikan untuk kegiatan umat.</p>
-            </div>
-         </div>
-      </div>
-      <div class="row three-col-pricing">
-         <div class="col-lg-4 col-sm-12">
-            <div class="price-table top60 wow fadeInUp" data-wow-delay="350ms">
-                <img src = "assets/images/merchandise/mug2.png" style="width:282px"></img>
-               <div class="clearfix"></div>
-            <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
-            </div>
-         </div>
-         <div class="col-lg-4 col-sm-12">
-            <div class="price-table active top60 wow fadeInUp" data-wow-delay="400ms">
-               <img src = "assets/images/merchandise/2.jpg" style="width:282px"></img>
-               <div class="clearfix"></div>
-             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
-            </div>
-         </div>
-         <div class="col-lg-4 col-sm-12">
-            <div class="price-table top60 wow fadeInUp" data-wow-delay="450ms">
-              <img src = "assets/images/merchandise/mug1.png" style="width:282px"></img>
-               <div class="clearfix"></div>
-             <a href="https://wa.me/+628562898979" class="button btnprimary top20">Beli</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--Merchandise ends-->
-
-<!--Gallery-->
-<!--<section id="portfolio_top" class="bglight">
-   <div class="container"><br><br>
-      <div id="portfolio-measonry" class="cbp border-portfolio simple_overlay">
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/e.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/e1.jpg"></a>
-               <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item">
-            <div class="text_wrap wow fadeIn" data-wow-delay="350ms">
-               <div class="heading-title text-center padding_top wow fadeInRight">
-                  <span>Documenter</span>
-                  <h2 class="darkcolor bottom10 fadeInRight">Galeri Masjid</h2>
-                  <p>Dokumentasi foto Masjid Ad-Darojat serta kegiatan Takmir dan Ikatan Pemuda Islam Babadan.</p>
-               </div>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/g.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/g1.jpg"></a>
-               <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/h.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/h1.jpg"></a>
-               <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item itemshadow">
-            <img src="assets/images/Galeri/j.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/j1.jpg"></a>
-              <h4 class="top30">Klik + </h4>
-               <p>Lihat lebih Detail</p>
-            </div>
-         </div>
-         <div class="cbp-item">
-            <div class="bottom-text">
-               <div class="cells wow fadeInLeft" data-wow-delay="350ms">
-                  <p>Kami telah mendokumentasikan lebih dari </p>
-                  <h2 class="port_head gradient_text">1774</h2>
-                  <p class="bottom15">foto kegiatan yang sangat luar biasa</p>
-               </div>
-               <div class="cells wow fadeIn" data-wow-delay="700ms">
-                  <a href="galeri" class="button btnsecondary btn-gradient-hvr">Lihat Semua</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--Gallery Ends-->
-
-<!-- Kajian Islami -->
-<section id="kajian" class="padding">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInLeft" style="padding-top :40px;" data-wow-delay="300ms"><img src="assets/images/kajian/1.jpg" alt="berita" class="equalheight"></div>
-         </div>
-         <div class="col-md-7 col-sm-12">
-            <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half" style="padding-top :130px;">
-               <span class="wow fadeInRight" data-wow-delay="350ms">Kajian Islami</span>
-               <h2 class="darkcolor bottom25 wow fadeInRight" data-wow-delay="400ms">Kajian Islami Terbaru</h2>
-               <p class="bottom30 wow fadeInRight" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan artikel kajian-kajian islam
-			   yang bertujuan memberikan edukasi serta tarbiyah bagi sahabat-sahabat kaum muslimin.</p>
-               <a href="#kajian2" class="nav-link pagescroll button btnsecondary wow fadeIn" data-wow-delay="700ms">Lihat Semua kajian</a>
-            </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
-</section>
-
-<section id="kajian2" class="padding bglight">
-  <div class="container">
-     <div class="row box-berita">
-        <div class="col-md-4">
-          <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="300ms">
-            <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/1.png"alt="Latest News" class="img-responsive">
-            </a>
-            <div class="news_desc">
-              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Islam dan Sunnah</a></h3>
-              <ul class="meta-tags top20 bottom20"></ul>
-              <p class="bottom35">Bukankah sunnah adalah sesuatu yang apabila dikerjakan, pelakunya mendapat pahala.
-              </p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
-            </div>
+    <div class="container">
+     <div class="row">
+          <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+             <div id="flat-filters" class="cbp-l-filters dark bottom30">
+                <div data-filter="*" class="cbp-filter-item">
+                   <span>Semua</span>
+                </div>
+                <div data-filter=".takmir" class="cbp-filter-item">
+                   <span>Takmir</span>
+                </div>
+                <div data-filter=".ipib" class="cbp-filter-item">
+                   <span>IPIB</span>
+                </div>
+                <div data-filter=".masjid" class="cbp-filter-item">
+                   <span>Masjid</span>
+                </div>
+             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="news_item shadow text-center wow fadeIn" data-wow-delay="350ms">
-            <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/3.png" alt="Latest News" class="img-responsive">
-            </a>
-            <div class="news_desc">
-              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Akibat Buruk Dusta</a></h3>
-              <ul class="meta-tags top20 bottom20"></ul>
-              <p class="bottom35">erkadang dengan lisannya seseorang mengucapkan kata-kata tanpa
-                dipertimbangkan dan dipikirkan sebelumnya.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
-            </div>
+       </div>
+       <div id="flat-gallery" class="cbp">
+     <div class="cbp-item masjid">
+             <img src="assets/images/Galeri/mas1.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas1.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div><div class="cbp-item masjid">
+             <img src="assets/images/Galeri/mas2.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas2.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div><div class="cbp-item masjid">
+             <img src="assets/images/Galeri/mas3.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas3.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div><div class="cbp-item masjid">
+             <img src="assets/images/Galeri/mas4.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas4.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div><div class="cbp-item masjid">
+             <img src="assets/images/Galeri/mas5.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas5.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="400ms">
-            <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/5.png" alt="Latest News" class="img-responsive">
-            </a>
-            <div class="news_desc">
-              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Haid dan Nifas</a></h3>
-              <ul class="meta-tags top20 bottom20"></ul>
-              <p class="bottom35">Ada berbagai larangan saat haid yang beredar di masyarakat khususnya
-                 kaum hawa yang menjalani periode menstruasi setiap bulannya.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
-            </div>
+          <div class="cbp-item ipib">
+             <img src="assets/images/Galeri/nau.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/nau.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="news_item shadow text-center wow fadeInLeft" data-wow-delay="450ms">
-            <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/2.png" alt="Latest News" class="img-responsive">
-            </a>
-            <div class="news_desc">
-              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Istiqomah</a></h3>
-              <ul class="meta-tags top20 bottom20"></ul>
-              <p class="bottom35">Seorang muslim yang baik tentunya diharapakan bisa beristiqamah dengan ibadah yang ia lakukan serta menjaga akhlaknya.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
-            </div>
+          <div class="cbp-item takmir">
+             <img src="assets/images/Galeri/1.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/1.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="news_item shadow text-center wow fadeIn" data-wow-delay="500ms">
-            <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/4.png" alt="Latest News" class="img-responsive">
-            </a>
-            <div class="news_desc">
-              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Kajian Ilmiah</a></h3>
-              <ul class="meta-tags top20 bottom20"></ul>
-              <p class="bottom35">Sebagian ahli pendidikan mengatakan bahwa ilmu pendidikan
-                adalah penerapan ilmu-ilmu lain dalam praktek pendidikan.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
-            </div>
+          <div class="cbp-item ipib">
+             <img src="assets/images/Galeri/ipib.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ipib.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="news_item shadow text-center wow fadeInRight" data-wow-delay="550ms">
-            <a class="image" href="kajian-detail">
-              <img src="assets/images/kajian/6.png" alt="Latest News" class="img-responsive">
-            </a>
-            <div class="news_desc">
-              <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail">Do'a Malaikat</a></h3>
-              <ul class="meta-tags top20 bottom20"></ul>
-              <p class="bottom35">Ibnu Katsir berkata: Adapun shalawat dari malaikat dalam ayat di atas, maknanya adalah doa dan istighfar bagi para manusia.</p>
-              <a href="kajian-detail" class="button btnprimary btn-gradient-hvr">Baca Lengkap</a>
-            </div>
+           <div class="cbp-item takmir">
+             <img src="assets/images/Galeri/tmk.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/tmk.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-         <div class="col-sm-12">
-            <ul class="pagination justify-content-center top50">
-               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-               <li class="page-item active"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">3</a></li>
-               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-            </ul>
+          <div class="cbp-item ipib">
+             <img src="assets/images/Galeri/had.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/had.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item takmir">
+             <img src="assets/images/Galeri/2.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/2.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item ipib">
+             <img src="assets/images/Galeri/arg.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/arg.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item takmir">
+             <img src="assets/images/Galeri/3.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/3.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item ipib">
+             <img src="assets/images/Galeri/ind.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/ind.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item takmir">
+             <img src="assets/images/Galeri/5.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/5.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item ipib">
+             <img src="assets/images/Galeri/bil.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/bil.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+          <div class="cbp-item takmir">
+             <img src="assets/images/Galeri/4.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/4.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+      <div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al1.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al1.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+      <div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al2.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al2.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div><div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al3.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al3.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div><div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al4.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al4.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+      <div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al5.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al5.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div>
+       <div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al6.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al6.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+          </div> <div class="cbp-item masjid">
+             <img src="assets/images/Galeri/al7.jpg" alt="">
+             <div class="overlay center-block whitecolor">
+                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al7.jpg"></a>
+                <h4 class="top30">Klik +</h4>
+                <p>Lihat Lebih Detail</p>
+             </div>
+           </div>
          </div>
-      </div>
-  </div>
-</section>
-<!--Kajian Islami Ends-->
-
-<!-- Video -->
-<section id="video-parallax" class="video-parallax padding parallaxie">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7 col-sm-7">
-            <div class="heading-title whitecolor text-md-left text-center wow fadeIn" data-wow-delay="500ms">
-               <span>Perjalanan yang luar biasa</span>
-               <h2 class="fontregular">Lihat Video Kami</h2>
-               <a data-fancybox href="https://youtu.be/wWBB-3E7F-4"
-              class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Putar Video</a>
-            </div>
-         </div>
-      </div>
-   </div>
+       </div>
+     </div>
 </section>
 <!--Video Ends-->
 
