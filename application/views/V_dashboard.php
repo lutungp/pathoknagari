@@ -79,10 +79,10 @@
                             <img src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' alt='pathoknagari-berita' class='img-responsive'>
                           </a>
                           <div class='news_desc news_desc2'>
-                            <h3 class='text-capitalize font-light darkcolor'><a>Lomba Mewarnai</a></h3>
+                            <h3 class='text-capitalize font-light darkcolor' style='font-size: 25px;'><a>" . $value['berita_nama'] . "</a></h3>
                             <ul class='meta-tags top20 bottom20'></ul>
-                            <p class='bottom35'>Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>
-                            <a class='button btnprimary btn-gradient-hvr' style='color: #FFF;'>Baca Lengkap</a>
+                            <p class='bottom35'>" . $value['berita_summary'] . "</p>
+                            <a class='button btnprimary btn-gradient-hvr' style='color: #FFF;' href='berita-detail'>Baca Lengkap</a>
                           </div>
                         </div>
                       </div>";
@@ -731,9 +731,9 @@
          text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
          text  += "</a>"
          text  += "<div class='news_desc news_desc2'>"
-         text  += "<h3 class='text-capitalize font-light darkcolor'><a>Lomba Mewarnai</a></h3>"
+         text  += "<h3 class='text-capitalize font-light darkcolor'><a>" + result.berita_nama + "</a></h3>"
          text  += "<ul class='meta-tags top20 bottom20'></ul>"
-         text  += "<p class='bottom35'>Dalam rangka bulan ramadhan kami menghadirkan acara lomba merwarnai dalam rangkaian olimpiade Santri.</p>"
+         text  += "<p class='bottom35'>" + result.berita_isi + "</p>"
          text  += "<a class='button btnprimary btn-gradient-hvr' style='color: #FFF;'>Baca Lengkap</a>"
          text  += "</div>"
          text  += "</div>"
