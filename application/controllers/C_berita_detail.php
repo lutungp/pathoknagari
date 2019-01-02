@@ -17,10 +17,11 @@ class C_berita_detail extends CI_Controller{
 
   function index()
   {
-    $postData['id'] = $this->input->post('val');
-    $profile = $this->http_request($this->API.'/C_api/beritadetail', $postData, 1);
-    print_r($profile);
-    // $this->load->view('V_berita_detail');
+    $postData['id'] = $this->input->post('message');
+    $berita_detail = $this->http_request($this->API.'/C_api/beritadetail', $postData, 1);
+    $data['berita_detail'] = json_decode($berita_detail, TRUE);
+    
+    $this->load->view('V_berita_detail', $data);
   }
 
 
@@ -47,21 +48,6 @@ class C_berita_detail extends CI_Controller{
 
       // mengembalikan hasil curl
       return $output;
-  }
-
-  function get_berita()
-  {
-    $start = $this->input->post('start');
-    $end = $this->input->post('end');
-    $postData = [
-      'start'   => $start,
-      'limit'   => $end,
-    ];
-
-    $countData = count($postData);
-
-    $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
-    echo $profile;
   }
 
 }

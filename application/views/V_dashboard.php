@@ -52,7 +52,6 @@
         <?php
         $berita_row  = 0 ;
         $berita_row2 = 1; /* baris berita sebenarnya */
-        $ringkas_berita = $ringkas_berita;
         $text = "";
 
         $animation_cls[0]  = 'fadeInLeft';

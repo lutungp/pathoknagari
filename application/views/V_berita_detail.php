@@ -194,18 +194,18 @@
              <div class="col-md-8">
                 <div class="news_item shadow">
                    <div class="image">
-                      <img src="assets/images/Berita/blog-measonry21.jpg" alt="Latest News" class="img-responsive">
+                      <img src="<?php echo $berita_detail['img_url'] . $berita_detail['data'][0]['berita_photo']?>" alt="Latest News" class="img-responsive">
                    </div>
                     <div class="news_desc text-left">
-                      <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail">Next Large Social Network</a></h3>
+                      <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail"><?php echo $berita_detail['data'][0]['berita_nama']; ?></a></h3>
                       <ul class="meta-tags top20 bottom20">
                         <li><a href="#."><i class="fa fa-calendar"></i>Feb 14, 2018</a></li>
                         <li><a href="#."> <i class="fa fa-user-o"></i> peter warren</a></li>
                         <li><a href="#."><i class="icon-comment"></i>5</a></li>
                       </ul>
-                      <p class="bottom35">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                      <p class="heading_space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec facilisis nullano volutpat justo. Nulla tempus ultricies feugiat. Duis magna risus, luctus id urna dapibus condimentum dui. Maecenas tempor non ex eu vehicula. Sed sit placerat velit,</p>
-                      <blockquote class="blockquote darkcolor heading_space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</blockquote>
+                      <p class="bottom35">
+                        <?php echo $berita_detail['data'][0]['berita_isi']; ?>
+                      </p>
 
                       <div class="profile-authors heading_space">
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
