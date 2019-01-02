@@ -8,6 +8,7 @@ class C_berita_detail extends CI_Controller{
     parent::__construct();
     //Codeigniter : Write Less Do More
     $this->API="http://admin.pathoknagari.id";
+    // $this->API="http://localhost/pathoknagari_back";
     $this->load->library('session');
     $this->load->library('curl');
     $this->load->helper('form');
@@ -16,16 +17,10 @@ class C_berita_detail extends CI_Controller{
 
   function index()
   {
-    $postData = [
-      'end'     => 0,
-      'limit'   => 6,
-    ];
-
-    $countData = count($postData);
-
-    $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
-
-    $this->load->view('V_berita_detail');
+    $postData['id'] = $this->input->post('val');
+    $profile = $this->http_request($this->API.'/C_api/beritadetail', $postData, 1);
+    print_r($profile);
+    // $this->load->view('V_berita_detail');
   }
 
 

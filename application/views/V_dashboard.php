@@ -82,7 +82,10 @@
                             <h3 class='text-capitalize font-light darkcolor' style='font-size: 25px;'><a>" . $value['berita_nama'] . "</a></h3>
                             <ul class='meta-tags top20 bottom20'></ul>
                             <p class='bottom35'>" . $value['berita_summary'] . "</p>
-                            <a class='button btnprimary btn-gradient-hvr' style='color: #FFF;' href='berita-detail'>Baca Lengkap</a>
+                            <a class='button btnprimary btn-gradient-hvr' style='color: #FFF;' href='javascript:;'
+                            onclick='berita_detail(this)' value='" .$value['berita_id']. "'>
+                              Baca Lengkap
+                            </a>
                           </div>
                         </div>
                       </div>";
@@ -746,6 +749,27 @@
        }
 
        $('#Column_berita').append(text)
+   }
+
+   function berita_detail(elem) {
+      val = $(elem).attr('value')
+      window.open('<?php //echo base_url('berita-detail') ?>')
+      var form = document.createElement("form");
+      form.setAttribute("method", "post");
+      form.setAttribute("action", "berita-detail");
+
+      form.setAttribute("target", "view");
+
+      var hiddenField = document.createElement("input");
+      hiddenField.setAttribute("type", "hidden");
+      hiddenField.setAttribute("name", "message");
+      hiddenField.setAttribute("value", val);
+      form.appendChild(hiddenField);
+      document.body.appendChild(form);
+
+      window.open('', 'view');
+
+      form.submit();
    }
 
 </script>
