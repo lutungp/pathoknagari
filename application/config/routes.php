@@ -58,5 +58,7 @@ $route['sejarah']               = 'C_sejarah_detail';
 $route['galeri']                = 'C_galeri_detail';
 $route['kajian']                = 'C_kajian';
 $route['kajian-detail']         = 'C_kajian_detail';
+$route['galeri']                = 'C_galeri_detail';
+$route['organisasi']            = 'C_organisasi';
 $route['beranda']               = 'C_dashboard';
 $route['get_berita']            = 'C_dashboard/get_berita';

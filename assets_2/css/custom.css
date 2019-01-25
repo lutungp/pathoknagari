@@ -1,0 +1,25 @@
+/* Page title background */
+#title                  { background-image: url(../img/title-bg/small.jpg) }
+#home-version-2 #title  { background-image: url(../img/title-bg/home-version-2-small.jpg) }
+#blog-version-1 #title  { background-image: url(../img/title-bg/blog-version-1-small.jpg) }
+#blog-version-2 #title  { background-image: url(../img/title-bg/blog-version-2-small.jpg) }
+#blog-detail #title     { background-image: url(../img/title-bg/blog-detail-small.jpg) }
+#gallery-page #title    { background-image: url(../img/title-bg/gallery-page-small.jpg) }
+
+@media(min-width: 769px) {
+    #title                  { background-image: url(../img/title-bg/medium.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/medium.jpg*/ }
+    #home-version-2 #title  { background-image: url(../img/title-bg/home-version-2-medium.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/home-version-2-medium.jpg*/ }
+    #blog-version-1 #title  { background-image: url(../img/title-bg/blog-version-1-medium.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/blog-version-1-medium.jpg*/ }
+    #blog-version-2 #title  { background-image: url(../img/title-bg/blog-version-2-medium.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/blog-version-2-medium.jpg*/ }
+    #blog-detail #title     { background-image: url(../img/title-bg/blog-detail-medium.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/blog-detail-medium.jpg*/ }
+    #gallery-page #title    { background-image: url(../img/title-bg/gallery-page-medium.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/gallery-page-medium.jpg*/ }
+}
+
+@media(min-width: 1367px) {
+    #title                  { background-image: url(../img/title-bg/large.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/large.jpg*/ }
+    #home-version-2 #title  { background-image: url(../img/title-bg/home-version-2-large.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/home-version-2-large.jpg*/ }
+    #blog-version-1 #title  { background-image: url(../img/title-bg/blog-version-1-large.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/blog-version-1-large.jpg*/ }
+    #blog-version-2 #title  { background-image: url(../img/title-bg/blog-version-2-large.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/blog-version-2-large.jpg*/ }
+    #blog-detail #title     { background-image: url(../img/title-bg/blog-detail-large.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/blog-detail-large.jpg*/ }
+    #gallery-page #title    { background-image: url(../img/title-bg/gallery-page-large.jpg)/*tpa=http://wartahtmldemo.friskamax.com/img/title-bg/gallery-page-large.jpg*/ }
+}

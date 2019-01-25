@@ -1,0 +1,48 @@
+#customizer {
+    left: 0;
+    margin-top: -96px;
+    position: fixed;
+    top: 50%;
+    z-index: 2
+}
+
+#customizer .content,
+#customizer .fa {
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    -webkit-box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, .1);
+    box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, .1);
+    background: #fff
+}
+
+#customizer .content {
+    padding: 10px
+}
+
+#customizer p {
+    margin: 4px 0
+}
+
+#customizer label {
+    width: 100%;
+    font-weight: 400
+}
+
+#customizer input[type=color] {
+    padding: 0;
+    display: inline;
+    vertical-align: middle;
+    margin-bottom: 0
+}
+
+#customizer .fa {
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 10px;
+    position: absolute;
+    right: -27px;
+    text-align: center;
+    top: 10px
+}

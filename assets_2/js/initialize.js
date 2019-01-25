@@ -1,0 +1,115 @@
+/**
+ * INITIALIZATION
+ * ==============
+ */
+
++function ($) { "use strict"; 
+        var isRTL = $('html').is('[dir=rtl]');
+        
+        /*
+         * HTML5 PLACEHOLDER
+         * ==========================
+         */
+        $('input, textarea').placeholder();
+                
+        /*
+         * Carousel Caption Animation
+         * ==========================
+         */
+        $('#carousel-large, #carousel-medium').wartaCarouselCaption();
+        
+        /*
+         * Slider Tabs
+         * ===========
+         */
+        $('#slider-tabs #popular, #slider-tabs #recent, #slider-tabs #gallery').wartaSliderTab();
+        
+        /*
+         * Nivo Lightbox 
+         * =============
+         */
+        $( 'a[data-lightbox-gallery], a[data-lightbox]' ).nivoLightbox({ 
+                effect  : 'fadeScale'
+        });
+
+        /*
+         * jQuery Marquee 
+         * ==============
+         */
+         $('.breaking-news .content').marquee({   
+                duplicated      : true,                 
+                duration        : 20000,     
+                pauseOnHover    : true,
+                direction       : isRTL ? 'right' : 'left'
+         });
+         
+        /*
+         * HOVER DIRECTION AWARE
+         * =====================
+         */
+        $('.da-thumbs > li').each(function() { 
+                $(this).hoverdir({
+                        hoverDelay : 75
+                }); 
+        });
+        
+        /**
+         * RateIt
+         * ======
+         */
+         $(".rateit").rateit({
+                step        : .5,
+                resetable   : false
+         }).on('over', function (event,value) { 
+                $(this).attr('title', value ? parseFloat(value).toFixed(1) : 0 ); 
+         }).on('rated', function (event,value) {
+                $(this)
+                        .rateit( 'readonly', true )
+                        .attr('title', value ? parseFloat(value).toFixed(1) : 0 )
+                        .next('.after-vote').css('display', 'block');
+         });
+
+        /*
+         * Flickr Feed
+         * ===========
+         */
+        new $.FlickrFeed({
+                element : '#flickr-feed-aside', // The element id to place the photos.
+                items   : 8,                    // How many items do you want to show.
+                id      : '112356465@N05',      // A single user ID. This specifies a user to fetch for. eg: '685365@N25'.
+                ids     : '',                   // A comma delimited list of user IDs. This specifies a list of users to fetch for.
+                tags    : '',                   // A comma delimited list of tags to filter the feed by.
+                tagmode : ''                    // Control whether items must have ALL the tags (tagmode=all), or ANY (tagmode=any) of the tags. Default is ALL.
+        });
+        new $.FlickrFeed({
+                element : '#flickr-feed-footer',// The element id to place the photos.
+                items   : 9,                    // How many items do you want to show.
+                id      : '112356465@N05',      // A single user ID. This specifies a user to fetch for. eg: '685365@N25'.
+                ids     : '',                   // A comma delimited list of user IDs. This specifies a list of users to fetch for.
+                tags    : '',                   // A comma delimited list of tags to filter the feed by.
+                tagmode : ''                    // Control whether items must have ALL the tags (tagmode=all), or ANY (tagmode=any) of the tags. Default is ALL.
+        });
+        
+        /**
+         * Twittie
+         * =======
+         */                        
+        $('#content .twitter-feed').each(function() {
+                var $this = $(this);
+                $this.twittie({
+                        apiPath      : 'http://wartahtmldemo.friskamax.com/js/php/tweetie/tweet.php',
+                        template     : $this.find('script[type="text/template"]').html(),
+                        dateFormat   : '%B %d, %Y',
+                        count        : 5
+                 });
+        });  
+        $('#footer-main .twitter-feed').each(function() {
+                var $this = $(this);
+                $this.twittie({
+                        apiPath      : 'http://wartahtmldemo.friskamax.com/js/php/tweetie/tweet.php',
+                        template     : $this.find('script').html(),
+                        dateFormat   : '%B %d, %Y',
+                        count        : 3
+                });
+        }); 
+} (jQuery);

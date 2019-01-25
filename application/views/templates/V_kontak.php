@@ -83,7 +83,7 @@
     <div id="histats_counter"></div>
     <!-- Histats.com  START  (aync)-->
     <script type="text/javascript">
-    
+
       var _Hasync= _Hasync|| [];
       _Hasync.push(['Histats.start', '1,4198969,4,205,255,27,00011000']);
       _Hasync.push(['Histats.fasi', '1']);

@@ -9,6 +9,9 @@
   <link href="assets/images/212.png" rel="icon">
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets_custom/css/style.css">
+  <link rel="stylesheet" href="assets_2/css/style.css">
+  <!--<link href="assets_2/css/custom.css" rel="stylesheet">
+
 
   <!-- HTML Meta Tags -->
 <meta name="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
@@ -65,13 +68,17 @@
    </div>
 </div>
 <!--PreLoader Ends-->
+
 <header class="site-header">
   <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
     <nav class="navbar">
       <marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
-          Pengajian Ahad Pagi di Masjid Ad-Darojat Kauman Babadan. &nbsp <b>Ahad, 30 Desember 2018</b> &nbsp
-          <b>Pembicara :</b> Drs. H. Slamet Abdullah, M.Si. &nbsp <b>Tema :</b> Selamatkan Dirimu dan Keluargamu dari Siksa Api Neraka. &nbsp
-          Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b> &nbsp Seluruh hasil dari Infaq akan didonasikan kepada korban tsunami Banten & Lampung.
+          <i class="fa fa-angle-double-right"></i> Pengajian Ahad Pagi di Masjid Ad-Darojat Kauman Babadan.
+          &nbsp <b>Ahad, 30 Desember 2018</b>
+          &nbsp <b>Pembicara :</b> Drs. H. Slamet Abdullah, M.Si.
+          &nbsp <b>Tema :</b> Selamatkan Dirimu dan Keluargamu dari Siksa Api Neraka.&nbsp&nbsp
+          <i class="fa fa-angle-double-right"></i> Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b>&nbsp&nbsp
+          <i class="fa fa-angle-double-right"></i> Seluruh hasil dari Infaq akan didonasikan kepada korban tsunami Banten & Lampung.
       </marquee>
       <div class="container">
         <a class="navbar-brand" href="beranda"> <img src="assets/images/pn5-transparent.png" alt="pathoknagari-logo"> </a>
@@ -82,23 +89,23 @@
         </button>
         <div class="collapse navbar-collapse" id="xenav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
+              <a class="nav-link pagescroll" href="#ipib">Organisasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pagescroll" href="#kajian">Kajian Islam</a>
+              <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#kontak">Kontak</a>
@@ -123,8 +130,8 @@
           <li class="nav-item active">
             <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
+          <li class="nav-item">
+            <a class="nav-link pagescroll" href="#ipib">Organisasi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
@@ -135,8 +142,8 @@
           <li class="nav-item">
             <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#kajian">Kajian Islam</a>
+          <li class="nav-item active">
+            <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
           </li>
           <li class="nav-item">
             <a class="nav-link pagescroll" href="#kontak">Kontak</a>

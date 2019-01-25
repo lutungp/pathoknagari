@@ -24,7 +24,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--Bootstrap Core-->
     <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
 
     <!--to view items on reach-->
     <script src="assets/js/jquery.appear.js"></script>
@@ -79,5 +78,15 @@
     <!--Google Map API-->
     <script src="../../../maps.googleapis.com/maps/api/js-key=AIzaSyAJ97zN_MClQ8BnmJJOCY165S2QEYvbIis.js"></script>
     <script src="assets/js/functions.js"></script>
+
+<!-- ==================================================================================================================== -->
+    <!-- jQuery  -->
+    <!-- Warta scripts -->
+    <script src="assets_2/js/script.min.js"></script>
+    <script src="assets_2/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets_2/js/initialize.js"></script>
+
   </body>
 </html>
