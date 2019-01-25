@@ -1118,8 +1118,8 @@
             }
         })
     }
-    function addBerita(berita-detail) {
-       data = berita-detail.data
+    function addBerita(berita_detail) {
+       data = berita_detail.data
        text = ''
        berita_row  = 0 ;
        berita_row2 = 1; /* baris berita sebenarnya */
@@ -1143,7 +1143,7 @@
          text  += " <div class='col-md-4'>";
          text  += "<div class='news_item shadow text-center wow " + cls + "' data-wow-delay='450ms'>"
          text  += "<a class='image image-berita'>"
-         text  += "<img src='" + berita-detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
+         text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
          text  += "</a>"
          text  += "<div class='news_desc news_desc2'>"
          text  += "<h3 class='text-capitalize font-light darkcolor'><a>" + result.berita_nama + "</a></h3>"
@@ -1160,9 +1160,9 @@
        }
        $('#Column_berita').append(text)
    }
-   function berita-detail(elem) {
+   function berita_detail(elem) {
       val = $(elem).attr('value')
-      window.open('<?php //echo base_url('berita-detail') ?>')
+      window.open('<?php //echo base_url('berita_detail') ?>')
       var form = document.createElement("form");
       form.setAttribute("method", "post");
       form.setAttribute("action", "#");
