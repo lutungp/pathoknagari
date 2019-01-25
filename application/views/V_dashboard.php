@@ -321,7 +321,7 @@
             </div>
          </div>
          <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInRight" style="padding-top:40px;" data-wow-delay="500ms"><img src="assets/images/berita/1.png"
+            <div class="image hover-effect wow fadeInRight" style="padding-top:40px;" data-wow-delay="500ms"><img src="assets/images/Berita/1.png"
               alt="masjid-logo" class="equalheight"></div>
          </div>
       </div>
