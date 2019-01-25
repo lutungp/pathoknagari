@@ -854,7 +854,7 @@
 
               </aside>
 
-            <!--  <section class="widget articles-v2">
+         <section class="widget articles-v2">
                   <header class="clearfix">
                       <h4>Politics</h4>
                       <a href="#" class="control"><i class="fa fa-plus"></i></a>
@@ -941,7 +941,7 @@
                           <hr>
                       </div>
                   </div><!--.content-->
-              <!--</section>-->
+            </section>
 
           </div>
       </div>
