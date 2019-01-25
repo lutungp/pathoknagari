@@ -21,7 +21,7 @@ class C_dashboard extends MY_Controller{
     // $url  = $this->API.'/C_api/berita';
     $postData = [
       'end'     => 0,
-      'limit'   => 6,
+      'limit'   => 3,
     ];
 
     $countData = count($postData);
