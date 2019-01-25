@@ -372,62 +372,46 @@
                    <!-- CAROUSEL  -->
                    <div><br><br></div>
                    <section class="widget no-mobile">
-                       <div class="frame thick">
-                           <div id="carousel-medium" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
-                               <!-- Carousel contents -->
-                               <div class="carousel-inner">
-                                   <div class="item active">
-                                       <div class="item-inner">
-                                           <div data-src="assets_2/img/content/doctype-hi-res-large.jpg" data-alt="Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat"></div>
-                                           <div class="carousel-caption">
-                                               <div><a href="#"><h3>Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat</h3></a></div>
-                                               <div class="hidden-xs">
-                                                   <p>
-                                                       Ut eleifend, ligula id tristique gravida, lectus risus convallis nunc, ut varius ipsum mauris
-                                                       vel erat. Pellentesque eleifend accumsan lacus vel rutrum&hellip;
-                                                   </p>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
+                     <div class="frame thick">
+                         <div id="carousel-medium" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
+                             <!-- Carousel contents -->
+                             <div class="carousel-inner">
+                                  <!-- detail berita sekilas -->
+                                  <?php
+                                        $kilasberita = "";
+                                        foreach ($ringkas_berita['data'] as $key => $value) {
+                                            $active = "";
+                                            if ($key == 0) {
+                                              $active = "active";
+                                            }
 
-                                   <div class="item">
-                                       <div class="item-inner">
-                                           <div data-src="assets_2/img/content/unsplash_529f51e60b51c_1-large.jpg" data-alt="Mauris Lacus Nisl Suscipit Ut Orci Ut Gravida Dapibus Neque"></div>
-                                           <div class="carousel-caption">
-                                               <div><a href="#"><h3>Mauris Lacus Nisl Suscipit Ut Orci Ut Gravida Dapibus Neque</h3></a></div>
-                                               <div class="hidden-xs">
-                                                   <p>
-                                                       Fames ac ante ipsum primis in faucibus. Aenean vulputate a nunc quis suscipit. Praesent non risus consequat,
-                                                       volutpat mi eu, porta nibh. Pellentesque habitant morbi tristique senectus et&hellip;
-                                                   </p>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
+                                            $kilasberita .= " <div class='item $active'>
+                                                <div class='item-inner'>
+                                                    <div data-src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' data-alt='Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat'></div>
+                                                    <div class='carousel-caption'>
+                                                        <div><a href='#''><h3>" . $value['berita_nama'] . "</h3></a></div>
+                                                        <div class='hidden-xs'>
+                                                            <p>
+                                                                " . $value['berita_summary'] . "
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> ";
+                                        }
 
-                                   <div class="item">
-                                       <div class="item-inner">
-                                           <div data-src="assets_2/img/content/stones-hi-res-large.jpg" data-alt="Stones Turpis Egestas Curabitur Scelerisque Sagittis Lectus Ac"></div>
-                                           <div class="carousel-caption">
-                                               <div><a href="#"><h3>Stones Turpis Egestas Curabitur Scelerisque Sagittis Lectus Ac</h3></a></div>
-                                               <div class="hidden-xs">
-                                                   <p>
-                                                       Nam sagittis neque et lectus varius imperdiet. Phasellus blandit viverra diam, et tincidunt arcu tempus ut.
-                                                       Nulla gravida erat nisi, sed laoreet nulla fringilla id. Maecenas tristique erat&hellip;
-                                                   </p>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                               <div class="image-light"></div>
+                                        echo $kilasberita;
+                                   ?>
 
-                               <!-- Carousel Controls -->
-                               <a class="left carousel-control" href="#carousel-medium" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
-                               <a class="right carousel-control" href="#carousel-medium" data-slide="next"><span class="fa fa-chevron-right"></span></a>
-                           </div>
-                       </div>
+                             </div>
+                             <div class="image-light"></div>
+
+                             <!-- Carousel Controls -->
+                             <a class="left carousel-control" href="#carousel-medium" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
+                             <a class="right carousel-control" href="#carousel-medium" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+                         </div>
+                     </div>
+                     <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
                        <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
                    </section>
 
