@@ -26,11 +26,11 @@ class C_dashboard extends MY_Controller{
 
     $countData = count($postData);
 
-    $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
+    $slide_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
 
     // ubah string JSON menjadi array
-    $profile = json_decode($profile, TRUE);
-    $data['ringkas_berita'] = $profile;
+    $slide_berita = json_decode($slide_berita, TRUE);
+    $data['slide_berita'] = $slide_berita;
 
     $this->load->view('templates/V_header');
     $this->load->view('V_dashboard', $data);
@@ -74,7 +74,7 @@ class C_dashboard extends MY_Controller{
 
     $countData = count($postData);
 
-    $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
+    $profile = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
     echo $profile;
   }
 

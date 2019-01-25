@@ -17,6 +17,23 @@
         $this->response($response);
     }
 
+    function slide_berita_get()
+    {
+      $where  = " WHERE berita_active = 'y' ";
+      $sortby = " ORDER BY berita_tanggal DESC ";
+      $start  = 0;
+      $end    = 5;
+
+      $response['status'] = 200;
+      $response['img_url'] = base_url('assets/img/items/');
+      $result = $this->Global_m->select_config('m_berita', $where, "*", $start, $end, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
+
     public function berita_get(){
         $where  = " WHERE berita_active = 'y' ";
 

@@ -347,7 +347,7 @@
 
 
 <!-- CONTENT -->
-<section id="berita" class="padding">
+<section id="berita" class="padding" style="padding-top: 100px;padding-bottom: 40px;">
     <div id="content">
        <div class="container">
            <div class="row">
@@ -379,7 +379,7 @@
                                   <!-- detail berita sekilas -->
                                   <?php
                                         $kilasberita = "";
-                                        foreach ($ringkas_berita['data'] as $key => $value) {
+                                        foreach ($slide_berita['data'] as $key => $value) {
                                             $active = "";
                                             if ($key == 0) {
                                               $active = "active";
@@ -387,7 +387,7 @@
 
                                             $kilasberita .= " <div class='item $active'>
                                                 <div class='item-inner'>
-                                                    <div data-src='" . $ringkas_berita['img_url'] . $value['berita_photo'] . "' data-alt='Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat'></div>
+                                                    <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat'></div>
                                                     <div class='carousel-caption'>
                                                         <div><a href='#''><h3>" . $value['berita_nama'] . "</h3></a></div>
                                                         <div class='hidden-xs'>
@@ -411,8 +411,8 @@
                              <a class="right carousel-control" href="#carousel-medium" data-slide="next"><span class="fa fa-chevron-right"></span></a>
                          </div>
                      </div>
-                     <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
-                       <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
+                    <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
+                    <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
                    </section>
 
                    <!-- ARTICLES V1 WIDGET -->
@@ -690,245 +690,12 @@
                                 </div>
                                 <hr>
                             </div>
-
-                            <!--Recent-->
-                            <div class="tab-pane fade" id="recent-aside">
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/day-of-the-dead-204539-tiny.jpg" alt="Day of the dead Maecenas odio condimentum a libero">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-gallery"></span>
-                                    </a>
-                                    <h5><a href="#">Day of the dead Maecenas odio condimentum a libero</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Mar 22, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> National</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/morocco-123957-tiny.jpg"  alt="Morocco molestie hendrerit magna Morbi tristique">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-audio"></span>
-                                    </a>
-                                    <h5><a href="#">Morocco molestie hendrerit magna Morbi tristique</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Apr 29, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> Politics</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/douglas-x-3-stiletto-11119-tiny.jpg"  alt="Douglas X3 Nulla id eros ut nibh hendrerit sollicitudin">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-links"></span>
-                                    </a>
-                                    <h5><a href="#">Douglas X3 Nulla id eros ut nibh hendrerit sollicitudin</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Mar 1, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> Science</a>
-                                    </p>
-                                </div>
-                                <hr>
-
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/nepal-397-tiny.jpg" alt="Nepal ornare nibh Nunc semper purus sit amet rhoncus imperdiet">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-links"></span>
-                                    </a>
-                                    <h5><a href="#">Nepal ornare nibh Nunc semper purus sit amet rhoncus imperdiet</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Feb 2, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> World</a>
-                                    </p>
-                                </div>
-                                <hr>
-                            </div>
-
-                            <!--Comments-->
-                            <div class="tab-pane fade" id="comments-aside">
-                                <ul class="recent-comments clearfix">
-                                    <li>
-                                        <div class="avatar">
-                                            <a href="#" class="light">
-                                                <img src="assets_2/img/content/DSC00441-avatar.jpg"  alt="Siska">
-                                                <div class="layer"></div>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="comment-content">
-                                                <a href="#">Aliquam sollicitudin massa eu augue hendrerit</a>
-                                            </div>
-                                            <div class="comment-meta">
-                                                <a href="#" class="author"><i class="fa fa-user"></i> Siska</a>&nbsp;
-                                                <a href="#"><i class="fa fa-clock-o"></i> Sep 16, 2018</a>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="avatar">
-                                            <a href="#" class="light">
-                                                <img src="assets_2/img/content/DSC02979-avatar.jpg"  alt="Fahri">
-                                                <div class="layer"></div>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="comment-content">
-                                                <a href="#">Fusce viverra ligula elit aliquam vel turpis ut</a>
-                                            </div>
-                                            <div class="comment-meta">
-                                                <a href="#" class="author"><i class="fa fa-user"></i> Fahri</a>&nbsp;
-                                                <a href="#"><i class="fa fa-clock-o"></i> Aug 31, 2018</a>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="avatar">
-                                            <a href="#" class="light">
-                                                <img src="assets_2/img/content/snapshot_20120929_133548-E2-avatar.jpg" alt="Rahma">
-                                                <div class="layer"></div>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="comment-content">
-                                                <a href="#">Eget facilisis erat aliquet tempus mi ligula consequat</a>
-                                            </div>
-                                            <div class="comment-meta">
-                                                <a href="#" class="author"><i class="fa fa-user"></i> Rahma</a>&nbsp;
-                                                <a href="#"><i class="fa fa-clock-o"></i> Aug 24, 2018</a>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="avatar">
-                                            <a href="#" class="light">
-                                                <img src="assets_2/img/content/DSC03847-avatar.jpg" alt="Rusli">
-                                                <div class="layer"></div>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="comment-content">
-                                                <a href="#">Lacus sit amet tincidunt odio massa quis felis</a>
-                                            </div>
-                                            <div class="comment-meta">
-                                                <a href="#" class="author"><i class="fa fa-user"></i> Rusli</a>&nbsp;
-                                                <a href="#"><i class="fa fa-clock-o"></i> Jul 8, 2018</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        </div>
                       </section>
-
+                  </div>
               </aside>
-
-         <section class="widget articles-v2">
-                  <header class="clearfix">
-                      <h4>Politics</h4>
-                      <a href="#" class="control"><i class="fa fa-plus"></i></a>
-                  </header>
-
-                  <div class="content row">
-                      <div class="col-sm-6 article-medium">
-                          <div class="frame">
-                              <a class="image" href="#">
-                                  <figure class="image-holder">
-                                      <img src="assets_2/img/content/ulm-58271-medium.jpg" alt="Ulm Town Home Cathedral Square Quantitative Mass">
-                                  </figure>
-                                  <div class="image-light"></div>
-                                  <span class="dashicons dashicons-format-quote"></span>
-                              </a>
-                          </div>
-                          <img src="assets_2/img/shadow.png"  class="shadow" alt="shadow">
-
-                          <h4><a href="#">Ulm Town Home Cathedral Square Quantitative Mass</a></h4>
-                          <p class="post-meta">
-                              <a href="#"><span class="fa fa-clock-o"></span> Dec 7, 2018</a> &nbsp;
-                              <a href="#"><span class="fa fa-comments"></span> 54 comments</a> &nbsp;
-                              <a href="#"><span class="fa fa-eye"></span> 654,356 views</a>
-                          </p>
-
-                          <p>
-                              Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint…
-                          </p>
-                          <hr>
-                      </div>
-
-                      <div class="col-sm-6 article-tiny">
-                          <a href="#" class="image">
-                              <figure class="image-holder">
-                                  <img src="assets_2/img/content/morocco-123957-tiny.jpg" alt="Morocco Africa Rally Desert Marroc Sand Dunes Morocco Africa Rally">
-                              </figure>
-                              <div class="image-light"></div>
-                              <span class="dashicons dashicons-format-link"></span>
-                          </a>
-
-                          <h5><a href="#">Morocco Africa Rally Desert Marroc Sand Dunes Morocco Africa Rally</a></h5>
-                          <p class="post-meta">
-                              <a href="#"><span class="fa fa-clock-o"></span> Dec 5, 2018</a> &nbsp;
-                              <a href="#"><span class="fa fa-comments"></span> 96</a> &nbsp;
-                              <a href="#"><span class="fa fa-eye"></span> 9,948</a>
-                          </p>
-                          <hr>
-                      </div>
-
-                      <div class="col-sm-6 article-tiny">
-                          <a href="#" class="image">
-                              <figure class="image-holder">
-                                  <img src="assets_2/img/content/unsplash_528cba6de78e5_1-tiny.jpg" alt="Mauris Mattis Ullamcorper Euismod Nulla Convallis">
-                              </figure>
-                              <div class="image-light"></div>
-                              <span class="dashicons dashicons-format-aside"></span>
-                          </a>
-
-                          <h5><a href="#">Mauris Mattis Ullamcorper Euismod Nulla Convallis</a></h5>
-                          <p class="post-meta">
-                              <a href="#"><span class="fa fa-clock-o"></span> Dec 5, 2018</a> &nbsp;
-                              <a href="#"><span class="fa fa-comments"></span> 6</a> &nbsp;
-                              <a href="#"><span class="fa fa-eye"></span> 64,518</a>
-                          </p>
-                          <hr>
-                      </div>
-
-                      <div class="col-sm-6 article-tiny">
-                          <a href="#" class="image">
-                              <figure class="image-holder">
-                                  <img src="assets_2/img/content/nepal-397-tiny.jpg" alt="Nepal Kathmandu Road Center Chaotic">
-                              </figure>
-                              <div class="image-light"></div>
-                              <span class="dashicons dashicons-format-audio"></span>
-                          </a>
-
-                          <h5><a href="#">Nepal Kathmandu Road Center Chaotic</a></h5>
-                          <p class="post-meta">
-                              <a href="#"><span class="fa fa-clock-o"></span> Nov 16, 2018</a> &nbsp;
-                              <a href="#"><span class="fa fa-comments"></span> 5</a> &nbsp;
-                              <a href="#"><span class="fa fa-eye"></span> 5,748</a>
-                          </p>
-                          <hr>
-                      </div>
-                  </div><!--.content-->
-            </section>
-
-          </div>
-      </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- CONTENT -->
@@ -1046,118 +813,3 @@
   </div>
 </section>
 <!--Live Streaming ends-->
-
-<script type="text/javascript">
-    $( document ).ready(function() {
-        var jml_berita = '<?php echo $ringkas_berita['nbrows'] ?>'
-        var pageval = 1
-        var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
-        var rightrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
-        var page    = '<li class="page-item"><a class="page-link">' + pageval + '</a></li>'
-        page = ''
-        pagebullet = 1;
-        if (jml_berita > 6) {
-            for (var i = 0; i < jml_berita; i++) {
-                aktif = ''
-                if (i % 6 == 0) {
-                    if (pagebullet == 1) {
-                        aktif = 'active'
-                    }
-                    page += '<li class="page-item berita-col ' + aktif + '" value="' + pagebullet + '"><a class="page-link">' + pagebullet + '</a></li>'
-                    pagebullet++
-                }
-            }
-            $('#pagination_news').append(leftrow + page + rightrow)
-        }
-        $('.page-item').on('click', function () {
-            var page_bullet = this
-            if ($(this).hasClass('berita-col')) {
-                for (var i = 0; i < $('.berita-col').length; i++) {
-                    var bullets = $('.berita-col')[i]
-                    $(bullets).removeClass('active')
-                }
-                $(page_bullet).addClass('active')
-                var pagenumber = $(page_bullet).attr('value')
-                getBeritaDetail(pagenumber)
-            }
-        })
-    })
-    function getBeritaDetail(pagenumber) {
-        jmlCol = 6
-        jmlberita = 6 * parseInt(pagenumber - 1)
-        startCol  = jmlberita
-        endCol    = jmlberita + 6
-        $.ajax ({
-            type: "POST",
-            url: '<?php echo base_url('get_berita')?>',
-            dataType: 'json',
-            async: false,
-            data:{
-              start : startCol,
-              end : endCol
-            },
-            success: function (response) {
-                $('#Column_berita').html('')
-                addBerita(response)
-            }
-        })
-    }
-    function addBerita(berita_detail) {
-       data = berita_detail.data
-       text = ''
-       berita_row  = 0 ;
-       berita_row2 = 1; /* baris berita sebenarnya */
-       animation_cls = new Array()
-       animation_cls[0]  = 'fadeInLeft';
-       animation_cls[1]  = 'fadeInUp';
-       animation_cls[2]  = 'fadeInRight';
-       for (var i = 0; i < data.length; i++) {
-         cls = animation_cls[berita_row];
-         berita_row++
-         if (berita_row == 1) {
-             style = "";
-             if (berita_row2 == 1) {
-                 /* memberi baris pertama padding bottom */
-                 style = "style='padding-bottom : 15px;'";
-             }
-             text += "<div class='row' " + style + " >"
-             berita_row2++
-         }
-         result = data[i]
-         text  += " <div class='col-md-4'>";
-         text  += "<div class='news_item shadow text-center wow " + cls + "' data-wow-delay='450ms'>"
-         text  += "<a class='image image-berita'>"
-         text  += "<img src='" + berita_detail.img_url + result.berita_photo + "' alt='Latest News' class='img-responsive'>"
-         text  += "</a>"
-         text  += "<div class='news_desc news_desc2'>"
-         text  += "<h3 class='text-capitalize font-light darkcolor'><a>" + result.berita_nama + "</a></h3>"
-         text  += "<ul class='meta-tags top20 bottom20'></ul>"
-         text  += "<p class='bottom35'>" + result.berita_isi + "</p>"
-         text  += "<a class='button btnprimary btn-gradient-hvr' style='color: #FFF;'>Baca Lengkap</a>"
-         text  += "</div>"
-         text  += "</div>"
-         text  += "</div>"
-         if (berita_row == 3) {
-             text += "</div>";
-             berita_row = 0;
-         }
-       }
-       $('#Column_berita').append(text)
-   }
-   function berita_detail(elem) {
-      val = $(elem).attr('value')
-      window.open('<?php //echo base_url('berita_detail') ?>')
-      var form = document.createElement("form");
-      form.setAttribute("method", "post");
-      form.setAttribute("action", "#");
-      form.setAttribute("target", "view");
-      var hiddenField = document.createElement("input");
-      hiddenField.setAttribute("type", "hidden");
-      hiddenField.setAttribute("name", "message");
-      hiddenField.setAttribute("value", val);
-      form.appendChild(hiddenField);
-      document.body.appendChild(form);
-      window.open('', 'view');
-      form.submit();
-   }
-</script>
