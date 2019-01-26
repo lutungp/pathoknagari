@@ -37,9 +37,9 @@
         $sorttype = $this->post('sorttype') <> "" ? $this->post('sorttype') : " ASC";
 
         $where  = " WHERE berita_active = 'y' ";
-
+        
         if ($sortby <> "") {
-            $sortby .= " ORDER BY " . $sortby . $sorttype;
+            $sortby = " ORDER BY " . $sortby . $sorttype;
         }
 
         $response['status'] = 200;
