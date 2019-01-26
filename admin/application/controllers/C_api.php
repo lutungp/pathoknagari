@@ -40,11 +40,11 @@
         $response['img_url'] = base_url('assets/img/items/');
         $result = $this->Global_m->select_config('m_berita', $where, '*', $start, $limit)->result();
         $nbrows = Count($this->Global_m->select_config('m_berita', $where, '*')->result());
-        echo $this->db->last_query();
+        $query = $this->db->last_query();
         $response['nbrows'] = $nbrows;
-        foreach ($result as $key => $value) {
-          $response['data'][] = $value;
-        }
+        // foreach ($result as $key => $value) {
+          $response['data'][] = $query;
+        // }
 
         $this->response($response);
     }
