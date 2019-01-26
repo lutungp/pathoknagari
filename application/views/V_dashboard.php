@@ -48,7 +48,7 @@
       </div>
    </div>
    <video class="my-background-video jquery-background-video" loop autoplay muted poster="assets/video/end.jpg">
-		<source src="assets/video/Frontier_1.mp4" type="video/mp4">
+		<!--<source src="assets/video/Frontier_1.mp4" type="video/mp4">-->
 	</video>
 </section>
 
