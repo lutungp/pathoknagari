@@ -34,12 +34,12 @@
         $start    = (integer)$this->post('start');
         $limit    = (integer)$this->post('limit');
         $sortby   = $this->post('sortby');
-        $sorttype = $this->post('sorttype') <> "" ? $this->post('sorttype') : "ASC";
+        $sorttype = $this->post('sorttype') <> "" ? $this->post('sorttype') : " ASC";
 
         $where  = " WHERE berita_active = 'y' ";
 
         if ($sortby <> "") {
-            $where .= " ORDER BY " . $sortby . $sorttype;
+            $sortby .= " ORDER BY " . $sortby . $sorttype;
         }
 
         $response['status'] = 200;

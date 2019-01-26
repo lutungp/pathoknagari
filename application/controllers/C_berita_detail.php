@@ -41,14 +41,14 @@ class C_berita_detail extends CI_Controller{
       'start'   => 0,
       'limit'   => 3,
       'sortby'  => 'berita_tanggal',
-      'sorttype'=> 'DESC'
+      'sorttype'=> ' DESC'
     ];
 
     $berita_terbaru = $this->http_request($this->API.'/C_api/berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
-
-    $data['berita_detail'] = json_decode($berita_detail, TRUE);
-
-    $this->load->view('V_berita_detail', $data);
+    print_r($berita_terbaru);
+    // $data['berita_detail'] = json_decode($berita_detail, TRUE);
+    //
+    // $this->load->view('V_berita_detail', $data);
   }
 
 
