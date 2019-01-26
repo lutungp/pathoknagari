@@ -13,7 +13,8 @@ class C_berita extends MY_Controller{
     $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css";
 
     // $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css";
-    // $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css";
+    $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css";
+    $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-summernote/summernote.css";
     // $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css";
     // $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css";
 
@@ -21,8 +22,10 @@ class C_berita extends MY_Controller{
     $this->load_plugin_foot[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js";
 
     // $this->load_plugin_foot[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js";
-    // $this->load_plugin_foot[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js";
+    $this->load_plugin_foot[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js";
     // $this->load_plugin_foot[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js";
+
+    $this->load_plugin_foot[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/bootstrap-summernote/summernote.min.js";
   }
 
   function index()
@@ -76,12 +79,14 @@ class C_berita extends MY_Controller{
 
   function berita_add()
   {
-    $berita_summary   = $this->input->post('berita_summary');
-    $berita_nama  = $this->input->post('berita_nama');
+    $berita_summary = $this->input->post('berita_summary');
+    $berita_nama    = $this->input->post('berita_nama');
 
     $data = array(
-        'berita_nama'   => $berita_nama,
-        'berita_summary'    => $berita_summary
+        'berita_nama'     => $berita_nama,
+        'berita_summary'  => $berita_summary,
+        'berita_tanggal'  => $berita_tanggal,
+        'berita_isi'      => $berita_isi,
     );
     $i_mg_file    = isset($_FILES['berita_photo']['name']) ? $_FILES['berita_photo']['name']: "";
     if ($i_mg_file <> "") {
@@ -130,15 +135,19 @@ class C_berita extends MY_Controller{
   }
 
   function berita_update(){
-    $berita_id    = $this->input->post('berita_id');
-    $berita_summary   = $this->input->post('berita_summary');
-    $berita_nama  = $this->input->post('berita_nama');
+    $berita_id      = $this->input->post('berita_id');
+    $berita_summary = $this->input->post('berita_summary');
+    $berita_nama    = $this->input->post('berita_nama');
+    $berita_tanggal = $this->input->post('berita_tanggal');
+    $berita_isi   = $this->input->post('berita_isi');
     $i_mg_file    = isset($_FILES['berita_photo']['name']) ? $_FILES['berita_photo']['name']: "";
 
     $data = array(
-                    'berita_id'     => $berita_id,
-                    'berita_nama'   => $berita_nama,
-                    'berita_summary'    => $berita_summary
+                    'berita_id'       => $berita_id,
+                    'berita_nama'     => $berita_nama,
+                    'berita_summary'  => $berita_summary,
+                    'berita_tanggal'  => date('Y-m-d', strtotime($berita_tanggal)),
+                    'berita_isi'      => htmlentities($berita_isi)
                 );
 
     $where = array(

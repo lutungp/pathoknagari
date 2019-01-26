@@ -28,6 +28,16 @@
                         value="<?php echo isset($berita_details->berita_nama) ? $berita_details->berita_nama : ""?>" required>
                       </div>
                       <div class="form-group">
+                        <label for="">Tanggal Berita</label>
+                        <div class="input-group date" data-provide="datepicker" style="width: 400px;">
+                            <input type="text" class="form-control" name="berita_tanggal"
+                            value="<?php echo isset($berita_details->berita_tanggal) ? date('d-m-Y', strtotime($berita_details->berita_tanggal)) : ""?>" required>
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
                         <label for="exampleFormControlTextarea1">Ringkas Berita</label>
                         <textarea class="form-control" id="ringkas_berita" rows="6" required
                         data-validation-required-message="Please enter your message" minlength="5"
@@ -40,6 +50,12 @@
                             Some tooltip text!
                           </div>
                         </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Isi Berita</label>
+                        <textarea id="isi_berita" name="berita_isi">
+                          <?php echo isset($berita_details->berita_isi) ? $berita_details->berita_isi : ""; ?>
+                        </textarea>
                       </div>
                       <div class="form-group">
                         <div class="img-box">
@@ -65,6 +81,8 @@
         </div>
       </div>
     </div>
+
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('#ringkas_berita').on('keyup', function () {
@@ -87,6 +105,17 @@
                 trigger: "focus"
             });
 
+            $('#isi_berita').summernote({
+                tabsize: 2,
+                height: 400,
+                toolbar: [
+                  ['style', ['style']],
+                  ['font', ['bold', 'italic', 'underline', 'clear']],
+                  ['fontname', ['fontname']],
+                  ['para', ['ul', 'ol', 'paragraph']],
+                  ['view', ['codeview']],
+                ]
+            });
         })
 
         function berita_readURL(input) {
