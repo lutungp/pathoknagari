@@ -229,20 +229,24 @@
                 <aside class="sidebar whitebox">
                    <div class="widget heading_space">
                       <h4 class="text-capitalize darkcolor bottom20">Kabar Terbaru</h4>
-                      <div class="single_post bottom15">
-                         <a href="#." class="post"><img src="assets/images/team-3.jpg" alt="post image"></a>
-                         <div class="text">
-                            <a href="#.">About Invesment Management</a>
-                            <span>September 22,2018</span>
-                         </div>
-                      </div>
-                      <div class="single_post bottom15">
-                         <a href="#." class="post"><img src="assets/images/team-3.jpg" alt="post image"></a>
-                         <div class="text">
-                            <a href="#.">We Conduct Share Holders Meet</a>
-                            <span>September 22,2018</span>
-                         </div>
-                      </div>
+                      <?php
+                          $terbaru = "";
+                          foreach ($berita_terbaru['data'] as $keybaru => $valuebaru) {
+                              $terbaru .= " <div class='bottom15'>
+                                               <a href='javascript:void(0)' onclick='berita_detail(this)' class='post' value='" . $valuebaru['berita_id'] . "'>
+                                                  <div class='row' style='font-size: 10px;'>
+                                                  <img src='" . $berita_terbaru['img_url'] . $valuebaru['berita_photo'] . "' alt='post image'
+                                                  style='width: 80px;height: 50px;'>
+                                                      <div style='width: 200px;padding-left:10px;'>
+                                                      " . $valuebaru['berita_nama'] . "
+                                                      </div>
+                                                  </div>
+                                               </a>
+                                            </div> ";
+                          }
+                       ?>
+
+                       <?php echo $terbaru; ?>
                    </div>
                    <div class="widget heading_space">
                       <h4 class="text-capitalize darkcolor bottom20">Kategori</h4>
@@ -317,7 +321,7 @@
   <script src="assets/js/jquery.fancybox.min.js"></script>
 
   <!-- Video Background-->
-  <script src="assets/js/jquery.background-video.js"></script>
+  <!-- <script src="assets/js/jquery.background-video.js"></script> -->
 
   <!--TypeWriter-->
   <script src="assets/js/typewriter.js"></script>
@@ -340,7 +344,7 @@
   <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
   <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
   <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-  <script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
+  <!-- <script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script> -->
 
   <script type='text/javascript' data-cfasync='false'>
     window.purechatApi = {
@@ -371,6 +375,31 @@
       if ( window.history.replaceState ) {
           window.history.replaceState( null, null, window.location.href );
       }
+
+      function berita_detail(elem) {
+          val = $(elem).attr('value')
+          var mapForm = document.createElement("form");
+          mapForm.target = "Map";
+          mapForm.method = "POST"; // or "post" if appropriate
+          mapForm.action = "<?php echo base_url('berita-detail') ?>";
+
+          var mapInput = document.createElement("input");
+          mapInput.type = "text";
+          mapInput.name = "message";
+          mapInput.value = val;
+          mapForm.appendChild(mapInput);
+
+          document.body.appendChild(mapForm);
+
+          map = window.open("", "_self");
+
+          if (map) {
+              mapForm.submit();
+          } else {
+              alert('You must allow popups for this map to work.');
+          }
+      }
+
   </script>
   </body>
 </html>

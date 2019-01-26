@@ -417,7 +417,7 @@
                                                 <div class='item-inner'>
                                                     <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'></div>
                                                     <div class='carousel-caption'>
-                                                        <div><a href='#''><h3>" . $value['berita_nama'] . "</h3></a></div>
+                                                        <div><a href='javascript:void(0)'><h3>" . $value['berita_nama'] . "</h3></a></div>
                                                         <div class='hidden-xs'>
                                                             <p>
                                                                 " . $value['berita_summary'] . "
@@ -455,7 +455,7 @@
                                                     <div class='row'>
                                                         <div class='col-sm-6'>
                                                             <div class='frame'>
-                                                                <a class='image'>
+                                                                <a class='image' href='javascript:void(0)'>
                                                                     <figure class='image-holder'>
                                                                         <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'
                                                                          onclick='berita_detail(this)' value='" . $value['berita_id'] . "'>
@@ -468,7 +468,7 @@
 
                                                         <div class='col-sm-6'>
                                                             <h4 class='custom-dio-hover'>
-                                                              <a href='#'>" . $value['berita_nama'] . "</a></h4>
+                                                              <a href='javascript:void(0)'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
                                                                 <a href='#'><span class='fa fa-clock-o'></span> " . date('d M Y', strtotime($value['berita_tanggal'])) . "</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
@@ -917,7 +917,7 @@
                 list_berita_html +="<div class='row'>"
                 list_berita_html +="<div class='col-sm-6'>"
                 list_berita_html +="<div class='frame'>"
-                list_berita_html +="<a class='image'>"
+                list_berita_html +="<a class='image' href='javascript:void(0)'>"
                 list_berita_html +="<figure class='image-holder'>"
                 list_berita_html +="<img src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "' onclick='berita_detail(this)' value='" + data[i].berita_id + "'>"
                 list_berita_html +="</figure>"

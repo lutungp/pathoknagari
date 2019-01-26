@@ -45,10 +45,11 @@ class C_berita_detail extends CI_Controller{
     ];
 
     $berita_terbaru = $this->http_request($this->API.'/C_api/berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
-    print_r($berita_terbaru);
-    // $data['berita_detail'] = json_decode($berita_detail, TRUE);
-    //
-    // $this->load->view('V_berita_detail', $data);
+
+    $data['berita_detail']  = json_decode($berita_detail, TRUE);
+    $data['berita_terbaru'] = json_decode($berita_terbaru, TRUE);
+
+    $this->load->view('V_berita_detail', $data);
   }
 
 
