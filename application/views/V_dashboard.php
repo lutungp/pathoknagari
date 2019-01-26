@@ -766,6 +766,7 @@
 <script type="text/javascript">
 
     $( document ).ready(function() {
+        console.log(<?php echo $kilas_berita['nbrows'] ?>);
         var jml_berita = '<?php echo $kilas_berita['nbrows'] ?>'
         var pageval = 1
         var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
