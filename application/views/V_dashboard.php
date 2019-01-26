@@ -798,9 +798,9 @@
     $( document ).ready(function() {
         var jml_berita = '<?php echo $kilas_berita['nbrows'] ?>'
         var pageval = 1
-        var leftrow = '<li class="page-item left-arrow"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
-        var rightrow = '<li class="page-item right-arrow"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
-        var page    = '<li class="page-item"><a class="page-link">' + pageval + '</a></li>'
+        var leftrow = '<li class="page-item left-arrow"><a href="javascript:void(0)" class="page-link"><i class="fa fa-angle-left"></i></a></li>'
+        var rightrow = '<li class="page-item right-arrow"><a href="javascript:void(0)" class="page-link"><i class="fa fa-angle-right"></i></a></li>'
+        var page    = '<li class="page-item"><a href="javascript:void(0)" class="page-link">' + pageval + '</a></li>'
         page = ''
         pagebullet = 1;
         if (jml_berita > 3) {

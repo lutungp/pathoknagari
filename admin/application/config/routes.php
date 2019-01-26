@@ -77,3 +77,6 @@ $route['jadwal-majelis-ilmu']             = 'C_jadwal_majelis_ilmu';
 $route['Berita']                          = 'C_berita';
 $route['Berita-Form']                     = 'C_berita/berita_form';
 $route['Berita-Edit/(:num)']              = 'C_berita/berita_edit/$1';
+
+$route['Pegawai']                         = 'C_m_pegawai';
+$route['Pegawai-Form']                    = 'C_m_pegawai/pegawai_form';
