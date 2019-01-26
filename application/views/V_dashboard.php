@@ -422,27 +422,26 @@
                        </header> -->
                        <?php
                             $kilasberita = "";
-                            foreach ($slide_berita['data'] as $key => $value) {
+                            foreach ($kilas_berita['data'] as $key => $value) {
                                 $kilasberita .= " <div class='article-medium'>
                                                     <div class='row'>
                                                         <div class='col-sm-6'>
                                                             <div class='frame'>
                                                                 <a class='image' href='#'>
                                                                     <figure class='image-holder'>
-                                                                        <img src='assets_2/img/content/pup-209148-medium.jpg'  alt='Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed'>
+                                                                        <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'>
                                                                     </figure>
                                                                     <div class='image-light'></div>
                                                                     <span class='dashicons dashicons-format-audio'></span>
                                                                 </a>
                                                             </div>
-                                                            <img src='assets_2/img/shadow.png'  class='shadow' alt='shadow'>
                                                         </div>
 
                                                         <div class='col-sm-6'>
                                                             <h4 class='custom-dio-hover'>
-                                                              <a href='#'>Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed</a></h4>
+                                                              <a href='#'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
-                                                                <a href='#'><span class='fa fa-clock-o'></span> Dec 4, 2018</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-clock-o'></span> " . $value['berita_tanggal'] . "</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-eye'></span> 1,324</a>
@@ -465,10 +464,7 @@
                               <!--Pagination-->
                               <center>
                                 <ul class="pagination justify-content-center top50" id="pagination_news">
-                                  <li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>
-                                  <li class="page-item"><a class="page-link">1</a></li>
-                                  <li class="page-item"><a class="page-link">2</a></li>
-                                  <li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>
+
                                 </ul>
                               </center>
                            </div>
@@ -766,3 +762,42 @@
   </div>
 </section>
 <!--Live Streaming ends-->
+
+<script type="text/javascript">
+
+    $( document ).ready(function() {
+        var jml_berita = '<?php echo $ringkas_berita['nbrows'] ?>'
+        var pageval = 1
+        var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
+        var rightrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
+        var page    = '<li class="page-item"><a class="page-link">' + pageval + '</a></li>'
+        page = ''
+        pagebullet = 1;
+        if (jml_berita > 6) {
+            for (var i = 0; i < jml_berita; i++) {
+                aktif = ''
+                if (i % 6 == 0) {
+                    if (pagebullet == 1) {
+                        aktif = 'active'
+                    }
+                    page += '<li class="page-item berita-col ' + aktif + '" value="' + pagebullet + '"><a class="page-link">' + pagebullet + '</a></li>'
+                    pagebullet++
+                }
+            }
+            $('#pagination_news').append(leftrow + page + rightrow)
+        }
+        $('.page-item').on('click', function () {
+            var page_bullet = this
+            if ($(this).hasClass('berita-col')) {
+                for (var i = 0; i < $('.berita-col').length; i++) {
+                    var bullets = $('.berita-col')[i]
+                    $(bullets).removeClass('active')
+                }
+                $(page_bullet).addClass('active')
+                var pagenumber = $(page_bullet).attr('value')
+                getBeritaDetail(pagenumber)
+            }
+        })
+    })
+
+</script>

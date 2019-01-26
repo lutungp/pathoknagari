@@ -17,10 +17,8 @@ class C_dashboard extends MY_Controller{
 
   function index()
   {;
-    // $ch   = curl_init();
-    // $url  = $this->API.'/C_api/berita';
     $postData = [
-      'end'     => 0,
+      'start'   => 0,
       'limit'   => 3,
     ];
 
@@ -28,9 +26,21 @@ class C_dashboard extends MY_Controller{
 
     $slide_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
 
+    $postData = [
+      'start'   => 3,
+      'limit'   => 7,
+    ];
+
+    $countData = count($postData);
+
+    $kilas_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
+
     // ubah string JSON menjadi array
     $slide_berita = json_decode($slide_berita, TRUE);
     $data['slide_berita'] = $slide_berita;
+
+    $kilas_berita = json_decode($kilas_berita, TRUE);
+    $data['kilas_berita'] = $kilas_berita;
 
     $this->load->view('templates/V_header');
     $this->load->view('V_dashboard', $data);
@@ -74,7 +84,7 @@ class C_dashboard extends MY_Controller{
 
     $countData = count($postData);
 
-    $profile = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
+    $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
     echo $profile;
   }
 

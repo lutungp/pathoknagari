@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="assets/css/plugins.css">
 <link rel="stylesheet" href="assets_custom/css/style.css">
 <link rel="stylesheet" href="assets_2/css/style.css">
-<!--<link href="assets_2/css/custom.css" rel="stylesheet">
+<!--<link href="assets_2/css/custom.css" rel="stylesheet">-->
 
 
 <!-- HTML Meta Tags -->
@@ -137,22 +137,22 @@
               <li class="nav-item active">
                   <a class="nav-link" href="beranda#kabar">Kabar Ad-Darojat</a>
                </li>
-<li class="nav-item">
+               <li class="nav-item">
                   <a class="nav-link" href="beranda#streaming">Live Streaming</a>
                </li>
-			   <li class="nav-item">
+			          <li class="nav-item">
                   <a class="nav-link" href="beranda#agenda">Majelis Ilmu</a>
                </li>
-			   <li class="nav-item">
+			         <li class="nav-item">
                   <a class="nav-link" href="beranda#profil">Profil Masjid</a>
-			   </li>
-			   <li class="nav-item">
+			         </li>
+			         <li class="nav-item">
                   <a class="nav-link" href="beranda#portfolio_top">Galeri</a>
                </li>
-			   <li class="nav-item">
+			         <li class="nav-item">
                   <a class="nav-link" href="beranda#kajian">Kajian Islam</a>
                </li>
-			   <li class="nav-item">
+			         <li class="nav-item">
                   <a class="nav-link" href="beranda#merchandise">Merchandise</a>
                </li>
                <li class="nav-item">
@@ -165,7 +165,7 @@
             <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i> </a> </li>
             <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i> </a> </li>
             <li><a href="https://twitter.com/ipib1960/"><i class="fa fa-twitter"></i> </a> </li>
-			<li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
+			      <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
             <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
          </ul>
          <p class="whitecolor">&copy; 2018 IPIB Production .</p>
@@ -290,7 +290,7 @@
             <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i></a></li>
             <li><a href="https://twitter.com/ipib1960/"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
+            <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
             <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a></li>
             </ul>
             <p class="copyrights wow fadeInUp" data-wow-delay="400ms"> IPIB Production &copy; 2018</p>
