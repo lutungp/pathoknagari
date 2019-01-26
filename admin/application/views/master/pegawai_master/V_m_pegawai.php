@@ -26,7 +26,7 @@
                           <td><?php echo $row->pegawai_nama; ?></td>
                           <td><?php echo $row->pegawai_jabatan; ?></td>
                           <td class="text-center">
-                            <a href="<?php echo base_url('Pegawai-Form/'.$row->pegawai_id)?>" class="btn btn-success">
+                            <a href="<?php echo base_url('Pegawai-Edit/'.$row->pegawai_id)?>" class="btn btn-success">
                               <i class="fa fa-edit"></i> Edit
                             </a>
                             <a href="javascript:void(0)" class="btn btn-danger"
@@ -43,7 +43,7 @@
 	                  <tr>
 	                    <td colspan="4">
 	                    <a href="<?php echo $action ?>" class="btn btn-primary">
-	                      Tambah kategori
+	                      Tambah Takmir & Ustadz
 	                    </a>
 	                    </td>
 	                  </tr>

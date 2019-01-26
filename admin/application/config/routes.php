@@ -80,3 +80,4 @@ $route['Berita-Edit/(:num)']              = 'C_berita/berita_edit/$1';
 
 $route['Pegawai']                         = 'C_m_pegawai';
 $route['Pegawai-Form']                    = 'C_m_pegawai/pegawai_form';
+$route['Pegawai-Edit/(:num)']             = 'C_m_pegawai/pegawai_edit/$1';
