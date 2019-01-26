@@ -39,12 +39,11 @@
         $response['status'] = 200;
         $response['img_url'] = base_url('assets/img/items/');
         $result = $this->Global_m->select_config('m_berita', $where, '*', $start, $limit)->result();
-        $query = $this->db->last_query();
         $nbrows = Count($this->Global_m->select_config('m_berita', $where, '*')->result());
         $response['nbrows'] = $nbrows;
-        // foreach ($result as $key => $value) {
-          $response['data'][] = $query;
-        // }
+        foreach ($result as $key => $value) {
+          $response['data'][] = $value;
+        }
 
         $this->response($response);
     }

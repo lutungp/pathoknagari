@@ -28,14 +28,14 @@ class C_dashboard extends MY_Controller{
 
     $postData = [
       'start'   => 3,
-      'limit'   => 7,
+      'limit'   => 5,
     ];
 
     $countData = count($postData);
 
-    $kilas_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
+    $kilas_berita = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
 
-    // ubah string JSON menjadi array
+    // // ubah string JSON menjadi array
     $slide_berita = json_decode($slide_berita, TRUE);
     $data['slide_berita'] = $slide_berita;
 
@@ -76,7 +76,7 @@ class C_dashboard extends MY_Controller{
   function get_berita()
   {
     $start = $this->input->post('start');
-    $end = $this->input->post('end');
+    $end   = $this->input->post('end');
     $postData = [
       'start'   => $start,
       'limit'   => $end,
@@ -85,7 +85,8 @@ class C_dashboard extends MY_Controller{
     $countData = count($postData);
 
     $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
-    echo $profile;
+    print_r($profile);
+    // echo $profile;
   }
 
 }

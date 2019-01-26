@@ -455,12 +455,14 @@
                                                     </div>
                                                 </div> ";
                             }
-
-                            echo $kilasberita;
                         ?>
 
+                       <div id="list_berita">
+                          <?php echo $kilasberita ?>
+                       </div>
+
                        <div class="row">
-                           <div class="col-md-12">
+                           <div class="col-md-12" style="top: 10px;">
                               <!--Pagination-->
                               <center>
                                 <ul class="pagination justify-content-center top50" id="pagination_news">
@@ -661,59 +663,62 @@
             </div>
          </div>
       </div><br>
-    <div class="row">
-         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-            <div id="flat-filters" class="cbp-l-filters dark wow fadeInUp bottom30" data-wow-delay="400ms">
-               <div data-filter="*" class="cbp-filter-item">
-                  <span>Semua</span>
-               </div>
-               <div data-filter=".shirt" class="cbp-filter-item">
-                  <span>T-Shirt</span>
-               </div>
-               <div data-filter=".mug" class="cbp-filter-item">
-                  <span>Mug</span>
-               </div>
-               <div data-filter=".topi" class="cbp-filter-item">
-                  <span>Topi</span>
-               </div>
-            </div>
-         </div>
+      <div class="row">
+           <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+              <div id="flat-filters" class="cbp-l-filters dark wow fadeInUp bottom30" data-wow-delay="400ms">
+                 <div data-filter="*" class="cbp-filter-item">
+                    <span>Semua</span>
+                 </div>
+                 <div data-filter=".shirt" class="cbp-filter-item">
+                    <span>T-Shirt</span>
+                 </div>
+                 <div data-filter=".mug" class="cbp-filter-item">
+                    <span>Mug</span>
+                 </div>
+                 <div data-filter=".topi" class="cbp-filter-item">
+                    <span>Topi</span>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="flat-gallery" class="cbp">
+  	       <div class="cbp-item shirt">
+              <img src="assets/images/merchandise/2.jpg" alt="">
+              <div class="overlay center-block whitecolor">
+                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/2.jpg"></a>
+                 <h4 class="top30">Klik +</h4>
+                 <p>Lihat Lebih Detail</p>
+              </div>
+           </div>
+           <div class="cbp-item topi">
+              <img src="assets/images/merchandise/top.jpg" alt="">
+              <div class="overlay center-block whitecolor">
+                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/top.jpg"></a>
+                 <h4 class="top30">Klik +</h4>
+                 <p>Lihat Lebih Detail</p>
+              </div>
+           </div>
+           <div class="cbp-item mug">
+              <img src="assets/images/merchandise/mug1.png" alt="">
+              <div class="overlay center-block whitecolor">
+                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/mug1.png"></a>
+                 <h4 class="top30">Klik +</h4>
+                 <p>Lihat Lebih Detail</p>
+              </div>
+           </div>
+           <div class="cbp-item mug">
+              <img src="assets/images/merchandise/mug2.png" alt="">
+              <div class="overlay center-block whitecolor">
+                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/mug2.png"></a>
+                 <h4 class="top30">Klik +</h4>
+                 <p>Lihat Lebih Detail</p>
+              </div>
+           </div>
+        </div>
+      <div class= "text-center">
+        <a target="_blank" href="https://wa.me/+628562898979" class="button btnprimary top50 wow fadeIn" data-wow-delay="400ms">Pesan Sekarang</a>
       </div>
- <div id="flat-gallery" class="cbp">
-	  <div class="cbp-item shirt">
-            <img src="assets/images/merchandise/2.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/2.jpg"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat Lebih Detail</p>
-            </div>
-         </div><div class="cbp-item topi">
-            <img src="assets/images/merchandise/top.jpg" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/top.jpg"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat Lebih Detail</p>
-            </div>
-         </div><div class="cbp-item mug">
-            <img src="assets/images/merchandise/mug1.png" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/mug1.png"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat Lebih Detail</p>
-            </div>
-         </div><div class="cbp-item mug">
-            <img src="assets/images/merchandise/mug2.png" alt="">
-            <div class="overlay center-block whitecolor">
-               <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/mug2.png"></a>
-               <h4 class="top30">Klik +</h4>
-               <p>Lihat Lebih Detail</p>
-            </div>
-         </div>
-      </div>
-  <div class= "text-center">
-  <a target="_blank" href="https://wa.me/+628562898979" class="button btnprimary top50 wow fadeIn" data-wow-delay="400ms">Pesan Sekarang</a>
-  </div>
- </div>
+   </div>
 </section>
 <!--Merchandise ends-->
 
@@ -766,18 +771,17 @@
 <script type="text/javascript">
 
     $( document ).ready(function() {
-        console.log(<?php echo $kilas_berita['nbrows'] ?>);
         var jml_berita = '<?php echo $kilas_berita['nbrows'] ?>'
         var pageval = 1
-        var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
-        var rightrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
+        var leftrow = '<li class="page-item left-arrow"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
+        var rightrow = '<li class="page-item right-arrow"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'
         var page    = '<li class="page-item"><a class="page-link">' + pageval + '</a></li>'
         page = ''
         pagebullet = 1;
-        if (jml_berita > 6) {
+        if (jml_berita > 3) {
             for (var i = 0; i < jml_berita; i++) {
                 aktif = ''
-                if (i % 6 == 0) {
+                if (i % 3 == 0) {
                     if (pagebullet == 1) {
                         aktif = 'active'
                     }
@@ -787,18 +791,131 @@
             }
             $('#pagination_news').append(leftrow + page + rightrow)
         }
+
         $('.page-item').on('click', function () {
             var page_bullet = this
+
             if ($(this).hasClass('berita-col')) {
+                /* reset bullet yang aktif jadi non-aktif */
                 for (var i = 0; i < $('.berita-col').length; i++) {
-                    var bullets = $('.berita-col')[i]
-                    $(bullets).removeClass('active')
+                  var bullets = $('.berita-col')[i]
+                  $(bullets).removeClass('active')
                 }
+
                 $(page_bullet).addClass('active')
+
                 var pagenumber = $(page_bullet).attr('value')
                 getBeritaDetail(pagenumber)
+            } else {
+              if ($(this).hasClass('left-arrow')) {
+
+                  /* bullet kiri yg akan diaktifkan */
+                  var non_aktif = 0
+                  for (var iBerita = 0; iBerita < $('.berita-col').length; iBerita++) {
+                      var bullets = $('.berita-col')[iBerita]
+                      if ($(bullets).hasClass('active')) {
+                          non_aktif = iBerita
+
+                          if (iBerita-1 > (-1)) {
+                              $(bullets).removeClass('active')
+                              /* jika posisi berada di page 1 page tidak perlu digerakkan lagi */
+                              var aktif = $('.berita-col')[iBerita-1]
+                              $(aktif).addClass('active')
+
+                              var pagenumber = $(aktif).attr('value')
+                              getBeritaDetail(pagenumber)
+                          }
+
+                          break;
+                      }
+                  }
+
+              }
+
+              if ($(this).hasClass('right-arrow')) {
+                  for (var iBerita = 0; iBerita < $('.berita-col').length; iBerita++) {
+                      var bullets = $('.berita-col')[iBerita]
+                      if ($(bullets).hasClass('active')) {
+                          non_aktif = iBerita
+
+                          if ((iBerita + 1) < $('.berita-col').length) {
+                              $(bullets).removeClass('active')
+                              /* jika posisi berada di page terakhir page tidak perlu digerakkan lagi */
+                              var aktif = $('.berita-col')[iBerita+1]
+                              $(aktif).addClass('active')
+
+                              var pagenumber = $(aktif).attr('value')
+                              getBeritaDetail(pagenumber)
+                          }
+
+                          break;
+                      }
+                  }
+              }
             }
+
+            $('#pagination_news').focus()
         })
+
+        function getBeritaDetail(pagenumber) {
+            jmlCol    = 5
+            jmlberita = 5 * parseInt(pagenumber - 1)
+            startCol  = jmlberita
+            endCol    = jmlberita + 3
+            $.ajax ({
+                type: "POST",
+                url: '<?php echo base_url('get_berita')?>',
+                dataType: 'json',
+                async: false,
+                data:{
+                  start : startCol,
+                  end : endCol
+                },
+                success: function (response) {
+                    $('#Column_berita').html('')
+                    addBerita(response)
+                }
+            })
+        }
+
+        function addBerita(response) {
+            $('#list_berita').html('')
+            var list_berita_html = ""
+
+            data = response.data
+            for (var i = 0; i < data.length; i++) {
+                list_berita_html +="<div class='article-medium'>"
+                list_berita_html +="<div class='row'>"
+                list_berita_html +="<div class='col-sm-6'>"
+                list_berita_html +="<div class='frame'>"
+                list_berita_html +="<a class='image' href='#'>"
+                list_berita_html +="<figure class='image-holder'>"
+                list_berita_html +="<img src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "'>"
+                list_berita_html +="</figure>"
+                list_berita_html +="<div class='image-light'></div>"
+                list_berita_html +="<span class='dashicons dashicons-format-audio'></span>"
+                list_berita_html +="</a>"
+                list_berita_html +="</div>"
+                list_berita_html +="</div>"
+                list_berita_html +="<div class='col-sm-6'>"
+                list_berita_html +="<h4 class='custom-dio-hover'>"
+                list_berita_html +="<a href='#'>" + data[i].berita_nama + "</a></h4>"
+                list_berita_html +="<p class='post-meta'>"
+                list_berita_html +="<a href='#'><span class='fa fa-clock-o'></span> " + data[i].berita_tanggal + " </a> &nbsp;"
+                list_berita_html +="<a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;"
+                list_berita_html +="<a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;"
+                list_berita_html +="<a href='#'><span class='fa fa-eye'></span> 1,324</a>"
+                list_berita_html +="</p>"
+                list_berita_html += data[i].berita_summary
+                list_berita_html +="</div>"
+                list_berita_html +="</div>"
+                list_berita_html +="</div>"
+            }
+
+            $('#list_berita').html(list_berita_html)
+
+        }
+
     })
 
 </script>
