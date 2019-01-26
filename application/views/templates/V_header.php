@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets_custom/css/style.css">
   <link rel="stylesheet" href="assets_2/css/style.css">
-  <!--<link href="assets_2/css/custom.css" rel="stylesheet">
+  <!--<link href="assets_2/css/custom.css" rel="stylesheet">-->
 
 
   <!-- HTML Meta Tags -->
