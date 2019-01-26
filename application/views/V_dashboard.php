@@ -3,9 +3,6 @@
 
         function berita_detail(elem) {
             val = $(elem).attr('value')
-            // // window.open('<?php //echo base_url('berita-detail') ?>')
-            // var thisIsAnObject = {value:val};
-            // var w = window.open("<?php echo base_url('berita-detail?id=') ?>" + val);
             var mapForm = document.createElement("form");
              mapForm.target = "Map";
              mapForm.method = "POST"; // or "post" if appropriate
@@ -920,9 +917,9 @@
                 list_berita_html +="<div class='row'>"
                 list_berita_html +="<div class='col-sm-6'>"
                 list_berita_html +="<div class='frame'>"
-                list_berita_html +="<a class='image' href='#'>"
+                list_berita_html +="<a class='image'>"
                 list_berita_html +="<figure class='image-holder'>"
-                list_berita_html +="<img src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "'>"
+                list_berita_html +="<img src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "' onclick='berita_detail(this)' value='" + data[i].berita_id + "'>"
                 list_berita_html +="</figure>"
                 list_berita_html +="<div class='image-light'></div>"
                 list_berita_html +="<span class='dashicons dashicons-format-audio'></span>"
