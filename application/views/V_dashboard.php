@@ -417,109 +417,62 @@
 
                    <!-- ARTICLES V1 WIDGET -->
                    <section class="widget articles-v1">
-                       <header class="clearfix">
+                       <!-- <header class="clearfix">
                            <h4>Headline</h4>
-                           <a href="#" class="control"><i class="fa fa-plus"></i></a>
-                       </header>
-                       <div class="article-medium">
-                           <div class="row">
-                               <div class="col-sm-6">
-                                   <div class="frame">
-                                       <a class="image" href="#">
-                                           <figure class="image-holder">
-                                               <img src="assets_2/img/content/pup-209148-medium.jpg"  alt="Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed">
-                                           </figure>
-                                           <div class="image-light"></div>
-                                           <span class="dashicons dashicons-format-audio"></span>
-                                       </a>
-                                   </div>
-                                   <img src="assets_2/img/shadow.png"  class="shadow" alt="shadow">
-                               </div>
+                       </header> -->
+                       <?php
+                            $kilasberita = "";
+                            foreach ($slide_berita['data'] as $key => $value) {
+                                $kilasberita .= " <div class='article-medium'>
+                                                    <div class='row'>
+                                                        <div class='col-sm-6'>
+                                                            <div class='frame'>
+                                                                <a class='image' href='#'>
+                                                                    <figure class='image-holder'>
+                                                                        <img src='assets_2/img/content/pup-209148-medium.jpg'  alt='Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed'>
+                                                                    </figure>
+                                                                    <div class='image-light'></div>
+                                                                    <span class='dashicons dashicons-format-audio'></span>
+                                                                </a>
+                                                            </div>
+                                                            <img src='assets_2/img/shadow.png'  class='shadow' alt='shadow'>
+                                                        </div>
 
-                               <div class="col-sm-6">
-                                   <h4 class="custom-dio-hover">
-                                     <a href="#">Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed</a></h4>
-                                   <p class="post-meta">
-                                       <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
-                                       <a href="#"><span class="fa fa-folder"></span> Bussiness</a> &nbsp;
-                                       <a href="#"><span class="fa fa-comments"></span> 17</a> &nbsp;
-                                       <a href="#"><span class="fa fa-eye"></span> 1,324</a>
-                                   </p>
-                                   <p>
-                                       Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure
-                                       reprehenderit&hellip;
-                                   </p>
-                               </div>
+                                                        <div class='col-sm-6'>
+                                                            <h4 class='custom-dio-hover'>
+                                                              <a href='#'>Pub Qui Dolorem Ipsum Quia Dol Consectetur Amet Adipisci Velit Sed</a></h4>
+                                                            <p class='post-meta'>
+                                                                <a href='#'><span class='fa fa-clock-o'></span> Dec 4, 2018</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-eye'></span> 1,324</a>
+                                                            </p>
+                                                            <p>
+                                                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure
+                                                                reprehenderit&hellip;
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div> ";
+                            }
+
+                            echo $kilasberita;
+                        ?>
+
+                       <div class="row">
+                           <div class="col-md-12">
+                              <!--Pagination-->
+                              <center>
+                                <ul class="pagination justify-content-center top50" id="pagination_news">
+                                  <li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>
+                                  <li class="page-item"><a class="page-link">1</a></li>
+                                  <li class="page-item"><a class="page-link">2</a></li>
+                                  <li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                              </center>
                            </div>
                        </div>
-                       <hr>
-
-                       <div class="article-medium">
-                           <div class="row">
-                               <div class="col-sm-6">
-                                   <div class="frame">
-                                       <a class="image" href="#">
-                                           <figure class="image-holder">
-                                               <img src="assets_2/img/content/coffee-206142-medium.jpg"  alt="Coffee Eros Non Risus Suscipit Faucibus Sed Quis">
-                                           </figure>
-                                           <div class="image-light"></div>
-                                           <span class="dashicons dashicons-format-chat"></span>
-                                       </a>
-                                   </div>
-                                   <img src="assets_2/img/shadow.png"  class="shadow" alt="shadow">
-                               </div>
-
-                               <div class="col-sm-6">
-                                   <h4><a href="#" >Coffee Eros Non Risus Suscipit Faucibus Sed Quis</a></h4>
-                                   <p class="post-meta">
-                                       <a href="#"><span class="fa fa-clock-o"></span> Dec 1, 2018</a> &nbsp;
-                                       <a href="#"><span class="fa fa-folder"></span> Bussiness</a> &nbsp;
-                                       <a href="#"><span class="fa fa-comments"></span> 65</a> &nbsp;
-                                       <a href="#"><span class="fa fa-eye"></span> 87,956</a>
-                                   </p>
-                                   <p>
-                                       Proin bibendum, libero in dictum pellentesque, lorem enim varius tellus, nec aliquet
-                                       dolor risus non sem. Curabitur placerat, quam vel bibendum pretium, arcu dui c
-                                       onsectetur tellus, et tincidunt turpis&hellip;
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-                       <hr>
-
-                       <div class="article-medium">
-                           <div class="row">
-                               <div class="col-sm-6">
-                                   <div class="frame">
-                                       <a class="image" href="#">
-                                           <figure class="image-holder">
-                                               <img src="assets_2/img/content/coffee-206142-medium.jpg"  alt="Coffee Eros Non Risus Suscipit Faucibus Sed Quis">
-                                           </figure>
-                                           <div class="image-light"></div>
-                                           <span class="dashicons dashicons-format-chat"></span>
-                                       </a>
-                                   </div>
-                                   <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
-                               </div>
-
-                               <div class="col-sm-6">
-                                   <h4><a href="#">Coffee Eros Non Risus Suscipit Faucibus Sed Quis</a></h4>
-                                   <p class="post-meta">
-                                       <a href="#"><span class="fa fa-clock-o"></span> Dec 1, 2018</a> &nbsp;
-                                       <a href="#"><span class="fa fa-folder"></span> Bussiness</a> &nbsp;
-                                       <a href="#"><span class="fa fa-comments"></span> 65</a> &nbsp;
-                                       <a href="#"><span class="fa fa-eye"></span> 87,956</a>
-                                   </p>
-                                   <p>
-                                       Proin bibendum, libero in dictum pellentesque, lorem enim varius tellus, nec aliquet
-                                       dolor risus non sem. Curabitur placerat, quam vel bibendum pretium, arcu dui c
-                                       onsectetur tellus, et tincidunt turpis&hellip;
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-                       <hr>
                    </section>
 
                </main><!--#main-content-->
