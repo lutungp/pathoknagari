@@ -28,6 +28,11 @@
                         value="<?php echo isset($berita_details->berita_nama) ? $berita_details->berita_nama : ""?>" required>
                       </div>
                       <div class="form-group">
+                        <label for="">Penulis</label>
+                        <input type="text" name="berita_penulis" class="form-control"
+                        value="<?php echo isset($berita_details->berita_penulis) ? $berita_details->berita_penulis : ""?>" required>
+                      </div>
+                      <div class="form-group">
                         <label for="">Tanggal Berita</label>
                         <div class="input-group date" data-provide="datepicker" style="width: 400px;">
                             <input type="text" class="form-control" name="berita_tanggal"

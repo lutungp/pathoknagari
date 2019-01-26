@@ -81,13 +81,18 @@ class C_berita extends MY_Controller{
   {
     $berita_summary = $this->input->post('berita_summary');
     $berita_nama    = $this->input->post('berita_nama');
+    $berita_tanggal = $this->input->post('berita_tanggal');
+    $berita_isi     = $this->input->post('berita_isi');
+    $berita_penulis = $this->input->post('berita_penulis');
 
     $data = array(
         'berita_nama'     => $berita_nama,
         'berita_summary'  => $berita_summary,
         'berita_tanggal'  => $berita_tanggal,
         'berita_isi'      => $berita_isi,
+        'berita_penulis'  => $berita_penulis
     );
+
     $i_mg_file    = isset($_FILES['berita_photo']['name']) ? $_FILES['berita_photo']['name']: "";
     if ($i_mg_file <> "") {
 
@@ -111,7 +116,7 @@ class C_berita extends MY_Controller{
 
     $page_bar['data'][] = array(
                               'title_page' => 'Berita list',
-                              'url'        => '../berita_list'
+                              'url'        => '../Berita'
                             );
 
     $page_bar['data'][] = array(
@@ -139,15 +144,17 @@ class C_berita extends MY_Controller{
     $berita_summary = $this->input->post('berita_summary');
     $berita_nama    = $this->input->post('berita_nama');
     $berita_tanggal = $this->input->post('berita_tanggal');
-    $berita_isi   = $this->input->post('berita_isi');
-    $i_mg_file    = isset($_FILES['berita_photo']['name']) ? $_FILES['berita_photo']['name']: "";
+    $berita_isi     = $this->input->post('berita_isi');
+    $berita_penulis = $this->input->post('berita_penulis');
+    $i_mg_file      = isset($_FILES['berita_photo']['name']) ? $_FILES['berita_photo']['name']: "";
 
     $data = array(
                     'berita_id'       => $berita_id,
                     'berita_nama'     => $berita_nama,
                     'berita_summary'  => $berita_summary,
                     'berita_tanggal'  => date('Y-m-d', strtotime($berita_tanggal)),
-                    'berita_isi'      => htmlentities($berita_isi)
+                    'berita_isi'      => htmlentities($berita_isi),
+                    'berita_penulis'  => $berita_penulis
                 );
 
     $where = array(

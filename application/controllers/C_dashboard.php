@@ -19,7 +19,7 @@ class C_dashboard extends MY_Controller{
   {;
     $postData = [
       'start'   => 0,
-      'limit'   => 3,
+      'limit'   => 7,
     ];
 
     $countData = count($postData);
