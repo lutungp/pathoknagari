@@ -24,16 +24,16 @@ class C_dashboard extends MY_Controller{
 
     $countData = count($postData);
 
-    $slide_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, $countData);
+    $slide_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
 
     $postData = [
-      'start'   => 3,
-      'limit'   => 5,
+      'start'   => 0,
+      'limit'   => 3,
     ];
 
     $countData = count($postData);
 
-    $kilas_berita = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
+    $kilas_berita = $this->http_request($this->API.'/C_api/berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
 
     // // ubah string JSON menjadi array
     $slide_berita = json_decode($slide_berita, TRUE);

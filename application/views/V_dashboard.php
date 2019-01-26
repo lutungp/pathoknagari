@@ -858,10 +858,14 @@
         })
 
         function getBeritaDetail(pagenumber) {
-            jmlCol    = 5
-            jmlberita = 5 * parseInt(pagenumber - 1)
-            startCol  = jmlberita
-            endCol    = jmlberita + 3
+            if (pagenumber == 1) {
+                pagenumber = 0
+            } else {
+                pagenumber = parseInt(pagenumber) + 3
+            }
+
+            startCol = parseInt(pagenumber)
+            endCol   = parseInt(pagenumber) + 3
             $.ajax ({
                 type: "POST",
                 url: '<?php echo base_url('get_berita')?>',
