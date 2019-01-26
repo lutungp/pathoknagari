@@ -63,7 +63,7 @@
         $response['data'][] = $value;
       }
 
-      $nbrows = Count($this->Global_m->select_config('m_berita', $where, '*')->result());
+      $nbrows = Count($this->Global_m->select_config('m_berita', $where, '*', $start, $limit)->result());
       $response['nbrows'] = $nbrows;
 
       $this->response($response);
