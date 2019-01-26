@@ -766,7 +766,7 @@
 <script type="text/javascript">
 
     $( document ).ready(function() {
-        var jml_berita = '<?php echo $ringkas_berita['nbrows'] ?>'
+        var jml_berita = '<?php echo $kilas_berita['nbrows'] ?>'
         var pageval = 1
         var leftrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-left"></i></a></li>'
         var rightrow = '<li class="page-item"><a class="page-link"><i class="fa fa-angle-right"></i></a></li>'

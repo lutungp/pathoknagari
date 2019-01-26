@@ -42,10 +42,12 @@ class C_dashboard extends MY_Controller{
     $kilas_berita = json_decode($kilas_berita, TRUE);
     $data['kilas_berita'] = $kilas_berita;
 
-    $this->load->view('templates/V_header');
-    $this->load->view('V_dashboard', $data);
-    $this->load->view('templates/V_kontak');
-    $this->load->view('templates/V_footer');
+    print_r($kilas_berita);
+
+    // $this->load->view('templates/V_header');
+    // $this->load->view('V_dashboard', $data);
+    // $this->load->view('templates/V_kontak');
+    // $this->load->view('templates/V_footer');
   }
 
   function http_request($url, $data, $count){
