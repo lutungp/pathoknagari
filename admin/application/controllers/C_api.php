@@ -31,14 +31,20 @@
     }
 
     public function berita_post(){
-        $start = (integer)$this->post('start');
-        $limit = (integer)$this->post('limit');
+        $start    = (integer)$this->post('start');
+        $limit    = (integer)$this->post('limit');
+        $sortby   = $this->post('sortby');
+        $sorttype = $this->post('sorttype') <> "" ? $this->post('sorttype') : "ASC";
 
         $where  = " WHERE berita_active = 'y' ";
 
+        if ($sortby <> "") {
+            $where .= " ORDER BY " . $sortby . $sorttype;
+        }
+
         $response['status'] = 200;
         $response['img_url'] = base_url('assets/img/items/');
-        $result = $this->Global_m->select_config('m_berita', $where, '*', $start, $limit)->result();
+        $result = $this->Global_m->select_config('m_berita', $where, '*', $start, $limit, $sortby)->result();
         $nbrows = Count($this->Global_m->select_config('m_berita', $where, '*')->result());
         $response['nbrows'] = $nbrows;
         foreach ($result as $key => $value) {

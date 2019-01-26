@@ -85,8 +85,8 @@ class C_dashboard extends MY_Controller{
     $countData = count($postData);
 
     $profile = $this->http_request($this->API.'/C_api/berita', $postData, $countData);
-    print_r($profile);
-    // echo $profile;
+
+    echo $profile;
   }
 
 }
