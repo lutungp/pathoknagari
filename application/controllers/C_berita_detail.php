@@ -17,7 +17,24 @@ class C_berita_detail extends CI_Controller{
 
   function index()
   {
-    $postData['id'] = $this->input->post('message');
+    /* check apakah session sudah menyimpan id berita */
+    if ($this->session->userdata('berita_id') == null ||
+            ($this->session->userdata('berita_id') <> $this->input->post('message') &&
+            $this->input->post('message'))) {
+        /*
+        * jika belum maka disimpan terlebih dahulu
+        * saat reload akan digunakan kembali
+        */
+        $id = $this->input->post('message');
+        $newdata = array('berita_id'  => $id);
+
+        $this->session->set_userdata($newdata);
+    } else {
+        $id = $this->session->userdata('berita_id');
+    }
+
+    $postData['id'] = $id;
+
     $berita_detail = $this->http_request($this->API.'/C_api/beritadetail', $postData, 1);
     $data['berita_detail'] = json_decode($berita_detail, TRUE);
 
