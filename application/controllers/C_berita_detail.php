@@ -20,7 +20,7 @@ class C_berita_detail extends CI_Controller{
     $postData['id'] = $this->input->post('message');
     $berita_detail = $this->http_request($this->API.'/C_api/beritadetail', $postData, 1);
     $data['berita_detail'] = json_decode($berita_detail, TRUE);
-    
+
     $this->load->view('V_berita_detail', $data);
   }
 

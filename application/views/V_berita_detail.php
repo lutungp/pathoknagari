@@ -365,7 +365,12 @@
   </script>
 
   <!--Google Map API-->
-  <script src="../../../maps.googleapis.com/maps/api/js-key=AIzaSyAJ97zN_MClQ8BnmJJOCY165S2QEYvbIis.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script type="text/javascript">
+      /* auto submission ketika reload */
+      if ( window.history.replaceState ) {
+          window.history.replaceState( null, null, window.location.href );
+      }
+  </script>
   </body>
 </html>

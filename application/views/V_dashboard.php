@@ -1,3 +1,34 @@
+
+<script type="text/javascript">
+
+        function berita_detail(elem) {
+            val = $(elem).attr('value')
+            // // window.open('<?php //echo base_url('berita-detail') ?>')
+            // var thisIsAnObject = {value:val};
+            // var w = window.open("<?php echo base_url('berita-detail?id=') ?>" + val);
+            var mapForm = document.createElement("form");
+             mapForm.target = "Map";
+             mapForm.method = "POST"; // or "post" if appropriate
+             mapForm.action = "<?php echo base_url('berita-detail') ?>";
+
+             var mapInput = document.createElement("input");
+             mapInput.type = "text";
+             mapInput.name = "message";
+             mapInput.value = val;
+             mapForm.appendChild(mapInput);
+
+             document.body.appendChild(mapForm);
+
+             map = window.open("", "Map");
+
+          if (map) {
+             mapForm.submit();
+          } else {
+             alert('You must allow popups for this map to work.');
+          }
+        }
+
+</script>
 <!--Ful Screen Section Video with caption-->
 <section class="full-screen parallax-video parallaxie center-block bg-video-container"  id="beranda">
    <div class="container">
@@ -387,7 +418,7 @@
 
                                             $kilasberita .= " <div class='item $active'>
                                                 <div class='item-inner'>
-                                                    <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='Doctype Pellentesque Pellentesque Faucibus Urna Ac Feugiat'></div>
+                                                    <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'></div>
                                                     <div class='carousel-caption'>
                                                         <div><a href='#''><h3>" . $value['berita_nama'] . "</h3></a></div>
                                                         <div class='hidden-xs'>
@@ -427,9 +458,10 @@
                                                     <div class='row'>
                                                         <div class='col-sm-6'>
                                                             <div class='frame'>
-                                                                <a class='image' href='#'>
+                                                                <a class='image'>
                                                                     <figure class='image-holder'>
-                                                                        <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'>
+                                                                        <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'
+                                                                         onclick='berita_detail(this)' value='" . $value['berita_id'] . "'>
                                                                     </figure>
                                                                     <div class='image-light'></div>
                                                                     <span class='dashicons dashicons-format-audio'></span>
@@ -441,16 +473,12 @@
                                                             <h4 class='custom-dio-hover'>
                                                               <a href='#'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
-                                                                <a href='#'><span class='fa fa-clock-o'></span> " . $value['berita_tanggal'] . "</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-clock-o'></span> " . date('d M Y', strtotime($value['berita_tanggal'])) . "</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-eye'></span> 1,324</a>
                                                             </p>
-                                                            <p>
-                                                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure
-                                                                reprehenderit&hellip;
-                                                            </p>
+                                                            <p>" . $value['berita_summary'] . "</p>
                                                         </div>
                                                     </div>
                                                 </div> ";
