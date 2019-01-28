@@ -1,5 +1,10 @@
-
 <script type="text/javascript">
+        function judul_detail(id) {
+            console.log(id);
+            elem = 'image_berita_' + id
+            elem = document.getElementById(elem)
+            berita_detail(elem)
+        }
 
         function berita_detail(elem) {
             val = $(elem).attr('value')
@@ -26,6 +31,7 @@
         }
 
 </script>
+
 <!--Ful Screen Section Video with caption-->
 <section class="full-screen parallax-video parallaxie center-block bg-video-container"  id="beranda">
    <div class="container">
@@ -458,7 +464,7 @@
                                                                 <a class='image' href='javascript:void(0)'>
                                                                     <figure class='image-holder'>
                                                                         <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'
-                                                                         onclick='berita_detail(this)' value='" . $value['berita_id'] . "'>
+                                                                         onclick='berita_detail(this)' value='" . $value['berita_id'] . "' id='image_berita_" . $value['berita_id'] . "'>
                                                                     </figure>
                                                                     <div class='image-light'></div>
                                                                     <span class='dashicons dashicons-format-audio'></span>
@@ -468,7 +474,7 @@
 
                                                         <div class='col-sm-6'>
                                                             <h4 class='custom-dio-hover'>
-                                                              <a href='javascript:void(0)'>" . $value['berita_nama'] . "</a></h4>
+                                                              <a href='javascript:void(0)' onclick='judul_detail(" . $value['berita_id'] . ")'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
                                                                 <a href='#'><span class='fa fa-clock-o'></span> " . date('d M Y', strtotime($value['berita_tanggal'])) . "</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
@@ -483,19 +489,24 @@
                         ?>
 
                        <div id="list_berita">
+                          <div id="berita_loading" class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom" style="display:none;position: absolute;
+                          z-index: 2; margin-left: auto; margin-right: auto; top: 35%; left: 50%; color: forestgreen; font-size: 100px;">
+
+                          </div>
                           <?php echo $kilasberita ?>
                        </div>
 
                        <div class="row">
-                           <div class="col-md-12" style="top: 10px;">
-                              <!--Pagination-->
-                              <center>
-                                <ul class="pagination justify-content-center top50" id="pagination_news">
+                         <div class="col-md-12" style="top: 10px;">
+                           <!--Pagination-->
+                           <center>
+                             <ul class="pagination justify-content-center top50" id="pagination_news">
 
-                                </ul>
-                              </center>
-                           </div>
+                             </ul>
+                           </center>
+                         </div>
                        </div>
+
                    </section>
 
                </main><!--#main-content-->
@@ -818,6 +829,10 @@
         }
 
         $('.page-item').on('click', function () {
+            $('#list_berita').css('opacity', '0.4')
+            $('#list_berita').css('pointer-events', 'none')
+            $('#berita_loading').css('display', 'block')
+
             var page_bullet = this
 
             if ($(this).hasClass('berita-col')) {
@@ -901,6 +916,9 @@
                   end : endCol
                 },
                 success: function (response) {
+                    $('#list_berita').css('opacity', '1')
+                    $('#list_berita').css('pointer-events', 'auto')
+                    $('#berita_loading').css('display', 'none')
                     $('#Column_berita').html('')
                     addBerita(response)
                 }
@@ -919,7 +937,7 @@
                 list_berita_html +="<div class='frame'>"
                 list_berita_html +="<a class='image' href='javascript:void(0)'>"
                 list_berita_html +="<figure class='image-holder'>"
-                list_berita_html +="<img src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "' onclick='berita_detail(this)' value='" + data[i].berita_id + "'>"
+                list_berita_html +="<img id='image_berita_" + data[i].berita_id + "' src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "' onclick='berita_detail(this)' value='" + data[i].berita_id + "'>"
                 list_berita_html +="</figure>"
                 list_berita_html +="<div class='image-light'></div>"
                 list_berita_html +="<span class='dashicons dashicons-format-audio'></span>"
@@ -928,12 +946,12 @@
                 list_berita_html +="</div>"
                 list_berita_html +="<div class='col-sm-6'>"
                 list_berita_html +="<h4 class='custom-dio-hover'>"
-                list_berita_html +="<a href='#'>" + data[i].berita_nama + "</a></h4>"
+                list_berita_html +="<a href='javascript:void(0)' onclick='judul_detail(" + data[i].berita_id + ")'>" + data[i].berita_nama + "</a></h4>"
                 list_berita_html +="<p class='post-meta'>"
-                list_berita_html +="<a href='#'><span class='fa fa-clock-o'></span> " + data[i].berita_tanggal + " </a> &nbsp;"
-                list_berita_html +="<a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;"
-                list_berita_html +="<a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;"
-                list_berita_html +="<a href='#'><span class='fa fa-eye'></span> 1,324</a>"
+                list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-clock-o'></span> " + data[i].berita_tanggal + " </a> &nbsp;"
+                list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;"
+                list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-comments'></span> 17</a> &nbsp;"
+                list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-eye'></span> 1,324</a>"
                 list_berita_html +="</p>"
                 list_berita_html += data[i].berita_summary
                 list_berita_html +="</div>"
