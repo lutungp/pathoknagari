@@ -37,9 +37,15 @@ class C_dashboard extends MY_Controller{
 
     // // ubah string JSON menjadi array
     $slide_berita = json_decode($slide_berita, TRUE);
+    if ($slide_berita == "") {
+        $slide_berita['data'] = array();
+    }
     $data['slide_berita'] = $slide_berita;
 
     $kilas_berita = json_decode($kilas_berita, TRUE);
+    if ($kilas_berita == "") {
+        $kilas_berita['data'] = array();
+    }
     $data['kilas_berita'] = $kilas_berita;
 
     $this->load->view('templates/V_header');
