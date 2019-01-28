@@ -204,8 +204,8 @@
                         <li><a href="#."><i class="icon-comment"></i>5</a></li>
                       </ul>
                       <p class="bottom35">
-                        <?php echo $berita_detail['data'][0]['berita_isi']; ?>
-                      </p>
+                        <?php echo html_entity_decode($berita_detail['data'][0]['berita_isi']); ?>
+                      <!-- </p> -->
 
                       <div class="profile-authors heading_space">
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
