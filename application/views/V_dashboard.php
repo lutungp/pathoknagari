@@ -1,6 +1,5 @@
 <script type="text/javascript">
         function judul_detail(id) {
-            console.log(id);
             elem = 'image_berita_' + id
             elem = document.getElementById(elem)
             berita_detail(elem)
