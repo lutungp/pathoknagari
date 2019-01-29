@@ -16,7 +16,7 @@ class C_dashboard extends MY_Controller{
   }
 
   function index()
-  {;
+  {
     $postData = [
       'start'   => 0,
       'limit'   => 7,
@@ -48,6 +48,17 @@ class C_dashboard extends MY_Controller{
     }
     $data['kilas_berita'] = $kilas_berita;
 
+    $postData = ['select'   => 'pegawai_nama, pegawai_jabatan, pegawai_photo'];
+
+    $countData = count($postData);
+
+    $data_pegawai = $this->http_request($this->API.'/C_api/pegawai', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $data_pegawai = json_decode($data_pegawai, TRUE);
+    if ($data_pegawai == "") {
+        $data_pegawai['data'] = array();
+    }
+
+    $data['data_pegawai'] = $data_pegawai;
     $this->load->view('templates/V_header');
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');

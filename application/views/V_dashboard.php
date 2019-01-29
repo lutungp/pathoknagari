@@ -84,14 +84,11 @@
           </header>
           <div class="content">
               <ul>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Ketua Takmir : Drs. H. Harsoyo, MS.I</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Wakil Takmir : Ir. H. Syaiful Huda, M.T</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Bendahara : H. Zamzuri,S.Ag, S.H</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Sekretaris : H. Suhari</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Ustadz I : Zaenal Syarifudin, M.Ag</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Ustadz II : Dr. H. Nurkholis, M.Ag</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Ustadz III: Ngudi Hartono</a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right"></i> Ustadz IV : dr. Zulrifqi, Sp.PD.</a></li>
+                <?php
+                    foreach ($data_pegawai['data'] as $key => $value) {
+                        echo "<li><a href='javascript:void(0)'><i class='fa fa-angle-double-right'></i> " . $value['pegawai_jabatan'] . " : " . $value['pegawai_nama'] . "</a></li>";
+                    }
+                 ?>
               </ul>
           </div>
       </section>
