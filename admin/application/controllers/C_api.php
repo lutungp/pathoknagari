@@ -37,7 +37,7 @@
         $sorttype = $this->post('sorttype') <> "" ? $this->post('sorttype') : " ASC";
 
         $where  = " WHERE berita_active = 'y' ";
-        
+
         if ($sortby <> "") {
             $sortby = " ORDER BY " . $sortby . $sorttype;
         }
@@ -90,6 +90,21 @@
 
 
         $this->response($response);
+    }
+
+    function pegawai_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $where  = " WHERE pegawai_aktif = 'y' ";
+      $select = $this->post('select');
+
+      $result = $this->Global_m->select_config('m_pegawai', $where, $select)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+      
+      $this->response($response);
     }
 }
 ?>
