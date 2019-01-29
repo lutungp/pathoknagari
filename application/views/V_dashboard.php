@@ -401,8 +401,285 @@
                            </ul>
                        </div>
                    </section>
+
+                   <!-- CAROUSEL  -->
+                   <div><br><br></div>
+                   <section class="widget no-mobile">
+                     <div class="frame thick">
+                         <div id="carousel-medium" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
+                             <!-- Carousel contents -->
+                             <div class="carousel-inner">
+                                  <!-- detail berita sekilas -->
+                                  <?php
+                                        $kilasberita = "";
+                                        foreach ($slide_berita['data'] as $key => $value) {
+                                            $active = "";
+                                            if ($key == 0) {
+                                              $active = "active";
+                                            }
+
+                                            $kilasberita .= " <div class='item $active'>
+                                                <div class='item-inner'>
+                                                    <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'></div>
+                                                    <div class='carousel-caption'>
+                                                        <div><a href='javascript:void(0)'><h3>" . $value['berita_nama'] . "</h3></a></div>
+                                                        <div class='hidden-xs'>
+                                                            <p>
+                                                                " . $value['berita_summary'] . "
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> ";
+                                        }
+
+                                        echo $kilasberita;
+                                   ?>
+
+                             </div>
+                             <div class="image-light"></div>
+
+                             <!-- Carousel Controls -->
+                             <a class="left carousel-control" href="#carousel-medium" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
+                             <a class="right carousel-control" href="#carousel-medium" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+                         </div>
+                     </div>
+                    <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
+                    <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
+                   </section>
+
+                   <!-- ARTICLES V1 WIDGET -->
+                   <section class="widget articles-v1">
+                       <!-- <header class="clearfix">
+                           <h4>Headline</h4>
+                       </header> -->
+                       <?php
+                            $kilasberita = "";
+                            foreach ($kilas_berita['data'] as $key => $value) {
+                                $kilasberita .= " <div class='article-medium'>
+                                                    <div class='row'>
+                                                        <div class='col-sm-6'>
+                                                            <div class='frame'>
+                                                                <a class='image' href='javascript:void(0)'>
+                                                                    <figure class='image-holder'>
+                                                                        <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'
+                                                                         onclick='berita_detail(this)' value='" . $value['berita_id'] . "' id='image_berita_" . $value['berita_id'] . "'>
+                                                                    </figure>
+                                                                    <div class='image-light'></div>
+                                                                    <span class='dashicons dashicons-format-audio'></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class='col-sm-6'>
+                                                            <h4 class='custom-dio-hover'>
+                                                              <a href='javascript:void(0)' onclick='judul_detail(" . $value['berita_id'] . ")'>" . $value['berita_nama'] . "</a></h4>
+                                                            <p class='post-meta'>
+                                                                <a href='#'><span class='fa fa-clock-o'></span> " . date('d M Y', strtotime($value['berita_tanggal'])) . "</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-eye'></span> 1,324</a>
+                                                            </p>
+                                                            <p>" . $value['berita_summary'] . "</p>
+                                                        </div>
+                                                    </div>
+                                                </div> ";
+                            }
+                        ?>
+
+                       <div id="list_berita">
+                          <div id="berita_loading" class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom" style="display:none;position: absolute;
+                          z-index: 2; margin-left: auto; margin-right: auto; top: 35%; left: 50%; color: forestgreen; font-size: 100px;">
+
+                          </div>
+                          <?php echo $kilasberita ?>
+                       </div>
+
+                       <div class="row">
+                         <div class="col-md-12" style="top: 10px;">
+                           <!--Pagination-->
+                           <center>
+                             <ul class="pagination justify-content-center top50" id="pagination_news">
+
+                             </ul>
+                           </center>
+                         </div>
+                       </div>
+
+                   </section>
+
                </main><!--#main-content-->
 
+               <!-- SIDEBAR -->
+               <aside class="col-md-4">
+                   <div class="row" style="width:390px;">
+
+                       <!-- SOCIALS WIDGET -->
+                       <!-- <section class="col-sm-6 col-md-12 widget">
+                           <header class="clearfix"><h4>Socials Media</h4></header>
+
+                           <ul class="social clearfix">
+                               <li><a href="#" title="Facebook "><span class="sc-md sc-facebook"></span></a></li>
+                               <li><a href="#" title="Twitter"><span class="sc-md sc-twitter"></span></a></li>
+                               <li><a href="#" title="Instagram"><span class="sc-md sc-instagram"></span></a></li>
+                               <li><a href="#" title="YouTube"><span class="sc-md sc-youtube"></span></a></li>
+                               <li><a href="#" title="googleplus"><span class="sc-md sc-googleplus"></span></a></li>
+                           </ul>
+                       </section> -->
+
+                      <!-- CAROUSEL SMALL WIDGET -->
+                      <section class="col-sm-6 col-md-12 widget no-mobile">
+                        <header class="clearfix">
+                          <h4>Gallery</h4>
+
+                          <a href="#carousel-small" class="control" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                          <a href="#carousel-small" class="control" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                          </a>
+                        </header>
+
+                        <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <a class="item active"
+                            href="assets_2/img/content/unsplash_527bf4b4ae00d_1-huge.jpg"
+                            title="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"
+                            data-lightbox-gallery="gallery-small">
+                              <div class="item-inner">
+                                <div data-src="assets_2/img/content/unsplash_527bf4b4ae00d_1-medium.jpg"
+                                data-alt="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"></div>
+                                <div class="image-light"></div>
+                                <div class="caption">
+                                  <h5>Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget</h5>
+                                </div>
+                              </div>
+                            </a>
+                            <a class="item"
+                            href="assets_2/img/content/unsplash_528a8fb8a276d_1-huge.jpg"
+                            title="Vestibulum ultricies Ut sollicitudin eget massa et lobortis"
+                            data-lightbox-gallery="gallery-small">
+                              <div class="item-inner">
+                                <div data-src="assets_2/img/content/unsplash_528a8fb8a276d_1-medium.jpg"
+                                data-alt="Vestibulum ultricies Ut sollicitudin eget massa et lobortis"></div>
+                                <div class="image-light"></div>
+                                <div class="caption">
+                                  <h5>Vestibulum ultricies Ut sollicitudin eget massa et lobortis</h5>
+                                </div>
+                              </div>
+                            </a>
+                          <a class="item"
+                            href="assets_2/img/content/Bird-Profile-Wellington-New-Zealand-huge.jpg"
+                            title="Bird Profile Wellington New Zealand Vivamus ac neque sed"
+                            data-lightbox-gallery="gallery-small">
+                              <div class="item-inner">
+                                <div data-src="assets_2/img/content/Bird-Profile-Wellington-New-Zealand-medium.jpg"
+                                data-alt="Bird Profile Wellington New Zealand Vivamus ac neque sed"></div>
+                                <div class="image-light"></div>
+                                <div class="caption">
+                                  <h5>Bird Profile Wellington New Zealand Vivamus ac neque sed</h5>
+                                </div>
+                              </div>
+                          </a>
+                          <a class="item"
+                          href="assets_2/img/content/unsplash_529f51e60b51c_1-huge.jpg"
+                          title="Dui placerat dictum Suspendisse ut justo venenatis imperdiet"
+                          data-lightbox-gallery="gallery-small">
+                            <div class="item-inner">
+                              <div data-src="assets_2/img/content/unsplash_529f51e60b51c_1-medium.jpg" data-alt="Dui placerat dictum Suspendisse ut justo venenatis imperdiet"></div>
+                              <div class="image-light"></div>
+                              <div class="caption">
+                                <h5>Dui placerat dictum Suspendisse ut justo venenatis imperdiet</h5>
+                              </div>
+                            </div>
+                          </a>
+                          </div><!--.carousel-inner-->
+                        </div><!--.carousel-->
+                        <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
+                      </section>
+
+                      <!-- WIDGET CUSTOM -->
+
+                      <section class="col-sm-6 col-md-12 widget">
+                        <!-- Tab menus -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#popular-aside" data-toggle="tab" aria-expanded="true">Popular</a></li>
+                            <li class=""><a href="#recent-aside" data-toggle="tab" aria-expanded="false">Recent</a></li>
+                            <li class=""><a href="#comments-aside" data-toggle="tab" aria-expanded="false">Comments</a></li>
+                        </ul>
+
+                        <!-- Tab contents -->
+                        <div class="tab-content">
+                            <!--Popular-->
+                            <div class="tab-pane fade active in" id="popular-aside">
+                                <div class="article-tiny">
+                                    <a href="#" class="image">
+                                        <figure class="image-holder">
+                                            <img src="assets_2/img/content/unsplash_528cba6de78e5_1-tiny.jpg"  alt="Mauris mattis ullamcorper euismod Nulla convallis">
+                                        </figure>
+                                        <div class="image-light"></div>
+                                        <span class="dashicons dashicons-format-gallery"></span>
+                                    </a>
+                                    <h5><a href="#">Mauris mattis ullamcorper euismod Nulla convallis</a></h5>
+                                    <p class="post-meta">
+                                        <a href="#"><span class="fa fa-clock-o"></span> Apr 11, 2018</a> &nbsp;
+                                        <a href="#"><span class="fa fa-folder"></span> Travel</a>
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <div class="article-tiny">
+                                    <a href="#" class="image">
+                                        <figure class="image-holder">
+                                            <img src="assets_2/img/content/unsplash_5261cd0183e57_1-tiny.jpg"  alt="Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum">
+                                        </figure>
+                                        <div class="image-light"></div>
+                                        <span class="dashicons dashicons-format-audio"></span>
+                                    </a>
+                                    <h5><a href="#">Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum</a></h5>
+                                    <p class="post-meta">
+                                        <a href="#"><span class="fa fa-clock-o"></span> Apr 7, 2018</a> &nbsp;
+                                        <a href="#"><span class="fa fa-folder"></span> Science</a>
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <div class="article-tiny">
+                                    <a href="#" class="image">
+                                        <figure class="image-holder">
+                                            <img src="assets_2/img/content/11452469094_9d17db34ba_o-tiny.jpg"  alt="Nulla id eros ut nibh hendrerit sollicitudin">
+                                        </figure>
+                                        <div class="image-light"></div>
+                                        <span class="dashicons dashicons-format-links"></span>
+                                    </a>
+                                    <h5><a href="#">Nulla id eros ut nibh hendrerit sollicitudin</a></h5>
+                                    <p class="post-meta">
+                                        <a href="#"><span class="fa fa-clock-o"></span> Feb 28, 2018</a> &nbsp;
+                                        <a href="#"><span class="fa fa-folder"></span> National</a>
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <div class="article-tiny">
+                                    <a href="#" class="image">
+                                        <figure class="image-holder">
+                                            <img src="assets_2/img/content/berries-tiny.jpg" alt="Ornare nibh Nunc semper dolor quis augue venenatis">
+                                        </figure>
+                                        <div class="image-light"></div>
+                                        <span class="dashicons dashicons-format-links"></span>
+                                    </a>
+                                    <h5><a href="#">Ornare nibh Nunc semper dolor quis augue venenatis</a></h5>
+                                    <p class="post-meta">
+                                        <a href="#"><span class="fa fa-clock-o"></span> Jan 4, 2018</a> &nbsp;
+                                        <a href="#"><span class="fa fa-folder"></span> Health</a>
+                                    </p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                      </section>
+                  </div>
+              </aside>
             </div>
         </div>
     </div>
