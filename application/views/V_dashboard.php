@@ -92,95 +92,25 @@
               </ul>
           </div>
       </section>
-      <div class="row">
-          <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/1.jpg"  alt="Pathoknagari-takmir">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Ketua Takmir</h3>
-                   <p class="nomargin">Drs. H. Harsoyo, MS.I</p>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/2.jpg" alt="Pathoknagari-takmir">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Wakil Takmir</h3>
-                   <p class="nomargin">Ir. H. Syaiful Huda, M.T</p>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/3.jpg" alt="Pathoknagari-takmir">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Bendahara</h3>
-                   <p class="nomargin">H. Zamzuri,S.Ag, S.H.</p>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/5.jpg" alt="Pathoknagari-takmir">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Sekretaris</h3>
-                   <p class="nomargin">H. Suhari</p>
-                </div>
-             </div>
-          </div>
-      <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="450">
-                <div class="image">
-                   <img src="assets/images/ustadz/4.jpg" alt="Pathoknagari-ustadz">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Ustadz I</h3>
-                   <p class="nomargin">Zaenal Syarifudin, M.Ag</p>
-                </div>
-             </div>
-          </div>
-      <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="450ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/6.jpg" alt="Pathoknagari-ustadz">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Ustadz II</h3>
-                   <p class="nomargin">Dr. H. Nurkholis, M.Ag</p>
-                </div>
-             </div>
-          </div>
-      <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="450ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/7.jpg" alt="Pathoknagari-ustadz">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Ustadz III</h3>
-                   <p class="nomargin">Ngudi Hartono</p>
-                </div>
-             </div>
-          </div>
-      <div class="col-lg-3 col-md-6">
-             <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="450ms">
-                <div class="image">
-                   <img src="assets/images/ustadz/8.jpg" alt="Pathoknagari-ustadz">
-                </div>
-                <div class="team-content darkcolor">
-                   <h3>Ustadz IV</h3>
-                   <p class="nomargin">dr. Zulrifqi, Sp.PD.</p>
-                </div>
-             </div>
-          </div>
+       <div class="row">
+          <?php
+              $takmir_box = "";
+              foreach ($data_pegawai['data'] as $key => $value) {
+                  $takmir_box .= "<div class='col-lg-3 col-md-6'>
+                               <div class='team-box grey-shade top60 wow fadeInUp' data-wow-delay='400ms'>
+                                  <div class='image'>
+                                     <img src='" . $slide_berita['img_url'] . $value['pegawai_photo'] . "'  alt='Pathoknagari-takmir'>
+                                  </div>
+                                  <div class='team-content darkcolor'>
+                                     <h3>Ketua Takmir</h3>
+                                     <p class='nomargin'>Drs. H. Harsoyo, MS.I</p>
+                                  </div>
+                               </div>
+                            </div>";
+              }
+           ?>
+
+           <?php echo $takmir_box; ?>
        </div>
        <div id="ipib" class="container"><br><br><br><br>
           <div class="row">
@@ -201,7 +131,7 @@
                   alt="ipib-logo" class="equalheight"></div>
              </div>
           </div>
-       </div><br><br><br>
+       </div>
        <section class="breaking-news wow fadeInUp" data-wow-delay="350ms">
            <header>
                <h4>Pengurus IPIB</h4>
@@ -377,7 +307,7 @@
 
 
 <!-- CONTENT -->
-<section id="berita" class="padding" style="padding-top: 100px;padding-bottom: 40px;">
+<section id="berita" class="padding" style="padding-top: 120px;padding-bottom: 40px;">
     <div id="content">
        <div class="container">
            <div class="row">
