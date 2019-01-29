@@ -511,11 +511,12 @@
                </main><!--#main-content-->
 
                <!-- SIDEBAR -->
-               <aside class="col-md-4">
+               <!-- <aside class="col-md-4"> -->
+               <aside>
                    <div class="row" style="width:390px;">
 
                        <!-- SOCIALS WIDGET -->
-                       <!-- <section class="col-sm-6 col-md-12 widget">
+                       <section>
                            <header class="clearfix"><h4>Socials Media</h4></header>
 
                            <ul class="social clearfix">
@@ -525,7 +526,7 @@
                                <li><a href="#" title="YouTube"><span class="sc-md sc-youtube"></span></a></li>
                                <li><a href="#" title="googleplus"><span class="sc-md sc-googleplus"></span></a></li>
                            </ul>
-                       </section> -->
+                       </section>
 
                       <!-- CAROUSEL SMALL WIDGET -->
                       <section class="col-sm-6 col-md-12 widget no-mobile">
