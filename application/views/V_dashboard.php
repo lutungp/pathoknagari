@@ -511,12 +511,11 @@
                </main><!--#main-content-->
 
                <!-- SIDEBAR -->
-               <!-- <aside class="col-md-4"> -->
-               <aside>
-                   <div class="row" style="width:390px;">
+               <aside class="col-md-4">
+                   <div class="row">
 
                        <!-- SOCIALS WIDGET -->
-                       <section>
+                       <section class="col-sm-6 col-md-12 widget">
                            <header class="clearfix"><h4>Socials Media</h4></header>
 
                            <ul class="social clearfix">
