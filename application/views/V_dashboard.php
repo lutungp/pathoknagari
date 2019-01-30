@@ -330,7 +330,6 @@
                    </section>
 
                    <!-- CAROUSEL  -->
-                   <div><br><br></div>
                    <section class="widget no-mobile">
                      <div class="frame thick">
                          <div id="carousel-medium" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
