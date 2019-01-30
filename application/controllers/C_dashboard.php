@@ -19,7 +19,7 @@ class C_dashboard extends MY_Controller{
   {
     $postData = [
       'start'   => 0,
-      'limit'   => 7,
+      'limit'   => 4,
     ];
 
     $countData = count($postData);
@@ -27,8 +27,8 @@ class C_dashboard extends MY_Controller{
     $slide_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
 
     $postData = [
-      'start'   => 0,
-      'limit'   => 3,
+      'start'   => 5,
+      'limit'   => 7,
     ];
 
     $countData = count($postData);

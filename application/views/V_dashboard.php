@@ -30,6 +30,13 @@
         }
 
 </script>
+<style media="screen">
+  @media (max-width: 760px) {
+     .news-slide-summary {
+       display: none;
+     }
+  }
+</style>
 
 <!--Ful Screen Section Video with caption-->
 <section class="full-screen parallax-video parallaxie center-block bg-video-container"  id="beranda">
@@ -349,7 +356,7 @@
                                                     <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'></div>
                                                     <div class='carousel-caption'>
                                                         <div><a href='javascript:void(0)'><h3>" . $value['berita_nama'] . "</h3></a></div>
-                                                        <div class='hidden-xs'>
+                                                        <div class='hidden-xs news-slide-summary'>
                                                             <p>
                                                                 " . $value['berita_summary'] . "
                                                             </p>
@@ -824,9 +831,9 @@
 
         function getBeritaDetail(pagenumber) {
             if (pagenumber == 1) {
-                pagenumber = 0
+                pagenumber = 5
             } else {
-                pagenumber = parseInt(pagenumber) + 3
+                pagenumber = parseInt(pagenumber) + 6
             }
 
             startCol = parseInt(pagenumber)
