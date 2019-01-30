@@ -66,7 +66,7 @@
     #navbar_btn {
       position: absolute;
       right: 10px;
-      top: 32px;
+      top: 40px;
     }
   </style>
 </head>
