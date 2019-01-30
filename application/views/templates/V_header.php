@@ -57,6 +57,17 @@
   </script>
 
   <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <style media="screen">
+    #navbar_header {
+      -webkit-box-pack: unset !important;
+      justify-content: normal;
+    }
+
+    #navbar_btn {
+      position: absolute;
+      right: 10px;
+    }
+  </style>
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -80,9 +91,9 @@
           <i class="fa fa-angle-double-right"></i> Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b>&nbsp&nbsp
           <i class="fa fa-angle-double-right"></i> Seluruh hasil dari Infaq akan didonasikan kepada korban tsunami Banten & Lampung.
       </marquee>
-      <div class="container">
+      <div id="navbar_header" class="container">
         <a class="navbar-brand" href="beranda"> <img src="assets/images/pn5-transparent.png" alt="pathoknagari-logo"> </a>
-        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
+        <button id="navbar_btn" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
           <span> </span>
           <span> </span>
           <span> </span>
@@ -113,53 +124,7 @@
           </ul>
         </div>
       </div>
-    <!--side menu open button-->
-      <a href="javascript:void(0)" class="d-none d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
     </nav>
   </nav>
-  <!-- side menu -->
-  <div class="side-menu">
-    <div class="inner-wrapper">
-      <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
-      <nav class="side-nav">
-        <ul class="navbar-nav w-100">
-          <li class="nav-item active">
-            <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#ipib">Organisasi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pagescroll" href="#kontak">Kontak</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="social-icons-simple white top50 w-100">
-        <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i> </a> </li>
-        <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i> </a> </li>
-        <li><a href="https://twitter.com/ipib1960/"><i class="fa fa-twitter"></i> </a> </li>
-        <li><a href="https://wa.me/+6281904033327"><i class="fa fa-whatsapp"></i> </a> </li>
-        <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
-      </ul>
-      <p class="whitecolor">&copy; 2018 IPIB Production.</p>
-    </div>
-  </div>
-  <a id="close_side_menu" href="javascript:void(0);"></a>
    <!-- End side menu -->
 </header>
