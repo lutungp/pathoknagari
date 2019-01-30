@@ -447,30 +447,10 @@
                <aside class="col-md-4">
                    <div class="row">
 
-                       <!-- SOCIALS WIDGET -->
-                       <section class="col-sm-6 col-md-12 widget">
-                           <header class="clearfix"><h4>Socials Media</h4></header>
-
-                           <ul class="social clearfix">
-                               <li><a href="#" title="Facebook "><span class="sc-md sc-facebook"></span></a></li>
-                               <li><a href="#" title="Twitter"><span class="sc-md sc-twitter"></span></a></li>
-                               <li><a href="#" title="Instagram"><span class="sc-md sc-instagram"></span></a></li>
-                               <li><a href="#" title="YouTube"><span class="sc-md sc-youtube"></span></a></li>
-                               <li><a href="#" title="googleplus"><span class="sc-md sc-googleplus"></span></a></li>
-                           </ul>
-                       </section>
-
                       <!-- CAROUSEL SMALL WIDGET -->
-                      <section class="col-sm-6 col-md-12 widget no-mobile">
+                      <section class="col-sm-6 col-md-12 widget no-mobile" style="display: block;padding-left: 0px;padding-right: 0px;margin-bottom: 20px;">
                         <header class="clearfix">
-                          <h4>Gallery</h4>
-
-                          <a href="#carousel-small" class="control" data-slide="next">
-                            <i class="fa fa-chevron-right"></i>
-                          </a>
-                          <a href="#carousel-small" class="control" data-slide="prev">
-                            <i class="fa fa-chevron-left"></i>
-                          </a>
+                          <h4>Kajian Islami</h4>
                         </header>
 
                         <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
@@ -528,88 +508,59 @@
                           </a>
                           </div><!--.carousel-inner-->
                         </div><!--.carousel-->
-                        <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
+                        <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
                       </section>
 
                       <!-- WIDGET CUSTOM -->
 
-                      <section class="col-sm-6 col-md-12 widget">
-                        <!-- Tab menus -->
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#popular-aside" data-toggle="tab" aria-expanded="true">Popular</a></li>
-                            <li class=""><a href="#recent-aside" data-toggle="tab" aria-expanded="false">Recent</a></li>
-                            <li class=""><a href="#comments-aside" data-toggle="tab" aria-expanded="false">Comments</a></li>
-                        </ul>
-
+                      <section class="col-md-12">
                         <!-- Tab contents -->
-                        <div class="tab-content">
-                            <!--Popular-->
-                            <div class="tab-pane fade active in" id="popular-aside">
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/unsplash_528cba6de78e5_1-tiny.jpg"  alt="Mauris mattis ullamcorper euismod Nulla convallis">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-gallery"></span>
-                                    </a>
-                                    <h5><a href="#">Mauris mattis ullamcorper euismod Nulla convallis</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Apr 11, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> Travel</a>
-                                    </p>
-                                </div>
-                                <hr>
+                          <div class="tab-content">
+                              <div class="tab-pane active">
+                                <div class="row" style="height: 100px;">
+                                  <div class="article-tiny">
+                                    <a href="javascript:void(0)" class="image">
+                                      <figure class="image-holder">
 
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/unsplash_5261cd0183e57_1-tiny.jpg"  alt="Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-audio"></span>
+                                        <img src="assets_2/img/content/car-gallery.jpg" alt="Mauris mattis ullamcorper euismod Nulla convallis">
+                                      </figure>
+                                      <div class="image-light"></div>
+                                      <span class="dashicons dashicons-format-gallery"></span>
                                     </a>
-                                    <h5><a href="#">Nulla vitae velit ac velit luctus facilisis dictum Mauris malesuada ante ut gravida condimentum</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Apr 7, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> Science</a>
-                                    </p>
+                                    <a href="javascript:void(0)">Mauris mattis ullamcorper euismod Nulla convallis</a>
+                                  </div>
+                                  <hr>
                                 </div>
-                                <hr>
+                                <div class="row" style="height: 100px;">
+                                  <div class="article-tiny">
+                                    <a href="javascript:void(0)" class="image">
+                                      <figure class="image-holder">
 
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/11452469094_9d17db34ba_o-tiny.jpg"  alt="Nulla id eros ut nibh hendrerit sollicitudin">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-links"></span>
+                                        <img src="assets_2/img/content/car-gallery.jpg" alt="Mauris mattis ullamcorper euismod Nulla convallis">
+                                      </figure>
+                                      <div class="image-light"></div>
+                                      <span class="dashicons dashicons-format-gallery"></span>
                                     </a>
-                                    <h5><a href="#">Nulla id eros ut nibh hendrerit sollicitudin</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Feb 28, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> National</a>
-                                    </p>
+                                    <a href="javascript:void(0)">Mauris mattis ullamcorper euismod Nulla convallis</a>
+                                  </div>
+                                  <hr>
                                 </div>
-                                <hr>
+                                <div class="row" style="height: 100px;">
+                                  <div class="article-tiny">
+                                    <a href="javascript:void(0)" class="image">
+                                      <figure class="image-holder">
 
-                                <div class="article-tiny">
-                                    <a href="#" class="image">
-                                        <figure class="image-holder">
-                                            <img src="assets_2/img/content/berries-tiny.jpg" alt="Ornare nibh Nunc semper dolor quis augue venenatis">
-                                        </figure>
-                                        <div class="image-light"></div>
-                                        <span class="dashicons dashicons-format-links"></span>
+                                        <img src="assets_2/img/content/car-gallery.jpg" alt="Mauris mattis ullamcorper euismod Nulla convallis">
+                                      </figure>
+                                      <div class="image-light"></div>
+                                      <span class="dashicons dashicons-format-gallery"></span>
                                     </a>
-                                    <h5><a href="#">Ornare nibh Nunc semper dolor quis augue venenatis</a></h5>
-                                    <p class="post-meta">
-                                        <a href="#"><span class="fa fa-clock-o"></span> Jan 4, 2018</a> &nbsp;
-                                        <a href="#"><span class="fa fa-folder"></span> Health</a>
-                                    </p>
+                                    <a href="javascript:void(0)">Mauris mattis ullamcorper euismod Nulla convallis</a>
+                                  </div>
+                                  <hr>
                                 </div>
-                                <hr>
-                            </div>
-                        </div>
+                              </div>
+                          </div>
                       </section>
                   </div>
               </aside>
