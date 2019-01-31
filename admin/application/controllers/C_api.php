@@ -47,7 +47,7 @@
         $response['img_url'] = base_url('assets/img/items/');
         $result = $this->Global_m->select_config('m_berita', $where, $select, $start, $limit, $sortby)->result();
         $nbrows = Count($this->Global_m->select_config('m_berita', $where, '*')->result());
-        $response['nbrows'] = ($nbrows - 4);
+        $response['nbrows'] = $nbrows;
         foreach ($result as $key => $value) {
           $response['data'][] = $value;
         }
