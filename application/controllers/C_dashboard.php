@@ -75,8 +75,23 @@ class C_dashboard extends MY_Controller{
     if ($slide_kajian == "") {
         $slide_kajian['data'] = array();
     }
-
     $data['slide_kajian'] = $slide_kajian;
+
+    $postData = [
+      'select'  => 'kajian_id, kajian_photo, kajian_nama, kajian_summary, kajian_tanggal',
+      'start'   => 0,
+      'limit'   => 6
+    ];
+
+    $countData = count($postData);
+
+    $kilas_kajian = $this->http_request($this->API.'/C_api/kajian', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $kilas_kajian = json_decode($kilas_kajian, TRUE);
+    if ($kilas_kajian == "") {
+        $kilas_kajian['data'] = array();
+    }
+
+    $data['kilas_kajian'] = $kilas_kajian;
 
     $this->load->view('templates/V_header');
     $this->load->view('V_dashboard', $data);

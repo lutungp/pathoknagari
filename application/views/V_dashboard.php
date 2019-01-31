@@ -369,18 +369,30 @@
                           </header>
 
                           <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
-                              <div class="carousel-inner">
-                                <a class="item active" href='javascript:void(0)'>
-                                  <div class="item-inner">
-                                    <div data-src="assets_2/img/content/unsplash_527bf4b4ae00d_1-medium.jpg"
-                                    data-alt="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"></div>
-                                    <div class="image-light"></div>
-                                    <div class="caption">
-                                      <h5>Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget</h5>
-                                    </div>
-                                  </div>
-                                </a>
-                              </div><!--.carousel-inner-->
+                              <?php
+                                  $html_kajian = "";
+                                  foreach ($slide_kajian['data'] as $key => $value) {
+                                      $active = "";
+                                      if ($key == 0) {
+                                        $active = "active";
+                                      }
+                                      $html_kajian .= "<div class='carousel-inner'>
+                                                        <a class='item $active' href='javascript:void(0)'>
+                                                          <div class='item-inner'>
+                                                            <div data-src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "'
+                                                            data-alt='" . $value['kajian_nama'] . "'></div>
+                                                            <div class='image-light'></div>
+                                                            <div class='caption'>
+                                                              <h5>" . $value['kajian_nama'] . "</h5>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>";
+                                  }
+                               ?>
+
+                               <?php echo $html_kajian; ?>
+                               <!--.carousel-inner-->
                           </div><!--.carousel-->
                       <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
                       </section>
@@ -391,48 +403,31 @@
                         <!-- Tab contents -->
                           <div class="tab-content">
                               <div class="tab-pane active">
-                                <div class="row" style="height: 100px;">
-                                  <div class="article-tiny">
-                                    <a href="javascript:void(0)" class="image">
-                                      <figure class="image-holder">
+                                <?php
+                                    $html_kajian = "";
+                                    foreach ($kilas_kajian['data'] as $key => $value) {
+                                        $html_kajian .= "<div class='row' style='height: 100px;'>
+                                                            <div class='article-tiny'>
+                                                              <a href='javascript:void(0)' class='image'>
+                                                                <figure class='image-holder'>
 
-                                        <img src="assets_2/img/content/car-gallery.jpg" alt="Mauris mattis ullamcorper euismod Nulla convallis">
-                                      </figure>
-                                      <div class="image-light"></div>
-                                      <span class="dashicons dashicons-format-gallery"></span>
-                                    </a>
-                                    <a href="javascript:void(0)">Mauris mattis ullamcorper euismod Nulla convallis</a>
-                                  </div>
-                                  <hr>
-                                </div>
-                                <div class="row" style="height: 100px;">
-                                  <div class="article-tiny">
-                                    <a href="javascript:void(0)" class="image">
-                                      <figure class="image-holder">
+                                                                  <img src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "' alt='" . $value['kajian_nama'] . "'>
+                                                                </figure>
+                                                                <div class='image-light'></div>
+                                                                <span class='dashicons dashicons-format-gallery'></span>
+                                                              </a>
+                                                              <a href='javascript:void(0)' style='font-size: 18px;'>
+                                                                " . $value['kajian_nama'] . "
+                                                              </a>
+                                                              <br>
+                                                              " . $value['kajian_tanggal'] . "
+                                                            </div>
+                                                            <hr>
+                                                        </div>";
+                                    }
+                                 ?>
 
-                                        <img src="assets_2/img/content/car-gallery.jpg" alt="Mauris mattis ullamcorper euismod Nulla convallis">
-                                      </figure>
-                                      <div class="image-light"></div>
-                                      <span class="dashicons dashicons-format-gallery"></span>
-                                    </a>
-                                    <a href="javascript:void(0)">Mauris mattis ullamcorper euismod Nulla convallis</a>
-                                  </div>
-                                  <hr>
-                                </div>
-                                <div class="row" style="height: 100px;">
-                                  <div class="article-tiny">
-                                    <a href="javascript:void(0)" class="image">
-                                      <figure class="image-holder">
-
-                                        <img src="assets_2/img/content/car-gallery.jpg" alt="Mauris mattis ullamcorper euismod Nulla convallis">
-                                      </figure>
-                                      <div class="image-light"></div>
-                                      <span class="dashicons dashicons-format-gallery"></span>
-                                    </a>
-                                    <a href="javascript:void(0)">Mauris mattis ullamcorper euismod Nulla convallis</a>
-                                  </div>
-                                  <hr>
-                                </div>
+                                 <?php echo $html_kajian; ?>
                               </div>
                           </div>
                       </section>

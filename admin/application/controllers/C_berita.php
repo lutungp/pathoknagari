@@ -88,7 +88,7 @@ class C_berita extends MY_Controller{
     $data = array(
         'berita_nama'     => $berita_nama,
         'berita_summary'  => $berita_summary,
-        'berita_tanggal'  => $berita_tanggal,
+        'berita_tanggal'  => date('Y-m-d', strtotime($berita_tanggal)),
         'berita_isi'      => $berita_isi,
         'berita_penulis'  => $berita_penulis
     );

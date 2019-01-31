@@ -88,7 +88,7 @@ class C_kajian extends MY_Controller{
     $data = array(
         'kajian_nama'     => $kajian_nama,
         'kajian_summary'  => $kajian_summary,
-        'kajian_tanggal'  => $kajian_tanggal,
+        'kajian_tanggal'  => date('Y-m-d', strtotime($kajian_tanggal)),
         'kajian_isi'      => $kajian_isi,
         'kajian_penulis'  => $kajian_penulis
     );
