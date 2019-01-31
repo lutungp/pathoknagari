@@ -114,10 +114,10 @@
               <a class="nav-link pagescroll" href="#berita">Kabar Ad-Darojat</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pagescroll" href="#ipib">Organisasi</a>
+              <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
+              <a class="nav-link pagescroll" href="#ipib">Organisasi</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link pagescroll" href="#streaming">Live Streaming</a>
