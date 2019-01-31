@@ -364,54 +364,25 @@
 
                       <!-- CAROUSEL SMALL WIDGET -->
                       <section class="col-sm-6 col-md-12 widget no-mobile" style="display: block;padding-left: 0px;padding-right: 0px;margin-bottom: 20px;">
-                        <header class="clearfix">
-                          <h4>Kajian Islami</h4>
-                        </header>
+                          <header class="clearfix">
+                              <h4>Kajian Islami</h4>
+                          </header>
 
-                        <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
-                          <div class="carousel-inner">
-                            <a class="item active" href='javascript:void(0)'>
-                              <div class="item-inner">
-                                <div data-src="assets_2/img/content/unsplash_527bf4b4ae00d_1-medium.jpg"
-                                data-alt="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"></div>
-                                <div class="image-light"></div>
-                                <div class="caption">
-                                  <h5>Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget</h5>
-                                </div>
-                              </div>
-                            </a>
-                            <a class="item" href='javascript:void(0)'>
-                              <div class="item-inner">
-                                <div data-src="assets_2/img/content/unsplash_528a8fb8a276d_1-medium.jpg"
-                                data-alt="Vestibulum ultricies Ut sollicitudin eget massa et lobortis"></div>
-                                <div class="image-light"></div>
-                                <div class="caption">
-                                  <h5>Vestibulum ultricies Ut sollicitudin eget massa et lobortis</h5>
-                                </div>
-                              </div>
-                            </a>
-                          <a class="item" href='javascript:void(0)'>
-                              <div class="item-inner">
-                                <div data-src="assets_2/img/content/Bird-Profile-Wellington-New-Zealand-medium.jpg"
-                                data-alt="Bird Profile Wellington New Zealand Vivamus ac neque sed"></div>
-                                <div class="image-light"></div>
-                                <div class="caption">
-                                  <h5>Bird Profile Wellington New Zealand Vivamus ac neque sed</h5>
-                                </div>
-                              </div>
-                          </a>
-                          <a class="item" href='javascript:void(0)'>
-                            <div class="item-inner">
-                              <div data-src="assets_2/img/content/unsplash_529f51e60b51c_1-medium.jpg" data-alt="Dui placerat dictum Suspendisse ut justo venenatis imperdiet"></div>
-                              <div class="image-light"></div>
-                              <div class="caption">
-                                <h5>Dui placerat dictum Suspendisse ut justo venenatis imperdiet</h5>
-                              </div>
-                            </div>
-                          </a>
-                          </div><!--.carousel-inner-->
-                        </div><!--.carousel-->
-                        <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
+                          <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <a class="item active" href='javascript:void(0)'>
+                                  <div class="item-inner">
+                                    <div data-src="assets_2/img/content/unsplash_527bf4b4ae00d_1-medium.jpg"
+                                    data-alt="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"></div>
+                                    <div class="image-light"></div>
+                                    <div class="caption">
+                                      <h5>Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget</h5>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div><!--.carousel-inner-->
+                          </div><!--.carousel-->
+                      <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
                       </section>
 
                       <!-- WIDGET CUSTOM -->

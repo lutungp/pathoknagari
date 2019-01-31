@@ -106,5 +106,21 @@
 
       $this->response($response);
     }
+
+    function kajian_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $sortby = " ORDER BY kajian_tanggal DESC ";
+      $where  = " WHERE kajian_aktif = 'y' ";
+      $select = $this->post('select');
+
+      $result = $this->Global_m->select_config('m_kajian', $where, $select)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
 }
 ?>
