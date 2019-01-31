@@ -2880,12 +2880,12 @@ iframe {
     z-index: 1
 }
 
-body>#content,
+/* body>#content,
 body>footer,
 body>header {
     -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, .4);
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .4)
-}
+} */
 
 aside .col-sm-6:nth-child(2n+1) {
     clear: both

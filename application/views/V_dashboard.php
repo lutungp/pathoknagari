@@ -36,6 +36,17 @@
        display: none;
      }
   }
+
+  @media (min-width: 760px) {
+     .berita-slide {
+       margin-top: 15px;
+     }
+  }
+
+  .full-content {
+    height: 600px;
+  }
+
 </style>
 
 <!--Ful Screen Section Video with caption-->
@@ -43,31 +54,28 @@
    <div class="container">
       <div class="row">
          <div class="col-md-2 col-sm-1"></div>
-         <div class="col-md-8 col-sm-10">
-                  <div class="center-item text-center video-content">
+            <div class="col-md-8 col-sm-10">
+                <div class="center-item text-center video-content">
 
                   <h2 class="text-capitalize bottom10 whitecolor">
-		  <span class="block fontbold wow fadeIn" data-wow-delay="300ms">MASJID</span>
-		  <span class="block fontbold wow fadeIn" data-wow-delay="400ms">PATHOK NAGARI</span>
-   		  </h2>
-		  <h3 class="text-capitalize bottom20 whitecolor">
+                  <span class="block fontbold wow fadeIn" data-wow-delay="300ms">MASJID</span>
+                  <span class="block fontbold wow fadeIn" data-wow-delay="400ms">PATHOK NAGARI</span>
+                  </h2>
+                  <h3 class="text-capitalize bottom20 whitecolor">
                   <span class="hero-text wow fadeIn" data-wow-delay="500ms">- Official Website -</span></h3> </span>
 
-                   <a href="#profil" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">Jelajahi</a>
-               </div>
-         </div>
-         <div class="col-md-2 col-sm-1"></div>
+                  <a href="#profil" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">Jelajahi</a>
+                </div>
+            </div>
       </div>
    </div>
-   <video class="my-background-video jquery-background-video" loop autoplay muted poster="assets/video/end.jpg">
-		<!--<source src="assets/video/Frontier_1.mp4" type="video/mp4">-->
-	</video>
+   <video class="my-background-video jquery-background-video" loop autoplay muted poster="assets/video/end.jpg"></video>
 </section>
 
 <!--Beranda section-->
 <section id="profil" class="padding">
    <div class="container">
-      <div class="row">
+      <div class="row full-content">
         <div class="col-md-5 col-sm-12">
            <div class="image hover-effect wow fadeInLeft" style="padding-top :70px;" data-wow-delay="300ms"><img src="assets/images/32.jpg"
              alt="masjid" class="equalheight"></div>
@@ -83,126 +91,33 @@
                 </div>
             </div>
          </div>
-      </div><br><br><br>
-      <section class="breaking-news wow fadeInUp" data-wow-delay="350ms">
-          <header>
-              <h4>Takmir & Ustadz</h4>
-              <i class="triangle"></i>
-          </header>
-          <div class="content">
-              <ul>
-                <?php
-                    foreach ($data_pegawai['data'] as $key => $value) {
-                        echo "<li><a href='javascript:void(0)'><i class='fa fa-angle-double-right'></i> " . $value['pegawai_jabatan'] . " : " . $value['pegawai_nama'] . "</a></li>";
-                    }
-                 ?>
-              </ul>
-          </div>
-      </section>
-       <div class="row">
-          <?php
-              $takmir_box = "";
-              foreach ($data_pegawai['data'] as $key => $value) {
-                  $takmir_box .= "<div class='col-lg-3 col-md-6'>
-                               <div class='team-box grey-shade top60 wow fadeInUp' data-wow-delay='400ms'>
-                                  <div class='image'>
-                                     <img src='" . $slide_berita['img_url'] . $value['pegawai_photo'] . "'  alt='Pathoknagari-takmir'>
-                                  </div>
-                                  <div class='team-content darkcolor'>
-                                     <h3>Ketua Takmir</h3>
-                                     <p class='nomargin'>Drs. H. Harsoyo, MS.I</p>
-                                  </div>
-                               </div>
-                            </div>";
-              }
-           ?>
-
-           <?php echo $takmir_box; ?>
-       </div>
-       <div id="ipib" class="container"><br><br><br><br>
-          <div class="row">
-             <div class="col-md-8 col-sm-12">
-                <div class="split-box center-block equalheight container-padding">
-                   <div class="heading-title padding_half" style="padding-top :130px;">
-                   <span class="wow fadeInLeft" data-wow-delay="300ms">Organisasi Masjid</span>
-                   <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">Ikatan Pemuda Islam Babadan</h2>
-                   <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms">Ikatan Pemuda Islam Babadan adalah organisasi dibawah
-                    naungan Masjid Pathok Nagari Ad-Darojat. Organisasi ini berdiri pada tahun 1970 yang diawali dengan
-                    nama “IPIB”.</p>
-                   <a href="organisasi" class="button btnprimary wow fadeIn" data-wow-delay="700ms">Selengkapnya</a>
-                    </div>
-                </div>
-             </div>
-             <div class="col-md-4 col-sm-12">
-                <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img src="assets/images/ipib.jpg"
-                  alt="ipib-logo" class="equalheight"></div>
-             </div>
-          </div>
-       </div>
-       <section class="breaking-news wow fadeInUp" data-wow-delay="350ms">
-           <header>
-               <h4>Pengurus IPIB</h4>
-               <i class="triangle"></i>
-           </header>
-           <div class="content">
-               <ul>
-                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Ketua Umum : Agus Purnomo</a></li>
-                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Ketua I : Hadiyan Haris</a></li>
-                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Ketua II : Indra Jaya</a></li>
-                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Ketua III : Naufal Ahmad</a></li>
-               </ul>
-           </div>
-       </section>
-       <div class="row">
-           <div class="col-lg-3 col-md-6">
-              <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                 <div class="image">
-                    <img src="assets/images/ustadz/agu.jpg"  alt="Pathoknagari-ipib">
-                 </div>
-                 <div class="team-content darkcolor">
-                    <h3>Ketua Umum</h3>
-                    <p class="nomargin">Agus Purnomo</p>
-                 </div>
-              </div>
-           </div>
-           <div class="col-lg-3 col-md-6">
-              <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                 <div class="image">
-                    <img src="assets/images/ustadz/had.jpg" alt="Pathoknagari-ipib">
-                 </div>
-                 <div class="team-content darkcolor">
-                    <h3>Ketua I</h3>
-                    <p class="nomargin">Hadiyan Haris</p>
-                 </div>
-              </div>
-           </div>
-           <div class="col-lg-3 col-md-6">
-              <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                 <div class="image">
-                    <img src="assets/images/ustadz/ind.jpg" alt="Pathoknagari-ipib">
-                 </div>
-                 <div class="team-content darkcolor">
-                    <h3>Ketua II</h3>
-                    <p class="nomargin">Indra Jaya</p>
-                 </div>
-              </div>
-           </div>
-           <div class="col-lg-3 col-md-6">
-              <div class="team-box grey-shade top60 wow fadeInUp" data-wow-delay="400ms">
-                 <div class="image">
-                    <img src="assets/images/ustadz/nau.jpg" alt="Pathoknagari-ipib">
-                 </div>
-                 <div class="team-content darkcolor">
-                    <h3>Ketua III</h3>
-                    <p class="nomargin">Naufal Ahmad</p>
-                 </div>
-              </div>
+      </div>
+    </div>
+    <!-- <div class= "text-center">
+        <a href="galeri" class="button btnprimary top60 wow fadeIn" data-wow-delay="500ms">Lihat Galeri masjid</a>
+    </div> -->
+</section>
+<section id="organisasi">
+  <div id="ipib" class="container">
+     <div class="row" style="height:680px; padding-top: 70px">
+        <div class="col-md-8 col-sm-12">
+           <div class="split-box center-block equalheight container-padding">
+              <div class="heading-title padding_half" style="padding-top :130px;">
+              <span class="wow fadeInLeft" data-wow-delay="300ms">Organisasi Masjid</span>
+              <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">Ikatan Pemuda Islam Babadan</h2>
+              <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms">Ikatan Pemuda Islam Babadan adalah organisasi dibawah
+               naungan Masjid Pathok Nagari Ad-Darojat. Organisasi ini berdiri pada tahun 1970 yang diawali dengan
+               nama “IPIB”.</p>
+              <a href="organisasi" class="button btnprimary wow fadeIn" data-wow-delay="700ms">Selengkapnya</a>
+               </div>
            </div>
         </div>
-    </div>
-    <div class= "text-center">
-    <a href="galeri" class="button btnprimary top60 wow fadeIn" data-wow-delay="500ms">Lihat Galeri masjid</a>
-    </div><br>
+        <div class="col-md-4 col-sm-12">
+           <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img src="assets/images/ipib.jpg"
+             alt="ipib-logo" class="equalheight"></div>
+        </div>
+     </div>
+  </div>
 </section>
 <!--Beranda ends-->
 
@@ -272,18 +187,18 @@
 <!--Agenda Ends-->
 
 <!-- Kabar Ad-Darojat -->
-<section id="kabar" class="padding">
+<section id="galeri" class="padding">
    <div class="container">
       <div class="row">
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
                <div class="heading-title padding_half" style="padding-top :130px;">
-               <span class="wow fadeInLeft" data-wow-delay="350ms">Berita Terbaru</span>
-               <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Kabar Ad-Darojat</h2>
+               <!-- <span class="wow fadeInLeft" data-wow-delay="350ms">Berita Terbaru</span> -->
+               <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Galeri Masjid</h2>
                <p class="bottom30 wow fadeInLeft" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
                 yang komperhensif, berimbang dan terpercaya yang bertujuan memberikan informasi dan
                 mengedukasi sahabat kaum muslimin di seluruh nusantara.</p>
-               <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">Lihat Semua kabar</a>
+               <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">LIHAT GALERI MASJID</a>
                 </div>
             </div>
          </div>
@@ -337,7 +252,7 @@
                    </section>
 
                    <!-- CAROUSEL  -->
-                   <section class="widget no-mobile">
+                   <section class="widget no-mobile berita-slide">
                      <div class="frame thick">
                          <div id="carousel-medium" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
                              <!-- Carousel contents -->
@@ -455,10 +370,7 @@
 
                         <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
                           <div class="carousel-inner">
-                            <a class="item active"
-                            href="assets_2/img/content/unsplash_527bf4b4ae00d_1-huge.jpg"
-                            title="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"
-                            data-lightbox-gallery="gallery-small">
+                            <a class="item active" href='javascript:void(0)'>
                               <div class="item-inner">
                                 <div data-src="assets_2/img/content/unsplash_527bf4b4ae00d_1-medium.jpg"
                                 data-alt="Nunc ut dolor nec mi posuere tincidunt quis ut sem Praesent pharetra eget"></div>
@@ -468,10 +380,7 @@
                                 </div>
                               </div>
                             </a>
-                            <a class="item"
-                            href="assets_2/img/content/unsplash_528a8fb8a276d_1-huge.jpg"
-                            title="Vestibulum ultricies Ut sollicitudin eget massa et lobortis"
-                            data-lightbox-gallery="gallery-small">
+                            <a class="item" href='javascript:void(0)'>
                               <div class="item-inner">
                                 <div data-src="assets_2/img/content/unsplash_528a8fb8a276d_1-medium.jpg"
                                 data-alt="Vestibulum ultricies Ut sollicitudin eget massa et lobortis"></div>
@@ -481,10 +390,7 @@
                                 </div>
                               </div>
                             </a>
-                          <a class="item"
-                            href="assets_2/img/content/Bird-Profile-Wellington-New-Zealand-huge.jpg"
-                            title="Bird Profile Wellington New Zealand Vivamus ac neque sed"
-                            data-lightbox-gallery="gallery-small">
+                          <a class="item" href='javascript:void(0)'>
                               <div class="item-inner">
                                 <div data-src="assets_2/img/content/Bird-Profile-Wellington-New-Zealand-medium.jpg"
                                 data-alt="Bird Profile Wellington New Zealand Vivamus ac neque sed"></div>
@@ -494,10 +400,7 @@
                                 </div>
                               </div>
                           </a>
-                          <a class="item"
-                          href="assets_2/img/content/unsplash_529f51e60b51c_1-huge.jpg"
-                          title="Dui placerat dictum Suspendisse ut justo venenatis imperdiet"
-                          data-lightbox-gallery="gallery-small">
+                          <a class="item" href='javascript:void(0)'>
                             <div class="item-inner">
                               <div data-src="assets_2/img/content/unsplash_529f51e60b51c_1-medium.jpg" data-alt="Dui placerat dictum Suspendisse ut justo venenatis imperdiet"></div>
                               <div class="image-light"></div>

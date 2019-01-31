@@ -110,8 +110,11 @@
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#agenda">Majelis Ilmu</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link pagescroll" href="#kabar">Kabar Ad-Darojat</a>
+            <li class="nav-item">
+              <a class="nav-link pagescroll" href="#galeri">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pagescroll" href="#berita">Kabar Ad-Darojat</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
