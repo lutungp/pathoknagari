@@ -413,14 +413,10 @@
 
                                                                   <img src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "' alt='" . $value['kajian_nama'] . "'>
                                                                 </figure>
-                                                                <div class='image-light'></div>
-                                                                <span class='dashicons dashicons-format-gallery'></span>
                                                               </a>
-                                                              <a href='javascript:void(0)' style='font-size: 18px;'>
-                                                                " . $value['kajian_nama'] . "
-                                                              </a>
-                                                              <br>
-                                                              " . $value['kajian_tanggal'] . "
+                                                              <h4 class='custom-dio-hover'>
+                                                              <a href='javascript:void(0)'>" . $value['kajian_nama'] . "</a></h4>
+
                                                             </div>
                                                             <hr>
                                                         </div>";
