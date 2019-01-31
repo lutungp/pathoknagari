@@ -97,28 +97,6 @@
         <a href="galeri" class="button btnprimary top60 wow fadeIn" data-wow-delay="500ms">Lihat Galeri masjid</a>
     </div> -->
 </section>
-<section id="organisasi">
-  <div id="ipib" class="container">
-     <div class="row" style="height:680px; padding-top: 70px">
-        <div class="col-md-8 col-sm-12">
-           <div class="split-box center-block equalheight container-padding">
-              <div class="heading-title padding_half" style="padding-top :130px;">
-              <span class="wow fadeInLeft" data-wow-delay="300ms">Organisasi Masjid</span>
-              <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">Ikatan Pemuda Islam Babadan</h2>
-              <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms">Ikatan Pemuda Islam Babadan adalah organisasi dibawah
-               naungan Masjid Pathok Nagari Ad-Darojat. Organisasi ini berdiri pada tahun 1970 yang diawali dengan
-               nama “IPIB”.</p>
-              <a href="organisasi" class="button btnprimary wow fadeIn" data-wow-delay="700ms">Selengkapnya</a>
-               </div>
-           </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-           <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img src="assets/images/ipib.jpg"
-             alt="ipib-logo" class="equalheight"></div>
-        </div>
-     </div>
-  </div>
-</section>
 <!--Beranda ends-->
 
 <!-- Agenda -->
@@ -298,9 +276,6 @@
 
                    <!-- ARTICLES V1 WIDGET -->
                    <section class="widget articles-v1">
-                       <!-- <header class="clearfix">
-                           <h4>Headline</h4>
-                       </header> -->
                        <?php
                             $kilasberita = "";
                             foreach ($kilas_berita['data'] as $key => $value) {
@@ -434,6 +409,29 @@
     </div>
 </section>
 <!-- CONTENT -->
+
+<section id="organisasi">
+  <div id="ipib" class="container">
+     <div class="row" style="height:680px; padding-top: 70px">
+        <div class="col-md-8 col-sm-12">
+           <div class="split-box center-block equalheight container-padding">
+              <div class="heading-title padding_half" style="padding-top :130px;">
+              <span class="wow fadeInLeft" data-wow-delay="300ms">Organisasi Masjid</span>
+              <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">Ikatan Pemuda Islam Babadan</h2>
+              <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms">Ikatan Pemuda Islam Babadan adalah organisasi dibawah
+               naungan Masjid Pathok Nagari Ad-Darojat. Organisasi ini berdiri pada tahun 1970 yang diawali dengan
+               nama “IPIB”.</p>
+              <a href="organisasi" class="button btnprimary wow fadeIn" data-wow-delay="700ms">Selengkapnya</a>
+               </div>
+           </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+           <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img src="assets/images/ipib.jpg"
+             alt="ipib-logo" class="equalheight"></div>
+        </div>
+     </div>
+  </div>
+</section>
 
 <!--Merchandise-->
 <section id="merchandise" class="padding bglight">

@@ -43,7 +43,7 @@ class C_dashboard extends MY_Controller{
     $data['slide_berita'] = $slide_berita;
 
     $kilas_berita = json_decode($kilas_berita, TRUE);
-    if ($kilas_berita == "") {
+    if ($kilas_berita['data'] == "") {
         $kilas_berita['data'] = array();
     }
     $data['kilas_berita'] = $kilas_berita;
@@ -72,7 +72,7 @@ class C_dashboard extends MY_Controller{
 
     $slide_kajian = $this->http_request($this->API.'/C_api/kajian', $postData, array(CURLOPT_BUFFERSIZE => 10));
     $slide_kajian = json_decode($slide_kajian, TRUE);
-    if ($slide_kajian == "") {
+    if ($slide_kajian['data'] == "") {
         $slide_kajian['data'] = array();
     }
     $data['slide_kajian'] = $slide_kajian;
@@ -87,7 +87,7 @@ class C_dashboard extends MY_Controller{
 
     $kilas_kajian = $this->http_request($this->API.'/C_api/kajian', $postData, array(CURLOPT_BUFFERSIZE => 10));
     $kilas_kajian = json_decode($kilas_kajian, TRUE);
-    if ($kilas_kajian == "") {
+    if ($kilas_kajian['data'] == "") {
         $kilas_kajian['data'] = array();
     }
 
