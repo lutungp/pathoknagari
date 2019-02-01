@@ -36,9 +36,20 @@
        display: none;
      }
 
-     .heading-title {
+     .header-on-mobile {
        padding-top: 10px;
      }
+
+     .galeri-on-mobile {
+       padding-top :25px;
+       padding-bottom: 15px;
+     }
+
+     #ipib_row {
+       height: 500px;
+       padding-top: 100px
+     }
+
   }
 
   @media (min-width: 760px) {
@@ -46,8 +57,17 @@
        margin-top: 15px;
      }
 
-     .heading-title {
+     .header-on-mobile {
        padding-top :125px;
+     }
+
+     .galeri-on-mobile {
+       padding-top :125px;
+     }
+
+     #ipib_row {
+       height: 680px;
+       padding-top: 70px
      }
   }
 
@@ -96,7 +116,7 @@
         </div>
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half">
+               <div class="heading-title padding_half header-on-mobile">
                <span class="wow fadeInRight" data-wow-delay="350ms">Biografi Sejarah</span>
                <h2 class="darkcolor bottom25 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat</h2>
                <p class="bottom30 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
@@ -184,14 +204,14 @@
       <div class="row">
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half" style="padding-top :130px;">
-               <!-- <span class="wow fadeInLeft" data-wow-delay="350ms">Berita Terbaru</span> -->
-               <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Galeri Masjid</h2>
-               <p class="bottom30 wow fadeInLeft" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
-                yang komperhensif, berimbang dan terpercaya yang bertujuan memberikan informasi dan
-                mengedukasi sahabat kaum muslimin di seluruh nusantara.</p>
-               <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">LIHAT GALERI MASJID</a>
-                </div>
+               <div class="heading-title padding_half galeri-on-mobile">
+                 <span class="wow fadeInRight" data-wow-delay="350ms">Dokumenter</span>
+                 <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Galeri Masjid</h2>
+                 <p class="bottom30 wow fadeInLeft" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
+                  yang komperhensif, berimbang dan terpercaya yang bertujuan memberikan informasi dan
+                  mengedukasi sahabat kaum muslimin di seluruh nusantara.</p>
+                 <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">LIHAT GALERI MASJID</a>
+               </div>
             </div>
          </div>
          <div class="col-md-5 col-sm-12">
@@ -499,10 +519,10 @@
 
 <section id="organisasi">
   <div id="ipib" class="container">
-     <div class="row" style="height:680px; padding-top: 70px">
+     <div id="ipib_row" class="row">
         <div class="col-md-8 col-sm-12">
            <div class="split-box center-block equalheight container-padding">
-              <div class="heading-title padding_half" style="padding-top :130px;">
+              <div class="heading-title padding_half">
               <span class="wow fadeInLeft" data-wow-delay="300ms">Organisasi Masjid</span>
               <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">Ikatan Pemuda Islam Babadan</h2>
               <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms">Ikatan Pemuda Islam Babadan adalah organisasi dibawah
@@ -512,9 +532,10 @@
                </div>
            </div>
         </div>
-        <div class="col-md-4 col-sm-12">
-           <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img id="img_organisasi" src="assets/images/ipib.jpg"
-             alt="ipib-logo" class="equalheight"></div>
+        <div id="img_organisasi" class="col-md-4 col-sm-12">
+           <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img src="assets/images/ipib.jpg"
+             alt="ipib-logo" class="equalheight">
+           </div>
         </div>
      </div>
   </div>
