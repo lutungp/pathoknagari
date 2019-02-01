@@ -122,5 +122,22 @@
 
       $this->response($response);
     }
+
+    public function kajiandetail_post(){
+        $kajian_id = $this->input->post('id');
+        $where  = " WHERE kajian_active = 'y' AND kajian_id = $kajian_id ";
+
+        $response['status'] = 200;
+        $response['img_url'] = base_url('assets/img/items/');
+        $result = $this->Global_m->select_config('m_kajian', $where, '*')->result();
+        $nbrows = Count($this->Global_m->select_config('m_kajian', $where, '*')->result());
+        $response['nbrows'] = $nbrows;
+        foreach ($result as $key => $value) {
+          $response['data'][] = $value;
+        }
+
+
+        $this->response($response);
+    }
 }
 ?>
