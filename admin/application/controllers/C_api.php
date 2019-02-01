@@ -139,5 +139,25 @@
 
         $this->response($response);
     }
+
+    function slide_kajian_post()
+    {
+      $where  = " WHERE kajian_active = 'y' ";
+      $sortby = " ORDER BY kajian_tanggal DESC ";
+      $start = (integer)$this->post('start');
+      $limit = (integer)$this->post('limit');
+
+      $response['status'] = 200;
+      $response['img_url'] = base_url('assets/img/items/');
+      $result = $this->Global_m->select_config('m_kajian', $where, "*", $start, $limit, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $nbrows = Count($this->Global_m->select_config('m_kajian', $where, '*', $start, $limit)->result());
+      $response['nbrows'] = $nbrows;
+
+      $this->response($response);
+    }
 }
 ?>
