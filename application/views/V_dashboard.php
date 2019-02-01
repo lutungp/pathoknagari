@@ -35,11 +35,19 @@
      .news-slide-summary {
        display: none;
      }
+
+     .heading-title {
+       padding-top: 10px;
+     }
   }
 
   @media (min-width: 760px) {
      .berita-slide {
        margin-top: 15px;
+     }
+
+     .heading-title {
+       padding-top :125px;
      }
   }
 
@@ -88,7 +96,7 @@
         </div>
          <div class="col-md-7 col-sm-12">
             <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half" style="padding-top :125px;">
+               <div class="heading-title padding_half">
                <span class="wow fadeInRight" data-wow-delay="350ms">Biografi Sejarah</span>
                <h2 class="darkcolor bottom25 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat</h2>
                <p class="bottom30 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
@@ -359,7 +367,7 @@
                                         $active = "active";
                                       }
                                       $html_kajian .= "<div class='carousel-inner'>
-                                                        <a class='item $active' href='javascript:void(0)'>
+                                                        <a class='item $active' href='javascript:void(0)' onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
                                                           <div class='item-inner'>
                                                             <div data-src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "'
                                                             data-alt='" . $value['kajian_nama'] . "'></div>
@@ -392,13 +400,14 @@
                                                             <div class='article-tiny'>
                                                               <a href='javascript:void(0)' class='image'>
                                                                 <figure class='image-holder'>
-
-                                                                  <img src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "' alt='" . $value['kajian_nama'] . "'>
+                                                                  <img src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "' alt='" . $value['kajian_nama'] . "'
+                                                                   onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
                                                                 </figure>
                                                               </a>
                                                               <h4 class='custom-dio-hover'>
-                                                              <a href='javascript:void(0)'>" . $value['kajian_nama'] . "</a></h4>
-
+                                                              <a href='javascript:void(0)' onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
+                                                              " . $value['kajian_nama'] . "
+                                                              </a></h4>
                                                             </div>
                                                             <hr>
                                                         </div>";
@@ -719,5 +728,29 @@
         }
 
     })
+
+    function kajian_detail(elem) {
+          val = $(elem).attr('value')
+          var mapForm = document.createElement("form");
+           mapForm.target = "Map";
+           mapForm.method = "POST"; // or "post" if appropriate
+           mapForm.action = "<?php echo base_url('kajian-detail') ?>";
+
+           var mapInput = document.createElement("input");
+           mapInput.type = "text";
+           mapInput.name = "message";
+           mapInput.value = val;
+           mapForm.appendChild(mapInput);
+
+           document.body.appendChild(mapForm);
+
+           map = window.open("", "Map");
+
+        if (map) {
+           mapForm.submit();
+        } else {
+           alert('You must allow popups for this map to work.');
+        }
+    }
 
 </script>
