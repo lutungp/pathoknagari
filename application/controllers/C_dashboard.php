@@ -27,8 +27,9 @@ class C_dashboard extends MY_Controller{
     $slide_berita = $this->http_request($this->API.'/C_api/slide_berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
 
     $postData = [
-      'start'   => 5,
-      'limit'   => 7,
+      'start'   => 0,
+      'limit'   => 5,
+      'sortby'  => ' berita_tanggal DESC, berita_created_date DESC'
     ];
 
     $countData = count($postData);
@@ -131,6 +132,8 @@ class C_dashboard extends MY_Controller{
     $postData = [
       'start'   => $start,
       'limit'   => $end,
+      'select'  => " berita_id, berita_nama, berita_photo, DATE_FORMAT(berita_tanggal, '%d %M %Y') AS berita_tanggal, berita_summary ",
+      'sortby'  => ' berita_tanggal DESC, berita_created_date DESC'
     ];
 
     $countData = count($postData);

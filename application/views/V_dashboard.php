@@ -252,9 +252,10 @@
 
                                             $kilasberita .= " <div class='item $active'>
                                                 <div class='item-inner'>
-                                                    <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'></div>
+                                                    <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'
+                                                     onclick='berita_detail(this)' value='" . $value['berita_id'] . "'></div>
                                                     <div class='carousel-caption'>
-                                                        <div><a href='javascript:void(0)'><h3>" . $value['berita_nama'] . "</h3></a></div>
+                                                        <div><a href='javascript:void(0)' onclick='berita_detail(this)' value='" . $value['berita_id'] . "'><h3>" . $value['berita_nama'] . "</h3></a></div>
                                                         <div class='hidden-xs news-slide-summary'>
                                                             <p>
                                                                 " . $value['berita_summary'] . "
@@ -566,10 +567,10 @@
         var page    = '<li class="page-item"><a href="javascript:void(0)" class="page-link">' + pageval + '</a></li>'
         page = ''
         pagebullet = 1;
-        if (jml_berita > 3) {
+        if (jml_berita > 5) {
             for (var i = 0; i < jml_berita; i++) {
                 aktif = ''
-                if (i % 3 == 0) {
+                if (i % 5 == 0) {
                     if (pagebullet == 1) {
                         aktif = 'active'
                     }
@@ -650,14 +651,16 @@
         })
 
         function getBeritaDetail(pagenumber) {
-            if (pagenumber == 1) {
-                pagenumber = 5
+            if (pagenumber > 1) {
+                endCol   = 5 * pagenumber
+                startCol = endCol - 5
             } else {
-                pagenumber = parseInt(pagenumber) + 6
+                startCol = 0
+                endCol   = 5
             }
 
-            startCol = parseInt(pagenumber)
-            endCol   = parseInt(pagenumber) + 3
+            startCol = parseInt(startCol)
+            endCol   = parseInt(endCol)
             $.ajax ({
                 type: "POST",
                 url: '<?php echo base_url('get_berita')?>',
