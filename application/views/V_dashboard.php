@@ -320,19 +320,16 @@
 
                         <div id="" class="carousel slide carousel-small frame" data-ride="carousel">
                           <div class='carousel-inner'>
-                            <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/pengajian-ahad-pagi.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Ust-Rahmat-Baequni.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
+                            <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/pengajian-ahad-pagi.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Ust-Rahmat-Baequni.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
                           </div>
                         </div>
                     </section>
-
-
-
                   </div>
               </aside>
-            </div>
+          </div>
         </div>
     </div>
 </section>
