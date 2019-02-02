@@ -98,146 +98,13 @@
                   <h3 class="text-capitalize bottom20 whitecolor">
                   <span class="hero-text wow fadeIn" data-wow-delay="500ms">- Official Website -</span></h3> </span>
 
-                  <a href="#profil" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">Jelajahi</a>
+                  <a href="#berita" class="button btnwhite pagescroll wow fadeInUp" data-wow-delay="600ms">Jelajahi</a>
                 </div>
             </div>
       </div>
    </div>
    <video class="my-background-video jquery-background-video" loop autoplay muted poster="assets/video/end.jpg"></video>
 </section>
-
-<!--Beranda section-->
-<section id="profil" class="padding">
-   <div class="container">
-      <div class="row full-content">
-        <div class="col-md-5 col-sm-12">
-           <div class="image hover-effect wow fadeInLeft" style="padding-top :70px;" data-wow-delay="300ms"><img src="assets/images/32.jpg"
-             alt="masjid" class="equalheight"></div>
-        </div>
-         <div class="col-md-7 col-sm-12">
-            <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half header-on-mobile">
-               <span class="wow fadeInRight" data-wow-delay="350ms">Biografi Sejarah</span>
-               <h2 class="darkcolor bottom25 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat</h2>
-               <p class="bottom30 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-               yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.</p>
-               <a href="sejarah" class="button btnprimary wow fadeIn" data-wow-delay="500ms">Selengkapnya</a>
-                </div>
-            </div>
-         </div>
-      </div>
-    </div>
-    <!-- <div class= "text-center">
-        <a href="galeri" class="button btnprimary top60 wow fadeIn" data-wow-delay="500ms">Lihat Galeri masjid</a>
-    </div> -->
-</section>
-<!--Beranda ends-->
-
-<!-- Agenda -->
-<section id="agenda" class="padding bg-counter-light parallaxie">
-   <div class="container"><br><br>
-    <div class="row">
-         <div class="col-md-12 col-sm-12 text-center">
-           <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-              <span>Jadwal Kegiatan Rutin</span>
-               <h2 class="whitecolor bottom20 wow fadeInUp" data-wow-delay="400ms">MAJELIS ILMU</h2>
-            </div>
-         </div>
-      </div>
-      <div class="row our-process">
-        <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 even wow fadeInLeft" data-wow-delay="400ms">
-               <span class="pro-step">1</span>
-             <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAHSIN QUR'AN</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Zaenal Syarifudin M.Ag.</h4>
-               <p>Setiap Hari Ahad, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-		  <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 wow fadeInUp" data-wow-delay="450ms">
-              <span class="pro-step">2</span>
-               <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAFSIR QUR'AN</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Dr. H. Nurkholis, M.Ag.</h4>
-               <p>Setiap Hari Rabu, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 even wow fadeInRight" data-wow-delay="500ms">
-               <span class="pro-step">3</span>
-              <h3 class="font-light darkcolor top20 bottom20">TADARUS QUR'AN BAPAK-BAPAK</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Jama'ah Masjid</h4>
-               <p>Setiap Hari Senin, Selasa, Rabu, Jum'at dan Sabtu Ba'da Maghrib di Masjid Ad-Darojat</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-           <div class="process-number top60 wow fadeInLeft" data-wow-delay="550ms">
-              <span class="pro-step">4</span>
-               <h3 class="font-light darkcolor top20 bottom20">PENGAJIAN AHAD PAGI</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Warga Babadan & Umum</h4>
-               <p>Setiap Hari Ahad Pagi, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-		<div class="col-lg-4 col-md-3">
-           <div class="process-number top60 even wow fadeInUp" data-wow-delay="600">
-               <span class="pro-step">5</span>
-               <h3 class="font-light darkcolor top20 bottom20">KAJIAN PEMUDA ISLAM</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">IPIB & FOKRI</h4>
-               <p>Setiap Hari Ahad, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-		<div class="col-lg-4 col-md-3">
-           <div class="process-number top60 wow fadeInRight" data-wow-delay="650ms">
-              <span class="pro-step">6</span>
-               <h3 class="font-light darkcolor top20 bottom20">TADARUS & PENGAJIAN ANAK</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">IPMADA</h4>
-               <p>Setiap Hari Kamis, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-      </div>
-   </div>
-</section>
-<!--Agenda Ends-->
-
-<!-- Kabar Ad-Darojat -->
-<section id="galeri" class="padding">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7 col-sm-12">
-            <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half galeri-on-mobile">
-                 <span class="wow fadeInRight" data-wow-delay="350ms">Dokumenter</span>
-                 <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Galeri Masjid</h2>
-                 <p class="bottom30 wow fadeInLeft" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
-                  yang komperhensif, berimbang dan terpercaya yang bertujuan memberikan informasi dan
-                  mengedukasi sahabat kaum muslimin di seluruh nusantara.</p>
-                 <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">LIHAT GALERI MASJID</a>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInRight" style="padding-top:40px;" data-wow-delay="500ms"><img src="assets/images/Berita/1.png"
-              alt="masjid-logo" class="equalheight"></div>
-         </div>
-      </div>
-   </div>
-</section>
-
-<!-- Video -->
-<section id="video-parallax" class="video-parallax padding parallaxie">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7 col-sm-7">
-            <div class="heading-title whitecolor text-md-left text-center wow fadeIn" data-wow-delay="500ms">
-               <span>Perjalanan yang luar biasa</span>
-               <h2 class="fontregular">Lihat Video Kami</h2>
-               <a data-fancybox href="https://youtu.be/wWBB-3E7F-4"
-              class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Putar Video</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--Video Ends-->
 
 
 <!-- CONTENT -->
@@ -311,10 +178,13 @@
 
                    <!-- ARTICLES V1 WIDGET -->
                    <section class="widget articles-v1">
+                     <header class="clearfix">
+                         <h4>Kabar Nasional</h4>
+                     </header>
                        <?php
                             $kilasberita = "";
                             foreach ($kilas_berita['data'] as $key => $value) {
-                                $kilasberita .= " <div class='article-medium'>
+                                $kilasberita .= " <div class='article-medium' style='padding: 10px 0 10px 0;'>
                                                     <div class='row'>
                                                         <div class='col-sm-6'>
                                                             <div class='frame'>
@@ -333,7 +203,7 @@
                                                             <h4 class='custom-dio-hover'>
                                                               <a href='javascript:void(0)' onclick='judul_detail(" . $value['berita_id'] . ")'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
-                                                                <a href='#'><span class='fa fa-clock-o'></span> " . date('d M Y', strtotime($value['berita_tanggal'])) . "</a> &nbsp;
+                                                                <a href='#'><span class='fa fa-clock-o'></span> " . $value['berita_tanggal'] . "</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-eye'></span> 1,324</a>
@@ -439,12 +309,163 @@
                           </div>
                       </section>
                   </div>
+                  <!-- Brosur -->
+                  <div class="row">
+                    <section class="col-sm-6 col-md-12 widget no-mobile" style="display: block;padding-left: 0px;padding-right: 0px;margin-bottom: 20px;">
+                        <header class="clearfix">
+                            <h4>Kajian Islami</h4>
+                        </header>
+                    </section>
+
+                    <!-- <section class="widget col-sm-6 col-md-12 no-mobile">
+                        <header class="clearfix"><h4>Advertisement</h4></header>
+
+                        <div class="frame thick">
+                            <a href="#"><div data-src="" tppabs="" data-alt="Banner image"></div></a>
+                        </div>
+                        <img src="img/shadow.png" tppabs="" class="shadow" alt="shadow">
+                    </section> -->
+
+                  </div>
               </aside>
             </div>
         </div>
     </div>
 </section>
 <!-- CONTENT -->
+
+<!--Beranda section-->
+<section id="profil" class="padding">
+   <div class="container">
+      <div class="row full-content">
+        <div class="col-md-5 col-sm-12">
+           <div class="image hover-effect wow fadeInLeft" style="padding-top :70px;" data-wow-delay="300ms"><img src="assets/images/32.jpg"
+             alt="masjid" class="equalheight"></div>
+        </div>
+         <div class="col-md-7 col-sm-12">
+            <div class="split-box center-block equalheight container-padding">
+               <div class="heading-title padding_half header-on-mobile">
+               <span class="wow fadeInRight" data-wow-delay="350ms">Biografi Sejarah</span>
+               <h2 class="darkcolor bottom25 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat</h2>
+               <p class="bottom30 wow fadeInRight" data-wow-delay="400ms">Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
+               yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.</p>
+               <a href="sejarah" class="button btnprimary wow fadeIn" data-wow-delay="500ms">Selengkapnya</a>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <!-- <div class= "text-center">
+        <a href="galeri" class="button btnprimary top60 wow fadeIn" data-wow-delay="500ms">Lihat Galeri masjid</a>
+    </div> -->
+</section>
+<!--Beranda ends-->
+
+<!-- Agenda -->
+<section id="agenda" class="padding bg-counter-light parallaxie">
+   <div class="container"><br><br>
+    <div class="row">
+         <div class="col-md-12 col-sm-12 text-center">
+           <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+              <span>Jadwal Kegiatan Rutin</span>
+               <h2 class="whitecolor bottom20 wow fadeInUp" data-wow-delay="400ms">MAJELIS ILMU</h2>
+            </div>
+         </div>
+      </div>
+      <div class="row our-process">
+        <div class="col-lg-4 col-md-1">
+           <div class="process-number top60 even wow fadeInLeft" data-wow-delay="400ms">
+               <span class="pro-step">1</span>
+             <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAHSIN QUR'AN</h3>
+			   <h4 class="font-light darkcolor top10 bottom10">Zaenal Syarifudin M.Ag.</h4>
+               <p>Setiap Hari Ahad, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+            </div>
+        </div>
+		  <div class="col-lg-4 col-md-1">
+           <div class="process-number top60 wow fadeInUp" data-wow-delay="450ms">
+              <span class="pro-step">2</span>
+               <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAFSIR QUR'AN</h3>
+			   <h4 class="font-light darkcolor top10 bottom10">Dr. H. Nurkholis, M.Ag.</h4>
+               <p>Setiap Hari Rabu, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-1">
+           <div class="process-number top60 even wow fadeInRight" data-wow-delay="500ms">
+               <span class="pro-step">3</span>
+              <h3 class="font-light darkcolor top20 bottom20">TADARUS QUR'AN BAPAK-BAPAK</h3>
+			   <h4 class="font-light darkcolor top10 bottom10">Jama'ah Masjid</h4>
+               <p>Setiap Hari Senin, Selasa, Rabu, Jum'at dan Sabtu Ba'da Maghrib di Masjid Ad-Darojat</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-3">
+           <div class="process-number top60 wow fadeInLeft" data-wow-delay="550ms">
+              <span class="pro-step">4</span>
+               <h3 class="font-light darkcolor top20 bottom20">PENGAJIAN AHAD PAGI</h3>
+			   <h4 class="font-light darkcolor top10 bottom10">Warga Babadan & Umum</h4>
+               <p>Setiap Hari Ahad Pagi, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+            </div>
+        </div>
+		<div class="col-lg-4 col-md-3">
+           <div class="process-number top60 even wow fadeInUp" data-wow-delay="600">
+               <span class="pro-step">5</span>
+               <h3 class="font-light darkcolor top20 bottom20">KAJIAN PEMUDA ISLAM</h3>
+			   <h4 class="font-light darkcolor top10 bottom10">IPIB & FOKRI</h4>
+               <p>Setiap Hari Ahad, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+            </div>
+        </div>
+		<div class="col-lg-4 col-md-3">
+           <div class="process-number top60 wow fadeInRight" data-wow-delay="650ms">
+              <span class="pro-step">6</span>
+               <h3 class="font-light darkcolor top20 bottom20">TADARUS & PENGAJIAN ANAK</h3>
+			   <h4 class="font-light darkcolor top10 bottom10">IPMADA</h4>
+               <p>Setiap Hari Kamis, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+            </div>
+        </div>
+      </div>
+   </div>
+</section>
+<!--Agenda Ends-->
+
+<!-- Kabar Ad-Darojat -->
+<section id="galeri" class="padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-7 col-sm-12">
+            <div class="split-box center-block equalheight container-padding">
+               <div class="heading-title padding_half galeri-on-mobile">
+                 <span class="wow fadeInLeft" data-wow-delay="350ms">Dokumenter</span>
+                 <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Galeri Masjid</h2>
+                 <p class="bottom30 wow fadeInLeft" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
+                  yang komperhensif, berimbang dan terpercaya yang bertujuan memberikan informasi dan
+                  mengedukasi sahabat kaum muslimin di seluruh nusantara.</p>
+                 <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">LIHAT GALERI MASJID</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-5 col-sm-12">
+            <div class="image hover-effect wow fadeInRight" style="padding-top:40px;" data-wow-delay="500ms"><img src="assets/images/Berita/1.png"
+              alt="masjid-logo" class="equalheight"></div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Video -->
+<section id="video-parallax" class="video-parallax padding parallaxie">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-7 col-sm-7">
+            <div class="heading-title whitecolor text-md-left text-center wow fadeIn" data-wow-delay="500ms">
+               <span>Perjalanan yang luar biasa</span>
+               <h2 class="fontregular">Lihat Video Kami</h2>
+               <a data-fancybox href="https://youtu.be/wWBB-3E7F-4"
+              class="button btnprimary fontmedium top20"><i class="fa fa-play"></i> &nbsp;Putar Video</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--Video Ends-->
 
 <!--Merchandise-->
 <section id="merchandise" class="padding bglight">
@@ -716,7 +737,7 @@
 
             data = response.data
             for (var i = 0; i < data.length; i++) {
-                list_berita_html +="<div class='article-medium'>"
+                list_berita_html +="<div class='article-medium' style='padding: 10px 0 10px 0;'>"
                 list_berita_html +="<div class='row'>"
                 list_berita_html +="<div class='col-sm-6'>"
                 list_berita_html +="<div class='frame'>"

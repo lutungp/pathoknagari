@@ -29,6 +29,7 @@ class C_dashboard extends MY_Controller{
     $postData = [
       'start'   => 0,
       'limit'   => 5,
+      'select'  => " berita_id, berita_nama, berita_photo, DATE_FORMAT(berita_tanggal, '%d %M %Y') AS berita_tanggal, berita_summary ",
       'sortby'  => ' berita_tanggal DESC, berita_created_date DESC'
     ];
 

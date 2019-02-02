@@ -102,6 +102,9 @@
         <div class="collapse navbar-collapse" id="xenav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link pagescroll" href="#berita">Kabar Ad-Darojat</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link pagescroll" href="#profil">Profil Masjid</a>
             </li>
             <li class="nav-item">
@@ -109,9 +112,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#galeri">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pagescroll" href="#berita">Kabar Ad-Darojat</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#merchandise">Merchandise</a>
