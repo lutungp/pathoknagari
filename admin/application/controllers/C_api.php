@@ -116,11 +116,11 @@
       $select = $this->post('select');
 
       $result = $this->Global_m->select_config('m_kajian', $where, $select, $limit, $sortby)->result();
-      foreach ($result as $key => $value) {
-        $response['data'][] = $value;
-      }
+      // foreach ($result as $key => $value) {
+      //   $response['data'][] = $value;
+      // }
 
-      $this->response($response);
+      $this->response($this->db->last_query());
     }
 
     public function kajiandetail_post(){
