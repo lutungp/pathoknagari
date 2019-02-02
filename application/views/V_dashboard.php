@@ -283,7 +283,7 @@
                       <section class="col-md-12">
                         <!-- Tab contents -->
                           <div class="tab-content">
-                              <div class="tab-pane">
+                              <div class="tab-pane active">
                                 <?php
                                     $html_kajian = "";
                                     foreach ($kilas_kajian['data'] as $key => $value) {
@@ -315,21 +315,64 @@
                   <div class="row">
                     <section class="col-sm-6 col-md-12 widget no-mobile" style="display: block;padding-left: 0px;padding-right: 0px;margin-bottom: 20px;">
                         <header class="clearfix">
-                            <h4>Agenda Islami</h4>
+                            <h4>Kabar Agenda</h4>
                         </header>
+
+                        <div id="" class="carousel slide carousel-small frame" data-ride="carousel">
+                          <div class='carousel-inner'>
+                            <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/pengajian-ahad-pagi.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Ust-Rahmat-Baequni.jpeg" tppabs="" alt="Banner image" style="width: 380px;height: 480px;"></a>
+                          </div>
+                        </div>
                     </section>
 
-                    <!-- <section class="widget col-sm-6 col-md-12 no-mobile">
-                        <header class="clearfix"><h4>Advertisement</h4></header>
 
-                        <div class="frame thick">
-                            <a href="#"><div data-src="" tppabs="" data-alt="Banner image"></div></a>
-                        </div>
-                        <img src="img/shadow.png" tppabs="" class="shadow" alt="shadow">
-                    </section> -->
 
                   </div>
               </aside>
+            </div>
+            <div class="row">
+              <!-- CAROUSEL  -->
+              <section class="widget no-mobile berita-slide">
+                <div class="frame thick">
+                    <div id="carousel-addarojat" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
+                        <!-- Carousel contents -->
+                        <div class="carousel-inner">
+                             <!-- detail berita sekilas -->
+                             <?php
+                                   $kilasberita = "";
+                                   foreach ($slide_berita['data'] as $key => $value) {
+                                       $active = "";
+                                       if ($key == 0) {
+                                         $active = "active";
+                                       }
+
+                                       $kilasberita .= " <div class='item $active'>
+                                           <div class='item-inner'>
+                                               <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'
+                                                onclick='berita_detail(this)' value='" . $value['berita_id'] . "'></div>
+                                               <div class='carousel-caption'>
+                                                   <div><a href='javascript:void(0)' onclick='berita_detail(this)' value='" . $value['berita_id'] . "'><h3>" . $value['berita_nama'] . "</h3></a></div>
+                                                   <div class='hidden-xs news-slide-summary'>
+                                                       <p>
+                                                           " . $value['berita_summary'] . "
+                                                       </p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div> ";
+                                   }
+
+                                   echo $kilasberita;
+                              ?>
+
+                        </div>
+                        <div class="image-light"></div>
+                    </div>
+                </div>
+              </section>
             </div>
         </div>
     </div>
@@ -705,11 +748,11 @@
 
         function getBeritaDetail(pagenumber) {
             if (pagenumber > 1) {
-                endCol   = 5 * pagenumber
-                startCol = endCol - 5
+                endCol   = 4 * pagenumber
+                startCol = endCol - 4
             } else {
                 startCol = 0
-                endCol   = 5
+                endCol   = 4
             }
 
             startCol = parseInt(startCol)

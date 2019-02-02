@@ -3,56 +3,56 @@
  * ==============
  */
 
-+function ($) { "use strict"; 
++function ($) { "use strict";
         var isRTL = $('html').is('[dir=rtl]');
-        
+
         /*
          * HTML5 PLACEHOLDER
          * ==========================
          */
         $('input, textarea').placeholder();
-                
+
         /*
          * Carousel Caption Animation
          * ==========================
          */
-        $('#carousel-large, #carousel-medium').wartaCarouselCaption();
-        
+        $('#carousel-large, #carousel-medium, #carousel-addarojat').wartaCarouselCaption();
+
         /*
          * Slider Tabs
          * ===========
          */
         $('#slider-tabs #popular, #slider-tabs #recent, #slider-tabs #gallery').wartaSliderTab();
-        
+
         /*
-         * Nivo Lightbox 
+         * Nivo Lightbox
          * =============
          */
-        $( 'a[data-lightbox-gallery], a[data-lightbox]' ).nivoLightbox({ 
+        $( 'a[data-lightbox-gallery], a[data-lightbox]' ).nivoLightbox({
                 effect  : 'fadeScale'
         });
 
         /*
-         * jQuery Marquee 
+         * jQuery Marquee
          * ==============
          */
-         $('.breaking-news .content').marquee({   
-                duplicated      : true,                 
-                duration        : 20000,     
+         $('.breaking-news .content').marquee({
+                duplicated      : true,
+                duration        : 20000,
                 pauseOnHover    : true,
                 direction       : isRTL ? 'right' : 'left'
          });
-         
+
         /*
          * HOVER DIRECTION AWARE
          * =====================
          */
-        $('.da-thumbs > li').each(function() { 
+        $('.da-thumbs > li').each(function() {
                 $(this).hoverdir({
                         hoverDelay : 75
-                }); 
+                });
         });
-        
+
         /**
          * RateIt
          * ======
@@ -60,8 +60,8 @@
          $(".rateit").rateit({
                 step        : .5,
                 resetable   : false
-         }).on('over', function (event,value) { 
-                $(this).attr('title', value ? parseFloat(value).toFixed(1) : 0 ); 
+         }).on('over', function (event,value) {
+                $(this).attr('title', value ? parseFloat(value).toFixed(1) : 0 );
          }).on('rated', function (event,value) {
                 $(this)
                         .rateit( 'readonly', true )
@@ -89,11 +89,11 @@
                 tags    : '',                   // A comma delimited list of tags to filter the feed by.
                 tagmode : ''                    // Control whether items must have ALL the tags (tagmode=all), or ANY (tagmode=any) of the tags. Default is ALL.
         });
-        
+
         /**
          * Twittie
          * =======
-         */                        
+         */
         $('#content .twitter-feed').each(function() {
                 var $this = $(this);
                 $this.twittie({
@@ -102,7 +102,7 @@
                         dateFormat   : '%B %d, %Y',
                         count        : 5
                  });
-        });  
+        });
         $('#footer-main .twitter-feed').each(function() {
                 var $this = $(this);
                 $this.twittie({
@@ -111,5 +111,5 @@
                         dateFormat   : '%B %d, %Y',
                         count        : 3
                 });
-        }); 
+        });
 } (jQuery);
