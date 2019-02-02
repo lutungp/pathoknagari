@@ -115,12 +115,12 @@
       $where  = " WHERE kajian_active = 'y' ";
       $select = $this->post('select');
 
-      $result = $this->Global_m->select_config('m_kajian', $where, $select, $limit, $sortby)->result();
-      // foreach ($result as $key => $value) {
-      //   $response['data'][] = $value;
-      // }
+      $result = $this->Global_m->select_config('m_kajian', $where, $select, $start, $limit, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
 
-      $this->response($this->db->last_query());
+      $this->response($response);
     }
 
     public function kajiandetail_post(){
