@@ -115,7 +115,7 @@
       $where  = " WHERE kajian_active = 'y' ";
       $select = $this->post('select');
 
-      $result = $this->Global_m->select_config('m_kajian', $where, $select)->result();
+      $result = $this->Global_m->select_config('m_kajian', $where, $select, $limit, $sortby)->result();
       foreach ($result as $key => $value) {
         $response['data'][] = $value;
       }
@@ -140,6 +140,6 @@
         $this->response($response);
     }
 
-    
+
 }
 ?>
