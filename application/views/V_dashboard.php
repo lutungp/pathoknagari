@@ -189,7 +189,7 @@
                                                         <div class='col-sm-6'>
                                                             <div class='frame'>
                                                                 <a class='image' href='javascript:void(0)'>
-                                                                    <figure class='image-holder'>
+                                                                    <figure class='image-holder' style='margin-bottom: 0px;'>
                                                                         <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'
                                                                          onclick='berita_detail(this)' value='" . $value['berita_id'] . "' id='image_berita_" . $value['berita_id'] . "'>
                                                                     </figure>
@@ -332,47 +332,6 @@
 
                   </div>
               </aside>
-            </div>
-            <div class="row">
-              <!-- CAROUSEL  -->
-              <section class="widget no-mobile berita-slide">
-                <div class="frame thick">
-                    <div id="carousel-addarojat" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
-                        <!-- Carousel contents -->
-                        <div class="carousel-inner">
-                             <!-- detail berita sekilas -->
-                             <?php
-                                   $kilasberita = "";
-                                   foreach ($slide_berita['data'] as $key => $value) {
-                                       $active = "";
-                                       if ($key == 0) {
-                                         $active = "active";
-                                       }
-
-                                       $kilasberita .= " <div class='item $active'>
-                                           <div class='item-inner'>
-                                               <div data-src='" . $slide_berita['img_url'] . $value['berita_photo'] . "' data-alt='" . $value['berita_photo'] . "'
-                                                onclick='berita_detail(this)' value='" . $value['berita_id'] . "'></div>
-                                               <div class='carousel-caption'>
-                                                   <div><a href='javascript:void(0)' onclick='berita_detail(this)' value='" . $value['berita_id'] . "'><h3>" . $value['berita_nama'] . "</h3></a></div>
-                                                   <div class='hidden-xs news-slide-summary'>
-                                                       <p>
-                                                           " . $value['berita_summary'] . "
-                                                       </p>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div> ";
-                                   }
-
-                                   echo $kilasberita;
-                              ?>
-
-                        </div>
-                        <div class="image-light"></div>
-                    </div>
-                </div>
-              </section>
             </div>
         </div>
     </div>
@@ -787,7 +746,7 @@
                 list_berita_html +="<div class='col-sm-6'>"
                 list_berita_html +="<div class='frame'>"
                 list_berita_html +="<a class='image' href='javascript:void(0)'>"
-                list_berita_html +="<figure class='image-holder'>"
+                list_berita_html +="<figure class='image-holder' style='margin-bottom: 0px;'>"
                 list_berita_html +="<img id='image_berita_" + data[i].berita_id + "' src='" + response.img_url + data[i].berita_photo + "'  alt='" + data[i].berita_photo + "' onclick='berita_detail(this)' value='" + data[i].berita_id + "'>"
                 list_berita_html +="</figure>"
                 list_berita_html +="<div class='image-light'></div>"
