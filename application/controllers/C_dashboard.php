@@ -67,7 +67,7 @@ class C_dashboard extends MY_Controller{
     $postData = [
       'select'  => 'kajian_id, kajian_photo, kajian_nama',
       'start'   => 0,
-      'limit'   => 3
+      'limit'   => 4
     ];
 
     $countData = count($postData);

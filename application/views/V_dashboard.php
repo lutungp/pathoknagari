@@ -249,6 +249,8 @@
                           </header>
 
                           <div id="carousel-small" class="carousel slide carousel-small frame" data-ride="carousel">
+                            <div class='carousel-inner'>
+
                               <?php
                                   $html_kajian = "";
                                   foreach ($slide_kajian['data'] as $key => $value) {
@@ -256,8 +258,7 @@
                                       if ($key == 0) {
                                         $active = "active";
                                       }
-                                      $html_kajian .= "<div class='carousel-inner'>
-                                                        <a class='item $active' href='javascript:void(0)' onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
+                                      $html_kajian .= "<a class='item $active' href='javascript:void(0)' onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
                                                           <div class='item-inner'>
                                                             <div data-src='" . $kilas_berita['img_url'] . $value['kajian_photo'] . "'
                                                             data-alt='" . $value['kajian_nama'] . "'></div>
@@ -266,12 +267,12 @@
                                                               <h5>" . $value['kajian_nama'] . "</h5>
                                                             </div>
                                                           </div>
-                                                        </a>
-                                                      </div>";
+                                                        </a>";
                                   }
                                ?>
 
                                <?php echo $html_kajian; ?>
+                               </div>
                                <!--.carousel-inner-->
                           </div><!--.carousel-->
                       <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
@@ -282,7 +283,7 @@
                       <section class="col-md-12">
                         <!-- Tab contents -->
                           <div class="tab-content">
-                              <div class="tab-pane active">
+                              <div class="tab-pane">
                                 <?php
                                     $html_kajian = "";
                                     foreach ($kilas_kajian['data'] as $key => $value) {
@@ -295,9 +296,10 @@
                                                                 </figure>
                                                               </a>
                                                               <h4 class='custom-dio-hover'>
-                                                              <a href='javascript:void(0)' onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
-                                                              " . $value['kajian_nama'] . "
-                                                              </a></h4>
+                                                                <a href='javascript:void(0)' onclick='kajian_detail(this)' value='" . $value['kajian_id'] . "'>
+                                                                " . $value['kajian_nama'] . "
+                                                                </a>
+                                                              </h4>
                                                             </div>
                                                             <hr>
                                                         </div>";
@@ -313,7 +315,7 @@
                   <div class="row">
                     <section class="col-sm-6 col-md-12 widget no-mobile" style="display: block;padding-left: 0px;padding-right: 0px;margin-bottom: 20px;">
                         <header class="clearfix">
-                            <h4>Kajian Islami</h4>
+                            <h4>Agenda Islami</h4>
                         </header>
                     </section>
 
