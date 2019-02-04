@@ -16,6 +16,7 @@
              mapInput.type = "text";
              mapInput.name = "message";
              mapInput.value = val;
+             mapInput.style.display = "none";
              mapForm.appendChild(mapInput);
 
              document.body.appendChild(mapForm);
