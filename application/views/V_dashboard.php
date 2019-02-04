@@ -82,6 +82,11 @@
     height: 600px;
   }
 
+  .Qs-Muhammad {
+    text-align: center;
+    font-size: 30px;
+  }
+
 </style>
 
 <!--Ful Screen Section Video with caption-->
@@ -336,7 +341,72 @@
 </section>
 <!-- CONTENT -->
 
-<!--Beranda section-->
+<!-- Agenda -->
+<section id="agenda" class="padding bg-counter-light parallaxie">
+   <div class="container"><br><br>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 text-center">
+          <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+            <span>Jadwal Kegiatan Rutin</span>
+            <h2 class="whitecolor bottom20 wow fadeInUp" data-wow-delay="400ms">MAJELIS ILMU</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row our-process">
+        <div class="col-lg-4 col-md-1">
+          <div class="process-number top60 even wow fadeInLeft" data-wow-delay="400ms">
+            <span class="pro-step">1</span>
+            <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAHSIN QUR'AN</h3>
+            <h4 class="font-light darkcolor top10 bottom10">Zaenal Syarifudin M.Ag.</h4>
+            <p>Setiap Hari Ahad, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-1">
+          <div class="process-number top60 wow fadeInUp" data-wow-delay="450ms">
+            <span class="pro-step">2</span>
+            <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAFSIR QUR'AN</h3>
+            <h4 class="font-light darkcolor top10 bottom10">Dr. H. Nurkholis, M.Ag.</h4>
+            <p>Setiap Hari Rabu, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-1">
+          <div class="process-number top60 even wow fadeInRight" data-wow-delay="500ms">
+            <span class="pro-step">3</span>
+            <h3 class="font-light darkcolor top20 bottom20">TADARUS QUR'AN BAPAK-BAPAK</h3>
+            <h4 class="font-light darkcolor top10 bottom10">Jama'ah Masjid</h4>
+            <p>Setiap Hari Senin, Selasa, Rabu, Jum'at dan Sabtu Ba'da Maghrib di Masjid Ad-Darojat</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3">
+          <div class="process-number top60 wow fadeInLeft" data-wow-delay="550ms">
+            <span class="pro-step">4</span>
+            <h3 class="font-light darkcolor top20 bottom20">PENGAJIAN AHAD PAGI</h3>
+            <h4 class="font-light darkcolor top10 bottom10">Warga Babadan & Umum</h4>
+            <p>Setiap Hari Ahad Pagi, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3">
+          <div class="process-number top60 even wow fadeInUp" data-wow-delay="600">
+            <span class="pro-step">5</span>
+            <h3 class="font-light darkcolor top20 bottom20">KAJIAN PEMUDA ISLAM</h3>
+            <h4 class="font-light darkcolor top10 bottom10">IPIB & FOKRI</h4>
+            <p>Setiap Hari Ahad, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3">
+          <div class="process-number top60 wow fadeInRight" data-wow-delay="650ms">
+            <span class="pro-step">6</span>
+            <h3 class="font-light darkcolor top20 bottom20">TADARUS & PENGAJIAN ANAK</h3>
+            <h4 class="font-light darkcolor top10 bottom10">IPMADA</h4>
+            <p>Setiap Hari Kamis, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
+          </div>
+        </div>
+      </div>
+   </div>
+</section>
+<!--Agenda Ends-->
+
+<!--profil masjid-->
 <section id="profil" class="padding">
    <div class="container">
       <div class="row full-content">
@@ -357,100 +427,8 @@
          </div>
       </div>
     </div>
-    <!-- <div class= "text-center">
-        <a href="galeri" class="button btnprimary top60 wow fadeIn" data-wow-delay="500ms">Lihat Galeri masjid</a>
-    </div> -->
 </section>
 <!--Beranda ends-->
-
-<!-- Agenda -->
-<section id="agenda" class="padding bg-counter-light parallaxie">
-   <div class="container"><br><br>
-    <div class="row">
-         <div class="col-md-12 col-sm-12 text-center">
-           <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-              <span>Jadwal Kegiatan Rutin</span>
-               <h2 class="whitecolor bottom20 wow fadeInUp" data-wow-delay="400ms">MAJELIS ILMU</h2>
-            </div>
-         </div>
-      </div>
-      <div class="row our-process">
-        <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 even wow fadeInLeft" data-wow-delay="400ms">
-               <span class="pro-step">1</span>
-             <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAHSIN QUR'AN</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Zaenal Syarifudin M.Ag.</h4>
-               <p>Setiap Hari Ahad, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-		  <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 wow fadeInUp" data-wow-delay="450ms">
-              <span class="pro-step">2</span>
-               <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAFSIR QUR'AN</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Dr. H. Nurkholis, M.Ag.</h4>
-               <p>Setiap Hari Rabu, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-1">
-           <div class="process-number top60 even wow fadeInRight" data-wow-delay="500ms">
-               <span class="pro-step">3</span>
-              <h3 class="font-light darkcolor top20 bottom20">TADARUS QUR'AN BAPAK-BAPAK</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Jama'ah Masjid</h4>
-               <p>Setiap Hari Senin, Selasa, Rabu, Jum'at dan Sabtu Ba'da Maghrib di Masjid Ad-Darojat</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-           <div class="process-number top60 wow fadeInLeft" data-wow-delay="550ms">
-              <span class="pro-step">4</span>
-               <h3 class="font-light darkcolor top20 bottom20">PENGAJIAN AHAD PAGI</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">Warga Babadan & Umum</h4>
-               <p>Setiap Hari Ahad Pagi, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-		<div class="col-lg-4 col-md-3">
-           <div class="process-number top60 even wow fadeInUp" data-wow-delay="600">
-               <span class="pro-step">5</span>
-               <h3 class="font-light darkcolor top20 bottom20">KAJIAN PEMUDA ISLAM</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">IPIB & FOKRI</h4>
-               <p>Setiap Hari Ahad, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-		<div class="col-lg-4 col-md-3">
-           <div class="process-number top60 wow fadeInRight" data-wow-delay="650ms">
-              <span class="pro-step">6</span>
-               <h3 class="font-light darkcolor top20 bottom20">TADARUS & PENGAJIAN ANAK</h3>
-			   <h4 class="font-light darkcolor top10 bottom10">IPMADA</h4>
-               <p>Setiap Hari Kamis, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-            </div>
-        </div>
-      </div>
-   </div>
-</section>
-<!--Agenda Ends-->
-
-<!-- Kabar Ad-Darojat -->
-<section id="galeri" class="padding">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7 col-sm-12">
-            <div class="split-box center-block equalheight container-padding">
-               <div class="heading-title padding_half galeri-on-mobile">
-                 <span class="wow fadeInLeft" data-wow-delay="350ms">Dokumenter</span>
-                 <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="400ms">Galeri Masjid</h2>
-                 <p class="bottom30 wow fadeInLeft" data-wow-delay="450ms">Kami selalu berusaha untuk menghadirkan kabar berita terbaru
-                  yang komperhensif, berimbang dan terpercaya yang bertujuan memberikan informasi dan
-                  mengedukasi sahabat kaum muslimin di seluruh nusantara.</p>
-                 <a href="#berita" class="nav-link pagescroll button btnprimary wow fadeIn" data-wow-delay="600ms">LIHAT GALERI MASJID</a>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-5 col-sm-12">
-            <div class="image hover-effect wow fadeInRight" style="padding-top:40px;" data-wow-delay="500ms"><img src="assets/images/Berita/1.png"
-              alt="masjid-logo" class="equalheight"></div>
-         </div>
-      </div>
-   </div>
-</section>
 
 <!-- Video -->
 <section id="video-parallax" class="video-parallax padding parallaxie">
@@ -469,99 +447,19 @@
 </section>
 <!--Video Ends-->
 
-<!--Merchandise-->
-<section id="merchandise" class="padding bglight">
-   <div class="container"><br>
-      <div class="row">
-         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
-               <h2 class="darkcolor bottom10 wow fadeIn" data-wow-delay="350ms">Merchandise</h2>
-               <p>Kami menyediakan merchandise untuk para jamaah. Anda bisa mendapatkannya langsung dimasjid. Sebagian dari hasil penjualan kami
-          produk kamin akan didonasikan untuk kegiatan umat.</p>
-            </div>
-         </div>
-      </div><br>
-      <div class="row">
-           <div class="col-md-8 offset-md-2 col-sm-12 text-center">
-              <div id="flat-filters" class="cbp-l-filters dark wow fadeInUp bottom30" data-wow-delay="400ms">
-                 <div data-filter="*" class="cbp-filter-item">
-                    <span>Semua</span>
-                 </div>
-                 <div data-filter=".shirt" class="cbp-filter-item">
-                    <span>T-Shirt</span>
-                 </div>
-                 <div data-filter=".mug" class="cbp-filter-item">
-                    <span>Mug</span>
-                 </div>
-                 <div data-filter=".topi" class="cbp-filter-item">
-                    <span>Topi</span>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <div id="flat-gallery" class="cbp">
-  	       <div class="cbp-item shirt">
-              <img src="assets/images/merchandise/2.jpg" alt="">
-              <div class="overlay center-block whitecolor">
-                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/2.jpg"></a>
-                 <h4 class="top30">Klik +</h4>
-                 <p>Lihat Lebih Detail</p>
-              </div>
-           </div>
-           <div class="cbp-item topi">
-              <img src="assets/images/merchandise/top.jpg" alt="">
-              <div class="overlay center-block whitecolor">
-                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/top.jpg"></a>
-                 <h4 class="top30">Klik +</h4>
-                 <p>Lihat Lebih Detail</p>
-              </div>
-           </div>
-           <div class="cbp-item mug">
-              <img src="assets/images/merchandise/mug1.png" alt="">
-              <div class="overlay center-block whitecolor">
-                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/mug1.png"></a>
-                 <h4 class="top30">Klik +</h4>
-                 <p>Lihat Lebih Detail</p>
-              </div>
-           </div>
-           <div class="cbp-item mug">
-              <img src="assets/images/merchandise/mug2.png" alt="">
-              <div class="overlay center-block whitecolor">
-                 <a class="plus" data-fancybox="gallery" href="assets/images/merchandise/mug2.png"></a>
-                 <h4 class="top30">Klik +</h4>
-                 <p>Lihat Lebih Detail</p>
-              </div>
-           </div>
-        </div>
-      <div class= "text-center">
-        <a target="_blank" href="https://wa.me/+628562898979" class="button btnprimary top50 wow fadeIn" data-wow-delay="400ms">Pesan Sekarang</a>
+<section id="Qs-Muhammad">
+   <div class="col-sm-12">
+     <div class="split-box center-block equalheight container-padding">
+       <div class="heading-title padding_half">
+         <h2 class="Qs-Muhammad darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ تَنْصُرُوا اللَّهَ يَنْصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ</h2>
+         <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms" style="text-align: center">
+           Hai orang-orang mukmin, jika kamu menolong (agama) Allah, niscaya Dia akan menolongmu dan meneguhkan kedudukanmu
+           <br>
+           <b><font style="font-size: 15px;">Qs: Muhammad Ayat. 7</font></b>
+         </p>
+       </div>
       </div>
-   </div>
-</section>
-<!--Merchandise ends-->
-
-<section id="organisasi">
-  <div id="ipib" class="container">
-     <div id="ipib_row" class="row">
-        <div class="col-md-8 col-sm-12">
-           <div class="split-box center-block equalheight container-padding">
-              <div class="heading-title padding_half">
-              <span class="wow fadeInLeft" data-wow-delay="300ms">Organisasi Masjid</span>
-              <h2 class="darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">Ikatan Pemuda Islam Babadan</h2>
-              <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms">Ikatan Pemuda Islam Babadan adalah organisasi dibawah
-               naungan Masjid Pathok Nagari Ad-Darojat. Organisasi ini berdiri pada tahun 1970 yang diawali dengan
-               nama “IPIB”.</p>
-              <a href="organisasi" class="button btnprimary wow fadeIn" data-wow-delay="700ms">Selengkapnya</a>
-               </div>
-           </div>
-        </div>
-        <div id="img_organisasi" class="col-md-4 col-sm-12">
-           <div class="image hover-effect wow fadeInRight" style="padding-top:100px;" data-wow-delay="450ms"><img src="assets/images/ipib.jpg"
-             alt="ipib-logo" class="equalheight">
-           </div>
-        </div>
-     </div>
-  </div>
+    </div>
 </section>
 
 <!--Live Streaming section-->
