@@ -337,52 +337,47 @@
         </div>
     </div>
 </section>
-<section>
-  <div class="container">
-      <!-- SLIDER TABS WIDGET: GALLERY -->
-      <section id="slider-tabs" class="col-md-12 widget no-mobile">
-          <!-- Tab Contents -->
-          <div class="tab-content">
-              <!-- Gallery -->
-              <div class="tab-pane active" id="gallery">
-                  <div class="slider-container">
-                      <ul class="da-thumbs">
-                        <li>
-                          <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
-                            <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
-                            <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
-                            <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
-                            <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
-                            <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
-                            <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
-                          </a>
-                        </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
-  </div>
+<section id="slider-tabs" class="col-md-12 widget no-mobile">
+    <!-- Tab Contents -->
+    <div class="tab-content">
+        <!-- Gallery -->
+        <div class="tab-pane active" id="gallery">
+            <div class="slider-container">
+                <ul class="da-thumbs">
+                  <li>
+                    <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                      <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                      <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                      <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                      <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                      <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                      <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- CONTENT -->
 
