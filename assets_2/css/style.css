@@ -3645,6 +3645,15 @@ textarea:-ms-input-placeholder {
     #berita {
       height: 3320px;
     }
+
+    .navbar-brand {
+      width: 30%;
+      margin: 10px 0 !important;
+    }
+
+    #navbar_btn {
+      top: 28px!important
+    }
 }
 
 @media (max-width:512px) {
