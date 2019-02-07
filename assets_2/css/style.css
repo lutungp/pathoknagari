@@ -3668,6 +3668,9 @@ textarea:-ms-input-placeholder {
     .images .da-thumbs.col-9 li {
         width: 14.28571429%
     }
+    .da-thumbs li {
+      text-align: center;
+    }
 }
 
 
