@@ -178,8 +178,6 @@
                              <a class="right carousel-control" href="#carousel-medium" data-slide="next"><span class="fa fa-chevron-right"></span></a>
                          </div>
                      </div>
-                    <!-- <img src="assets_2/img/shadow.png" class="shadow" alt="shadow">
-                    <img src="assets_2/img/shadow.png" class="shadow" alt="shadow"> -->
                    </section>
 
                    <!-- ARTICLES V1 WIDGET -->
@@ -337,6 +335,51 @@
               </aside>
           </div>
         </div>
+        <div class="container">
+            <!-- SLIDER TABS WIDGET: GALLERY -->
+            <section id="slider-tabs" class="widget no-mobile">
+                <!-- Tab Contents -->
+                <div class="tab-content">
+                    <!-- Gallery -->
+                    <div class="tab-pane active" id="gallery">
+                        <div class="slider-container">
+                            <ul class="da-thumbs">
+                              <li>
+                                <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                                  <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                                  <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                                  <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                                  <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                                  <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" title="Mauris venenatis facilisis sem vel feugiat enim gravida vitae" data-lightbox-gallery="silder-tabs-gallery">
+                                  <div data-src="assets_2/img/berries-gallery.jpg" data-alt="Mauris venenatis facilisis sem vel feugiat enim gravida vitae"></div>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </section>
 <!-- CONTENT -->
@@ -451,7 +494,12 @@
    <div class="col-sm-12">
      <div class="split-box center-block equalheight container-padding">
        <div class="heading-title padding_half">
-         <h2 class="Qs-Muhammad darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ تَنْصُرُوا اللَّهَ يَنْصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ</h2>
+         <h2 class="Qs-Muhammad darkcolor bottom25 wow fadeInLeft" data-wow-delay="350ms">
+           <img class="" src="assets_2/img/Al-Quran.png" alt="Al-Quran" style="width: 70px;">
+           <br>
+           <br>
+           يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ تَنْصُرُوا اللَّهَ يَنْصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ
+         </h2>
          <p class="bottom30 wow fadeInLeft" data-wow-delay="400ms" style="text-align: center">
            Hai orang-orang mukmin, jika kamu menolong (agama) Allah, niscaya Dia akan menolongmu dan meneguhkan kedudukanmu
            <br>
