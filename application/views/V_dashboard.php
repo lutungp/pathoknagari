@@ -76,6 +76,14 @@
      #img_organisasi {
        display: none;
      }
+
+     #popular-no-mobile {
+       display: none;
+     }
+
+     #berita {
+       padding-top: 100px!important;
+     }
   }
 
   .full-content {
@@ -85,6 +93,25 @@
   .Qs-Muhammad {
     text-align: center;
     font-size: 30px;
+  }
+
+  h5 {
+    font-family: "Roboto Condensed",sans-serif;
+      font-weight: 700;
+      margin: 0 0 13px;
+      color: #606068;
+  }
+
+  h5 {
+      font-size: 14px;
+  }
+
+  .post-meta a {
+    color: #b0b0b8;
+    font-family: "Roboto Condensed","Arial Narrow",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    display: inline-block;
   }
 
 </style>
@@ -112,11 +139,113 @@
    <video class="my-background-video jquery-background-video" loop autoplay muted poster="assets/video/end.jpg"></video>
 </section>
 
-
 <!-- CONTENT -->
-<section id="berita" class="padding" style="padding-top: 120px;padding-bottom: 40px;">
+<section id="berita" class="padding" style="padding-top: 130px;padding-bottom: 40px;">
     <div id="content">
        <div class="container">
+           <div id="popular-no-mobile" class="row" style="height: 280px;">
+             <section class="col-sm-6 col-md-12 widget no-mobile">
+                 <header class="widget articles-v1">
+                   <h4>Kabar Ad-Darojat</h4>
+                   <i class="triangle"></i>
+                 </header>
+                 <!-- Tab contents -->
+                 <div class="tab-content">
+                     <!--Popular-->
+                     <div class="tab-pane active">
+                       <div class="slider-container article">
+                          <ul>
+                            <li class="article-small">
+                              <a href="#" class="image">
+                                <figure class="image-holder">
+                                  <div data-src="assets_2/img/berries-huge.jpg" data-alt="Sed Consectetur Enim Congue Quis Proin"></div>
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-quote"></span>
+                              </a>
+                              <h5 class="kabar-ad-darojat"><a href="#">Sed Consectetur Enim Congue Quis Proin</a></h5>
+                              <p class="post-meta">
+                                <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
+                                <a href="#"><span class="fa fa-folder"></span> Sport</a>
+                              </p>
+                            </li>
+                            <li class="article-small">
+                              <a href="#" class="image">
+                                <figure class="image-holder">
+                                  <div data-src="assets_2/img/berries-huge.jpg" data-alt="Sed Consectetur Enim Congue Quis Proin"></div>
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-quote"></span>
+                              </a>
+                              <h5 class="kabar-ad-darojat"><a href="#">Sed Consectetur Enim Congue Quis Proin</a></h5>
+                              <p class="post-meta">
+                                <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
+                                <a href="#"><span class="fa fa-folder"></span> Sport</a>
+                              </p>
+                            </li>
+                            <li class="article-small">
+                              <a href="#" class="image">
+                                <figure class="image-holder">
+                                  <div data-src="assets_2/img/berries-huge.jpg" data-alt="Sed Consectetur Enim Congue Quis Proin"></div>
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-quote"></span>
+                              </a>
+                              <h5 class="kabar-ad-darojat"><a href="#">Sed Consectetur Enim Congue Quis Proin</a></h5>
+                              <p class="post-meta">
+                                <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
+                                <a href="#"><span class="fa fa-folder"></span> Sport</a>
+                              </p>
+                            </li>
+                            <li class="article-small">
+                              <a href="#" class="image">
+                                <figure class="image-holder">
+                                  <div data-src="assets_2/img/berries-huge.jpg" data-alt="Sed Consectetur Enim Congue Quis Proin"></div>
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-quote"></span>
+                              </a>
+                              <h5 class="kabar-ad-darojat"><a href="#">Sed Consectetur Enim Congue Quis Proin</a></h5>
+                              <p class="post-meta">
+                                <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
+                                <a href="#"><span class="fa fa-folder"></span> Sport</a>
+                              </p>
+                            </li>
+                            <li class="article-small">
+                              <a href="#" class="image">
+                                <figure class="image-holder">
+                                  <div data-src="assets_2/img/berries-huge.jpg" data-alt="Sed Consectetur Enim Congue Quis Proin"></div>
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-quote"></span>
+                              </a>
+                              <h5 class="kabar-ad-darojat"><a href="#">Sed Consectetur Enim Congue Quis Proin</a></h5>
+                              <p class="post-meta">
+                                <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
+                                <a href="#"><span class="fa fa-folder"></span> Sport</a>
+                              </p>
+                            </li>
+                            <li class="article-small">
+                              <a href="#" class="image">
+                                <figure class="image-holder">
+                                  <div data-src="assets_2/img/berries-huge.jpg" data-alt="Sed Consectetur Enim Congue Quis Proin"></div>
+                                </figure>
+                                <div class="image-light"></div>
+                                <span class="dashicons dashicons-format-quote"></span>
+                              </a>
+                              <h5 class="kabar-ad-darojat"><a href="#">Sed Consectetur Enim Congue Quis Proin</a></h5>
+                              <p class="post-meta">
+                                <a href="#"><span class="fa fa-clock-o"></span> Dec 4, 2018</a> &nbsp;
+                                <a href="#"><span class="fa fa-folder"></span> Sport</a>
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                     </div>
+
+                 </div>
+             </section>
+           </div>
            <div class="row">
                <!-- MAIN CONTENT -->
                <main id="main-content" class="col-md-8">
