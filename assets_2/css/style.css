@@ -3641,6 +3641,10 @@ textarea:-ms-input-placeholder {
     .images .da-thumbs.col-9 li {
         width: 12.5%
     }
+
+    #berita {
+      height: 3320px;
+    }
 }
 
 @media (max-width:512px) {
@@ -3678,9 +3682,6 @@ textarea:-ms-input-placeholder {
       width: 100%;
     }
 
-    #berita {
-      height: 3320px;
-    }
 }
 
 
