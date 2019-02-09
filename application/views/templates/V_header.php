@@ -111,6 +111,9 @@
             <li class="nav-item">
               <a class="nav-link pagescroll" href="#kontak">Kontak</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link pagescroll" href=""></a>
+            </li>
           </ul>
         </div>
       </div>
