@@ -489,9 +489,27 @@
                 $colclass = "col-md-3";
             }
 
-            $majelisilmu_html = "<div class='col-lg-4 $colclass'>
-                                  <div class='process-number top60 even wow fadeInLeft' data-wow-delay='400ms'>
-                                    <span class='pro-step'>1</span>
+            $fadein = "";
+            if ($number == 1 || $number == 4) {
+                $fadein = "fadeInLeft";
+            }
+
+            if ($number == 3 || $number == 6) {
+                $fadein = "fadeInRight";
+            }
+
+            if ($number == 2) {
+                $fadein = "fadeInUp";
+            }
+
+            if ($number == 4) {
+                $fadein = "fadeInUp";
+            }
+
+
+            $majelisilmu_html .= "<div class='col-lg-4 $colclass'>
+                                  <div class='process-number top60 even wow $fadein' data-wow-delay='400ms'>
+                                    <span class='pro-step'>" . $number . "</span>
                                     <h3 class='font-light darkcolor top20 bottom20'>" . $value['majelisilmu_judul'] . "</h3>
                                     <h4 class='font-light darkcolor top10 bottom10'>" . $value['majelisilmu_narasumber'] . "</h4>
                                     <p>" . $value['majelisilmu_keterangan'] . "</p>
