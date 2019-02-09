@@ -112,7 +112,21 @@ class C_dashboard extends MY_Controller{
 
     $data['majelisilmu_details'] = $majelisilmu_details;
 
-    $this->load->view('templates/V_header');
+    $postData = [
+      'select'  => 'webprofile_runtext',
+      'start'   => 0,
+      'limit'   => 1
+    ];
+
+    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $running_text = json_decode($running_text, TRUE);
+    if ($running_text['data'] == "") {
+        $running_text['data'] = array();
+    }
+
+    $dataheader['running_text'] = $running_text;
+
+    $this->load->view('templates/V_header', $dataheader);
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');
     $this->load->view('templates/V_footer');

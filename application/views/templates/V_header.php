@@ -85,12 +85,7 @@
   <nav class="navbar navbar-expand-lg fixed-bottom gradient_bg">
     <nav class="navbar">
       <marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
-          <i class="fa fa-angle-double-right"></i> Pengajian Ahad Pagi di Masjid Ad-Darojat Kauman Babadan.
-          &nbsp <b>Ahad, 30 Desember 2018</b>
-          &nbsp <b>Pembicara :</b> Drs. H. Slamet Abdullah, M.Si.
-          &nbsp <b>Tema :</b> Selamatkan Dirimu dan Keluargamu dari Siksa Api Neraka.&nbsp&nbsp
-          <i class="fa fa-angle-double-right"></i> Saldo Infaq Sholat Jum'at 28 Desember 2018 : <b>Rp. 11.428.400 -,</b>&nbsp&nbsp
-          <i class="fa fa-angle-double-right"></i> Seluruh hasil dari Infaq akan didonasikan kepada korban tsunami Banten & Lampung.
+          <?php echo $running_text['data'][0]['webprofile_runtext']; ?>
       </marquee>
       <div id="navbar_header" class="container">
         <a class="navbar-brand" href="beranda"> <img src="assets/images/pn5-transparent.png" alt="pathoknagari-logo"> </a>
