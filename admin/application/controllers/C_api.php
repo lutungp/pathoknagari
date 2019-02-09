@@ -140,6 +140,23 @@
         $this->response($response);
     }
 
+    function majelisilmu_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $sortby = " ORDER BY majelisilmu_urutan ASC ";
+      $where  = " WHERE majelisilmu_active = 'y' ";
+      $select = $this->post('select');
+
+      $result = $this->Global_m->select_config('m_majelisilmu', $where, $select, $start, $limit, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
+
+
 
 }
 ?>
