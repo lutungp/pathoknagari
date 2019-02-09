@@ -95,6 +95,23 @@ class C_dashboard extends MY_Controller{
 
     $data['kilas_kajian'] = $kilas_kajian;
 
+    /* Majelis Ilmu */
+    $postData = [
+      'select'  => 'majelisilmu_id, majelisilmu_judul, majelisilmu_narasumber, majelisilmu_urutan, majelisilmu_keterangan',
+      'start'   => 0,
+      'limit'   => 6
+    ];
+
+    $countData = count($postData);
+
+    $majelisilmu_details = $this->http_request($this->API.'/C_api/majelisilmu', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $majelisilmu_details = json_decode($majelisilmu_details, TRUE);
+    if ($majelisilmu_details['data'] == "") {
+        $majelisilmu_details['data'] = array();
+    }
+
+    $data['majelisilmu_details'] = $majelisilmu_details;
+
     $this->load->view('templates/V_header');
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');

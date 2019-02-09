@@ -480,54 +480,26 @@
         </div>
       </div>
       <div class="row our-process">
-        <div class="col-lg-4 col-md-1">
-          <div class="process-number top60 even wow fadeInLeft" data-wow-delay="400ms">
-            <span class="pro-step">1</span>
-            <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAHSIN QUR'AN</h3>
-            <h4 class="font-light darkcolor top10 bottom10">Zaenal Syarifudin M.Ag.</h4>
-            <p>Setiap Hari Ahad, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-1">
-          <div class="process-number top60 wow fadeInUp" data-wow-delay="450ms">
-            <span class="pro-step">2</span>
-            <h3 class="font-light darkcolor top20 bottom20">KAJIAN TAFSIR QUR'AN</h3>
-            <h4 class="font-light darkcolor top10 bottom10">Dr. H. Nurkholis, M.Ag.</h4>
-            <p>Setiap Hari Rabu, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-1">
-          <div class="process-number top60 even wow fadeInRight" data-wow-delay="500ms">
-            <span class="pro-step">3</span>
-            <h3 class="font-light darkcolor top20 bottom20">TADARUS QUR'AN BAPAK-BAPAK</h3>
-            <h4 class="font-light darkcolor top10 bottom10">Jama'ah Masjid</h4>
-            <p>Setiap Hari Senin, Selasa, Rabu, Jum'at dan Sabtu Ba'da Maghrib di Masjid Ad-Darojat</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-          <div class="process-number top60 wow fadeInLeft" data-wow-delay="550ms">
-            <span class="pro-step">4</span>
-            <h3 class="font-light darkcolor top20 bottom20">PENGAJIAN AHAD PAGI</h3>
-            <h4 class="font-light darkcolor top10 bottom10">Warga Babadan & Umum</h4>
-            <p>Setiap Hari Ahad Pagi, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-          <div class="process-number top60 even wow fadeInUp" data-wow-delay="600">
-            <span class="pro-step">5</span>
-            <h3 class="font-light darkcolor top20 bottom20">KAJIAN PEMUDA ISLAM</h3>
-            <h4 class="font-light darkcolor top10 bottom10">IPIB & FOKRI</h4>
-            <p>Setiap Hari Ahad, 2 Pekan Sekali Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-          <div class="process-number top60 wow fadeInRight" data-wow-delay="650ms">
-            <span class="pro-step">6</span>
-            <h3 class="font-light darkcolor top20 bottom20">TADARUS & PENGAJIAN ANAK</h3>
-            <h4 class="font-light darkcolor top10 bottom10">IPMADA</h4>
-            <p>Setiap Hari Kamis, Ba'da Maghrib Bertempat di Masjid Ad-Darojat Kauman Babadan</p>
-          </div>
-        </div>
+        <?php
+          $majelisilmu_html = "";
+          $number = 1;
+          foreach ($majelisilmu_details['data'] as $key => $value) {
+            $colclass = "col-md-1";
+            if ($number > 3) {
+                $colclass = "col-md-3";
+            }
+
+            $majelisilmu_html = "<div class='col-lg-4 $colclass'>
+                                  <div class='process-number top60 even wow fadeInLeft' data-wow-delay='400ms'>
+                                    <span class='pro-step'>1</span>
+                                    <h3 class='font-light darkcolor top20 bottom20'>" . $value['majelisilmu_judul'] . "</h3>
+                                    <h4 class='font-light darkcolor top10 bottom10'>" . $value['majelisilmu_narasumber'] . "</h4>
+                                    <p>" . $value['majelisilmu_keterangan'] . "</p>
+                                  </div>
+                                </div>";
+            $number++;
+          } ?>
+        <?php echo $majelisilmu_html; ?>
       </div>
    </div>
 </section>

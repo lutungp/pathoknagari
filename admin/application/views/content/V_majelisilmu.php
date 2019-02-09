@@ -13,6 +13,7 @@
 										<tr>
 											<th class="text-center" style="width:5%;">No.</th>
 											<th class="text-center">Judul Majelis Ilmu</th>
+											<th class="text-center">Urutan</th>
 											<th class="text-center">Config.</th>
 										</tr>
 									</thead>
@@ -23,6 +24,7 @@
 													<tr>
 														<td align=center><?php echo $no ?></td>
 														<td><?php echo $row->majelisilmu_judul; ?></td>
+														<td align='center'><?php echo $row->majelisilmu_urutan; ?></td>
 														<td class="text-center">
 		                          <a href="<?php echo base_url('Majelisilmu-Edit/'.$row->majelisilmu_id)?>" class="btn btn-success">
 		                            <i class="fa fa-edit"></i> Edit

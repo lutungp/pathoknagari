@@ -43,7 +43,7 @@ class C_majelisilmu extends MY_Controller{
                             );
 
     $where  = " WHERE majelisilmu_active = 'y' ";
-    $select = " majelisilmu_id, majelisilmu_judul ";
+    $select = " majelisilmu_id, majelisilmu_judul, majelisilmu_urutan ";
     $data = array(
                   'title_page' 	=> $this->page_bar($page_bar),
                   'majelisilmu' => $this->select_config('m_majelisilmu', $where, $select),
@@ -83,12 +83,14 @@ class C_majelisilmu extends MY_Controller{
     $majelisilmu_narasumber   = $this->input->post('majelisilmu_narasumber');
     $majelisilmu_isi          = $this->input->post('majelisilmu_isi');
     $majelisilmu_keterangan   = $this->input->post('majelisilmu_keterangan');
+    $majelisilmu_urutan       = $this->input->post('majelisilmu_urutan');
 
     $data = array(
         'majelisilmu_judul'     => $majelisilmu_judul,
         'majelisilmu_narasumber'=> $majelisilmu_narasumber,
         'majelisilmu_keterangan'=> $majelisilmu_keterangan,
-        'majelisilmu_isi'       => $majelisilmu_isi
+        'majelisilmu_isi'       => $majelisilmu_isi,
+        'majelisilmu_urutan'    => $majelisilmu_urutan
     );
 
     $this->create_config('m_majelisilmu', $data);
@@ -118,22 +120,26 @@ class C_majelisilmu extends MY_Controller{
              'action_close'     => "Majelisilmu",
              'majelisilmu_details'   => $this->select_config('m_majelisilmu', $where_majelisilmu_id)->row()
             );
-    
+
     $this->get_page($data, $action, $this->load_plugin_head, $this->load_plugin_foot);
 
   }
 
 
   function majelisilmu_update(){
-    $majelisilmu_judul   = $this->input->post('majelisilmu_judul');
+    $majelisilmu_id          = $this->input->post('majelisilmu_id');
+    $majelisilmu_judul       = $this->input->post('majelisilmu_judul');
     $majelisilmu_narasumber  = $this->input->post('majelisilmu_narasumber');
-    $majelisilmu_isi     = $this->input->post('majelisilmu_isi');
+    $majelisilmu_isi         = $this->input->post('majelisilmu_isi');
+    $majelisilmu_urutan      = $this->input->post('majelisilmu_urutan');
+    $majelisilmu_keterangan  = $this->input->post('majelisilmu_keterangan');
 
     $data = array(
-              'majelisilmu_judul'     => $majelisilmu_judul,
-              'majelisilmu_narasumber'    => $majelisilmu_narasumber,
-              'majelisilmu_keterangan'=> $majelisilmu_keterangan,
-              'majelisilmu_isi'       => $majelisilmu_isi
+              'majelisilmu_judul'       => $majelisilmu_judul,
+              'majelisilmu_narasumber'  => $majelisilmu_narasumber,
+              'majelisilmu_keterangan'  => $majelisilmu_keterangan,
+              'majelisilmu_isi'         => $majelisilmu_isi,
+              'majelisilmu_urutan'      => $majelisilmu_urutan
             );
 
     $where = array(

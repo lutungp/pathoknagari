@@ -35,12 +35,15 @@
                       <div class="form-group">
                         <label for="">Urutan</label>
                         <select class="form-control js-example-basic-single" id="majelisilmu_urutan" name="majelisilmu_urutan">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
+                          <?php
+                            $majelisilmu_urutan = isset($majelisilmu_details->majelisilmu_urutan) ? $majelisilmu_details->majelisilmu_urutan : "";
+                           ?>
+                          <option value="1" <?php if ($majelisilmu_urutan == 1) { echo "selected"; } ?>>1</option>
+                          <option value="2" <?php if ($majelisilmu_urutan == 2) { echo "selected"; } ?>>2</option>
+                          <option value="3" <?php if ($majelisilmu_urutan == 3) { echo "selected"; } ?>>3</option>
+                          <option value="4" <?php if ($majelisilmu_urutan == 4) { echo "selected"; } ?>>4</option>
+                          <option value="5" <?php if ($majelisilmu_urutan == 5) { echo "selected"; } ?>>5</option>
+                          <option value="6" <?php if ($majelisilmu_urutan == 6) { echo "selected"; } ?>>6</option>
                         </select>
                       </div>
                       <div class="form-group">
