@@ -40,7 +40,8 @@
                   <tfoot>
 	                  <tr>
                       <td colspan="3">
-                        <button id="Btn-addmajelis" href="<?php echo $action ?>" class="btn btn-primary">
+                        <button id="Btn-addmajelis" href="<?php echo $action ?>" class="btn btn-primary"
+                           onclick=" addmajelis(this)">
                           Tambah Majelis
                         </button>
                       </td>
@@ -66,4 +67,8 @@
             $('#Btn-addmajelis').attr('disabled', 'true')
           }
       })
+
+      function addmajelis(elem) {
+        location.href = $(elem).attr('href')
+      }
     </script>
