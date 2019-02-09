@@ -156,6 +156,19 @@
       $this->response($response);
     }
 
+    function webprofile_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $select = $this->post('select');
+
+      $result = $this->Global_m->select_config('s_webprofile', "", $select, $start, $limit)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
 
 
 }
