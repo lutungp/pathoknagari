@@ -57,8 +57,11 @@ class Global_m extends CI_Model{
     return $query;
   }
 
-  function update_config($table, $data, $where){
-    $this->db->where($where);
+  function update_config($table, $data, $where = ""){
+    if ($where <> "") {
+       $this->db->where($where);
+    }
+
 		$this->db->update($table,$data);
     if($this->db->affected_rows() >=0){
       return $data = '200'; // your code

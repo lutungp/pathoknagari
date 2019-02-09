@@ -86,7 +86,7 @@ class MY_Controller extends CI_Controller{
     return $query;
   }
 
-  function update_config($table, $data, $where){
+  function update_config($table, $data, $where = ""){
     $query = $this->Global_m->update_config($table, $data,$where);
   }
 

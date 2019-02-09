@@ -1,4 +1,9 @@
 
+<style media="screen">
+    .running-textfield {
+      display: none
+    }
+</style>
  <!-- <div class="page-content-wrapper"> -->
     <!-- BEGIN CONTENT BODY -->
     <div class="page-content">
@@ -55,6 +60,61 @@
                 </a>
             </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6 col-xs-12 col-sm-12">
+              <div class="portlet light" style="background-color: #fbfafa;">
+                  <div class="portlet-title tabbable-line">
+                      <div class="caption">
+                          <i class="icon-bubbles font-dark hide"></i>
+                          <span class="caption-subject font-dark bold uppercase">Profile</span>
+                          <div class="mt-comment-info">
+                              <span class="mt-comment-date">Last Update. 26 Feb, 10:30AM</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="portlet-body">
+                      <div class="tab-content">
+                          <div class="tab-pane active">
+                              <!-- BEGIN: Comments -->
+                              <div class="mt-comments">
+                                  <div class="mt-comment">
+                                      <div class="mt-comment-body">
+                                          <div class="mt-comment-info">
+                                              <span class="mt-comment-author">Running Text</span>
+                                          </div>
+                                          <div id="view-runtext" class="mt-comment-text"> <?php echo isset($webprofile->webprofile_runtext) ? $webprofile->webprofile_runtext : ""; ?> </div>
+                                          <textarea class="form-control running-textfield" id="ringkas_runtext" rows="6" required
+                                          data-validation-required-message="Please enter your message" minlength="5"
+                                          data-validation-minlength-message="Min 5 characters" name="kajian_summary";
+                                          maxlength="999" style="resize:none" data-toggle="tooltip"
+                                          required title="Character tidak boleh melebihi 300 character"><?php echo isset($webprofile->webprofile_runtext) ? $webprofile->webprofile_runtext : ""; ?></textarea>
+                                          <div class="tooltip top" role="tooltip">
+                                            <div class="tooltip-arrow"></div>
+                                            <div class="tooltip-inner">
+                                              Some tooltip text!
+                                            </div>
+                                          </div>
+                                          <div class="mt-comment-details">
+                                              <ul class="mt-comment-actions">
+                                                  <li>
+                                                      <a href="javascript:void(0)" onclick="update_runningtext()">Quick Edit</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="javascript:void(0)" onclick="save_runningtext()">Save Edit</a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- END: Comments -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
         <div class="clearfix"></div>
         <!-- END DASHBOARD STATS 1-->
         <div class="row">
@@ -65,5 +125,35 @@
 </div>
 
 <script type="text/javascript">
+  function update_runningtext() {
+      var ringkas_runtext = $('#ringkas_runtext')
+      if (ringkas_runtext.css('display') == 'none') {
+          $('#ringkas_runtext').css('display', 'block')
+          $('#view-runtext').css('display', 'none')
+      } else {
+          $('#ringkas_runtext').css('display', 'none')
+          $('#view-runtext').css('display', 'block')
+      }
+  }
 
+  function save_runningtext() {
+      var ringkas_runtext = $('#ringkas_runtext')[0].value
+      $('#ringkas_runtext').css('display', 'none')
+      $('#view-runtext').css('display', 'block')
+
+      $.ajax({
+         type: "POST",
+         url: '<?php echo site_url('C_dashboard/save_webprofile')?>',
+         data: {webprofile_runtext : ringkas_runtext}, // serializes the form's elements.
+         success: function(data) {
+             $('#view-runtext').html(ringkas_runtext)
+
+             new PNotify({
+               title: 'Success !',
+               text: 'Running Text berhasil disimpan .',
+               type: 'success'
+             });
+         }
+       });
+  }
 </script>
