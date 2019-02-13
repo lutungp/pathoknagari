@@ -3643,7 +3643,7 @@ textarea:-ms-input-placeholder {
     }
 
     #berita {
-      height: 3320px;
+      /* height: 3320px; */
     }
 
     .navbar-brand {
@@ -3719,8 +3719,8 @@ textarea:-ms-input-placeholder {
 }
 
 .image-light {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .2)), color-stop(80%, rgba(0, 0, 0, 0)));
-    background: linear-gradient(rgba(255, 255, 255, .2) 0, rgba(0, 0, 0, 0) 80%);
+    /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .2)), color-stop(80%, rgba(0, 0, 0, 0)));
+    background: linear-gradient(rgba(255, 255, 255, .2) 0, rgba(0, 0, 0, 0) 80%); */
     display: block;
     height: 100%;
     position: absolute;
@@ -3729,6 +3729,10 @@ textarea:-ms-input-placeholder {
     width: 100%;
     -webkit-transform: skewX(24deg);
     transform: skewX(24deg)
+}
+
+.tab-content >.active {
+    display: block!important;
 }
 
 /*  ========================================================================================*/
