@@ -376,12 +376,12 @@
                   <h4>Kabar Ad-Darojat</h4>
                   <ul>
                       <li class="control current">
-                          <a href="#popular" data-slide="next">
+                          <a href="javascript:void(0)" data-href="#popular" data-slide="next">
                             <span class="fa fa-chevron-right"></span>
                           </a>
                       </li>
                       <li class="control current">
-                          <a href="#popular" data-slide="prev">
+                          <a href="javascript:void(0)" data-href="#popular" data-slide="prev">
                             <span class="fa fa-chevron-left"></span>
                           </a>
                       </li>
