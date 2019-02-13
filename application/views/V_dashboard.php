@@ -354,12 +354,12 @@
                             <h4>Kabar Agenda</h4>
                         </header>
 
-                        <div id="" class="carousel slide carousel-small frame" data-ride="carousel">
+                        <div id="kabar_agenda" class="carousel slide carousel-small frame" data-ride="carousel">
                           <div class='carousel-inner'>
-                            <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/pengajian-ahad-pagi.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Ust-Rahmat-Baequni.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: 100%;"></a>
+                            <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/pengajian-ahad-pagi.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
+                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Ust-Rahmat-Baequni.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
                           </div>
                         </div>
                     </section>

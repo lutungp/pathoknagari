@@ -3642,8 +3642,8 @@ textarea:-ms-input-placeholder {
         width: 12.5%
     }
 
-    #berita {
-      /* height: 3320px; */
+    #kabar_agenda {
+      height: 500px;
     }
 
     .navbar-brand {
