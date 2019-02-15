@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_kabar_addarajat_addarajat extends MY_Controller{
+class C_kabar_addarajat extends MY_Controller{
 
   public function __construct()
   {
@@ -39,38 +39,38 @@ class C_kabar_addarajat_addarajat extends MY_Controller{
   {
 
     $page_bar['data'][] = array(
-                              'title_page' => 'Kabar Ad-darojat list',
-                              'url'        => 'Kabar'
+                              'title_page' => 'Kabar Ad-darojat List',
+                              'url'        => 'Kabar_Ad-Darajat'
                             );
     $where  = " WHERE kabar_active = 'y' ";
     $select = " kabar_id, kabar_nama ";
     $data = array(
                   'title_page' 	=> $this->page_bar($page_bar),
                   'kabar'       => $this->select_config('m_kabar', $where, $select),
-                  'action'      => "Kabar-Form",
+                  'action'      => "Kabar_Ad-Darajat-Form",
                 );
 
-    $this->load->view('content/V_kabar', $data);
+    $this->load->view('content/V_kabar_addarajat', $data);
   }
 
   function kabar_form()
   {
     $page_bar['data'][] = array(
-                              'title_page' => 'kabar list',
-                              'url'        => 'kabar'
+                              'title_page' => 'Kabar Ad-darojat List',
+                              'url'        => 'Kabar_Ad-Darajat'
                             );
 
     $page_bar['data'][] = array(
-                              'title_page' => 'kabar Form',
-                              'url'        => 'kabar-Form'
+                              'title_page' => 'Kabar Ad-Darajat-Form',
+                              'url'        => 'Kabar_Ad-Darajat-Form'
                             );
 
     $where = '';
-    $url   = "content/kabar_form";
+    $url   = "content/V_kabar_form";
     $data  = array(
                'title_page' 	=> $this->page_bar($page_bar),
                'action_add'   => "C_kabar_addarajat/kabar_add",
-               'action_close' => "kabar",
+               'action_close' => "Kabar_Ad-Darajat",
                'kabar'       => $this->select_config('m_kabar', $where)
             );
 
@@ -105,33 +105,37 @@ class C_kabar_addarajat_addarajat extends MY_Controller{
 
         $this->load->library('upload', $config);
         $this->upload->do_upload('kabar_photo');
+
+        $errors = $this->upload->display_errors();
+
+        echo $errors;
     }
 
     $this->create_config('m_kabar', $data);
 
-    redirect('kabar');
+    redirect('Kabar_Ad-Darajat');
   }
 
   function kabar_edit($id){
 
     $page_bar['data'][] = array(
-                              'title_page' => 'kabar list',
-                              'url'        => '../kabar'
+                              'title_page' => 'Kabar Ad-darojat List',
+                              'url'        => '../kabar_list'
                             );
 
     $page_bar['data'][] = array(
-                              'title_page' => 'kabar Form',
+                              'title_page' => 'Kabar Ad-Darajat-Form',
                               'url'        => '../kabar_edit/'.$id
                             );
 
     $where = '';
     $where_kabar_id  = "WHERE kabar_id = '$id'";
-    $action           = "content/kabar_form";
+    $action           = "content/V_kabar_form";
 
     $data  = array(
              'title_page' 	    => $this->page_bar($page_bar),
              'action_add'       => "C_kabar_addarajat/kabar_update",
-             'action_close'     => "kabar",
+             'action_close'     => "Kabar_Ad-Darajat",
              'kabar_details'   => $this->select_config('m_kabar', $where_kabar_id)->row()
             );
 
@@ -180,7 +184,7 @@ class C_kabar_addarajat_addarajat extends MY_Controller{
     }
 
     $this->update_config('m_kabar', $data, $where);
-    redirect('kabar');
+    redirect('Kabar_Ad-Darajat');
 
   }
 
@@ -190,7 +194,7 @@ class C_kabar_addarajat_addarajat extends MY_Controller{
     );
 
     $this->delete_config('m_kabar',$where);
-    redirect('kabar');
+    redirect('Kabar_Ad-Darajat');
   }
 
 }
