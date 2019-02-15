@@ -369,8 +369,8 @@
         </div>
     </div>
 
-    <div class="row" style="height: 280px;">
-        <div class="container">
+    <div class="row" style="height: 280px;margin-right: 5px;margin-left: 5px;">
+        <div class="container" style="padding: 0px;">
           <section id="slider-tabs" class="col-sm-6 col-md-12 widget no-mobile">
               <header class="widget articles-v1">
                   <h4>Kabar Ad-Darojat</h4>
@@ -387,7 +387,6 @@
                       </li>
                   </ul>
               </header>
-              <!-- Tab contents -->
               <div class="tab-content">
                   <!--Popular-->
                   <div class="tab-pane active fade in " id="popular">
@@ -536,7 +535,6 @@
                        </ul>
                      </div>
                   </div>
-
               </div>
           </section>
         </div>
