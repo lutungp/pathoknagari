@@ -90,3 +90,7 @@ $route['kajian-detail/(:num)']            = 'C_kajian/kajian_edit/$1';
 $route['Majelisilmu']                     = 'C_majelisilmu';
 $route['Majelisilmu-Form']                = 'C_majelisilmu/majelisilmu_form';
 $route['Majelisilmu-Edit/(:num)']         = 'C_majelisilmu/majelisilmu_edit/$1';
+
+$route['Kabar Ad-Darajat']                     = 'C_kabar_addarajat';
+$route['Kabar Ad-Darajat-Form']                = 'C_kabar_addarajat/kabar_addarajat_form';
+$route['Kabar Ad-Darajat-Edit/(:num)']         = 'C_kabar_addarajat/kabar_addarajat_edit/$1';
