@@ -32,6 +32,10 @@
 
 </script>
 <style media="screen">
+  #profil {
+    padding-top: 170px;
+  }
+
   @media (max-width: 760px) {
      .news-slide-summary {
        display: none;
@@ -56,7 +60,7 @@
      }
 
      .header-on-mobile {
-       padding-top :125px;
+       padding-top: 0px;
      }
 
      .galeri-on-mobile {
@@ -66,6 +70,10 @@
      #ipib_row {
        height: 680px;
        padding-top: 70px
+     }
+
+     #profil {
+       padding-top: 100px;
      }
   }
 
@@ -603,7 +611,7 @@
    <div class="container">
       <div class="row full-content">
         <div class="col-md-5 col-sm-12">
-           <div class="image hover-effect wow fadeInLeft" style="padding-top :70px;" data-wow-delay="300ms"><img src="assets/images/32.jpg"
+           <div class="image hover-effect wow fadeInLeft" data-wow-delay="300ms"><img src="assets/images/32.jpg"
              alt="masjid" class="equalheight"></div>
         </div>
          <div class="col-md-7 col-sm-12">
