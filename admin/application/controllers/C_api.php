@@ -170,6 +170,22 @@
       $this->response($response);
     }
 
+    function kabar_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $sortby = " ORDER BY kabar_urutan ASC ";
+      $where  = " WHERE kabar_active = 'y' ";
+      $select = $this->post('select');
+
+      $result = $this->Global_m->select_config('m_kabar', $where, $select, $start, $limit, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
+
 
 }
 ?>
