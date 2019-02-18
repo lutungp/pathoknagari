@@ -186,6 +186,24 @@
       $this->response($response);
     }
 
+    function kabardetail_post()
+    {
+        $kabar_id = $this->input->post('id');
+        $where  = " WHERE kabar_active = 'y' AND kabar_id = $kabar_id ";
+
+        $response['status'] = 200;
+        $response['img_url'] = base_url('assets/img/items/');
+        $result = $this->Global_m->select_config('m_kabar', $where, '*')->result();
+        $nbrows = Count($this->Global_m->select_config('m_kabar', $where, '*')->result());
+        $response['nbrows'] = $nbrows;
+        foreach ($result as $key => $value) {
+          $response['data'][] = $value;
+        }
+
+
+        $this->response($response);
+    }
+
 
 }
 ?>
