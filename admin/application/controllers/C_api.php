@@ -174,7 +174,7 @@
     {
       $start  = (integer)$this->post('start');
       $limit  = (integer)$this->post('limit');
-      $sortby = " ORDER BY kabar_urutan ASC ";
+      $sortby = " ORDER BY kabar_tanggal ASC ";
       $where  = " WHERE kabar_active = 'y' ";
       $select = $this->post('select');
 
