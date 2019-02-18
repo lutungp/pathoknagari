@@ -126,6 +126,20 @@ class C_dashboard extends MY_Controller{
 
     $dataheader['running_text'] = $running_text;
 
+    /* Kabar Ad-Darojat */
+    $postDataKbr = [
+      'select'  => 'kabar_id, kabar_nama, kabar_penulis, kabar_summary, kabar_photo, kabar_tanggal '
+    ];
+
+    $countData = count($postData);
+
+    $kabar_details = $this->http_request($this->API.'/C_api/kabar', $postDataKbr, array(CURLOPT_BUFFERSIZE => 10));
+    $kabar_details = json_decode($kabar_details, TRUE);
+    if ($kabar_details['data'] == "") {
+        $kabar_details['data'] = array();
+    }
+
+    $data['kabar_details'] = $kabar_details;
     $this->load->view('templates/V_header', $dataheader);
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');
