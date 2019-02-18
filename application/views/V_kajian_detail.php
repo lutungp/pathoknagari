@@ -8,6 +8,8 @@
     <link href="assets/images/212.png" rel="icon">
     <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets_custom/css/style.css">
+    <link rel="stylesheet" href="assets_2/css/style.css">
 
       <!-- HTML Meta Tags -->
     <meta name="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
@@ -51,6 +53,22 @@
         }
       }
     </script>
+    <style media="screen">
+        .news_item {
+            height: auto;
+        }
+
+        #navbar_header {
+          -webkit-box-pack: unset !important;
+          justify-content: normal;
+        }
+
+        #navbar_btn {
+          position: absolute;
+          right: 10px;
+          top: 40px;
+        }
+    </style>
   </head>
   <body  data-spy="scroll" data-target=".navbar" data-offset="90">
 
@@ -65,31 +83,24 @@
 
     <!-- header -->
     <header class="site-header">
-      <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+      <nav class="navbar navbar-expand-lg transparent-bg fixedmenu">
         <nav class="navbar">
           <marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
-            <b>Undangan Sholat Jum'at di Masjid Ad-Darojat &nbsp Jum'at, 28 Desember 2018 &nbsp </b> <b>Khotib :
-            </b>Awaludin Kiroman, S.Ag. &nbsp
-            <b>Imam :</b>Awaludin Kiroman, S.Ag. &nbsp
-            <b>Muadzin :</b> Ahmad Musyafa &nbsp
-            <b>Saldo Infaq Jum'at :</b> Rp. 0 -, &nbsp Seluruh Infaq akan didonasikan kepada korban bencana tsunami Banten &            Lampung. &nbsp Disediakan makan siang.
+              <?php echo $running_text['data'][0]['webprofile_runtext']; ?>
           </marquee>
-          <div class="container">
+          <div id="navbar_header" class="container">
             <a class="navbar-brand" href="beranda">
               <img src="assets/images/pn5-transparent.png" alt="logo">
             </a>
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
+            <button id="navbar_btn" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
               <span> </span>
               <span> </span>
               <span> </span>
             </button>
             <div class="collapse navbar-collapse" id="xenav">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="beranda#kabar">Kabar Ad-Darojat</a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="beranda#streaming">Live Streaming</a>
+                  <a class="nav-link" href="beranda#berita">Kabar Ad-Darojat</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="beranda#agenda">Majelis Ilmu</a>
@@ -97,95 +108,26 @@
                 <li class="nav-item">
                   <a class="nav-link" href="beranda#profil">Profil Masjid</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="beranda#portfolio_top">Galeri</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="beranda#kajian">Kajian Islam</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="beranda#merchandise">Merchandise</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="beranda#streaming">Live Streaming</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="beranda#kontak">Kontak</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+                </li>
               </ul>
             </div>
           </div>
-          <!--side menu open button-->
-          <a href="javascript:void(0)" class="d-none d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
         </nav>
       </nav>
 
        <!-- side menu -->
-      <div class="side-menu">
-        <div class="inner-wrapper">
-          <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
-          <nav class="side-nav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="beranda#kabar">Kabar Ad-Darojat</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#streaming">Live Streaming</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#agenda">Majelis Ilmu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#profil">Profil Masjid</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#portfolio_top">Galeri</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#kajian">Kajian Islam</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#merchandise">Merchandise</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="beranda#kontak">Kontak</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="social-icons-simple white top50 w-100">
-            <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i> </a> 	 </li>
-            <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i> </a> </li>
-            <li><a href="https://twitter.com/ipib1960/"><i class="fa fa-twitter"></i> </a> </li>
-            <li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
-            <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
-          </ul>
-          <p class="whitecolor">&copy; 2018 IPIB Production .</p>
-        </div>
-      </div>
       <a id="close_side_menu" href="javascript:void(0);"></a>
        <!-- End side menu -->
     </header>
     <!-- header -->
-
-    <!--page Header-->
-    <section class="page-header parallaxie padding_top">
-       <div class="container">
-          <div class="row">
-             <div class="col-sm-12">
-                <div class="page-titles text-center">
-                   <h2 class="whitecolor font-light bottom30">Kajian Islam</h2>
-                   <ul class="breadcrumb justify-content-center">
-                     <li class="breadcrumb-item"><a href="beranda">Beranda</a></li>
-                     <li class="breadcrumb-item active" aria-current="page">Kajian Islam</li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section>
-    <!--page Header ends-->
 
     <!-- kajian-detail -->
     <section id="kajian-detail" class="padding bglight">

@@ -49,6 +49,20 @@ class C_berita_detail extends CI_Controller{
     $data['berita_detail']  = json_decode($berita_detail, TRUE);
     $data['berita_terbaru'] = json_decode($berita_terbaru, TRUE);
 
+    $postData = [
+      'select'  => 'webprofile_runtext',
+      'start'   => 0,
+      'limit'   => 1
+    ];
+
+    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $running_text = json_decode($running_text, TRUE);
+    if ($running_text['data'] == "") {
+        $running_text['data'] = array();
+    }
+
+    $data['running_text'] = $running_text;
+
     $this->load->view('V_berita_detail', $data);
   }
 
