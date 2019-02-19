@@ -68,6 +68,18 @@
           right: 10px;
           top: 40px;
         }
+
+
+        @media (max-width: 760px) {
+          .top30 {
+            margin-top: 5px;
+          }
+
+          #sejarah-detail {
+             padding-top: 25px;
+          }
+
+        }
     </style>
   </head>
   <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -129,28 +141,6 @@
        <!-- End side menu -->
     </header>
     <!-- header -->
-    <section class="padding col-md-12">
-        <div class="row">
-          <?php
-              $takmir_box = "";
-              foreach ($data_pegawai['data'] as $key => $value) {
-                $takmir_box .= "<div class='col-lg-3 col-md-6'>
-                                  <div class='team-box grey-shade top60 wow fadeInUp' data-wow-delay='400ms'>
-                                    <div class='image'>
-                                      <img src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'  alt='Pathoknagari-takmir'>
-                                    </div>
-                                    <div class='team-content darkcolor'>
-                                      <h3>" . $value['pegawai_jabatan'] . "</h3>
-                                      <p class='nomargin'>" . $value['pegawai_nama'] . "</p>
-                                    </div>
-                                  </div>
-                                </div>";
-              }
-          ?>
-
-          <?php echo $takmir_box; ?>
-        </div>
-    </section>
     <!-- sejarah-detail -->
     <section id="sejarah-detail" class="padding bglight">
        <div class="container">
@@ -196,6 +186,26 @@
               </div>
              <div class="col-md-4">
                 <aside class="sidebar whitebox">
+                  <div class="widget heading_space">
+                    <h4 class="text-capitalize darkcolor bottom20">Ustadz & Takmir</h4>
+                    <ul id='imglist'>
+                      <?php
+                          $takmir_box = "";
+                          $number = 1;
+                          foreach ($data_pegawai['data'] as $key => $value) {
+                              $takmir_box .= "<li>
+                                                  <a href='javascript:void(0)'>
+                                                    <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
+                                                    alt='" . $value['pegawai_nama'] . "'>
+                                                  </a>
+                                              </li>";
+                          }
+
+                       ?>
+
+                       <?php echo $takmir_box; ?>
+                    </ul>
+                  </div>
                    <div class="widget heading_space">
                       <h4 class="text-capitalize darkcolor bottom20">Kabar Terbaru</h4>
                       <?php
@@ -216,22 +226,6 @@
                        ?>
 
                        <?php echo $terbaru; ?>
-                   </div>
-                   <div class="widget heading_space">
-                      <h4 class="text-capitalize darkcolor bottom20">Kategori</h4>
-                      <ul class="webcats">
-                         <li><a href="#.">Kajian Islami <span>(20)</span></a></li>
-                         <li><a href="#.">Kabar Ad-Darojat <span>(05)</span></a></li>
-                      </ul>
-                   </div>
-                   <div class="widget heading_space">
-                      <h4 class="text-capitalize darkcolor bottom20">Pencarian</h4>
-                      <form class="widget_search">
-                         <div class="input-group">
-                            <input type="search" class="form-control" placeholder="cari..." required>
-                            <button type="submit" class="input-group-addon"><i class="fa fa-search"></i> </button>
-                         </div>
-                      </form>
                    </div>
                 </aside>
              </div>

@@ -39,7 +39,7 @@ class C_sejarah_detail extends CI_Controller{
 
     $data['running_text'] = $running_text;
 
-    $postData = ['select'   => 'pegawai_nama, pegawai_jabatan, pegawai_photo'];
+    $postData = ['select'   => 'pegawai_id, pegawai_nama, pegawai_jabatan, pegawai_photo'];
 
     $countData = count($postData);
 

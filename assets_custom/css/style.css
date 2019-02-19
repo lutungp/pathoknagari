@@ -203,6 +203,11 @@ blockquote.blockquote::before{
 .top60{
     margin-top: 60px;
 }
+
+.top30{
+    margin-top: 30px;
+}
+
 .bottom60{
     margin-bottom: 60px;
 }
@@ -4273,4 +4278,14 @@ html{
     .youtubeembed {
         height: 200px;
     }
+}
+
+.ul-img {
+  width: 120px !important;
+  margin: 10px;
+}
+
+#imglist li{
+  display : inline;
+  list-style-type : none;
 }
