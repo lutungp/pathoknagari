@@ -97,6 +97,7 @@
       $start  = (integer)$this->post('start');
       $limit  = (integer)$this->post('limit');
       $where  = " WHERE pegawai_aktif = 'y' ";
+      $sortby = " ORDER BY pegawai_id ASC ";
       $select = $this->post('select');
 
       $result = $this->Global_m->select_config('m_pegawai', $where, $select)->result();
