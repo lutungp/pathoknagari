@@ -451,11 +451,8 @@
                                                       <div class='image-light'></div>
                                                       <span class='dashicons dashicons-format-quote'></span>
                                                     </a>
-                                                    <h5 class='kabar-ad-darojat'><a href='javascript:void(0)'>" . $value['kabar_nama'] . "</a></h5>
-                                                    <p class='post-meta'>
                                                       <a href='javascript:void(0)'><span class='fa fa-clock-o'></span> " . date('M d, Y', strtotime($value['kabar_tanggal'])) . "</a> &nbsp;
-                                                      <a href='javascript:void(0)'><span class=''></span> ".$value['kabar_nama']."</a>
-                                                    </p>
+                                                      <h5 class='kabar-ad-darojat'><a href='javascript:void(0)'>" . $value['kabar_nama'] . "</a></h5>
                                                   </li> ";
                              }
                          ?>

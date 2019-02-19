@@ -197,6 +197,7 @@
                                                   <a href='javascript:void(0)'>
                                                     <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
                                                     alt='" . $value['pegawai_nama'] . "'>
+                                                    <h5 class='kabar-ad-darojat'><a href='javascript:void(0)'>" . $value['pegawai_nama'] . "</a></h5>
                                                   </a>
                                               </li>";
                           }
