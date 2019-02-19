@@ -25,6 +25,32 @@ class C_sejarah_detail extends CI_Controller{
 
     $berita_terbaru = $this->http_request($this->API.'/C_api/berita', $postData, array(CURLOPT_BUFFERSIZE => 10));
 
+    $postData = [
+      'select'  => 'webprofile_runtext',
+      'start'   => 0,
+      'limit'   => 1
+    ];
+
+    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $running_text = json_decode($running_text, TRUE);
+    if ($running_text['data'] == "") {
+        $running_text['data'] = array();
+    }
+
+    $data['running_text'] = $running_text;
+
+    $postData = ['select'   => 'pegawai_nama, pegawai_jabatan, pegawai_photo'];
+
+    $countData = count($postData);
+
+    $data_pegawai = $this->http_request($this->API.'/C_api/pegawai', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $data_pegawai = json_decode($data_pegawai, TRUE);
+    if ($data_pegawai == "") {
+        $data_pegawai['data'] = array();
+    }
+
+    $data['data_pegawai'] = $data_pegawai;
+
     $data['berita_terbaru'] = json_decode($berita_terbaru, TRUE);
     $this->load->view('V_sejarah_detail', $data);
   }

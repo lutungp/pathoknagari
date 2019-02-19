@@ -100,7 +100,7 @@
       $sortby = " ORDER BY pegawai_id ASC ";
       $select = $this->post('select');
 
-      $result = $this->Global_m->select_config('m_pegawai', $where, $select)->result();
+      $result = $this->Global_m->select_config('m_pegawai', $where, $select, 0, 0, $sortby)->result();
       foreach ($result as $key => $value) {
         $response['data'][] = $value;
       }
