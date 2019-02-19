@@ -147,7 +147,7 @@
                       </ul>
                       <p class="bottom35">
                         <?php echo html_entity_decode($kajian_detail['data'][0]['kajian_isi']); ?>
-                      <!-- </p> -->
+                      </p>
 
                       <div class="profile-authors heading_space">
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>

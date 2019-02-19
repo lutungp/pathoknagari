@@ -23,11 +23,36 @@
 
              map = window.open("", "Map");
 
-          if (map) {
-             mapForm.submit();
-          } else {
-             alert('You must allow popups for this map to work.');
-          }
+            if (map) {
+               mapForm.submit();
+            } else {
+               alert('You must allow popups for this map to work.');
+            }
+        }
+
+        function kabar_detail(elem) {
+            var val = $(elem).attr('value')
+            var mapForm = document.createElement("form");
+            mapForm.target = "Map";
+            mapForm.method = "POST"; // or "post" if appropriate
+            mapForm.action = "<?php echo base_url('kabar-detail') ?>";
+
+            var mapInput = document.createElement("input");
+            mapInput.type = "text";
+            mapInput.name = "message";
+            mapInput.value = val;
+            mapInput.style.display = "none";
+            mapForm.appendChild(mapInput);
+
+            document.body.appendChild(mapForm);
+
+            map = window.open("", "Map");
+
+            if (map) {
+               mapForm.submit();
+            } else {
+               alert('You must allow popups for this map to work.');
+            }
         }
 
 </script>
@@ -362,7 +387,7 @@
                             <h4>Kabar Agenda</h4>
                         </header>
 
-                        <div id="kabar_agenda" class="carousel slide carousel-small frame" data-ride="carousel">
+                        <div id="kabar_agenda" class="carousel slide carousel-small" data-ride="carousel">
                           <div class='carousel-inner'>
                             <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
                             <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
@@ -371,6 +396,9 @@
                           </div>
                         </div>
                     </section>
+                  </div>
+                  <div class="row">
+                      
                   </div>
               </aside>
           </div>
@@ -404,7 +432,7 @@
                              $html_kabar = "";
                              foreach ($kabar_details['data'] as $key => $value) {
                                 $html_kabar .= " <li class='article-small'>
-                                                    <a href='javascript:void(0)' class='image'>
+                                                    <a href='javascript:void(0)' onclick='kabar_detail(this)' class='image' value='" . $value['kabar_id'] . "'>
                                                       <figure class='image-holder'>
                                                         <div data-src='" . $kilas_berita['img_url'] . $value['kabar_photo'] . "' data-alt='" . $value['kabar_nama'] . "'></div>
                                                       </figure>

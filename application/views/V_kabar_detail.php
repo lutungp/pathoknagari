@@ -129,29 +129,29 @@
     </header>
     <!-- header -->
 
-    <!-- berita-detail -->
-    <section id="berita-detail" class="padding bglight">
+    <!-- kabar-detail -->
+    <section id="kabar-detail" class="padding bglight">
        <div class="container">
           <div class="row">
              <div class="col-md-8">
                 <div class="news_item shadow">
                    <div class="image">
-                      <img src="<?php echo $berita_detail['img_url'] . $berita_detail['data'][0]['berita_photo']?>" alt="Latest News" class="img-responsive">
+                      <img src="<?php echo $kabar_detail['img_url'] . $kabar_detail['data'][0]['kabar_photo']?>" alt="Latest News" class="img-responsive">
                    </div>
                     <div class="news_desc text-left">
-                      <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail"><?php echo $berita_detail['data'][0]['berita_nama']; ?></a></h3>
+                      <h3 class="text-capitalize font-light darkcolor"><a href="kabar-detail"><?php echo $kabar_detail['data'][0]['kabar_nama']; ?></a></h3>
                       <ul class="meta-tags top20 bottom20">
-                        <li><a href="#."><i class="fa fa-calendar"></i>Feb 14, 2018</a></li>
-                        <li><a href="#."> <i class="fa fa-user-o"></i> peter warren</a></li>
+                        <li><a href="#."><i class="fa fa-calendar"></i><?php echo date('M d, Y', strtotime($kabar_detail['data'][0]['kabar_tanggal'])); ?></a></li>
+                        <li><a href="#."> <i class="fa fa-user-o"></i><?php echo $kabar_detail['data'][0]['kabar_penulis'] ?></a></li>
                         <li><a href="#."><i class="icon-comment"></i>5</a></li>
                       </ul>
                       <p class="bottom35">
-                        <?php echo html_entity_decode($berita_detail['data'][0]['berita_isi']); ?>
+                        <?php echo html_entity_decode($kabar_detail['data'][0]['kabar_isi']); ?>
                       </p>
 
                       <div class="profile-authors heading_space">
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
-                        <div class="fb-comments" data-href="https://pathoknagari.id/berita-detail" data-width="670" data-numposts="5"></div>
+                        <div class="fb-comments" data-href="https://pathoknagari.id/kabar-detail" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
                         <script>
                           (function(d, s, id) {
@@ -169,49 +169,49 @@
             <br><br><br><br><br><br>
              <div class="col-md-4">
                 <aside class="sidebar whitebox">
-                   <div class="widget heading_space">
-                      <h4 class="text-capitalize darkcolor bottom20">Kabar Terbaru</h4>
-                      <?php
-                          $terbaru = "";
-                          foreach ($berita_terbaru['data'] as $keybaru => $valuebaru) {
-                              $terbaru .= " <div class='bottom15'>
-                                               <a href='javascript:void(0)' onclick='berita_detail(this)' class='post' value='" . $valuebaru['berita_id'] . "'>
-                                                  <div class='row' style='font-size: 10px;'>
-                                                  <img src='" . $berita_terbaru['img_url'] . $valuebaru['berita_photo'] . "' alt='post image'
-                                                  style='width: 80px;height: 50px;'>
-                                                      <div style='width: 200px;padding-left:10px;'>
-                                                      " . $valuebaru['berita_nama'] . "
-                                                      </div>
-                                                  </div>
-                                               </a>
-                                            </div> ";
-                          }
-                       ?>
+                  <div class="widget heading_space">
+                     <h4 class="text-capitalize darkcolor bottom20">kabar Terbaru</h4>
+                     <?php
+                         $terbaru = "";
+                         foreach ($kabar_terbaru['data'] as $keybaru => $valuebaru) {
+                             $terbaru .= " <div class='bottom15'>
+                                              <a href='javascript:void(0)' onclick='kabar_detail(this)' class='post' value='" . $valuebaru['kabar_id'] . "'>
+                                                 <div class='row' style='font-size: 10px;'>
+                                                 <img src='" . $kabar_detail['img_url'] . $valuebaru['kabar_photo'] . "' alt='post image'
+                                                 style='width: 80px;height: 50px;'>
+                                                     <div style='width: 200px;padding-left:10px;'>
+                                                     " . $valuebaru['kabar_nama'] . "
+                                                     </div>
+                                                 </div>
+                                              </a>
+                                           </div> ";
+                         }
+                      ?>
 
-                       <?php echo $terbaru; ?>
-                   </div>
-                   <div class="widget heading_space">
-                      <h4 class="text-capitalize darkcolor bottom20">Kategori</h4>
-                      <ul class="webcats">
-                         <li><a href="#.">Kajian Islami <span>(20)</span></a></li>
-                         <li><a href="#.">Kabar Ad-Darojat <span>(05)</span></a></li>
-                      </ul>
-                   </div>
-                   <div class="widget heading_space">
-                      <h4 class="text-capitalize darkcolor bottom20">Pencarian</h4>
-                      <form class="widget_search">
-                         <div class="input-group">
-                            <input type="search" class="form-control" placeholder="cari..." required>
-                            <button type="submit" class="input-group-addon"><i class="fa fa-search"></i> </button>
-                         </div>
-                      </form>
-                   </div>
+                      <?php echo $terbaru; ?>
+                  </div>
+                  <div class="widget heading_space">
+                     <h4 class="text-capitalize darkcolor bottom20">Kategori</h4>
+                     <ul class="webcats">
+                        <li><a href="#.">kabar Islami <span>(20)</span></a></li>
+                        <li><a href="#.">Kabar Ad-Darojat <span>(05)</span></a></li>
+                     </ul>
+                  </div>
+                  <div class="widget heading_space">
+                     <h4 class="text-capitalize darkcolor bottom20">Pencarian</h4>
+                     <form class="widget_search">
+                        <div class="input-group">
+                           <input type="search" class="form-control" placeholder="cari..." required>
+                           <button type="submit" class="input-group-addon"><i class="fa fa-search"></i> </button>
+                        </div>
+                     </form>
+                  </div>
                 </aside>
              </div>
           </div>
        </div>
     </section>
-    <!--Berita Ends-->
+    <!--kabar Ends-->
 
     <!--Site Footer Here-->
     <footer id="site-footer" class="padding_half">
@@ -318,12 +318,12 @@
           window.history.replaceState( null, null, window.location.href );
       }
 
-      function berita_detail(elem) {
+      function kabar_detail(elem) {
           val = $(elem).attr('value')
           var mapForm = document.createElement("form");
           mapForm.target = "Map";
           mapForm.method = "POST"; // or "post" if appropriate
-          mapForm.action = "<?php echo base_url('berita-detail') ?>";
+          mapForm.action = "<?php echo base_url('kabar-detail') ?>";
 
           var mapInput = document.createElement("input");
           mapInput.type = "text";
