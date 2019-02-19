@@ -128,7 +128,9 @@ class C_dashboard extends MY_Controller{
 
     /* Kabar Ad-Darojat */
     $postDataKbr = [
-      'select'  => 'kabar_id, kabar_nama, kabar_penulis, kabar_summary, kabar_photo, kabar_tanggal '
+      'select'  => 'kabar_id, kabar_nama, kabar_penulis, kabar_summary, kabar_photo, kabar_tanggal ',
+      'start'   => 0,
+      'limit'   => 24
     ];
 
     $countData = count($postData);

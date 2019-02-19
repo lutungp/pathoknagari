@@ -153,6 +153,10 @@
     opacity: 1!important;
   }
 
+  #kabar_agenda {
+    height: 520px;
+  }
+
 </style>
 
 <!--Ful Screen Section Video with caption-->
@@ -398,7 +402,15 @@
                     </section>
                   </div>
                   <div class="row">
-                      
+                    <section class="widget">
+                        <header class="clearfix"><h4>Advertisement</h4></header>
+                        <div class="frame thick">
+                          <a href="javascript:void(0)" target="_blank">
+                            <img class="img-responsive" style="width: 100%;height: 250px;" src="assets_2/img/placeholder/300x250.png" alt="ads">
+                          </a>
+                        </div>
+                        <img src="assets_2/img/shadow.png" alt="shadow" class="shadow">
+                    </section>
                   </div>
               </aside>
           </div>
