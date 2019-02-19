@@ -4285,7 +4285,9 @@ html{
   margin: 10px;
 }
 
-#imglist li{
-  display : inline;
-  list-style-type : none;
-}
+
+#imglist{float:left;}
+#imglist ul{margin:0;padding:0}
+#imglist ul li{list-style-type:none;display:inline;padding:0; float:left;}
+#imglist ul li img{width:200px;display:block;}
+#imglist ul li .ul-img-text{font-size: 12px; text-align: center;width: 140px;}

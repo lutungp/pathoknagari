@@ -186,25 +186,27 @@
               </div>
              <div class="col-md-4">
                 <aside class="sidebar whitebox">
-                  <div class="widget heading_space">
-                    <h4 class="text-capitalize darkcolor bottom20">Ustadz & Takmir</h4>
-                    <ul id='imglist'>
-                      <?php
-                          $takmir_box = "";
-                          $number = 1;
-                          foreach ($data_pegawai['data'] as $key => $value) {
-                              $takmir_box .= "<li>
-                                                  <a href='javascript:void(0)'>
-                                                    <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
-                                                    alt='" . $value['pegawai_nama'] . "'>
-                                                  </a>
-                                              </li>";
-                          }
+                  <div id='imglist' class="widget heading_space">
+                    <h4 class="text-capitalize darkcolor">Ustadz & Takmir</h4>
+                      <ul>
+                        <?php
+                        $takmir_box = "";
+                        $number = 1;
+                        foreach ($data_pegawai['data'] as $key => $value) {
+                          $takmir_box .= "<li class='article-small'>
+                                              <a href='javascript:void(0)'>
+                                                <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
+                                                alt='" . $value['pegawai_nama'] . "'>
+                                              </a>
+                                              <div class='ul-img-text'><b>".$value['pegawai_jabatan']."</b></div>
+                                              <div class='ul-img-text'>".$value['pegawai_nama']."</div>
+                                          </li>";
+                        }
 
-                       ?>
+                        ?>
 
-                       <?php echo $takmir_box; ?>
-                    </ul>
+                        <?php echo $takmir_box; ?>
+                      </ul>
                   </div>
                    <div class="widget heading_space">
                       <h4 class="text-capitalize darkcolor bottom20">Kabar Terbaru</h4>
