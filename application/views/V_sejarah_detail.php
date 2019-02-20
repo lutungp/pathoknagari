@@ -79,6 +79,11 @@
              padding-bottom: 20px;
           }
 
+          .imgHeader {
+            width: 100%;
+            text-align: center;
+          }
+
         }
     </style>
   </head>
@@ -183,27 +188,56 @@
              <div class="col-md-4">
                 <aside class="sidebar whitebox">
                   <div id='imglist' class="widget heading_space">
-                    <!-- Ustadz & Takmir -->
-                    <h4 class="text-capitalize darkcolor">Ustadz & Takmir</h4>
-                      <ul>
-                        <?php
-                        $takmir_box = "";
-                        $number = 1;
-                        foreach ($data_pegawai['data'] as $key => $value) {
-                          $takmir_box .= "<li class='article-small'>
+                    <div class="row">
+                        <!-- Ustadz & Takmir -->
+                        <div class="imgHeader">
+                          <h4 class="text-capitalize darkcolor">Takmir & Ustadz</h4>
+                        </div>
+                        <ul>
+                          <?php
+                          $takmir_box = "";
+                          $number = 1;
+                          foreach ($data_pegawai['data'] as $key => $value) {
+                            $takmir_box .= "<li class='article-small'>
+                            <a href='javascript:void(0)'>
+                            <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
+                            alt='" . $value['pegawai_nama'] . "'>
+                            </a>
+                            <div class='ul-img-text'><b>".$value['pegawai_jabatan']."</b></div>
+                            <div class='ul-img-text'>".$value['pegawai_nama']."</div>
+                            </li>";
+                          }
+
+                          ?>
+
+                          <?php echo $takmir_box; ?>
+                        </ul>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <!-- Ustadz & Takmir -->
+                        <div class="imgHeader">
+                          <h4 class="text-capitalize darkcolor">Pengurus IPIB</h4>
+                        </div>
+                        <ul>
+                          <?php
+                          $takmir_box = "";
+                          $number = 1;
+                          foreach ($data_pegawai['data'] as $key => $value) {
+                            $takmir_box .= "<li class='article-small'>
                                               <a href='javascript:void(0)'>
                                                 <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
                                                 alt='" . $value['pegawai_nama'] . "'>
                                               </a>
                                               <div class='ul-img-text'><b>".$value['pegawai_jabatan']."</b></div>
                                               <div class='ul-img-text'>".$value['pegawai_nama']."</div>
-                                          </li>";
-                        }
+                                            </li>";
+                          }
 
-                        ?>
+                          ?>
 
-                        <?php echo $takmir_box; ?>
-                      </ul>
+                          <?php echo $takmir_box; ?>
+                        </ul>
+                    </div>
                   </div>
                    <div class="widget heading_space">
                       <h4 class="text-capitalize darkcolor bottom20">Kabar Terbaru</h4>

@@ -4285,6 +4285,9 @@ html{
   margin: 10px;
 }
 
+#imglist {
+  padding-top: 18px !important;
+}
 
 #imglist{float:left;}
 #imglist ul{margin:0;padding:0}
