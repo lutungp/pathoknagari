@@ -61,6 +61,12 @@
     padding-top: 170px;
   }
 
+  /* @media (min-width: 500px) { */
+      #slide_berita {
+        margin-top: 15px!important;
+      }
+  /* } */
+
   @media (max-width: 760px) {
      .news-slide-summary {
        display: none;
@@ -207,7 +213,7 @@
 
                    <!-- CAROUSEL  -->
                    <section class="widget no-mobile berita-slide">
-                     <div class="frame thick">
+                     <div style="margin-top: 15px" class="frame thick">
                          <div id="carousel-medium" class="carousel caption-slide slide carousel-medium" data-ride="carousel">
                              <!-- Carousel contents -->
                              <div class="carousel-inner">
