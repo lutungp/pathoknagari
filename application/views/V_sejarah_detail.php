@@ -167,19 +167,15 @@
                         <p style="text-align: justify;">Pada pembangunan awal di tahun 1964, bentuk masjid masih semi permanen. Baru pada tahun 1988 dibangun kembali serambi tengah dengan sumber dana dari pemerintah dan swadaya masyarakat. Meski bentuk masjid mengalami perubahan, namun ciri khas sebagai Masjid Pathok Negara tetap dipertahankan, seperti mustoko masjid yang masih disimpan dengan baik. Baru pada tahun 1992 bangunan induk utama dibongkar kembali dan disarankan agar disesuaikan seperti bentuk semula yakni joglo yang berasal dari kayu jati.</p>
                         <p style="text-align: justify;">Pada tahun 1993 akhirnya pembangunan ruang utama masjid berhasil dilakukan dengan membangun joglo dengan 4 soko guru masing-masing setinggi 7 meter. Pembangunan kelengkapan masjid seperti serambi depan, gerbang masuk, serta tempat wudhu dan wc dilakukan pada tahun 2001. Atas kesepakatan para tokoh agama setempat pada tahun 2003, mustoko yang asli yang terbuat dari tanah liat tidak jadi dipasang dan diganti dengan mustoko dari kuningan. Meskipun demikian mustoko yang asli sampai sekarang masih tersimpan dengan baik di Masjid Ad-Darojat.</p>
                         <p style="text-align: justify;">Melalui peranan masjid ini, masyarakat Babadan begitu lekat dengan ajaran-ajaran Islam. Di tengah-tengah masyarakat pada akhirnya memang muncul beragam pandangan. Namun keragaman ini dapat disikapi dengan bijak oleh warga masyarakat Babadan. Toleransi di kampung santri Babadan sungguh dapat menjadi teladan dalam kehidupan beragama di masyarakat. Terlebih dalam menyikapi adanya perbedaan pandangan di kalangan masyarakat, perbedaan pandangan di kalangan umat Islam dalam menjalani syariat, tidak berlkaku bagi masyarakt perkampungan santri Babadan. Rasa toleransi ini telah terjalin sejak lama terutama dalm menghadapi bulan Ramadhan yakni pada pelaksanaan sholat tarawih. Fanatisme perbedaan faham antara NU dan Muhammadiyah dapat diantisipasi dengan baik oleh masyarakat Babadan.</p>
+
+
+
+
+
                         <div class="profile-authors heading_space">
                           <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
                           <div class="fb-comments" data-href="https://pathoknagari.id/sejarah" data-width="670" data-numposts="5"></div>
                           <div id="fb-root"></div>
-                          <script>
-                              (function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s); js.id = id;
-                                js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=2260957407519198&autoLogAppEvents=1';
-                                fjs.parentNode.insertBefore(js, fjs);
-                              }(document, 'script', 'facebook-jssdk'));
-                          </script>
                         </div>
                     </div>
                 </div>
@@ -331,6 +327,14 @@
         }
       };
     })();
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=2260957407519198&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
   </script>
 
