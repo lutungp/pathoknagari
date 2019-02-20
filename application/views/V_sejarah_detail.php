@@ -187,6 +187,7 @@
              <div class="col-md-4">
                 <aside class="sidebar whitebox">
                   <div id='imglist' class="widget heading_space">
+                    <!-- Ustadz & Takmir -->
                     <h4 class="text-capitalize darkcolor">Ustadz & Takmir</h4>
                       <ul>
                         <?php
