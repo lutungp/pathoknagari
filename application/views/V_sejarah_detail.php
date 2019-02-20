@@ -76,7 +76,7 @@
           }
 
           #sejarah-detail {
-             padding-top: 25px;
+             padding-bottom: 20px;
           }
 
         }
