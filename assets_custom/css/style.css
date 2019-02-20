@@ -4290,14 +4290,27 @@ html{
 }
 
 #imglist{float:left;}
-#imglist ul{margin:0;padding:0}
+#imglist ul{width: 88%;margin:auto;padding:0}
 #imglist ul li{list-style-type:none;display:inline;padding:0; float:left;}
 #imglist ul li img{width:200px;display:block;}
 #imglist ul li .ul-img-text{font-size: 12px; text-align: center;width: 140px;}
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 411px){
+    #imglist ul{width: 76%;margin:auto;padding:0}
     #imglist {
         padding-left : 15px;
         padding-right : 15px;
     }
+}
+
+@media screen and (max-width: 360px){
+    #imglist ul{width: 83%;margin:auto;padding:0}
+}
+
+@media screen and (max-width: 375px){
+    #imglist ul{width: 87%;margin:auto;padding:0}
+}
+
+@media screen and (max-width: 320px){
+    #imglist ul{width: 99%;margin:auto;padding:0}
 }

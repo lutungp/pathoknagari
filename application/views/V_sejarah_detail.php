@@ -69,6 +69,10 @@
           top: 40px;
         }
 
+        .imgHeader {
+          width: 100%;
+          text-align: center;
+        }
 
         @media (max-width: 760px) {
           .top30 {
@@ -79,10 +83,6 @@
              padding-bottom: 20px;
           }
 
-          .imgHeader {
-            width: 100%;
-            text-align: center;
-          }
 
         }
     </style>
@@ -199,19 +199,20 @@
                           $number = 1;
                           foreach ($data_pegawai['data'] as $key => $value) {
                             $takmir_box .= "<li class='article-small'>
-                            <a href='javascript:void(0)'>
-                            <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
-                            alt='" . $value['pegawai_nama'] . "'>
-                            </a>
-                            <div class='ul-img-text'><b>".$value['pegawai_jabatan']."</b></div>
-                            <div class='ul-img-text'>".$value['pegawai_nama']."</div>
-                            </li>";
+                                              <a href='javascript:void(0)'>
+                                                <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
+                                                alt='" . $value['pegawai_nama'] . "'>
+                                              </a>
+                                              <div class='ul-img-text'><b>".$value['pegawai_jabatan']."</b></div>
+                                              <div class='ul-img-text'>".$value['pegawai_nama']."</div>
+                                            </li>";
                           }
 
                           ?>
 
                           <?php echo $takmir_box; ?>
                         </ul>
+                        <!-- <a href="sejarah" class="button btnprimary wow fadeIn" data-wow-delay="500ms">Selengkapnya</a> -->
                     </div>
                     <div class="row" style="margin-top: 20px;">
                         <!-- Ustadz & Takmir -->
