@@ -161,6 +161,7 @@
 
   #kabar_agenda {
     height: 520px;
+    background-color: black;
   }
 
 </style>
@@ -399,10 +400,15 @@
 
                         <div id="kabar_agenda" class="carousel slide carousel-small" data-ride="carousel">
                           <div class='carousel-inner'>
-                            <a class='item active' href='javascript:void(0)'><img src="assets_2/img/IPIB-tsunami-aceh.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Agenda-Jogja-lurik.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/pengajian-ahad-pagi.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
-                            <a class='item' href='javascript:void(0)'><img src="assets_2/img/Ust-Rahmat-Baequni.jpeg" tppabs="" alt="Banner image" style="width: 80%;height: auto;"></a>
+                            <?php
+                            $html_agenda = "";
+                            foreach ($agenda_details['data'] as $valueAgenda){
+                                $html_agenda .= "<a class='item active' href='javascript:void(0)'>
+                                                    <img src='" . $kilas_berita['img_url'] . $valueAgenda['agenda_photo'] . "' tppabs=' alt='Banner image''>
+                                                 </a>";
+                            } ?>
+
+                            <?php echo $html_agenda; ?>
                           </div>
                         </div>
                     </section>

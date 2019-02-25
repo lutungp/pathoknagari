@@ -142,6 +142,24 @@ class C_dashboard extends MY_Controller{
     }
 
     $data['kabar_details'] = $kabar_details;
+
+    /* Kabar Agenda */
+    $postAgenda = [
+      'select'  => 'agenda_id, agenda_photo ',
+      'start'   => 0,
+      'limit'   => 24
+    ];
+
+    $countData = count($postData);
+
+    $agenda_details = $this->http_request($this->API.'/C_api/agenda', $postAgenda, array(CURLOPT_BUFFERSIZE => 10));
+    $agenda_details = json_decode($agenda_details, TRUE);
+    if ($agenda_details['data'] == "") {
+        $agenda_details['data'] = array();
+    }
+
+    $data['agenda_details'] = $agenda_details;
+
     $this->load->view('templates/V_header', $dataheader);
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');
