@@ -1,14 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_m_pegawai extends MY_Controller{
+class C_m_pemuda extends MY_Controller{
 
   public function __construct()
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
     $this->is_logged_in();
-    $this->load->model('m_m_pegawai');
 
     $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/datatables/datatables.min.css";
     $this->load_plugin_head[] = base_url()."assets/metronic_v4.5.6/theme/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css";
@@ -20,63 +19,62 @@ class C_m_pegawai extends MY_Controller{
   function index()
   {
     $this->get_header($this->load_plugin_head);
-    $this->pegawai_list();
+    $this->pemuda_list();
     $this->get_footer($this->load_plugin_foot);
   }
 
-  function pegawai_list()
+  function pemuda_list()
   {
-
     $page_bar['data'][] = array(
-                              'title_page' => 'Takmir list',
-                              'url'        => 'Pegawai'
+                              'title_page' => 'Pemuda list',
+                              'url'        => 'Pemuda'
                             );
-    $where  = " WHERE pegawai_aktif = 'y' AND pegawai_status = 'TAKMIR' ";
+    $where  = " WHERE pegawai_aktif = 'y' AND pegawai_status = 'PEMUDA' ";
     $select = " pegawai_id, pegawai_nama, pegawai_jabatan, pegawai_photo";
     $data = array(
                   'title_page' 	=> $this->page_bar($page_bar),
-                  'pegawai'     => $this->select_config('m_pegawai', $where, $select),
-                  'action'      => "Pegawai-Form",
+                  'pemuda'      => $this->select_config('m_pegawai', $where, $select),
+                  'action'      => "Pemuda-Form",
                 );
 
-    $this->load->view('master/pegawai_master/V_m_pegawai', $data);
+    $this->load->view('master/pemuda_master/V_m_pemuda', $data);
   }
 
-  function pegawai_form()
+  function pemuda_form()
   {
     $page_bar['data'][] = array(
-                              'title_page' => 'Takmir list',
-                              'url'        => 'Pegawai'
+                              'title_page' => 'Pemuda list',
+                              'url'        => 'Pemuda'
                             );
 
     $page_bar['data'][] = array(
-                              'title_page' => 'Takmir Form',
-                              'url'        => 'Pegawai-Form'
+                              'title_page' => 'Pemuda Form',
+                              'url'        => 'Pemuda-Form'
                             );
 
     $where = '';
-    $url   = "master/pegawai_master/V_m_pegawai_form";
+    $url   = "master/pemuda_master/V_m_pemuda_form";
     $data  = array(
                'title_page' 	=> $this->page_bar($page_bar),
-               'action_add'   => "C_m_pegawai/pegawai_add",
-               'action_close' => "Pegawai",
-               'pegawai_details' => $this->select_config('m_pegawai', $where)
+               'action_add'   => "C_m_pemuda/pemuda_add",
+               'action_close' => "Pemuda",
+               'pemuda_details' => $this->select_config('m_pegawai', $where)
             );
 
     $this->get_page($data, $url, $this->load_plugin_head, $this->load_plugin_foot);
   }
 
-  function pegawai_delete($id)
+  function pemuda_delete($id)
   {
     $where = array(
       'pegawai_id' => $id
     );
 
     $this->delete_config('m_pegawai',$where);
-    redirect('Pegawai');
+    redirect('../Pemuda');
   }
 
-  function pegawai_add()
+  function pemuda_add()
   {
       $pegawai_id      = $this->input->post('pegawai_id');
       $pegawai_nama    = $this->input->post('pegawai_nama');
@@ -86,7 +84,7 @@ class C_m_pegawai extends MY_Controller{
         'pegawai_id'      => $pegawai_id,
         'pegawai_nama'    => $pegawai_nama,
         'pegawai_jabatan' => $pegawai_jabatan,
-        'pegawai_status'  => 'TAKMIR'
+        'pegawai_status'  => 'PEMUDA'
       );
 
       $i_mg_file    = isset($_FILES['pegawai_photo']['name']) ? $_FILES['pegawai_photo']['name']: "";
@@ -105,30 +103,30 @@ class C_m_pegawai extends MY_Controller{
 
       $this->create_config('m_pegawai', $data);
 
-      redirect('Pegawai');
+      redirect('../Pemuda');
   }
 
-  function pegawai_edit($id){
+  function pemuda_edit($id){
 
     $page_bar['data'][] = array(
-                              'title_page' => 'Takmir list',
-                              'url'        => '../Pegawai'
+                              'title_page' => 'Pemuda list',
+                              'url'        => '../Pemuda'
                             );
 
     $page_bar['data'][] = array(
-                              'title_page' => 'Takmir Form',
-                              'url'        => '../Pegawai_edit/'.$id
+                              'title_page' => 'Pemuda Form',
+                              'url'        => '../Pemuda-Edit/'.$id
                             );
 
     $where = '';
     $where_pegawai_id  = "WHERE pegawai_id = '$id'";
-    $action           = "master/pegawai_master/V_m_pegawai_form";
+    $action           = "master/pemuda_master/V_m_pemuda_form";
 
     $data  = array(
              'title_page' 	    => $this->page_bar($page_bar),
-             'action_add'       => "C_m_pegawai/pegawai_update",
-             'action_close'     => "Pegawai",
-             'pegawai_details'   => $this->select_config('m_pegawai', $where_pegawai_id)->row()
+             'action_add'       => "C_m_pemuda/pegawai_update",
+             'action_close'     => "Pemuda",
+             'pemuda_details'   => $this->select_config('m_pegawai', $where_pegawai_id)->row()
             );
 
     $this->get_page($data, $action, $this->load_plugin_head, $this->load_plugin_foot);
@@ -146,7 +144,7 @@ class C_m_pegawai extends MY_Controller{
                     'pegawai_id'       => $pegawai_id,
                     'pegawai_nama'     => $pegawai_nama,
                     'pegawai_jabatan'  => $pegawai_jabatan,
-                    'pegawai_status'  => 'TAKMIR'
+                    'pegawai_status'   => 'PEMUDA'
                 );
 
     $where = array('pegawai_id' => $pegawai_id);
@@ -171,7 +169,7 @@ class C_m_pegawai extends MY_Controller{
     }
 
     $this->update_config('m_pegawai', $data, $where);
-    redirect('Pegawai');
+    redirect('../Pemuda');
 
   }
 

@@ -98,3 +98,7 @@ $route['Kabar_Ad-Darajat-Edit/(:num)']         = 'C_kabar_addarajat/kabar_edit/$
 $route['Kabar_agenda']                     = 'C_kabar_agenda';
 $route['Kabar_agenda_form']                = 'C_kabar_agenda/agenda_form';
 $route['Kabar_agenda_edit/(:num)']         = 'C_kabar_agenda/agenda_edit/$1';
+
+$route['Pemuda']                         = 'C_m_pemuda';
+$route['Pemuda-Form']                    = 'C_m_pemuda/pemuda_form';
+$route['Pemuda-Edit/(:num)']             = 'C_m_pemuda/pemuda_edit/$1';
