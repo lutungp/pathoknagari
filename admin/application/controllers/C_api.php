@@ -205,6 +205,20 @@
         $this->response($response);
     }
 
+    function agenda_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $sortby = " ORDER BY agenda_tanggal ASC ";
+      $where  = " WHERE agenda_active = 'y' ";
+      $select = $this->post('select');
 
+      $result = $this->Global_m->select_config('m_agenda', $where, $select, $start, $limit, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
 }
 ?>
