@@ -19,16 +19,16 @@
 									<tbody>
 											<?php
 											$no = 1;
-											foreach ($kabar->result() as $key_addarajat => $row_addarajat): ?>
+											foreach ($agenda_details->result() as $key_agenda => $row_agenda): ?>
 													<tr>
 														<td align=center><?php echo $no ?></td>
-														<td><?php echo $row_addarajat->kabar_nama; ?></td>
+														<td><?php echo $row_agenda->agenda_nama; ?></td>
 														<td class="text-center">
-		                          <a href="<?php echo base_url('Kabar_Ad-Darajat-Edit/'.$row_addarajat->kabar_id)?>" class="btn btn-success">
+		                          <a href="<?php echo base_url('Kabar_agenda_edit/'.$row_agenda->agenda_id)?>" class="btn btn-success">
 		                            <i class="fa fa-edit"></i> Edit
 		                          </a>
 		                          <a href="javascript:void(0)" class="btn btn-danger"
-		                          onclick="confirm_delete(<?php echo $row_addarajat->kabar_id?>, 'C_kabar_addarajat/kabar_delete/')">
+		                          onclick="confirm_delete(<?php echo $row_agenda->agenda_id?>, 'C_kabar_agenda/agenda_delete/')">
 		                            <i class="fa fa-trash-o"></i> Delete
 		                          </a>
 		                        </td>
@@ -41,7 +41,7 @@
 	                  <tr>
 	                    <td colspan="3">
 	                    <a href="<?php echo $action ?>" class="btn btn-primary">
-	                      Tambah Kabar
+	                      Tambah Agenda
 	                    </a>
 	                    </td>
 	                  </tr>

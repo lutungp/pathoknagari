@@ -94,3 +94,7 @@ $route['Majelisilmu-Edit/(:num)']         = 'C_majelisilmu/majelisilmu_edit/$1';
 $route['Kabar_Ad-Darajat']                     = 'C_kabar_addarajat';
 $route['Kabar_Ad-Darajat-Form']                = 'C_kabar_addarajat/kabar_form';
 $route['Kabar_Ad-Darajat-Edit/(:num)']         = 'C_kabar_addarajat/kabar_edit/$1';
+
+$route['Kabar_agenda']                     = 'C_kabar_agenda';
+$route['Kabar_agenda_form']                = 'C_kabar_agenda/agenda_form';
+$route['Kabar_agenda_edit/(:num)']         = 'C_kabar_agenda/agenda_edit/$1';
