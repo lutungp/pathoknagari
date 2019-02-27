@@ -166,20 +166,19 @@
       $start  = (integer)$this->post('start');
       $limit  = (integer)$this->post('limit');
       $select = $this->post('select');
-      print_r($select);
-      // $wherearr  = json_decode($this->post('where'));
-      //
-      // $where  = " WHERE webprofile_id IS NOT NULL ";
-      // if ($wherearr->fieldname  <> "") {
-      //     $where .= " AND $wherearr->fieldname = '$wherearr->value' ";
-      // }
-      //
-      // $result = $this->Global_m->select_config('s_webprofile', $where, $select, $start, $limit)->result();
-      // foreach ($result as $key => $value) {
-      //   $response['data'][] = $value;
-      // }
-      //
-      // $this->response($response);
+      $wherearr  = json_decode($this->post('where'));
+
+      $where  = " WHERE webprofile_id IS NOT NULL ";
+      if ($wherearr->fieldname  <> "") {
+          $where .= " AND $wherearr->fieldname = '$wherearr->value' ";
+      }
+
+      $result = $this->Global_m->select_config('s_webprofile', $where, $select, $start, $limit)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
     }
 
     function kabar_post()
