@@ -61,11 +61,13 @@
     padding-top: 170px;
   }
 
-  /* @media (min-width: 500px) { */
-      #slide_berita {
-        margin-top: 15px!important;
-      }
-  /* } */
+  #slide_berita {
+    margin-top: 15px!important;
+  }
+
+  .pagination {
+    margin-top: 47px;
+  }
 
   @media (max-width: 760px) {
      .news-slide-summary {
@@ -161,7 +163,7 @@
 
   #kabar_agenda {
     height: 520px;
-    background-color: black;
+    background-color: white;
   }
 
 </style>
@@ -402,10 +404,16 @@
                           <div class='carousel-inner'>
                             <?php
                             $html_agenda = "";
+                            $kabar_agenda = 0;
                             foreach ($agenda_details['data'] as $valueAgenda){
-                                $html_agenda .= "<a class='item active' href='javascript:void(0)'>
+                                $active = "";
+                                if ($kabar_agenda == 0) {
+                                    $active = 'active';
+                                }
+                                $html_agenda .= "<a class='item $active' href='javascript:void(0)'>
                                                     <img src='" . $kilas_berita['img_url'] . $valueAgenda['agenda_photo'] . "' tppabs=' alt='Banner image''>
                                                  </a>";
+                                $kabar_agenda++;
                             } ?>
 
                             <?php echo $html_agenda; ?>
@@ -463,7 +471,7 @@
                                                       <div class='image-light'></div>
                                                       <span class='dashicons dashicons-format-quote'></span>
                                                     </a>
-                                                      <a href='javascript:void(0)' style='font-size:12px;'><span class='fa fa-clock-o'></span> " . date('M d, Y', strtotime($value['kabar_tanggal'])) . "</a> &nbsp;
+                                                      <a href='javascript:void(0)' style='font-size:12px;'><span class='fa fa-clock-o'></span> " . date('d F Y', strtotime($value['kabar_tanggal'])) . "</a> &nbsp;
                                                       <h5 class='kabar-ad-darojat'><a href='javascript:void(0)'>" . $value['kabar_nama'] . "</a></h5>
                                                   </li> ";
                              }
