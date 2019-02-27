@@ -424,11 +424,25 @@
                   <div class="row">
                     <section class="widget">
                         <header class="clearfix"><h4>Advertisement</h4></header>
-                        <div class="frame thick">
-                          <a href="javascript:void(0)" target="_blank">
-                            <img class="img-responsive" style="width: 100%;height: 250px;" src="assets_2/img/placeholder/300x250.png" alt="ads">
-                          </a>
-                        </div>
+                        <div id="" class="carousel slide carousel-small" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <?php
+                            $html_iklan = "";
+                            $slide_iklan = 0;
+                            foreach ($iklan_details['data'] as $valueIklan){
+                                $active = "";
+                                if ($slide_iklan == 0) {
+                                    $active = 'active';
+                                }
+                                $html_iklan .= "<a class='item $active' href='javascript:void(0)'>
+                                                    <img src='" . $kilas_berita['img_url'] . $valueIklan['iklan_photo'] . "' tppabs=' alt='Banner image''>
+                                                 </a>";
+                                $slide_iklan++;
+                            } ?>
+
+                            <?php echo $html_iklan; ?>
+                          </div>
+                        </div>  
                         <img src="assets_2/img/shadow.png" alt="shadow" class="shadow">
                     </section>
                   </div>

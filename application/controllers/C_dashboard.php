@@ -143,7 +143,7 @@ class C_dashboard extends MY_Controller{
       'start'   => 0,
       'limit'   => 1
     ];
-    
+
     $youtube_embed = $this->http_request($this->API.'/C_api/webprofile', $postDataContent, array(CURLOPT_BUFFERSIZE => 10));
     $youtube_embed = json_decode($youtube_embed, TRUE);
     if ($youtube_embed['data'] == "") {
@@ -184,7 +184,22 @@ class C_dashboard extends MY_Controller{
         $agenda_details['data'] = array();
     }
 
-    $data['agenda_details'] = $agenda_details;
+    /* Slide Iklan */
+    $postIklan = [
+      'select'  => 'iklan_id, iklan_photo ',
+      'start'   => 0,
+      'limit'   => 24
+    ];
+
+    $countData = count($postData);
+
+    $iklan_details = $this->http_request($this->API.'/C_api/iklan', $postIklan, array(CURLOPT_BUFFERSIZE => 10));
+    $iklan_details = json_decode($iklan_details, TRUE);
+    if ($iklan_details['data'] == "") {
+        $iklan_details['data'] = array();
+    }
+
+    $data['iklan_details'] = $iklan_details;
     $this->load->view('templates/V_header', $dataheader);
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');
