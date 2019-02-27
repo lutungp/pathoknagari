@@ -39,17 +39,43 @@ class C_sejarah_detail extends CI_Controller{
 
     $data['running_text'] = $running_text;
 
-    $postData = ['select'   => 'pegawai_id, pegawai_nama, pegawai_jabatan, pegawai_photo'];
+    $wherePegawai = array(
+      'fieldname' => 'pegawai_status',
+      'value'     => 'TAKMIR'
+    );
 
-    $countData = count($postData);
+    $postDataPegawai = [
+      'select'   => 'pegawai_id, pegawai_nama, pegawai_jabatan, pegawai_photo',
+      'where'    =>  json_encode($wherePegawai)
+    ];
 
-    $data_pegawai = $this->http_request($this->API.'/C_api/pegawai', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $countData = count($postDataPegawai);
+    $data_pegawai = $this->http_request($this->API.'/C_api/pegawai', $postDataPegawai, array(CURLOPT_BUFFERSIZE => 10));
     $data_pegawai = json_decode($data_pegawai, TRUE);
     if ($data_pegawai == "") {
         $data_pegawai['data'] = array();
     }
 
     $data['data_pegawai'] = $data_pegawai;
+
+    $wherePemuda = array(
+      'fieldname' => 'pegawai_status',
+      'value'     => 'PEMUDA'
+    );
+
+    $postDataPemuda = [
+      'select'   => 'pegawai_id, pegawai_nama, pegawai_jabatan, pegawai_photo',
+      'where'    =>  json_encode($wherePemuda)
+    ];
+
+    $countData = count($postDataPemuda);
+    $data_pemuda = $this->http_request($this->API.'/C_api/pegawai', $postDataPemuda, array(CURLOPT_BUFFERSIZE => 10));
+    $data_pemuda = json_decode($data_pemuda, TRUE);
+    if ($data_pemuda == "") {
+        $data_pemuda['data'] = array();
+    }
+
+    $data['data_pemuda'] = $data_pemuda;
 
     $data['berita_terbaru'] = json_decode($berita_terbaru, TRUE);
     $this->load->view('V_sejarah_detail', $data);

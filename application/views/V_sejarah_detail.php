@@ -221,10 +221,10 @@
                         </div>
                         <ul>
                           <?php
-                          $takmir_box = "";
+                          $pemuda_box = "";
                           $number = 1;
-                          foreach ($data_pegawai['data'] as $key => $value) {
-                            $takmir_box .= "<li class='article-small'>
+                          foreach ($data_pemuda['data'] as $key => $value) {
+                            $pemuda_box .= "<li class='article-small'>
                                               <a href='javascript:void(0)'>
                                                 <img class='ul-img' src='" . $berita_terbaru['img_url'] . $value['pegawai_photo'] . "'
                                                 alt='" . $value['pegawai_nama'] . "'>
@@ -236,7 +236,7 @@
 
                           ?>
 
-                          <?php echo $takmir_box; ?>
+                          <?php echo $pemuda_box; ?>
                         </ul>
                     </div>
                   </div>
