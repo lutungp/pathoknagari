@@ -102,3 +102,7 @@ $route['Kabar_agenda_edit/(:num)']         = 'C_kabar_agenda/agenda_edit/$1';
 $route['Pemuda']                         = 'C_m_pemuda';
 $route['Pemuda-Form']                    = 'C_m_pemuda/pemuda_form';
 $route['Pemuda-Edit/(:num)']             = 'C_m_pemuda/pemuda_edit/$1';
+
+$route['Iklan']                         = 'C_m_iklan';
+$route['Iklan-Form']                    = 'C_m_iklan/iklan_form';
+$route['Iklan-Edit/(:num)']             = 'C_m_iklan/iklan_edit/$1';

@@ -41,7 +41,7 @@
 	                  <tr>
 	                    <td colspan="3">
 	                    <a href="<?php echo $action ?>" class="btn btn-primary">
-	                      Tambah kategori
+	                      Tambah Berita
 	                    </a>
 	                    </td>
 	                  </tr>
