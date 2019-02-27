@@ -96,10 +96,14 @@
     {
       $start  = (integer)$this->post('start');
       $limit  = (integer)$this->post('limit');
+      $wherearr  = json_decode($this->post('where'));
+
       $where  = " WHERE pegawai_aktif = 'y' ";
+      if ($wherearr->fieldname  <> "") {
+          $where .= " AND $wherearr->fieldname = '$wherearr->value' ";
+      }
       $sortby = " ORDER BY pegawai_id ASC ";
       $select = $this->post('select');
-
       $result = $this->Global_m->select_config('m_pegawai', $where, $select, 0, 0, $sortby)->result();
       foreach ($result as $key => $value) {
         $response['data'][] = $value;
