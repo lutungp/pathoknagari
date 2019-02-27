@@ -112,8 +112,34 @@ class C_dashboard extends MY_Controller{
 
     $data['majelisilmu_details'] = $majelisilmu_details;
 
+    $wherewebprofile = array(
+      'fieldname' => 'webprofile_name',
+      'value'     => 'PATHOK NAGARI'
+    );
+
     $postData = [
       'select'  => 'webprofile_runtext',
+      'where'   => json_encode($wherewebprofile),
+      'start'   => 0,
+      'limit'   => 1
+    ];
+
+    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $running_text = json_decode($running_text, TRUE);
+    if ($running_text['data'] == "") {
+        $running_text['data'] = array();
+    }
+
+    $dataheader['running_text'] = $running_text;
+
+    $wherewebprofile = array(
+      'fieldname' => 'webprofile_name',
+      'value'     => 'PATHOK CONTENT'
+    );
+
+    $postData = [
+      'select'  => 'webprofile_runtext',
+      'where'   => json_encode($wherewebprofile),
       'start'   => 0,
       'limit'   => 1
     ];

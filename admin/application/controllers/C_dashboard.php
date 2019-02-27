@@ -29,6 +29,7 @@ class C_dashboard extends My_controller {
 	    $data['user_data']   = $this->select_config('user', $where, 'user_id, user_name, user_img')->row();
 
 			$data['webprofile'] = $this->webprofile()->row();
+			$data['webcontent'] = $this->webcontent()->row();
 			$this->load->view('template/head_admin_interface', $data);
 			$this->load->view('template/topbar');
 			$this->sidebar();
@@ -40,7 +41,17 @@ class C_dashboard extends My_controller {
 	function webprofile()
 	{
     $select 		= " webprofile_background, webprofile_runtext, webprofile_name ";
-		$webprofile = $this->select_config('s_webprofile', "", $select);
+		$where			= " WHERE webprofile_name = 'PATHOK NAGARI' ";
+		$webprofile = $this->select_config('s_webprofile', $where, $select);
+
+		return $webprofile;
+	}
+
+	function webcontent()
+	{
+    $select 		= " webprofile_background, webprofile_runtext, webprofile_name ";
+		$where			= " WHERE webprofile_name = 'PATHOK CONTENT' ";
+		$webprofile = $this->select_config('s_webprofile', $where, $select);
 
 		return $webprofile;
 	}
@@ -49,7 +60,22 @@ class C_dashboard extends My_controller {
 	{
 		$webprofile_runtext = $this->input->post('webprofile_runtext');
 		$data = array('webprofile_runtext' => $webprofile_runtext);
-		$result = $this->update_config('s_webprofile', $data);
+		$where = array('webprofile_name' => 'PATHOK NAGARI');
+		$result = $this->update_config('s_webprofile', $data, $where);
+
+		echo 1;
+	}
+
+	function save_webcontent()
+	{
+		$youtube_embed = $this->input->post('youtube_embed');
+		$data = array(
+			'webprofile_name'		 => 'PATHOK CONTENT',
+			'webprofile_runtext' => $youtube_embed
+		);
+
+		$where = array('webprofile_name' => 'PATHOK CONTENT');
+		$result = $this->update_config('s_webprofile', $data, $where);
 
 		echo 1;
 	}
