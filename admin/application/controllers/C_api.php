@@ -231,5 +231,21 @@
       $this->response($response);
     }
 
+    function iklan_post()
+    {
+      $start  = (integer)$this->post('start');
+      $limit  = (integer)$this->post('limit');
+      $sortby = " ORDER BY iklan_tanggal ASC ";
+      $where  = " WHERE iklan_active = 'y' ";
+      $select = $this->post('select');
+
+      $result = $this->Global_m->select_config('m_iklan', $where, $select, $start, $limit, $sortby)->result();
+      foreach ($result as $key => $value) {
+        $response['data'][] = $value;
+      }
+
+      $this->response($response);
+    }
+
 }
 ?>
