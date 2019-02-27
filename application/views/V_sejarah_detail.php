@@ -140,10 +140,6 @@
           </div>
         </nav>
       </nav>
-
-       <!-- side menu -->
-      <a id="close_side_menu" href="javascript:void(0);"></a>
-       <!-- End side menu -->
     </header>
     <!-- header -->
     <!-- sejarah-detail -->
@@ -212,7 +208,6 @@
 
                           <?php echo $takmir_box; ?>
                         </ul>
-                        <!-- <a href="sejarah" class="button btnprimary wow fadeIn" data-wow-delay="500ms">Selengkapnya</a> -->
                     </div>
                     <div class="row" style="margin-top: 20px;">
                         <!-- Ustadz & Takmir -->
@@ -238,6 +233,13 @@
 
                           <?php echo $pemuda_box; ?>
                         </ul>
+                    </div>
+                    <div class="">
+                      <center style="padding-top: 10px;">
+                        <a href="galeri" class="button btnprimary wow fadeIn" data-wow-delay="500ms" style="padding:10px;">
+                          Lihat Gallery
+                        </a>
+                      </center>
                     </div>
                   </div>
                    <div class="widget heading_space">

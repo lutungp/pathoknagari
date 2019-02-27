@@ -8,9 +8,10 @@
 <title>Masjid Pathok Nagari | Official Website</title>
 <link href="assets/images/212.png" rel="icon">
 <link rel="stylesheet" href="assets/css/plugins.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets_custom/css/style.css">
 <link rel="stylesheet" href="assets_2/css/style.css">
-<!--<link href="assets_2/css/custom.css" rel="stylesheet">
+
 
 
 <!-- HTML Meta Tags -->
@@ -57,6 +58,34 @@
 </script>
 
 <script src="assets/js/jquery-3.1.1.min.js"></script>
+<style media="screen">
+    .news_item {
+        height: auto;
+    }
+
+    #navbar_header {
+      -webkit-box-pack: unset !important;
+      justify-content: normal;
+    }
+
+    #navbar_btn {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+    }
+
+    .imgHeader {
+      width: 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .top30 {
+        margin-top: 5px;
+      }
+
+    }
+</style>
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -71,128 +100,47 @@
 
 <!-- header -->
 <header class="site-header">
-   <nav class="navbar navbar-expand-lg transparent-bg static-nav">
-   <nav class="navbar"><marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
-   <b>Jadwal Khotib dan Imam &nbsp Jum'at, 14 Desember 2018 &nbsp </b> <b>Khotib :</b>
-    Drs. KH. Harun Ghazali, MM. &nbsp
-   <b>Imam :</b> Drs. KH. Harun Ghazali, MM.&nbsp
-   <b>Muadzin :</b> Ahmad Musyafa &nbsp
-   <b>Saldo Infaq Jum'at :</b> Rp. 212.000.000,00 &nbsp Infaq terbaikmu adalah kemulianmu. &nbsp Panitia menyediakan makan siang. &nbsp &nbsp
-   <b>Pengajian Ahad Pagi &nbsp Ahad, 16 Desember 2018 &nbsp </b> <b>Pembicara :</b>
-    Ust. Edi Mustoffa, MA. &nbsp
-   <b>Pukul :</b> 06.00 WIB &nbsp <b>Tema :</b> "Godaan Syaithon".&nbsp
-   </marquee>
-      <div class="container">
-         <a class="navbar-brand" href="beranda">
-         <img src="assets/images/pn5-transparent.png" alt="logo">
-         </a>
-         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-         </button>
-         <div class="collapse navbar-collapse" id="xenav">
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item active">
-                  <a class="nav-link" href="beranda#kabar">Kabar Ad-Darojat</a>
-               </li>
-<li class="nav-item">
-                  <a class="nav-link" href="beranda#streaming">Live Streaming</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#agenda">Majelis Ilmu</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#profil">Profil Masjid</a>
-			   </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#portfolio_top">Galeri</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#kajian">Kajian Islam</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#merchandise">Merchandise</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="beranda#kontak">Kontak</a>
-               </li>
-            </ul>
-         </div>
+  <nav class="navbar navbar-expand-lg transparent-bg fixedmenu">
+    <nav class="navbar">
+      <marquee style="background:#000000;font-style:bold;color:white;" behavior="scroll" direction="left">
+          <?php echo $running_text['data'][0]['webprofile_runtext']; ?>
+      </marquee>
+      <div id="navbar_header" class="container">
+        <a class="navbar-brand" href="beranda">
+          <img src="assets/images/pn5-transparent.png" alt="logo">
+        </a>
+        <button id="navbar_btn" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="xenav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="beranda#berita">Kabar Ad-Darojat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="beranda#agenda">Majelis Ilmu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="beranda#profil">Profil Masjid</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="beranda#streaming">Live Streaming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="beranda#kontak">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""></a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-
-      <!--side menu open button-->
-      <a href="javascript:void(0)" class="d-none d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
-          <span></span> <span></span> <span></span>
-       </a>
-   </nav></nav>
-
-   <!-- side menu -->
-   <div class="side-menu">
-      <div class="inner-wrapper">
-         <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
-         <nav class="side-nav">
-           <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="beranda#kabar">Kabar Ad-Darojat</a>
-               </li>
-<li class="nav-item">
-                  <a class="nav-link" href="beranda#streaming">Live Streaming</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#agenda">Majelis Ilmu</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#profil">Profil Masjid</a>
-			   </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#portfolio_top">Galeri</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#kajian">Kajian Islam</a>
-               </li>
-			   <li class="nav-item">
-                  <a class="nav-link" href="beranda#merchandise">Merchandise</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="beranda#kontak">Kontak</a>
-               </li>
-            </ul>
-         </nav>
-
-         <ul class="social-icons-simple white top50 w-100">
-            <li><a href="https://www.facebook.com/pathoknagoro.addarojat?fref=ts/"><i class="fa fa-facebook"></i> </a> </li>
-            <li><a href="https://www.instagram.com/ipib.update/"><i class="fa fa-instagram"></i> </a> </li>
-            <li><a href="https://twitter.com/ipib1960/"><i class="fa fa-twitter"></i> </a> </li>
-			<li><a href="https://wa.me/+628562898979"><i class="fa fa-whatsapp"></i> </a></li>
-            <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
-         </ul>
-         <p class="whitecolor">&copy; 2018 IPIB Production .</p>
-      </div>
-   </div>
-   <a id="close_side_menu" href="javascript:void(0);"></a>
-   <!-- End side menu -->
+    </nav>
+  </nav>
 </header>
 <!-- header -->
-
-<!--page Header-->
-<section class="page-header parallaxie padding_top">
-   <div class="container">
-      <div class="row">
-         <div class="col-sm-12">
-            <div class="page-titles text-center">
-               <h2 class="whitecolor font-light bottom30">Galeri Masjid</h2>
-               <ul class="breadcrumb justify-content-center">
-                 <li class="breadcrumb-item"><a href="beranda">Beranda</a></li>
-                 <li class="breadcrumb-item active" aria-current="page">Galeri Masjid</li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--page Header ends-->
 
 <!--Gallery-->
 <section id="portfolio-xe" class="bglight padding">
@@ -216,35 +164,39 @@
          </div>
       </div>
       <div id="flat-gallery" class="cbp">
-	  <div class="cbp-item masjid">
+	       <div class="cbp-item masjid">
             <img src="assets/images/Galeri/mas1.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas1.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div><div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/mas2.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas2.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div><div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/mas3.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas3.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div><div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/mas4.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas4.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div><div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/mas5.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/mas5.jpg"></a>
@@ -276,7 +228,7 @@
                <p>Lihat Lebih Detail</p>
             </div>
          </div>
-          <div class="cbp-item takmir">
+        <div class="cbp-item takmir">
             <img src="assets/images/Galeri/tmk.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/tmk.jpg"></a>
@@ -348,7 +300,7 @@
                <p>Lihat Lebih Detail</p>
             </div>
          </div>
-		 <div class="cbp-item masjid">
+		     <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al1.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al1.jpg"></a>
@@ -356,21 +308,23 @@
                <p>Lihat Lebih Detail</p>
             </div>
          </div>
-		 <div class="cbp-item masjid">
+		     <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al2.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al2.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div><div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al3.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al3.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div><div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al4.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al4.jpg"></a>
@@ -378,7 +332,7 @@
                <p>Lihat Lebih Detail</p>
             </div>
          </div>
-		 <div class="cbp-item masjid">
+		     <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al5.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al5.jpg"></a>
@@ -386,14 +340,15 @@
                <p>Lihat Lebih Detail</p>
             </div>
          </div>
-		  <div class="cbp-item masjid">
+		     <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al6.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al6.jpg"></a>
                <h4 class="top30">Klik +</h4>
                <p>Lihat Lebih Detail</p>
             </div>
-         </div> <div class="cbp-item masjid">
+         </div>
+         <div class="cbp-item masjid">
             <img src="assets/images/Galeri/al7.jpg" alt="">
             <div class="overlay center-block whitecolor">
                <a class="plus" data-fancybox="gallery" href="assets/images/Galeri/al7.jpg"></a>
@@ -402,7 +357,6 @@
             </div>
          </div>
 		 </div>
-      </div>
    </div>
 </section>
 <!--Gallery ends -->
@@ -479,12 +433,10 @@
 <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
 <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
 <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
 
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '01d08824-a3a9-453b-9891-dd06c87837df', f: true }); done = true; } }; })();</script>
 
 <!--Google Map API-->
-<script src="../../../maps.googleapis.com/maps/api/js-key=AIzaSyAJ97zN_MClQ8BnmJJOCY165S2QEYvbIis.js"></script>
 <script src="assets/js/functions.js"></script>
 
 <!-- ==================================================================================================================== -->
