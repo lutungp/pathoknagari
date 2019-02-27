@@ -54,7 +54,7 @@
 									<i class="icon-lock"></i> Lock Screen </a>
 							</li> -->
 							<li>
-								<a id="#button_logout" data-toggle="modal" data-target="#myModal">
+								<a id="#button_logout" data-toggle="modal" data-target="#myModal" onclick="logout_response()">
 									<i class="icon-key"></i> Log Out </a>
 							</li>
 						</ul>
@@ -72,74 +72,11 @@
 			</div>
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
-		<!-- END HEADER INNER -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		    <div class="modal-dialog">
-		        <div class="modal-content">
-	            <div class="modal-header">
-	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	                 <h4 class="modal-title">Modal title</h4>
-	            </div>
-							<form id="logout_form" class="" action="" method="post">
-	            	<div class="modal-body">
-									<div class="alert alert-danger">
-	                  <strong>Info!</strong> Indicates a neutral informative change or action.
-	                </div>
-	                <div class="alert alert-info">
-	                  <strong>Info!</strong> Indicates a neutral informative change or action.
-	                </div>
-									<div class="form-group">
-										<label for="">User Name</label>
-										<input type="text" id="username" name="username" value="" class="form-control">
-									</div>
-									<div class="form-group">
-										<label for="">Password</label>
-										<input type="password" id="password" name="password" value="" class="form-control">
-									</div>
-								</div>
-		            <div class="modal-footer">
-		                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		                <button type="submit" class="btn btn-primary">Submit</button>
-		            </div>
-							</form>
-		        </div>
-		        <!-- /.modal-content -->
-		    </div>
-		    <!-- /.modal-dialog -->
-		</div>
 	</div>
 	<script type="text/javascript">
-		$("#logout_form").submit(function(e) {
-
-				var url = '<?php echo site_url('auth/check_login')?>'; // the script where you handle the form input.
-
-				$.ajax({
-							 type: "POST",
-							 url: url,
-							 data: $("#logout_form").serialize(), // serializes the form's elements.
-							 success: function(data)
-							 {
-									 logout_response(data)
-							 },
-							 error : function (data) {
-							 		 alert("Error !!");
-							 }
-						 });
-
-				e.preventDefault(); // avoid to execute the actual submit of the form.
-		});
-
-		function logout_response(data)
+		function logout_response()
 		{
-			if (data == 1) {
-				$(".alert-danger").fadeOut();
-				setTimeout(function(){ $(".alert-info").fadeIn(); }, 800);
-				setTimeout(function(){ window.location.href = '<?php echo base_url('Auth/logout')?>'; }, 1500);
-			} else {
-				$(".alert-danger").fadeIn();
-				$('#username').val('');
-				$('#password').val('');
-			}
+			window.location.href = '<?php echo base_url('Auth/logout')?>'; 
 		}
 
 	</script>
