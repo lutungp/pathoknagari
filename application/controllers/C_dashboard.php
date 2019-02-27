@@ -117,14 +117,14 @@ class C_dashboard extends MY_Controller{
       'value'     => 'PATHOK NAGARI'
     );
 
-    $postData = [
+    $postDataProfile = [
       'select'  => 'webprofile_runtext',
       'where'   => json_encode($wherewebprofile),
       'start'   => 0,
       'limit'   => 1
     ];
 
-    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postDataProfile, array(CURLOPT_BUFFERSIZE => 10));
     $running_text = json_decode($running_text, TRUE);
     if ($running_text['data'] == "") {
         $running_text['data'] = array();
@@ -132,25 +132,25 @@ class C_dashboard extends MY_Controller{
 
     $dataheader['running_text'] = $running_text;
 
-    $wherewebprofile = array(
+    $wherewebcontent = array(
       'fieldname' => 'webprofile_name',
       'value'     => 'PATHOK CONTENT'
     );
 
-    $postData = [
+    $postDataContent = [
       'select'  => 'webprofile_runtext',
-      'where'   => json_encode($wherewebprofile),
+      'where'   => json_encode($wherewebcontent),
       'start'   => 0,
       'limit'   => 1
     ];
-
-    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
-    $running_text = json_decode($running_text, TRUE);
-    if ($running_text['data'] == "") {
-        $running_text['data'] = array();
+    
+    $youtube_embed = $this->http_request($this->API.'/C_api/webprofile', $postDataContent, array(CURLOPT_BUFFERSIZE => 10));
+    $youtube_embed = json_decode($youtube_embed, TRUE);
+    if ($youtube_embed['data'] == "") {
+        $youtube_embed['data'] = array();
     }
 
-    $dataheader['running_text'] = $running_text;
+    $dataheader['youtube_embed'] = $youtube_embed;
 
     /* Kabar Ad-Darojat */
     $postDataKbr = [
@@ -185,7 +185,6 @@ class C_dashboard extends MY_Controller{
     }
 
     $data['agenda_details'] = $agenda_details;
-
     $this->load->view('templates/V_header', $dataheader);
     $this->load->view('V_dashboard', $data);
     $this->load->view('templates/V_kontak');

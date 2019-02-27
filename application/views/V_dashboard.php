@@ -615,7 +615,7 @@
     </div>
     <div class="col-md-12">
       <div class="profile-video wow fadeInUp" data-wow-delay="450ms">
-        <iframe width="80%" class="youtubeembed" src="https://www.youtube.com/embed/live_stream?channel=UCP-tWGFUAmVWFz4XyHDz07A&feature=oembed&autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=0"
+        <iframe width="80%" class="youtubeembed" src="<?php echo $youtube_embed['data'][0]['webprofile_runtext'] ?>"
         frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="container wow fadeInUp" data-wow-delay="500ms">

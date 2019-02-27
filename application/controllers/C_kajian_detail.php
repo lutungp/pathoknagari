@@ -50,13 +50,19 @@ class C_kajian_detail extends CI_Controller{
     $data['kajian_detail']  = json_decode($kajian_detail, TRUE);
     $data['kajian_terbaru'] = json_decode($kajian_terbaru, TRUE);
 
-    $postData = [
+    $wherewebprofile = array(
+      'fieldname' => 'webprofile_name',
+      'value'     => 'PATHOK NAGARI'
+    );
+
+    $postDataProfile = [
       'select'  => 'webprofile_runtext',
+      'where'   => json_encode($wherewebprofile),
       'start'   => 0,
       'limit'   => 1
     ];
 
-    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+    $running_text = $this->http_request($this->API.'/C_api/webprofile', $postDataProfile, array(CURLOPT_BUFFERSIZE => 10));
     $running_text = json_decode($running_text, TRUE);
     if ($running_text['data'] == "") {
         $running_text['data'] = array();

@@ -17,13 +17,19 @@ class C_galeri_detail extends CI_Controller{
 
   function index()
   {
-      $postData = [
+      $wherewebprofile = array(
+        'fieldname' => 'webprofile_name',
+        'value'     => 'PATHOK NAGARI'
+      );
+
+      $postDataProfile = [
         'select'  => 'webprofile_runtext',
+        'where'   => json_encode($wherewebprofile),
         'start'   => 0,
         'limit'   => 1
       ];
 
-      $running_text = $this->http_request($this->API.'/C_api/webprofile', $postData, array(CURLOPT_BUFFERSIZE => 10));
+      $running_text = $this->http_request($this->API.'/C_api/webprofile', $postDataProfile, array(CURLOPT_BUFFERSIZE => 10));
       $running_text = json_decode($running_text, TRUE);
       if ($running_text['data'] == "") {
           $running_text['data'] = array();
