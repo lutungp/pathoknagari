@@ -166,6 +166,10 @@
     background-color: white;
   }
 
+  .slide-iklan {
+    height: 220px !important;
+  }
+
 </style>
 
 <!--Ful Screen Section Video with caption-->
@@ -424,7 +428,7 @@
                   <div class="row">
                     <section class="widget">
                         <header class="clearfix"><h4>Advertisement</h4></header>
-                        <div id="" class="carousel slide carousel-small" data-ride="carousel">
+                        <div id="slide_iklan" class="carousel slide carousel-small" data-ride="carousel">
                           <div class="carousel-inner">
                             <?php
                             $html_iklan = "";
@@ -435,14 +439,14 @@
                                     $active = 'active';
                                 }
                                 $html_iklan .= "<a class='item $active' href='javascript:void(0)'>
-                                                    <img src='" . $kilas_berita['img_url'] . $valueIklan['iklan_photo'] . "' tppabs=' alt='Banner image''>
+                                                    <img class='slide-iklan' src='" . $kilas_berita['img_url'] . $valueIklan['iklan_photo'] . "' tppabs=' alt='Banner image''>
                                                  </a>";
                                 $slide_iklan++;
                             } ?>
 
                             <?php echo $html_iklan; ?>
                           </div>
-                        </div>  
+                        </div>
                         <img src="assets_2/img/shadow.png" alt="shadow" class="shadow">
                     </section>
                   </div>
