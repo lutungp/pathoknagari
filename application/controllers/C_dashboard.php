@@ -183,7 +183,7 @@ class C_dashboard extends MY_Controller{
     if ($agenda_details['data'] == "") {
         $agenda_details['data'] = array();
     }
-
+    $data['agenda_details'] = $agenda_details;
     /* Slide Iklan */
     $postIklan = [
       'select'  => 'iklan_id, iklan_photo ',
