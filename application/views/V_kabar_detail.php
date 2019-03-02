@@ -152,7 +152,7 @@
                       <div class="profile-authors heading_space">
                         <div class="" style="margin-bottom: 10px;">
                           <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
-                        </div>  
+                        </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
                         <div class="fb-comments" data-href="https://pathoknagari.id/kabar-detail" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
@@ -309,7 +309,7 @@
       FB.ui({
         method: 'share',
         display: 'popup',
-        href: '<?php echo base_url('kabar-detail') ?>?message=<?php echo $berita_id ?>',
+        href: '<?php echo base_url('kabar-detail') ?>?message=<?php echo $kabar_id ?>',
       }, function(response){});
     }
     window.purechatApi = {

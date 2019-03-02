@@ -332,7 +332,7 @@
         FB.ui({
           method: 'share',
           display: 'popup',
-          href: '<?php echo base_url('kajian-detail') ?>?message=<?php echo $berita_id ?>',
+          href: '<?php echo base_url('kajian-detail') ?>?message=<?php echo $kajian_id ?>',
         }, function(response){});
       }
 

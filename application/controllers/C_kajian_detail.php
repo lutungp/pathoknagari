@@ -70,7 +70,7 @@ class C_kajian_detail extends CI_Controller{
     }
 
     $data['running_text'] = $running_text;
-
+    $data['kajian_id']    = $id;  
     $this->load->view('V_kajian_detail', $data);
   }
 

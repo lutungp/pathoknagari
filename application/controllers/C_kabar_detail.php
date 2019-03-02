@@ -70,7 +70,7 @@ class C_kabar_detail extends CI_Controller{
       }
 
       $data['running_text'] = $running_text;
-
+      $data['kabar_id']    = $id;
       $this->load->view('V_kabar_detail', $data);
   }
 
