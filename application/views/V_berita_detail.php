@@ -68,6 +68,21 @@
           right: 10px;
           top: 40px;
         }
+
+        .btn-facebook {
+        	color: #fff;
+        	background-color: #4C67A1;
+        }
+
+        .btn-facebook:hover {
+        	color: #fff;
+        	background-color: #405D9B;
+        }
+
+        .btn-facebook:focus {
+        	color: #fff;
+        }
+
     </style>
   </head>
   <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -150,7 +165,9 @@
                       </p>
 
                       <div class="profile-authors heading_space">
-                        <div id="shareBtn" class="btn btn-success clearfix">Share</div>
+                        <div class="" style="margin-bottom: 10px;">
+                          <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
+                        </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
                         <div class="fb-comments" data-href="https://pathoknagari.id/berita-detail" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
