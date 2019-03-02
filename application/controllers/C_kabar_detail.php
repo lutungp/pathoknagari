@@ -20,7 +20,8 @@ class C_kabar_detail extends CI_Controller{
       /* check apakah session sudah menyimpan id kabar */
       if ($this->session->userdata('kabar_id') == null ||
               ($this->session->userdata('kabar_id') <> $this->input->post('message') &&
-              $this->input->post('message'))) {
+              $this->input->post('message') || $this->session->userdata('kabar_id') <> $this->input->get('message') &&
+              $this->input->get('message') )) {
           /*
           * jika belum maka disimpan terlebih dahulu
           * saat reload akan digunakan kembali

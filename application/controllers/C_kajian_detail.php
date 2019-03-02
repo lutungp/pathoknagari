@@ -20,7 +20,8 @@ class C_kajian_detail extends CI_Controller{
     /* check apakah session sudah menyimpan id kajian */
     if ($this->session->userdata('kajian_id') == null ||
             ($this->session->userdata('kajian_id') <> $this->input->post('message') &&
-            $this->input->post('message'))) {
+            $this->input->post('message') || $this->session->userdata('kajian_id') <> $this->input->get('message') &&
+            $this->input->get('message') )) {
         /*
         * jika belum maka disimpan terlebih dahulu
         * saat reload akan digunakan kembali
