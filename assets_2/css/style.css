@@ -3735,4 +3735,18 @@ textarea:-ms-input-placeholder {
     display: block!important;
 }
 
+.btn-facebook {
+  color: #fff;
+  background-color: #4C67A1!important;
+}
+
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #405D9B!important;
+}
+
+.btn-facebook:focus {
+  color: #fff;
+}
+
 /*  ========================================================================================*/

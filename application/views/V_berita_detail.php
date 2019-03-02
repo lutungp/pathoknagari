@@ -69,20 +69,6 @@
           top: 40px;
         }
 
-        .btn-facebook {
-        	color: #fff;
-        	background-color: #4C67A1;
-        }
-
-        .btn-facebook:hover {
-        	color: #fff;
-        	background-color: #405D9B;
-        }
-
-        .btn-facebook:focus {
-        	color: #fff;
-        }
-
     </style>
   </head>
   <body  data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -348,7 +334,7 @@
         FB.ui({
           method: 'share',
           display: 'popup',
-          href: '<?php echo base_url('kabar-detail') ?>?message=<?php echo $berita_id ?>',
+          href: '<?php echo base_url('berita-detail') ?>?message=<?php echo $berita_id ?>',
         }, function(response){});
       }
 

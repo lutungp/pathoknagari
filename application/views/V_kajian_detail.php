@@ -150,18 +150,12 @@
                       </p>
 
                       <div class="profile-authors heading_space">
+                        <div class="" style="margin-bottom: 10px;">
+                          <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
+                        </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
                         <div class="fb-comments" data-href="https://pathoknagari.id/kajian-detail" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
-                        <script>
-                          (function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s); js.id = id;
-                            js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=2260957407519198&autoLogAppEvents=1';
-                            fjs.parentNode.insertBefore(js, fjs);
-                          }(document, 'script', 'facebook-jssdk'));
-                        </script>
                       </div>
                     </div>
                 </div>
@@ -313,6 +307,35 @@
   <!--Google Map API-->
   <script src="assets/js/functions.js"></script>
   <script type="text/javascript">
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '420429465167778',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v3.2'
+        });
+
+        FB.AppEvents.logPageView();
+
+      };
+
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=420429465167778&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      document.getElementById('shareBtn').onclick = function() {
+        FB.ui({
+          method: 'share',
+          display: 'popup',
+          href: '<?php echo base_url('kajian-detail') ?>?message=<?php echo $berita_id ?>',
+        }, function(response){});
+      }
+
       /* auto submission ketika reload */
       if ( window.history.replaceState ) {
           window.history.replaceState( null, null, window.location.href );
