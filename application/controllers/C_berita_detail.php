@@ -20,7 +20,8 @@ class C_berita_detail extends CI_Controller{
     /* check apakah session sudah menyimpan id berita */
     if ($this->session->userdata('berita_id') == null ||
             ($this->session->userdata('berita_id') <> $this->input->post('message') &&
-            $this->input->post('message'))) {
+            $this->input->post('message') || $this->session->userdata('berita_id') <> $this->input->get('message') &&
+            $this->input->get('message') )) {
         /*
         * jika belum maka disimpan terlebih dahulu
         * saat reload akan digunakan kembali
@@ -68,6 +69,7 @@ class C_berita_detail extends CI_Controller{
     }
 
     $data['running_text'] = $running_text;
+    $data['berita_id']    = $id;
 
     $this->load->view('V_berita_detail', $data);
   }

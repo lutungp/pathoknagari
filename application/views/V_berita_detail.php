@@ -331,7 +331,7 @@
         FB.ui({
           method: 'share',
           display: 'popup',
-          href: 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=2260957407519198&autoLogAppEvents=1',
+          href: '<?php echo base_url('kabar-detail') ?>?message=<?php echo $berita_id ?>',
         }, function(response){});
       }
 
