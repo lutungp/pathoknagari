@@ -308,7 +308,7 @@
 
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '2260957407519198',
+          appId      : '420429465167778',
           cookie     : true,
           xfbml      : true,
           version    : 'v3.2'
@@ -323,7 +323,7 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=2260957407519198&autoLogAppEvents=1';
+        js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=420429465167778&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
@@ -331,7 +331,7 @@
         FB.ui({
           method: 'share',
           display: 'popup',
-          href: 'https://developers.facebook.com/docs/',
+          href: 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=2260957407519198&autoLogAppEvents=1',
         }, function(response){});
       }
 
