@@ -265,7 +265,7 @@
                    <!-- ARTICLES V1 WIDGET -->
                    <section class="widget articles-v1">
                      <header class="clearfix">
-                         <h4>Kabar Nasional</h4>
+                         <h4>Kabar Ad-Darojat</h4>
                      </header>
                        <?php
                             $kilasberita = "";
@@ -459,7 +459,7 @@
         <div class="container" style="padding: 0px;">
           <section id="slider-tabs" class="col-sm-6 col-md-12 widget no-mobile">
               <header class="widget articles-v1">
-                  <h4>Kabar Ad-Darojat</h4>
+                  <h4>Kabar Nasional</h4>
                   <ul>
                       <li class="control current">
                           <a href="javascript:void(0)" data-href="#popular" data-slide="next">
@@ -490,7 +490,7 @@
                                                       <span class='dashicons dashicons-format-quote'></span>
                                                     </a>
                                                       <a href='javascript:void(0)' style='font-size:12px;'><span class='fa fa-clock-o'></span> " . date('d F Y', strtotime($value['kabar_tanggal'])) . "</a> &nbsp;
-                                                      <h5 class='kabar-ad-darojat'><a href='javascript:void(0)'>" . $value['kabar_nama'] . "</a></h5>
+                                                      <h5 class='kabar-nasional'><a href='javascript:void(0)'>" . $value['kabar_nama'] . "</a></h5>
                                                   </li> ";
                              }
                          ?>
