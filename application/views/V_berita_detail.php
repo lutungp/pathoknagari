@@ -154,7 +154,7 @@
                           <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
                         </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
-                        <div class="fb-comments" data-href=" https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-width="670" data-numposts="5"></div>
+                        <div class="fb-comments" data-href="https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
                       </div>
                     </div>
