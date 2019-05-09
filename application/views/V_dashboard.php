@@ -291,7 +291,7 @@
                                                             <p class='post-meta'>
                                                                 <a href='#'><span class='fa fa-clock-o'></span> " . $value['berita_tanggal'] . "</a> &nbsp;
                                                                 <a href='#'>
-                                                                <span class='fb-comments-count' data-href='https://pathoknagari.id/berita-detail?message= . $value['berita_id']'>0</span> comments
+                                                                <span class='fb-comments-count' data-href='https://pathoknagari.id/berita-detail?message=". $value['berita_id'] ." '>0</span> comments
                                                                 </a> &nbsp;
                                                             </p>
                                                             <p>" . $value['berita_summary'] . "</p>
