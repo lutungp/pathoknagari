@@ -4,6 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="When Great Minds Don’t Think Alike" />
+    <meta property="og:description" content="How much does culture influence creative thinking?" />
+    <meta property="og:image" content="<?php echo $berita_detail['img_url'] . $berita_detail['data'][0]['berita_photo']?>" />
     <title>Pathok Nagari</title>
     <link href="assets/images/212.png" rel="icon">
     <link rel="stylesheet" href="assets/css/plugins.css">
@@ -333,7 +338,7 @@
           FB.ui({
             method: 'share',
             display: 'popup',
-            href: 'https://pathoknagari.id/berita-detail&amp;message=<?php echo $berita_id ?>'
+            href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
           }, function(response){});
       }
 
