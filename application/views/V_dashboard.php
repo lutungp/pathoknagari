@@ -501,7 +501,10 @@
           </section>
         </div>
     </div> -->
-
+    <center>
+      <iframe src="https://bimasislam.kemenag.go.id/widget/jadwalshalat/503e4610288b23f201336627bca6a110d319c378"
+      width="240" style="background : transparent" height="310px"  frameborder="0" scrolling="no"> </iframe>
+    </center>
 </section>
 <!-- CONTENT -->
 
