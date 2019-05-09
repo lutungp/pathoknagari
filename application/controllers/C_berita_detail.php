@@ -17,9 +17,6 @@ class C_berita_detail extends CI_Controller{
 
   function index()
   {
-    $id = $this->input->post('message') > 0 ? $this->input->post('message') : $this->input->get('message');
-    echo $id;
-    exit();
     /* check apakah session sudah menyimpan id berita */
     if ($this->session->userdata('berita_id') == null ||
             ($this->session->userdata('berita_id') <> $this->input->post('message') &&
