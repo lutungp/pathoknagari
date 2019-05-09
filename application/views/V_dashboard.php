@@ -425,7 +425,7 @@
                         </div>
                     </section>
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <section class="widget">
                         <header class="clearfix"><h4>Advertisement</h4></header>
                         <div id="slide_iklan" class="carousel slide carousel-small" data-ride="carousel">
@@ -444,18 +444,18 @@
                                 $slide_iklan++;
                             } ?>
 
-                            <?php echo $html_iklan; ?>
+                            <?php //echo $html_iklan; ?>
                           </div>
                         </div>
                         <img src="assets_2/img/shadow.png" alt="shadow" class="shadow">
                     </section>
-                  </div>
+                  </div> -->
               </aside>
           </div>
         </div>
     </div>
 
-    <div class="row" style="height: 280px;margin-right: 5px;margin-left: 5px;">
+    <!-- <div class="row" style="height: 280px;margin-right: 5px;margin-left: 5px;">
         <div class="container" style="padding: 0px;">
           <section id="slider-tabs" class="col-sm-6 col-md-12 widget no-mobile">
               <header class="widget articles-v1">
@@ -474,7 +474,6 @@
                   </ul>
               </header>
               <div class="tab-content">
-                  <!--Popular-->
                   <div class="tab-pane active fade in " id="popular">
                     <div class="slider-container article">
                        <ul>
@@ -494,14 +493,14 @@
                                                   </li> ";
                              }
                          ?>
-                         <?php echo $html_kabar; ?>
+                         <?php //echo $html_kabar; ?>
                        </ul>
                      </div>
                   </div>
               </div>
           </section>
         </div>
-    </div>
+    </div> -->
 
 </section>
 <!-- CONTENT -->
