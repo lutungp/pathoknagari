@@ -142,9 +142,8 @@
                     <div class="news_desc text-left">
                       <h3 class="text-capitalize font-light darkcolor"><a href="berita-detail"><?php echo $berita_detail['data'][0]['berita_nama']; ?></a></h3>
                       <ul class="meta-tags top20 bottom20">
-                        <li><a href="#."><i class="fa fa-calendar"></i>Feb 14, 2018</a></li>
-                        <li><a href="#."> <i class="fa fa-user-o"></i> peter warren</a></li>
-                        <li><a href="#."><i class="icon-comment"></i>5</a></li>
+                        <li><a href="#."><i class="fa fa-calendar"></i><?php echo date("d M Y", strtotime($berita_detail['data'][0]['berita_tanggal'])); ?></a></li>
+                        <li><a href="#."> <i class="fa fa-user-o"></i><?php echo $berita_detail['data'][0]['berita_penulis']; ?></a></li>
                       </ul>
                       <p class="bottom35">
                         <?php echo html_entity_decode($berita_detail['data'][0]['berita_isi']); ?>
