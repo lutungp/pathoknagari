@@ -26,7 +26,7 @@ class C_berita_detail extends CI_Controller{
         * jika belum maka disimpan terlebih dahulu
         * saat reload akan digunakan kembali
         */
-        $id = $this->input->post('message');
+        $id = $this->input->post('message') > 0 ? $this->input->post('message') : $this->input->get('message');
         $newdata = array('berita_id'  => $id);
 
         $this->session->set_userdata($newdata);
