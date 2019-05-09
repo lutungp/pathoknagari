@@ -331,9 +331,13 @@
 
       document.getElementById('shareBtn').onclick = function() {
           FB.ui({
-            method: 'share',
+            method: 'share_open_graph',
             display: 'popup',
-            href: '<?php echo base_url('berita-detail') ?>?message=<?php echo $berita_id ?>',
+            //href: 'https://pathoknagari.id/berita-detail?message=?message=<?php echo $berita_id ?>'
+            action_type: 'og.likes',
+            action_properties: JSON.stringify({
+              object:'https://pathoknagari.id/berita-detail?message=?message=<?php echo $berita_id ?>',
+            })
           }, function(response){});
       }
 
