@@ -70,8 +70,8 @@ class C_berita_detail extends CI_Controller{
 
     $data['running_text'] = $running_text;
     $data['berita_id']    = $id;
-
-    $this->load->view('V_berita_detail', $data);
+    print_r($data['berita_detail']);
+    // $this->load->view('V_berita_detail', $data);
   }
 
 
