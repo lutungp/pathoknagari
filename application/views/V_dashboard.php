@@ -290,7 +290,9 @@
                                                               <a href='javascript:void(0)' onclick='judul_detail(" . $value['berita_id'] . ")'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
                                                                 <a href='#'><span class='fa fa-clock-o'></span> " . $value['berita_tanggal'] . "</a> &nbsp;
-                                                                <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
+                                                                <a href='#'>
+                                                                <span class='fb-comments-count' data-href=" . base_url('berita-detail') . "?message=" . $value['berita_id'] . ">0</span> comments
+                                                                </a> &nbsp;
                                                             </p>
                                                             <p>" . $value['berita_summary'] . "</p>
                                                         </div>
@@ -813,9 +815,7 @@
                 list_berita_html +="<a href='javascript:void(0)' onclick='judul_detail(" + data[i].berita_id + ")'>" + data[i].berita_nama + "</a></h4>"
                 list_berita_html +="<p class='post-meta'>"
                 list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-clock-o'></span> " + data[i].berita_tanggal + " </a> &nbsp;"
-                list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;"
                 list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-comments'></span> 17</a> &nbsp;"
-                list_berita_html +="<a href='javascript:void(0)'><span class='fa fa-eye'></span> 1,324</a>"
                 list_berita_html +="</p>"
                 list_berita_html += data[i].berita_summary
                 list_berita_html +="</div>"
@@ -853,5 +853,13 @@
            alert('You must allow popups for this map to work.');
         }
     }
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=417994868791839&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
 </script>
