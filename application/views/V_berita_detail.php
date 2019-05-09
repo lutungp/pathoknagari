@@ -330,12 +330,11 @@
       }(document, 'script', 'facebook-jssdk'));
 
       document.getElementById('shareBtn').onclick = function() {
-          console.log('https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>');
-          // FB.ui({
-          //   method: 'share',
-          //   display: 'popup',
-          //   href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
-          // }, function(response){});
+          FB.ui({
+            method: 'share',
+            display: 'popup',
+            href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
+          }, function(response){});
       }
 
       /* auto submission ketika reload */
