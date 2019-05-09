@@ -12,7 +12,7 @@
 									<thead>
 										<tr>
 											<th class="text-center" style="width:5%;">No.</th>
-											<th class="text-center">kabar Ad-Darajat</th>
+											<th class="text-center">kabar Nasional</th>
 											<th class="text-center">Config.</th>
 										</tr>
 									</thead>

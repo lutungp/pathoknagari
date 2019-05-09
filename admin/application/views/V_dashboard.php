@@ -18,7 +18,7 @@
                         <div class="number">
                             <span data-counter="counterup" data-value="1349" id="dataBookToday">0</span>
                         </div>
-                        <div class="desc"> Booking Today</div>
+                        <div class="desc">Saldo Infaq</div>
                     </div>
                 </a>
             </div>
@@ -30,7 +30,7 @@
                     <div class="details">
                         <div class="number">
                             <span data-counter="counterup" data-value="12,5" id="dataBookTodayconfirm">0</span></div>
-                        <div class="desc">Get Confirm </div>
+                        <div class="desc">Saldo Infaq Tarawih</div>
                     </div>
                 </a>
             </div>
@@ -43,7 +43,7 @@
                         <div class="number">
                             <span data-counter="counterup" data-value="549" id="dataBookTodayunconfirm">0</span>
                         </div>
-                        <div class="desc"> New Orders </div>
+                        <div class="desc">Saldo Infaq Shubuh</div>
                     </div>
                 </a>
             </div>
@@ -55,7 +55,7 @@
                     <div class="details">
                         <div class="number"> +
                             <span data-counter="counterup" data-value="89"></span>% </div>
-                        <div class="desc"> Brand Popularity </div>
+                        <div class="desc"> Rata-Rata Jama'ah </div>
                     </div>
                 </a>
             </div>
