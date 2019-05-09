@@ -290,9 +290,7 @@
                                                               <a href='javascript:void(0)' onclick='judul_detail(" . $value['berita_id'] . ")'>" . $value['berita_nama'] . "</a></h4>
                                                             <p class='post-meta'>
                                                                 <a href='#'><span class='fa fa-clock-o'></span> " . $value['berita_tanggal'] . "</a> &nbsp;
-                                                                <a href='#'><span class='fa fa-folder'></span> Bussiness</a> &nbsp;
                                                                 <a href='#'><span class='fa fa-comments'></span> 17</a> &nbsp;
-                                                                <a href='#'><span class='fa fa-eye'></span> 1,324</a>
                                                             </p>
                                                             <p>" . $value['berita_summary'] . "</p>
                                                         </div>
