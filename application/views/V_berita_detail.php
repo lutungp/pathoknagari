@@ -325,11 +325,11 @@
           FB.ui({
             method: 'share_open_graph',
             display: 'popup',
-            //href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
-            action_type: 'og.likes',
-            action_properties: JSON.stringify({
-              object:'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>',
-            })
+            href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
+            // action_type: 'og.likes',
+            // action_properties: JSON.stringify({
+            //   object:'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>',
+            // })
           }, function(response){});
       }
 
