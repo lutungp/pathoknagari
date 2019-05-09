@@ -333,7 +333,7 @@
           FB.ui({
             method: 'share',
             display: 'popup',
-            href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
+            href: 'https://pathoknagari.id/berita-detail&amp;message=<?php echo $berita_id ?>'
           }, function(response){});
       }
 
