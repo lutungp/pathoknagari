@@ -16,26 +16,6 @@
     <link rel="stylesheet" href="assets_custom/css/style.css">
     <link rel="stylesheet" href="assets_2/css/style.css">
 
-      <!-- HTML Meta Tags -->
-    <meta name="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Masjid Pathok Nagari | Official Website">
-    <meta itemprop="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-    <meta itemprop="image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Masjid Pathok Nagari | Official Website">
-    <meta name="twitter:description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-    <meta name="twitter:image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
-
     <!-- Meta Tags Generated -->
 
 
