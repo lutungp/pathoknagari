@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Pathok Nagari</title>
     <meta property="og:url" content="https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?php echo $kajian_detail['data'][0]['kajian_nama']; ?>" />
