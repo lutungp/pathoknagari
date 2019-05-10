@@ -10,35 +10,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets_custom/css/style.css">
     <link rel="stylesheet" href="assets_2/css/style.css">
+    <meta property="og:url" content="https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?php echo $kajian_detail['data'][0]['kajian_nama']; ?>" />
+    <meta property="og:description" content="<?php echo $kajian_detail['data'][0]['kajian_summary']; ?>" />
+    <meta property="og:image" content="<?php echo $kajian_detail['img_url'] . $kajian_detail['data'][0]['kajian_photo']?>" />
+    <title>Pathok Nagari</title>
+    <link href="assets/images/212.png" rel="icon">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets_custom/css/style.css">
+    <link rel="stylesheet" href="assets_2/css/style.css">
 
-      <!-- HTML Meta Tags -->
-    <meta name="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Masjid Pathok Nagari | Official Website">
-    <meta itemprop="description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-    <meta itemprop="image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://pathoknagari.id">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Masjid Pathok Nagari | Official Website">
-    <meta property="og:description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-    <meta property="og:image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Masjid Pathok Nagari | Official Website">
-    <meta name="twitter:description" content="Masjid Ad-Darojat Kauman Babadan adalah salah satu masjid Pathok Nagari
-    			   yang didirikan oleh Sultan Hamengku Buwono I pada tahun 1774 di atas tanah mutihan atau Sultan ground seluas 120 meter persegi.
-    			 ">
-    <meta name="twitter:image" content="https://pathoknagari.id/assets/images/pn1-transparent.png">
 
     <!-- Meta Tags Generated -->
 
@@ -141,9 +124,8 @@
                     <div class="news_desc text-left">
                       <h3 class="text-capitalize font-light darkcolor"><a href="kajian-detail"><?php echo $kajian_detail['data'][0]['kajian_nama']; ?></a></h3>
                       <ul class="meta-tags top20 bottom20">
-                        <li><a href="#."><i class="fa fa-calendar"></i>Feb 14, 2018</a></li>
-                        <li><a href="#."> <i class="fa fa-user-o"></i> peter warren</a></li>
-                        <li><a href="#."><i class="icon-comment"></i>5</a></li>
+                        <li><a href="#."><i class="fa fa-calendar"></i><?php echo date("d M Y", strtotime($kajian_detail['data'][0]['kajian_tanggal'])); ?></a></li>
+                        <li><a href="#."> <i class="fa fa-user-o"></i> <?php echo $kajian_detail['data'][0]['kajian_penulis']; ?> </a></li>
                       </ul>
                       <p class="bottom35">
                         <?php echo html_entity_decode($kajian_detail['data'][0]['kajian_isi']); ?>
@@ -154,7 +136,7 @@
                           <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
                         </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
-                        <div class="fb-comments" data-href="https://pathoknagari.id/kajian-detail" data-width="670" data-numposts="5"></div>
+                        <div class="fb-comments" data-href="https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
                       </div>
                     </div>
@@ -309,7 +291,7 @@
   <script type="text/javascript">
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '420429465167778',
+          appId      : '417994868791839',
           cookie     : true,
           xfbml      : true,
           version    : 'v3.2'
@@ -324,7 +306,7 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=420429465167778&autoLogAppEvents=1';
+        js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.2&appId=417994868791839&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
@@ -332,7 +314,7 @@
         FB.ui({
           method: 'share',
           display: 'popup',
-          href: '<?php echo base_url('kajian-detail') ?>?message=<?php echo $kajian_id ?>',
+          href: 'https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>'
         }, function(response){});
       }
 

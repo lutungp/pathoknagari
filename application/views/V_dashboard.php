@@ -274,7 +274,7 @@
                                                     <div class='row'>
                                                         <div class='col-sm-6'>
                                                             <div class='frame'>
-                                                                <a class='image' href='javascript:void(0)'>
+                                                                <a class='image' href='javascript:void(0)' onclick='judul_detail(" . $value['berita_id'] . ")'>
                                                                     <figure class='image-holder' style='margin-bottom: 0px;'>
                                                                         <img src='" . $kilas_berita['img_url'] . $value['berita_photo'] . "'  alt='" . $value['berita_nama'] . "'
                                                                          onclick='berita_detail(this)' value='" . $value['berita_id'] . "' id='image_berita_" . $value['berita_id'] . "'>
