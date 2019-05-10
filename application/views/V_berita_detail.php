@@ -128,7 +128,7 @@
                       <div class="profile-authors heading_space">
                         <div class="" style="margin-bottom: 10px;">
                           <button id="shareFbBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
-                          <a type="button" class="btn btn-facebook" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">
+                          <a type="button" class="btn btn-facebook" href="whatsapp://send?text=https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>!" data-action="share/whatsapp/share">
                             <i class="fa fa-whatsapp fa-2"></i>
                           </a>
                         </div>
