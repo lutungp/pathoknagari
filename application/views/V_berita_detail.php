@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url" content="https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" />
+    <meta property="og:url" content="http://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?php echo $berita_detail['data'][0]['berita_nama']; ?>" />
     <meta property="og:description" content="<?php echo $berita_detail['data'][0]['berita_summary']; ?>" />
@@ -24,8 +24,8 @@
        {
           "@context": "http://schema.org",
           "@type": "Organization",
-          "url": "https://pathoknagari.id",
-          "logo": "https://pathoknagari.id/assets/images/21.png"
+          "url": "http://pathoknagari.id",
+          "logo": "http://pathoknagari.id/assets/images/21.png"
         }
       }
     </script>
@@ -146,15 +146,15 @@
                         <div class="row" style="margin-bottom: 10px;">
                           <button id="shareFbBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
                           &nbsp;
-                          <a type="button" class="mobile btn btn-facebook" href="whatsapp://send?text=https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-action="share/whatsapp/share">
+                          <a type="button" class="mobile btn btn-facebook" href="whatsapp://send?text=http://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-action="share/whatsapp/share">
                             <i class="fa fa-whatsapp fa-2"></i>
                           </a>
-                          <a type="button" class="no-mobile btn btn-facebook" href="https://web.whatsapp.com/send?text=https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-action="share/whatsapp/share">
+                          <a type="button" class="no-mobile btn btn-facebook" href="https://web.whatsapp.com/send?text=http://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-action="share/whatsapp/share">
                             <i class="fa fa-whatsapp fa-2"></i>
                           </a>
                         </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
-                        <div class="fb-comments" data-href="https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-width="670" data-numposts="5"></div>
+                        <div class="fb-comments" data-href="http://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-width="670" data-numposts="5"></div>
                         <div id="fb-root"></div>
                       </div>
                     </div>
@@ -333,7 +333,7 @@
           FB.ui({
             method: 'share',
             display: 'popup',
-            href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
+            href: 'http://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
           }, function(response){});
       }
       /* auto submission ketika reload */
