@@ -311,12 +311,11 @@
       }(document, 'script', 'facebook-jssdk'));
 
       document.getElementById('shareBtn').onclick = function() {
-        console.log('https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>');
-        // FB.ui({
-        //   method: 'share',
-        //   display: 'popup',
-        //   href: 'https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>'
-        // }, function(response){});
+        FB.ui({
+          method: 'share',
+          display: 'popup',
+          href: 'https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>'
+        }, function(response){});
       }
 
       /* auto submission ketika reload */
