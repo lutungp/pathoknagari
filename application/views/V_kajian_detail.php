@@ -5,12 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pathok Nagari</title>
-    <link href="assets/images/212.png" rel="icon">
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets_custom/css/style.css">
-    <link rel="stylesheet" href="assets_2/css/style.css">
-    <meta property="og:url" content="http://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" />
+    <meta property="og:url" content="https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?php echo $kajian_detail['data'][0]['kajian_nama']; ?>" />
     <meta property="og:description" content="<?php echo $kajian_detail['data'][0]['kajian_summary']; ?>" />
