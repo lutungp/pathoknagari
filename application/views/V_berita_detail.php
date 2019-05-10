@@ -127,7 +127,10 @@
 
                       <div class="profile-authors heading_space">
                         <div class="" style="margin-bottom: 10px;">
-                          <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
+                          <button id="shareFbBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
+                          <a type="button" class="btn btn-facebook" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">
+                            <i class="fa fa-whatsapp fa-2"></i>
+                          </a>
                         </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
                         <div class="fb-comments" data-href="https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>" data-width="670" data-numposts="5"></div>
@@ -305,14 +308,13 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
-      document.getElementById('shareBtn').onclick = function() {
+      document.getElementById('shareFbBtn').onclick = function() {
           FB.ui({
             method: 'share',
             display: 'popup',
             href: 'https://pathoknagari.id/berita-detail?message=<?php echo $berita_id ?>'
           }, function(response){});
       }
-
       /* auto submission ketika reload */
       if ( window.history.replaceState ) {
           window.history.replaceState( null, null, window.location.href );
