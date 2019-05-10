@@ -8,7 +8,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?php echo $kajian_detail['data'][0]['kajian_nama']; ?>" />
     <meta property="og:description" content="<?php echo $kajian_detail['data'][0]['kajian_summary']; ?>" />
-    <meta property="og:image" content="<?php echo $kajian_detail['img_url'] . $kajian_detail['data'][0]['kajian_photo']?>" />
+    <meta property="og:image" itemprop="image" content="<?php echo $kajian_detail['img_url'] . $kajian_detail['data'][0]['kajian_photo']?>" />
     <title>Pathok Nagari</title>
     <link href="assets/images/212.png" rel="icon">
     <link rel="stylesheet" href="assets/css/plugins.css">
@@ -128,6 +128,9 @@
                       <div class="profile-authors heading_space">
                         <div class="" style="margin-bottom: 10px;">
                           <button id="shareBtn" type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2"></i></button>
+                          <a type="button" class="btn btn-facebook" href="whatsapp://send?text=https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" data-action="share/whatsapp/share">
+                            <i class="fa fa-whatsapp fa-2"></i>
+                          </a>
                         </div>
                         <h4 class="text-capitalize darkcolor bottom40">Tinggalkan Komentar</h4>
                         <div class="fb-comments" data-href="https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" data-width="670" data-numposts="5"></div>
