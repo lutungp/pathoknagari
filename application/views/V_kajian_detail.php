@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets_custom/css/style.css">
     <link rel="stylesheet" href="assets_2/css/style.css">
-    <meta property="og:url" content="https://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" />
+    <meta property="og:url" content="http://pathoknagari.id/kajian-detail?message=<?php echo $kajian_id ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?php echo $kajian_detail['data'][0]['kajian_nama']; ?>" />
     <meta property="og:description" content="<?php echo $kajian_detail['data'][0]['kajian_summary']; ?>" />
