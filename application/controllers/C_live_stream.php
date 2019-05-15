@@ -41,7 +41,7 @@ class C_live_stream extends CI_Controller{
       // $graphNode = $response->getGraphNode();
       // print_r($graphNode);
       $helper = $fb->getCanvasHelper();
-
+      print_r($helper);
       try {
         $accessToken = $helper->getAccessToken();
       } catch(Facebook\Exceptions\FacebookResponseException $e) {
