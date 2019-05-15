@@ -64,3 +64,4 @@ $route['beranda']               = 'C_dashboard';
 $route['get_berita']            = 'C_dashboard/get_berita';
 $route['kabar']                 = 'C_kabar';
 $route['kabar-detail']          = 'C_kabar_detail';
+$route['live-stream']           = 'C_live_stream';
